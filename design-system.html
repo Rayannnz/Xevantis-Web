@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Valentisys — Design System</title>
+<meta name="description" content="Foundations, components and motion for the Valentisys BPO & software agency brand." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/base.css" />
+<link rel="stylesheet" href="assets/css/animations.css" />
+<link rel="stylesheet" href="assets/css/components.css" />
+
+<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+<link rel="apple-touch-icon" href="assets/img/logo-mark.png" />
+
+<!-- Set before first paint: scroll-reveal only hides content when JS can show it again. -->
+<script>document.documentElement.classList.add("js");</script>
+
+<style>
+  /* Docs shell */
+  .docs { display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: clamp(2rem, 1rem + 3vw, 4rem); align-items: start; }
+  /* Grid items default to min-width:auto, so a wide <pre> or display heading
+     would push the content column past the track it was given. */
+  .docs > * { min-width: 0; }
+  @media (max-width: 900px) { .docs { grid-template-columns: minmax(0,1fr); } .docs__aside { position: static !important; } }
+
+  .docs__aside { position: sticky; top: calc(var(--header-height) + 2rem); display: grid; gap: .1rem; }
+  .docs__aside a { display: block; padding: .5rem .85rem; border-radius: var(--radius-pill); font-size: var(--text-sm); color: var(--color-text-muted); transition: background-color var(--dur-fast) ease, color var(--dur-fast) ease, transform var(--dur-fast) ease; }
+  .docs__aside a:hover { background: var(--color-surface-sunk); color: var(--color-text); transform: translateX(3px); }
+  .docs__aside a.is-active { background: var(--ink-900); color: var(--paper-050); }
+  .docs__aside strong { display: block; padding: 1rem .85rem .35rem; font-family: var(--font-display); font-size: var(--text-2xs); letter-spacing: var(--tracking-widest); text-transform: uppercase; color: var(--color-text-subtle); }
+
+  .block { padding-block: clamp(2.5rem, 2rem + 2vw, 4rem); border-top: 1px solid var(--color-border); scroll-margin-top: calc(var(--header-height) + 2rem); }
+  .block:first-of-type { border-top: 0; padding-top: 0; }
+  .block__head { display: grid; gap: .5rem; margin-bottom: var(--space-8); }
+
+  .demo { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4); padding: var(--space-6); border-radius: var(--radius-lg); border: 1px dashed var(--color-border); background: var(--color-surface); }
+  .demo--grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); align-items: stretch; }
+  .demo--stack { flex-direction: column; align-items: stretch; }
+  .demo--dark { background: var(--ink-900); border-color: rgb(255 255 255 / .18); }
+
+  .swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(122px, 1fr)); gap: var(--space-4); }
+  .ramp { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: .35rem; margin-bottom: var(--space-6); }
+  .ramp__step { height: 62px; border-radius: var(--radius-sm); display: grid; align-items: end; padding: .35rem; font-family: var(--font-mono); font-size: 10px; cursor: pointer; transition: transform var(--dur-base) var(--ease-out-back); }
+  .ramp__step:hover { transform: translateY(-5px); }
+  .ramp__name { grid-column: 1 / -1; font-family: var(--font-display); font-weight: 700; font-size: var(--text-sm); margin-bottom: .1rem; }
+
+  .type-row { display: grid; grid-template-columns: 148px minmax(0,1fr); gap: var(--space-6); align-items: baseline; padding-block: 1rem; border-bottom: 1px solid var(--color-border); }
+  @media (max-width: 640px) { .type-row { grid-template-columns: minmax(0,1fr); gap: .35rem; } }
+  .type-row__meta { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-subtle); }
+
+  .space-bar { display: flex; align-items: center; gap: 1rem; padding-block: .4rem; }
+  .space-bar__viz { height: 18px; border-radius: 4px; background: var(--lilac-300); }
+
+  .elev { display: grid; place-items: center; height: 110px; border-radius: var(--radius-lg); background: var(--paper-000); font-family: var(--font-mono); font-size: var(--text-xs); }
+
+  .motion-card { display: grid; gap: .75rem; padding: var(--space-5); border-radius: var(--radius-lg); background: var(--color-surface); border: 1px solid var(--color-border); }
+  .motion-card__stage { display: grid; place-items: center; height: 92px; border-radius: var(--radius-md); background: var(--color-surface-sunk); overflow: hidden; }
+  .motion-dot { width: 42px; height: 42px; border-radius: var(--radius-md); background: var(--ink-900); }
+
+  .do-dont { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--space-4); }
+  @media (max-width: 640px) { .do-dont { grid-template-columns: minmax(0,1fr); } }
+  .do-dont__item { padding: var(--space-5); border-radius: var(--radius-lg); border-left: 4px solid; }
+  .do { background: var(--mint-050); border-color: var(--mint-400); }
+  .dont { background: var(--blush-050); border-color: var(--blush-400); }
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header class="header" data-header data-pinned="true">
+  <div class="container container--wide">
+    <div class="header__inner">
+      <a class="brand" href="index.html" aria-label="Valentisys home">
+        <img class="brand__logo" src="assets/img/logo-valentisys.png" alt=""
+             width="900" height="240" />
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="index.html">Landing page</a>
+        <a class="nav__link is-active" href="design-system.html">Design system</a>
+      </nav>
+      <div class="header__actions">
+        <span class="badge badge--sun">v1.0</span>
+        <a class="btn btn--primary btn--sm" href="index.html" data-magnetic="0.25">
+          <span class="btn__label">View live site</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- Intro -->
+<section class="section" style="padding-bottom: var(--space-12)">
+  <div class="container container--wide">
+    <div class="stack" style="--gap:1.25rem; max-width: 760px; padding-top: var(--header-height)">
+      <span class="eyebrow" data-reveal>Valentisys · Design System v1.0</span>
+      <h1 data-split="words" data-stagger="50">The rules that make every page feel like us.</h1>
+      <p class="lead" data-reveal data-delay="200">
+        Three layers: <strong>primitives</strong> (raw values), <strong>semantic tokens</strong>
+        (intent — surface, text, accent) and <strong>component tokens</strong> (button height,
+        card radius). Components only ever read from the semantic layer, which is why a whole
+        section can be flipped to dark with one attribute.
+      </p>
+      <div class="cluster" data-reveal data-delay="300">
+        <span class="badge badge--mint">Zero dependencies</span>
+        <span class="badge badge--lilac">WCAG AA targets</span>
+        <span class="badge badge--sky">Reduced-motion safe</span>
+        <span class="badge badge--blush">Framework-agnostic CSS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+<div class="container container--wide">
+<div class="docs">
+
+  <!-- ============================= SIDEBAR ============================= -->
+  <aside class="docs__aside" data-spy>
+    <strong>Foundations</strong>
+    <a href="#logo">Logo</a>
+    <a href="#color">Color</a>
+    <a href="#typography">Typography</a>
+    <a href="#space">Space &amp; layout</a>
+    <a href="#radius">Radius &amp; elevation</a>
+    <strong>Components</strong>
+    <a href="#buttons">Buttons &amp; links</a>
+    <a href="#badges">Badges &amp; chips</a>
+    <a href="#cards">Cards</a>
+    <a href="#forms">Forms</a>
+    <a href="#patterns">Patterns</a>
+    <strong>Motion</strong>
+    <a href="#motion-tokens">Timing &amp; easing</a>
+    <a href="#motion-library">Animation library</a>
+    <a href="#motion-rules">Rules of use</a>
+    <strong>Practice</strong>
+    <a href="#voice">Voice &amp; imagery</a>
+    <a href="#a11y">Accessibility</a>
+    <a href="#usage">Getting started</a>
+  </aside>
+
+  <!-- ============================= CONTENT ============================= -->
+  <div>
+
+  <!-- ---------------------------- LOGO ---------------------------- -->
+  <section class="block" id="logo">
+    <div class="block__head">
+      <h2 data-reveal>Logo</h2>
+      <p class="lead" data-reveal data-delay="80">
+        Two assets. The <strong>lockup</strong> (V + orbit + wordmark) is the default and
+        should be used wherever there is room. The <strong>mark</strong> stands alone only
+        where the name already appears or the space is square — app icons, favicons,
+        avatars, social profile images.
+      </p>
+    </div>
+
+    <div class="grid grid--2" style="--gap:var(--space-5)">
+      <div class="demo" style="justify-content:center; padding-block:var(--space-10)">
+        <img src="assets/img/logo-valentisys.png" alt="Valentisys primary lockup" style="height:64px; width:auto" />
+      </div>
+      <div class="demo" style="justify-content:center; padding-block:var(--space-10)">
+        <img src="assets/img/logo-mark.png" alt="Valentisys mark" style="height:80px; width:auto" />
+      </div>
+    </div>
+
+    <div class="grid grid--2" style="--gap:var(--space-5); margin-top:var(--space-5)">
+      <div class="demo" style="justify-content:center; background:var(--grad-aurora)">
+        <img src="assets/img/logo-valentisys.png" alt="" style="height:48px; width:auto" />
+      </div>
+      <div class="demo demo--dark" style="justify-content:center">
+        <img src="assets/img/logo-mark.png" alt="" style="height:48px; width:auto" />
+        <span style="font-family:var(--font-display); font-size:1.5rem; font-weight:800; color:var(--paper-050); letter-spacing:var(--tracking-tighter)">Valentisys</span>
+      </div>
+    </div>
+    <p class="caption" style="margin-top:.75rem">
+      Left: the lockup sits happily on any light brand wash. Right: the wordmark is navy,
+      so on ink surfaces pair the mark with live text instead of placing the navy lockup.
+    </p>
+
+    <h3 style="margin:2.5rem 0 1rem">Brand colours in the mark</h3>
+    <div class="swatches">
+      <div class="swatch"><div class="swatch__chip" style="background:var(--brand-violet)" data-copy="var(--brand-violet)"></div><div class="swatch__meta"><span>violet</span><span>#8250F0</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:var(--brand-violet-light)" data-copy="var(--brand-violet-light)"></div><div class="swatch__meta"><span>orbit</span><span>#A98BF5</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:var(--brand-indigo)" data-copy="var(--brand-indigo)"></div><div class="swatch__meta"><span>indigo</span><span>#3C1E96</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:var(--brand-navy)" data-copy="var(--brand-navy)"></div><div class="swatch__meta"><span>navy</span><span>#1E1450</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:var(--grad-brand)" data-copy="var(--grad-brand)"></div><div class="swatch__meta"><span>grad-brand</span></div></div>
+    </div>
+
+    <div class="do-dont" style="margin-top:2rem">
+      <div class="do-dont__item do">
+        <strong>Do</strong>
+        <ul class="stack body-sm u-muted" style="--gap:.5rem; margin-top:.6rem">
+          <li>· Keep clear space around the lockup equal to the height of the V.</li>
+          <li>· Size by height, never width — <code>--logo-height</code> on <code>.brand</code>.</li>
+          <li>· Minimum 24px tall for the lockup, 16px for the mark.</li>
+          <li>· Place on paper, white, or a light brand wash.</li>
+        </ul>
+      </div>
+      <div class="do-dont__item dont">
+        <strong>Don't</strong>
+        <ul class="stack body-sm u-muted" style="--gap:.5rem; margin-top:.6rem">
+          <li>· Don't recolour, outline, or add a shadow to the mark.</li>
+          <li>· Don't stretch, rotate, or crop the orbit ring.</li>
+          <li>· Don't set the navy lockup on ink or on a saturated colour.</li>
+          <li>· Don't rebuild the wordmark in Plus Jakarta Sans — it is custom.</li>
+        </ul>
+      </div>
+    </div>
+
+    <pre class="code" style="margin-top:1.5rem">&lt;a class=<span class="tok-v">"brand"</span> href=<span class="tok-v">"/"</span> aria-label=<span class="tok-v">"Valentisys home"</span> style=<span class="tok-v">"--logo-height:44px"</span>&gt;
+  &lt;img class=<span class="tok-v">"brand__logo"</span> src=<span class="tok-v">"assets/img/logo-valentisys.png"</span>
+       alt=<span class="tok-v">""</span> width=<span class="tok-v">"900"</span> height=<span class="tok-v">"240"</span>&gt;
+&lt;/a&gt;
+<span class="tok-c">/* alt is empty because the link already carries the accessible name */</span></pre>
+  </section>
+
+  <!-- ---------------------------- COLOR ---------------------------- -->
+  <section class="block" id="color">
+    <div class="block__head">
+      <h2 data-reveal>Color</h2>
+      <p class="lead" data-reveal data-delay="80">
+        One ink, one paper, five brand pastels. Pastels carry meaning — Sun for energy
+        and CTAs, Mint for reliability, Lilac for intelligence/AI, Blush for the human
+        side, Sky for scale and data. Text is always ink on light; never pastel on pastel.
+        Click a swatch to copy its token.
+      </p>
+    </div>
+
+    <div class="stack" style="--gap:2rem">
+      <div>
+        <div class="ramp">
+          <span class="ramp__name">Ink — text, borders, the brand's spine</span>
+          <div class="ramp__step" style="background:var(--ink-900); color:#fff" data-copy="var(--ink-900)">900</div>
+          <div class="ramp__step" style="background:var(--ink-700); color:#fff" data-copy="var(--ink-700)">700</div>
+          <div class="ramp__step" style="background:var(--ink-500); color:#fff" data-copy="var(--ink-500)">500</div>
+          <div class="ramp__step" style="background:var(--ink-300)" data-copy="var(--ink-300)">300</div>
+          <div class="ramp__step" style="background:var(--ink-100)" data-copy="var(--ink-100)">100</div>
+          <div class="ramp__step" style="background:var(--paper-100); border:1px solid var(--color-border)" data-copy="var(--paper-100)">paper</div>
+        </div>
+
+        <div class="ramp">
+          <span class="ramp__name">Sun — primary accent, CTA fills, highlights</span>
+          <div class="ramp__step" style="background:var(--sun-050)" data-copy="var(--sun-050)">050</div>
+          <div class="ramp__step" style="background:var(--sun-100)" data-copy="var(--sun-100)">100</div>
+          <div class="ramp__step" style="background:var(--sun-200)" data-copy="var(--sun-200)">200</div>
+          <div class="ramp__step" style="background:var(--sun-300)" data-copy="var(--sun-300)">300</div>
+          <div class="ramp__step" style="background:var(--sun-400)" data-copy="var(--sun-400)">400</div>
+          <div class="ramp__step" style="background:var(--sun-500)" data-copy="var(--sun-500)">500</div>
+        </div>
+
+        <div class="ramp">
+          <span class="ramp__name">Mint — reliability, uptime, success</span>
+          <div class="ramp__step" style="background:var(--mint-050)" data-copy="var(--mint-050)">050</div>
+          <div class="ramp__step" style="background:var(--mint-100)" data-copy="var(--mint-100)">100</div>
+          <div class="ramp__step" style="background:var(--mint-200)" data-copy="var(--mint-200)">200</div>
+          <div class="ramp__step" style="background:var(--mint-300)" data-copy="var(--mint-300)">300</div>
+          <div class="ramp__step" style="background:var(--mint-400)" data-copy="var(--mint-400)">400</div>
+          <div class="ramp__step" style="background:var(--mint-500); color:#fff" data-copy="var(--mint-500)">500</div>
+        </div>
+
+        <div class="ramp">
+          <span class="ramp__name">Lilac — intelligence, automation, AI</span>
+          <div class="ramp__step" style="background:var(--lilac-050)" data-copy="var(--lilac-050)">050</div>
+          <div class="ramp__step" style="background:var(--lilac-100)" data-copy="var(--lilac-100)">100</div>
+          <div class="ramp__step" style="background:var(--lilac-200)" data-copy="var(--lilac-200)">200</div>
+          <div class="ramp__step" style="background:var(--lilac-300)" data-copy="var(--lilac-300)">300</div>
+          <div class="ramp__step" style="background:var(--lilac-400); color:#fff" data-copy="var(--lilac-400)">400</div>
+          <div class="ramp__step" style="background:var(--lilac-500); color:#fff" data-copy="var(--lilac-500)">500</div>
+        </div>
+
+        <div class="ramp">
+          <span class="ramp__name">Blush — the human touch, CX, empathy</span>
+          <div class="ramp__step" style="background:var(--blush-050)" data-copy="var(--blush-050)">050</div>
+          <div class="ramp__step" style="background:var(--blush-100)" data-copy="var(--blush-100)">100</div>
+          <div class="ramp__step" style="background:var(--blush-200)" data-copy="var(--blush-200)">200</div>
+          <div class="ramp__step" style="background:var(--blush-300)" data-copy="var(--blush-300)">300</div>
+          <div class="ramp__step" style="background:var(--blush-400)" data-copy="var(--blush-400)">400</div>
+          <div class="ramp__step" style="background:var(--blush-500); color:#fff" data-copy="var(--blush-500)">500</div>
+        </div>
+
+        <div class="ramp">
+          <span class="ramp__name">Sky — scale, infrastructure, data</span>
+          <div class="ramp__step" style="background:var(--sky-050)" data-copy="var(--sky-050)">050</div>
+          <div class="ramp__step" style="background:var(--sky-100)" data-copy="var(--sky-100)">100</div>
+          <div class="ramp__step" style="background:var(--sky-200)" data-copy="var(--sky-200)">200</div>
+          <div class="ramp__step" style="background:var(--sky-300)" data-copy="var(--sky-300)">300</div>
+          <div class="ramp__step" style="background:var(--sky-400)" data-copy="var(--sky-400)">400</div>
+          <div class="ramp__step" style="background:var(--sky-500); color:#fff" data-copy="var(--sky-500)">500</div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="margin-bottom:1rem">Gradients</h3>
+        <div class="swatches">
+          <div class="swatch"><div class="swatch__chip" style="background:var(--grad-aurora)"></div><div class="swatch__meta"><span>aurora</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--grad-sunrise)"></div><div class="swatch__meta"><span>sunrise</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--grad-cool)"></div><div class="swatch__meta"><span>cool</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--grad-ink)"></div><div class="swatch__meta"><span>ink</span></div></div>
+        </div>
+      </div>
+
+      <div class="do-dont">
+        <div class="do-dont__item do">
+          <strong>Do</strong>
+          <p class="body-sm u-muted" style="margin-top:.4rem">Use one pastel per section as a wash, ink for all body copy, and Sun only where you want the eye to land.</p>
+        </div>
+        <div class="do-dont__item dont">
+          <strong>Don't</strong>
+          <p class="body-sm u-muted" style="margin-top:.4rem">Stack pastel on pastel, set body text in a 300-level tint, or use two accent colours in one CTA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------- TYPOGRAPHY ---------------------------- -->
+  <section class="block" id="typography">
+    <div class="block__head">
+      <h2 data-reveal>Typography</h2>
+      <p class="lead" data-reveal data-delay="80">
+        <strong>Plus Jakarta Sans</strong> for anything structural (headings, buttons, labels),
+        <strong>Inter</strong> for reading, <strong>Caveat</strong> as a hand-written accent —
+        maximum one per section. Every size is a <code>clamp()</code>, so there are no
+        typographic media queries anywhere in the system.
+      </p>
+    </div>
+
+    <div class="stack" style="--gap:0">
+      <div class="type-row"><div class="type-row__meta">display-lg<br />--text-6xl · 800</div><div><span class="display-lg">Built to scale</span></div></div>
+      <div class="type-row"><div class="type-row__meta">h1<br />--text-5xl · 800</div><div><h1 style="margin:0">Outsourcing, re-engineered</h1></div></div>
+      <div class="type-row"><div class="type-row__meta">h2<br />--text-4xl · 700</div><div><h2 style="margin:0">More growth, less risk</h2></div></div>
+      <div class="type-row"><div class="type-row__meta">h3<br />--text-2xl · 700</div><div><h3 style="margin:0">Customer support squads</h3></div></div>
+      <div class="type-row"><div class="type-row__meta">lead<br />--text-lg · 400</div><div><p class="lead" style="margin:0">Dedicated teams, live in two weeks, measured on your outcomes.</p></div></div>
+      <div class="type-row"><div class="type-row__meta">body<br />--text-base · 400</div><div><p style="margin:0">Most outsourcing sells you seats. We build teams — recruited for your brand, trained on your product and wired into the tools your in-house staff already use.</p></div></div>
+      <div class="type-row"><div class="type-row__meta">body-sm<br />--text-sm</div><div><p class="body-sm u-muted" style="margin:0">Supporting copy, card bodies, table cells.</p></div></div>
+      <div class="type-row"><div class="type-row__meta">eyebrow<br />--text-xs · 700 · uppercase</div><div><span class="eyebrow">Why teams switch</span></div></div>
+      <div class="type-row"><div class="type-row__meta">hand accent<br />Caveat 700</div><div><span class="hand" style="font-size:2.5rem">our whole mission</span></div></div>
+    </div>
+
+    <div class="demo" style="margin-top:2rem">
+      <p style="font-size:var(--text-2xl); font-weight:700; font-family:var(--font-display); margin:0">
+        Highlight styles:
+        <span class="mark mark--sun">Sun</span>
+        <span class="mark mark--mint">Mint</span>
+        <span class="mark mark--lilac">Lilac</span>
+        <span class="text-gradient">gradient</span>
+        <span class="mark mark--underline">underline
+          <svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M4 8C46 3 108 2 196 6"/></svg>
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ---------------------------- SPACE ---------------------------- -->
+  <section class="block" id="space">
+    <div class="block__head">
+      <h2 data-reveal>Space &amp; layout</h2>
+      <p class="lead" data-reveal data-delay="80">
+        A 4px base scale for components; sections use the fluid
+        <code>--space-section</code> so vertical rhythm grows with the viewport.
+        Three container widths cover every page.
+      </p>
+    </div>
+
+    <div class="grid grid--2">
+      <div class="demo demo--stack">
+        <div class="space-bar"><span class="type-row__meta" style="width:96px">space-1 · 4</span><span class="space-bar__viz" style="width:4px"></span></div>
+        <div class="space-bar"><span class="type-row__meta" style="width:96px">space-2 · 8</span><span class="space-bar__viz" style="width:8px"></span></div>
+        <div class="space-bar"><span class="type-row__meta" style="width:96px">space-3 · 12</span><span class="space-bar__viz" style="width:12px"></span></div>
+        <div class="space-bar"><span class="type-row__meta" style="width:96px">space-4 · 16</span><span class="space-bar__viz" style="width:16px"></span></div>
+        <div class="space-bar"><span class="type-row__meta" style="width:96px">space-6 · 24</span><span class="space-bar__viz" style="width:24px"></span></div>
+        <div class="space-bar"><span class="type-row__meta" style="width:96px">space-8 · 32</span><span class="space-bar__viz" style="width:32px"></span></div>
+        <div class="space-bar"><span class="type-row__meta" style="width:96px">space-12 · 48</span><span class="space-bar__viz" style="width:48px"></span></div>
+        <div class="space-bar"><span class="type-row__meta" style="width:96px">space-16 · 64</span><span class="space-bar__viz" style="width:64px"></span></div>
+        <div class="space-bar"><span class="type-row__meta" style="width:96px">space-24 · 96</span><span class="space-bar__viz" style="width:96px"></span></div>
+      </div>
+
+      <div class="table-scroll">
+        <table class="spec">
+          <thead><tr><th>Token</th><th>Value</th><th>Use</th></tr></thead>
+          <tbody>
+            <tr><td><code>--container-narrow</code></td><td>780px</td><td>Long-form copy, quotes</td></tr>
+            <tr><td><code>--container-max</code></td><td>1240px</td><td>Default page content</td></tr>
+            <tr><td><code>--container-wide</code></td><td>1480px</td><td>Hero, grids, marquees</td></tr>
+            <tr><td><code>--space-section</code></td><td>72 → 144px</td><td>Section padding-block</td></tr>
+            <tr><td><code>--space-gutter</code></td><td>20 → 40px</td><td>Container padding-inline</td></tr>
+            <tr><td><code>.grid--2/3/4</code></td><td>—</td><td>Collapses at 1024 / 860 / 620px</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------- RADIUS + ELEVATION ---------------------------- -->
+  <section class="block" id="radius">
+    <div class="block__head">
+      <h2 data-reveal>Radius &amp; elevation</h2>
+      <p class="lead" data-reveal data-delay="80">
+        Generous radii are core to the brand's friendliness. Two shadow families:
+        <strong>soft</strong> for real depth, <strong>sticker</strong> (a hard offset) for
+        the playful, illustrative surfaces.
+      </p>
+    </div>
+
+    <div class="demo demo--grid" style="margin-bottom:1.5rem">
+      <div class="elev" style="border-radius:var(--radius-sm); border:1px solid var(--color-border)">radius-sm · 10</div>
+      <div class="elev" style="border-radius:var(--radius-md); border:1px solid var(--color-border)">radius-md · 16</div>
+      <div class="elev" style="border-radius:var(--radius-lg); border:1px solid var(--color-border)">radius-lg · 24</div>
+      <div class="elev" style="border-radius:var(--radius-xl); border:1px solid var(--color-border)">radius-xl · 32</div>
+      <div class="elev" style="border-radius:var(--radius-2xl); border:1px solid var(--color-border)">radius-2xl · 44</div>
+      <div class="elev anim-blob" style="border-radius:var(--radius-blob); background:var(--lilac-200)">radius-blob</div>
+    </div>
+
+    <div class="demo demo--grid" style="background:var(--paper-100)">
+      <div class="elev" style="box-shadow:var(--shadow-sm)">shadow-sm</div>
+      <div class="elev" style="box-shadow:var(--shadow-md)">shadow-md</div>
+      <div class="elev" style="box-shadow:var(--shadow-lg)">shadow-lg</div>
+      <div class="elev" style="box-shadow:var(--shadow-xl)">shadow-xl</div>
+      <div class="elev" style="box-shadow:var(--shadow-glow-sun); background:var(--sun-300)">glow-sun</div>
+      <div class="elev" style="box-shadow:var(--shadow-sticker); border:2px solid var(--ink-900)">sticker</div>
+    </div>
+  </section>
+
+  <!-- ---------------------------- BUTTONS ---------------------------- -->
+  <section class="block" id="buttons">
+    <div class="block__head">
+      <h2 data-reveal>Buttons &amp; links</h2>
+      <p class="lead" data-reveal data-delay="80">
+        One primary action per view. Every button has a liquid fill that rises on hover
+        (<code>::before</code>, 480ms expo) — the sticker variant swaps that for a physical
+        press instead. Add <code>data-magnetic</code> for cursor attraction on hero CTAs.
+      </p>
+    </div>
+
+    <div class="demo" style="margin-bottom:1rem">
+      <button class="btn btn--primary"><span class="btn__label">Primary</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <button class="btn btn--accent"><span class="btn__label">Accent</span></button>
+      <button class="btn btn--secondary"><span class="btn__label">Secondary</span></button>
+      <button class="btn btn--ghost"><span class="btn__label">Ghost</span></button>
+      <button class="btn btn--sticker"><span class="btn__label">Sticker</span></button>
+      <button class="btn btn--primary" disabled><span class="btn__label">Disabled</span></button>
+    </div>
+
+    <div class="demo" style="margin-bottom:1rem">
+      <button class="btn btn--primary btn--sm"><span class="btn__label">Small · 38</span></button>
+      <button class="btn btn--primary"><span class="btn__label">Medium · 48</span></button>
+      <button class="btn btn--primary btn--lg" data-magnetic="0.3"><span class="btn__label">Large · 58 (magnetic)</span></button>
+      <button class="btn btn--secondary btn--icon" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <a class="link" href="#buttons">Text link <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    </div>
+
+    <div class="demo demo--dark" data-scheme="dark">
+      <button class="btn btn--accent"><span class="btn__label">Accent on dark</span></button>
+      <button class="btn btn--secondary"><span class="btn__label">Secondary on dark</span></button>
+      <button class="btn btn--sticker"><span class="btn__label">Sticker on dark</span></button>
+    </div>
+
+    <pre class="code" style="margin-top:1.5rem"><span class="tok-c">&lt;!-- markup contract: label must be wrapped so the liquid fill sits behind it --&gt;</span>
+&lt;a class=<span class="tok-v">"btn btn--primary btn--lg"</span> href=<span class="tok-v">"#"</span> <span class="tok-p">data-magnetic</span>=<span class="tok-v">"0.3"</span>&gt;
+  &lt;span class=<span class="tok-v">"btn__label"</span>&gt;Build your dream team&lt;/span&gt;
+  &lt;svg …/&gt;
+&lt;/a&gt;</pre>
+  </section>
+
+  <!-- ---------------------------- BADGES ---------------------------- -->
+  <section class="block" id="badges">
+    <div class="block__head">
+      <h2 data-reveal>Badges &amp; chips</h2>
+      <p class="lead" data-reveal data-delay="80">
+        Badges label; chips filter. Use the glass pill only over gradients or imagery.
+      </p>
+    </div>
+    <div class="demo">
+      <span class="badge">Default</span>
+      <span class="badge badge--sun">Sun</span>
+      <span class="badge badge--mint">Mint</span>
+      <span class="badge badge--lilac">Lilac</span>
+      <span class="badge badge--blush">Blush</span>
+      <span class="badge badge--sky">Sky</span>
+      <span class="badge badge--ink">Ink</span>
+      <span class="badge badge--outline">Outline</span>
+      <span class="chip">Filter chip</span>
+      <span class="pill-glass"><span class="pulse-dot" aria-hidden="true"></span> Live · 11 seats left</span>
+    </div>
+  </section>
+
+  <!-- ---------------------------- CARDS ---------------------------- -->
+  <section class="block" id="cards">
+    <div class="block__head">
+      <h2 data-reveal>Cards</h2>
+      <p class="lead" data-reveal data-delay="80">
+        Five surfaces, one skeleton. <code>.card--hover</code> adds the lift;
+        <code>.card--wash</code> adds the accent flood; <code>data-tilt</code> and
+        <code>data-spotlight</code> add pointer response on fine pointers only.
+      </p>
+    </div>
+
+    <div class="grid grid--3" style="--gap:var(--space-5)">
+      <article class="card card--hover card--wash" data-accent="sky" data-tilt="7" data-spotlight>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18v-6a8 8 0 0 1 16 0v6"/><path d="M4 15h3v5H5a1 1 0 0 1-1-1Zm16 0h-3v5h2a1 1 0 0 0 1-1Z"/></svg></div>
+        <h3 class="card__title">Default + wash</h3>
+        <p class="card__body">Hover to see the accent flood rise and the icon tilt.</p>
+        <div class="card__foot"><a class="link" href="#cards">Learn more</a></div>
+      </article>
+
+      <article class="card card--sticker card--hover">
+        <span class="card__index">02</span>
+        <div class="card__icon" style="background:var(--sun-300)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 15 9l7 3-7 3-3 7-3-7-7-3 7-3Z"/></svg></div>
+        <h3 class="card__title">Sticker</h3>
+        <p class="card__body">Hard offset shadow. Reserved for playful, illustrative moments.</p>
+      </article>
+
+      <article class="card card--ink anim-sheen" data-spotlight data-scheme="dark">
+        <div class="card__icon" style="background:var(--lilac-300)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink-900)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 8-5 4 5 4M15 8l5 4-5 4"/></svg></div>
+        <h3 class="card__title">Ink + sheen</h3>
+        <p class="card__body">Dark surface with a light sweep on hover and a pointer spotlight.</p>
+      </article>
+
+      <article class="card card--flat">
+        <h3 class="card__title">Flat</h3>
+        <p class="card__body">Sunk surface, no border. For dense lists and secondary info.</p>
+      </article>
+
+      <article class="card card--glass" style="background:var(--grad-cool)">
+        <h3 class="card__title">Glass</h3>
+        <p class="card__body">Backdrop blur. Only ever placed on a gradient or photo.</p>
+      </article>
+
+      <div class="card">
+        <div class="stat"><span class="stat__value counter" data-count="96" data-suffix="%">0</span><span class="stat__label">Stat block with count-up + meter</span></div>
+        <div class="meter"><div class="meter__fill" style="--value:.96"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------- FORMS ---------------------------- -->
+  <section class="block" id="forms">
+    <div class="block__head">
+      <h2 data-reveal>Forms</h2>
+      <p class="lead" data-reveal data-delay="80">
+        Pill fields, 52px tall, with a 4px Sun focus ring — visible against every surface
+        in the palette. Errors set <code>aria-invalid</code>, never colour alone.
+      </p>
+    </div>
+
+    <div class="demo demo--stack" style="max-width:620px">
+      <form class="stack" data-demo-form="Demo submitted — no data left the page." novalidate>
+        <div class="field">
+          <label class="field__label" for="ds-name">Full name</label>
+          <input class="input" id="ds-name" type="text" placeholder="Alex Rivera" />
+        </div>
+        <div class="field">
+          <label class="field__label" for="ds-email">Work email</label>
+          <input class="input" id="ds-email" type="email" placeholder="you@company.com" required />
+        </div>
+        <div class="field">
+          <label class="field__label" for="ds-team">Team size</label>
+          <select class="select" id="ds-team">
+            <option>1–10 seats</option><option>11–50 seats</option><option>51–200 seats</option><option>200+ seats</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="ds-msg">What do you need staffed?</label>
+          <textarea class="textarea" id="ds-msg" placeholder="Tier-1 support, 12k tickets/month, Zendesk…"></textarea>
+        </div>
+        <div class="field">
+          <label class="field__label" for="ds-err">Error state</label>
+          <input class="input" id="ds-err" type="text" value="not-an-email" aria-invalid="true" aria-describedby="ds-err-msg" />
+          <span class="caption" id="ds-err-msg" style="color:var(--signal-danger)">Enter a valid work email address.</span>
+        </div>
+        <button class="btn btn--primary" type="submit"><span class="btn__label">Submit</span></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ---------------------------- PATTERNS ---------------------------- -->
+  <section class="block" id="patterns">
+    <div class="block__head">
+      <h2 data-reveal>Patterns</h2>
+      <p class="lead" data-reveal data-delay="80">
+        Composed blocks that appear across pages. All keyboard-operable, all wired by
+        <code>site.js</code> through <code>data-*</code> attributes.
+      </p>
+    </div>
+
+    <div class="stack" style="--gap:2rem">
+      <div>
+        <h3 style="margin-bottom:1rem">Accordion <span class="badge badge--outline">data-accordion</span></h3>
+        <div class="accordion" data-accordion>
+          <div class="acc is-open">
+            <button class="acc__trigger" type="button"><span class="acc__num">1</span><span>Arrow keys move between headers</span><span class="acc__icon" aria-hidden="true"></span></button>
+            <div class="acc__panel"><div><div class="acc__content">The panel animates with <code>grid-template-rows: 0fr → 1fr</code>, so it works at any content height with no JS measurement.</div></div></div>
+          </div>
+          <div class="acc">
+            <button class="acc__trigger" type="button"><span class="acc__num">2</span><span>Single-open by default</span><span class="acc__icon" aria-hidden="true"></span></button>
+            <div class="acc__panel"><div><div class="acc__content">Pass <code>data-accordion="multi"</code> to allow several open at once.</div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="margin-bottom:1rem">Marquee <span class="badge badge--outline">data-marquee</span></h3>
+        <div class="marquee" data-marquee style="border:1px dashed var(--color-border); border-radius:var(--radius-lg); padding-block:1.25rem">
+          <div class="marquee__track">
+            <span class="logo-strip__item">Zendesk</span><span class="logo-strip__item">Intercom</span>
+            <span class="logo-strip__item">Salesforce</span><span class="logo-strip__item">Twilio</span>
+            <span class="logo-strip__item">Snowflake</span><span class="logo-strip__item">Linear</span>
+          </div>
+        </div>
+        <p class="caption" style="margin-top:.5rem">Track content is cloned at runtime; hover pauses it.</p>
+      </div>
+
+      <div>
+        <h3 style="margin-bottom:1rem">Wave &amp; ribbon dividers</h3>
+        <div style="border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--color-border)">
+          <div style="background:var(--sun-100); height:40px"></div>
+          <div class="wave" style="background:var(--color-bg)"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 40c180 46 340 46 540 12s420-54 640-12 260 40 260 40V0H0Z" fill="var(--sun-100)"/></svg></div>
+          <div class="ribbon" style="height:70px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------- MOTION TOKENS ---------------------------- -->
+  <section class="block" id="motion-tokens">
+    <div class="block__head">
+      <h2 data-reveal>Timing &amp; easing</h2>
+      <p class="lead" data-reveal data-delay="80">
+        Motion is a token, not a decision made per component. Interface feedback is fast
+        (&lt;300ms); entrances are slow and eased out hard so they feel weighted rather
+        than bouncy.
+      </p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="spec">
+        <thead><tr><th>Token</th><th>Value</th><th>Where it belongs</th></tr></thead>
+        <tbody>
+          <tr><td><code>--dur-instant</code></td><td>90ms</td><td>Colour/opacity flips, hover tint</td></tr>
+          <tr><td><code>--dur-fast</code></td><td>180ms</td><td>Buttons, links, focus rings</td></tr>
+          <tr><td><code>--dur-base</code></td><td>280ms</td><td>Nav pills, tilt return, dropdowns</td></tr>
+          <tr><td><code>--dur-slow</code></td><td>480ms</td><td>Card lift, accordion, drawer, liquid fill</td></tr>
+          <tr><td><code>--dur-slower</code></td><td>720ms</td><td>Carousel travel, underline draw</td></tr>
+          <tr><td><code>--dur-reveal</code></td><td>900ms</td><td>Scroll entrances only</td></tr>
+          <tr><td><code>--ease-out-expo</code></td><td>cubic-bezier(.16,1,.3,1)</td><td>Default for anything entering</td></tr>
+          <tr><td><code>--ease-out-back</code></td><td>cubic-bezier(.34,1.56,.64,1)</td><td>Small playful pops — icons, dots</td></tr>
+          <tr><td><code>--ease-spring</code></td><td>linear() spring</td><td>Magnetic buttons returning home</td></tr>
+          <tr><td><code>--stagger</code></td><td>70ms</td><td>Step between siblings in a group</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ---------------------------- MOTION LIBRARY ---------------------------- -->
+  <section class="block" id="motion-library">
+    <div class="block__head">
+      <h2 data-reveal>Animation library</h2>
+      <p class="lead" data-reveal data-delay="80">
+        Everything below is declarative — add the attribute, the engine wires the rest.
+        Scroll this section slowly to see the entrances fire.
+      </p>
+    </div>
+
+    <div class="grid grid--3" style="--gap:var(--space-4)">
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot" data-reveal="up" data-reveal-repeat></div></div><strong>data-reveal="up"</strong><span class="caption">Default entrance: 32px rise + fade, 900ms expo.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot" data-reveal="scale" data-reveal-repeat style="background:var(--lilac-400)"></div></div><strong>data-reveal="scale"</strong><span class="caption">For panels and imagery that should feel like they land.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot" data-reveal="pop" data-reveal-repeat style="background:var(--blush-400)"></div></div><strong>data-reveal="pop"</strong><span class="caption">Back-eased overshoot. Badges, avatars, small delights.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot" data-reveal="blur" data-reveal-repeat style="background:var(--mint-400)"></div></div><strong>data-reveal="blur"</strong><span class="caption">Focus-pull entrance for hero-adjacent content.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot" data-reveal="left" data-reveal-repeat style="background:var(--sky-400)"></div></div><strong>data-reveal="left|right"</strong><span class="caption">Directional — use to reinforce a split layout's reading order.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot" data-reveal="clip" data-reveal-repeat style="background:var(--sun-400)"></div></div><strong>data-reveal="clip"</strong><span class="caption">Wipes up from a mask. Best on full-bleed media.</span></div>
+
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot anim-float"></div></div><strong>.anim-float</strong><span class="caption">Ambient bob for sticker notes and orbs.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot anim-blob" style="width:64px;height:64px;background:var(--mint-300)"></div></div><strong>.anim-blob</strong><span class="caption">Organic border-radius morph, 16s loop.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot anim-spin" style="border-radius:50%;background:conic-gradient(var(--sun-300),var(--lilac-300),var(--mint-300),var(--sun-300))"></div></div><strong>.anim-spin</strong><span class="caption">26s rotation for orbit diagrams.</span></div>
+      <div class="motion-card"><div class="motion-card__stage anim-aurora" style="width:100%"></div><strong>.anim-aurora</strong><span class="caption">The signature gradient drift. One per page, maximum two.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><span class="badge badge--ink anim-sheen" style="height:42px;padding-inline:1.25rem">Hover me</span></div><strong>.anim-sheen</strong><span class="caption">Light sweep across dark surfaces on hover.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><span class="stat__value counter" data-count="1240" data-suffix="+">0</span></div><strong>data-count</strong><span class="caption">Count-up on entry, easeOutExpo, tabular figures.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><button class="btn btn--primary btn--sm" data-magnetic="0.4"><span class="btn__label">Pull me</span></button></div><strong>data-magnetic</strong><span class="caption">Cursor attraction, spring return. Hero CTAs only.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><div class="motion-dot" data-tilt="14" data-spotlight style="width:72px;height:72px;background:var(--grad-cool)"></div></div><strong>data-tilt / data-spotlight</strong><span class="caption">3D pointer response, disabled on touch.</span></div>
+      <div class="motion-card"><div class="motion-card__stage"><div style="width:100%;padding-inline:1.5rem"><div class="meter"><div class="meter__fill" style="--value:.78"></div></div></div></div><strong>.meter__fill</strong><span class="caption">Scale-X grow keyed to <code>--value</code>.</span></div>
+    </div>
+
+    <pre class="code" style="margin-top:1.5rem"><span class="tok-c">&lt;!-- a group with an inherited stagger --&gt;</span>
+&lt;div class=<span class="tok-v">"grid grid--3"</span> <span class="tok-p">data-stagger</span>=<span class="tok-v">"110"</span>&gt;
+  &lt;article class=<span class="tok-v">"card"</span> <span class="tok-p">data-reveal</span>=<span class="tok-v">"up"</span>&gt;…&lt;/article&gt;   <span class="tok-c">/* delay 0ms   */</span>
+  &lt;article class=<span class="tok-v">"card"</span> <span class="tok-p">data-reveal</span>=<span class="tok-v">"up"</span>&gt;…&lt;/article&gt;   <span class="tok-c">/* delay 110ms */</span>
+  &lt;article class=<span class="tok-v">"card"</span> <span class="tok-p">data-reveal</span>=<span class="tok-v">"up"</span>&gt;…&lt;/article&gt;   <span class="tok-c">/* delay 220ms */</span>
+&lt;/div&gt;
+
+<span class="tok-c">&lt;!-- headline split into words, each rising out of a mask --&gt;</span>
+&lt;h2 <span class="tok-p">data-split</span>=<span class="tok-v">"words"</span> <span class="tok-p">data-stagger</span>=<span class="tok-v">"45"</span>&gt;More growth, less risk.&lt;/h2&gt;</pre>
+  </section>
+
+  <!-- ---------------------------- MOTION RULES ---------------------------- -->
+  <section class="block" id="motion-rules">
+    <div class="block__head">
+      <h2 data-reveal>Rules of use</h2>
+    </div>
+    <div class="do-dont">
+      <div class="do-dont__item do">
+        <strong>Do</strong>
+        <ul class="stack body-sm u-muted" style="--gap:.5rem; margin-top:.6rem">
+          <li>· Animate <code>transform</code> and <code>opacity</code> only — they stay on the compositor.</li>
+          <li>· Reveal each element once. Repeating entrances on scroll-back is nausea, not delight.</li>
+          <li>· Keep stagger between 45–120ms; beyond that the group stops reading as a group.</li>
+          <li>· Let ambient loops run slow (7s+) and low-amplitude so they never compete with reading.</li>
+          <li>· Test the whole page with reduced motion on — content must be fully usable.</li>
+        </ul>
+      </div>
+      <div class="do-dont__item dont">
+        <strong>Don't</strong>
+        <ul class="stack body-sm u-muted" style="--gap:.5rem; margin-top:.6rem">
+          <li>· Don't animate <code>width</code>, <code>height</code>, <code>top</code> or <code>box-shadow</code> in a loop.</li>
+          <li>· Don't put more than one hero-scale effect on screen at a time.</li>
+          <li>· Don't gate meaning behind motion — if it only reads while animating, it's decoration.</li>
+          <li>· Don't stack parallax on a sticky element; the two fight and jitter.</li>
+          <li>· Don't use magnetic or tilt on anything below the fold that users must click quickly.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------- VOICE ---------------------------- -->
+  <section class="block" id="voice">
+    <div class="block__head">
+      <h2 data-reveal>Voice &amp; imagery</h2>
+    </div>
+    <div class="grid grid--2">
+      <div class="card card--flat">
+        <h3 class="card__title">Voice</h3>
+        <p class="card__body">Direct, numerate, warm. Lead with the outcome and the number; skip the adjectives. Say "live in 14 days", not "rapid deployment". Never say "resources" about people.</p>
+      </div>
+      <div class="card card--flat">
+        <h3 class="card__title">Imagery</h3>
+        <p class="card__body">Real people at real desks, or abstract geometry in brand pastels — never stock handshakes or globe-and-network clip art. Illustrations get 2px ink outlines to match the sticker family.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------- A11Y ---------------------------- -->
+  <section class="block" id="a11y">
+    <div class="block__head">
+      <h2 data-reveal>Accessibility commitments</h2>
+    </div>
+    <div class="table-scroll">
+      <table class="spec">
+        <thead><tr><th>Area</th><th>Commitment</th></tr></thead>
+        <tbody>
+          <tr><td>Contrast</td><td>Body copy is ink-900 on paper (≈16:1). Muted text uses ink-500 (≈7:1). Pastels are backgrounds only — never text colour.</td></tr>
+          <tr><td>Focus</td><td>2px lilac ring, 3px offset, on every interactive element. <code>outline: none</code> is not used anywhere in the system.</td></tr>
+          <tr><td>Motion</td><td><code>prefers-reduced-motion</code> disables all transitions, loops and parallax; revealed content is forced visible.</td></tr>
+          <tr><td>Keyboard</td><td>Accordion and tabs support arrow/Home/End. Drawer and mega menu close on Escape and return focus to the trigger.</td></tr>
+          <tr><td>Semantics</td><td>Split headings keep an <code>aria-label</code> with the original text; per-word spans are <code>aria-hidden</code>.</td></tr>
+          <tr><td>Targets</td><td>Minimum 38×38px interactive area; primary CTAs are 48–58px tall.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ---------------------------- USAGE ---------------------------- -->
+  <section class="block" id="usage">
+    <div class="block__head">
+      <h2 data-reveal>Getting started</h2>
+      <p class="lead" data-reveal data-delay="80">Load in this order — tokens must come first, components last.</p>
+    </div>
+    <pre class="code">&lt;link rel=<span class="tok-v">"stylesheet"</span> href=<span class="tok-v">"assets/css/tokens.css"</span>&gt;      <span class="tok-c">/* variables      */</span>
+&lt;link rel=<span class="tok-v">"stylesheet"</span> href=<span class="tok-v">"assets/css/base.css"</span>&gt;        <span class="tok-c">/* reset + type   */</span>
+&lt;link rel=<span class="tok-v">"stylesheet"</span> href=<span class="tok-v">"assets/css/animations.css"</span>&gt;  <span class="tok-c">/* keyframes      */</span>
+&lt;link rel=<span class="tok-v">"stylesheet"</span> href=<span class="tok-v">"assets/css/components.css"</span>&gt;  <span class="tok-c">/* blocks         */</span>
+
+&lt;script src=<span class="tok-v">"assets/js/motion.js"</span> defer&gt;&lt;/script&gt;
+&lt;script src=<span class="tok-v">"assets/js/site.js"</span> defer&gt;&lt;/script&gt;
+
+<span class="tok-c">/* Injecting markup later? Re-scan for new hooks: */</span>
+<span class="tok-p">VMotion</span>.refresh();</pre>
+
+    <div class="cluster" style="margin-top:2rem">
+      <a class="btn btn--primary btn--lg" href="index.html" data-magnetic="0.3"><span class="btn__label">See it assembled</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+
+  </div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container container--wide">
+    <div class="footer__bottom" style="margin-top:0; border-top:0">
+      <span>© <span data-year>2026</span> Valentisys — Design System v1.0</span>
+      <div class="cluster"><a class="link" href="index.html">Landing page</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/motion.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
