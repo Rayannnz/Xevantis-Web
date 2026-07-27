@@ -1,0 +1,183 @@
+/* ==========================================================================
+   Landing-page compositions.
+   Reusable pieces live in assets/css/components.css; what stays here is
+   layout unique to this one page. Mirrors the <style> block of index.html.
+   ========================================================================== */
+
+/* Hero backdrop */
+.hero__bg {
+  position: absolute;
+  inset: -10% -5% auto -5%;
+  height: 130%;
+  z-index: -2;
+}
+.orb--a {
+  top: -6rem;
+  left: -8rem;
+  width: 30rem;
+  height: 30rem;
+  background: var(--lilac-200);
+  --orb-blur: 40px;
+  --orb-opacity: 0.75;
+}
+.orb--b {
+  top: 22rem;
+  right: -10rem;
+  width: 26rem;
+  height: 26rem;
+  background: var(--sun-200);
+  --orb-blur: 50px;
+  --orb-opacity: 0.8;
+}
+.orb--c {
+  bottom: -8rem;
+  left: 32%;
+  width: 22rem;
+  height: 22rem;
+  background: var(--mint-200);
+  --orb-blur: 55px;
+  --orb-opacity: 0.6;
+}
+
+.hero__stage {
+  position: relative;
+}
+
+/* Notes hang off the panel's corners — offsets keep them clear of the
+   panel's own badge row and metric values. */
+.note--1 {
+  top: -2.25rem;
+  left: -3.25rem;
+  --rot: -6deg;
+  background: var(--sun-200);
+}
+.note--2 {
+  bottom: -1.75rem;
+  right: 1.5rem;
+  --rot: 5deg;
+  background: var(--mint-200);
+}
+.note--3 {
+  bottom: -1.5rem;
+  left: -1rem;
+  --rot: -3deg;
+  background: var(--lilac-200);
+}
+@media (max-width: 1180px) {
+  .note--1 {
+    left: -1.25rem;
+  }
+  .note--3 {
+    left: 1rem;
+  }
+}
+@media (max-width: 520px) {
+  .note--1,
+  .note--2,
+  .note--3 {
+    display: none;
+  }
+}
+
+/* Value-prop illustration */
+.flow {
+  display: grid;
+  gap: 0.75rem;
+}
+.flow__node {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius-lg);
+  background: var(--paper-000);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+.flow__dot {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Services */
+.services {
+  --gap: var(--space-5);
+}
+
+/* Scale banner */
+.scale-band {
+  position: relative;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  padding: clamp(2rem, 1.5rem + 3vw, 4rem);
+}
+.scale-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  gap: clamp(2rem, 1rem + 3vw, 4rem);
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .scale-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.scale-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem 1.5rem;
+}
+.scale-list li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+.scale-list svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  color: var(--mint-500);
+}
+
+/* Stats band */
+.stats-band {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-8);
+}
+@media (max-width: 860px) {
+  .stats-band {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Post media placeholders */
+.post__art {
+  display: grid;
+  place-items: center;
+}
+.art--1 {
+  background: linear-gradient(140deg, var(--lilac-200), var(--blush-200));
+}
+.art--2 {
+  background: linear-gradient(140deg, var(--mint-200), var(--sky-200));
+}
+.art--3 {
+  background: linear-gradient(140deg, var(--sun-200), var(--blush-100));
+}
+
+/* CTA */
+.cta__title {
+  font-size: var(--text-5xl);
+  line-height: 0.98;
+  letter-spacing: var(--tracking-tighter);
+}

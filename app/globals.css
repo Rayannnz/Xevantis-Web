@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Next.js entry point for the design system stylesheets.
+
+   The four files below are the framework-agnostic source of truth and are
+   shared verbatim with the static build (index.html / design-system.html).
+   They are imported rather than copied, so there is exactly one definition of
+   every token. Order matters: tokens → base → animations → components.
+   ========================================================================== */
+
+@import "../assets/css/tokens.css";
+@import "../assets/css/base.css";
+@import "../assets/css/animations.css";
+@import "../assets/css/components.css";
+
+/* --------------------------------------------------------------------------
+   next/font bridge.
+
+   tokens.css names font families as plain strings so the static build can use
+   a <link> to Google Fonts. Under Next the families are self-hosted by
+   next/font, which exposes each one as a CSS variable on <html>. Remapping
+   here keeps tokens.css untouched and framework-agnostic — nothing else in
+   the system needs to know which loader is in play.
+   -------------------------------------------------------------------------- */
+:root {
+  --font-display: var(--font-jakarta), "Segoe UI Variable Display", "Segoe UI", system-ui,
+    -apple-system, sans-serif;
+  --font-body: var(--font-inter), "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system,
+    sans-serif;
+  --font-hand: var(--font-caveat), "Segoe Script", "Bradley Hand", cursive;
+  --font-mono: var(--font-jetbrains), ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
