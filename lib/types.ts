@@ -57,14 +57,6 @@ export interface Stat {
   label: string;
 }
 
-export interface Post {
-  date: string;
-  category: string;
-  title: string;
-  art: string;
-  icon: ReactNode;
-}
-
 export interface FooterColumn {
   title: string;
   links: NavLink[];

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { MotionProvider } from "@/components/motion/MotionProvider";
 import { ToastProvider } from "@/components/ui/Toast";
+import { SITE_URL } from "@/lib/seo";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -31,7 +32,14 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Valentisys — Outsourcing & software teams, built to make you better",
+  // Every page's canonical, OpenGraph and Twitter URL resolves against this,
+  // so a relative `alternates.canonical` becomes absolute automatically.
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Valentisys — Outsourcing & software teams, built to make you better",
+    // Service pages set their own full title; this only wraps the ones that don't.
+    template: "%s",
+  },
   description:
     "Valentisys blends world-class BPO talent with product engineers. Dedicated CX, back-office and software squads live in 2 weeks — not 2 quarters.",
   icons: {

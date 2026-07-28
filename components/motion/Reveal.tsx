@@ -17,13 +17,23 @@ export type RevealVariant =
 const EASE_OUT_EXPO = [0.16, 1, 0.3, 1] as const;
 const EASE_OUT_BACK = [0.34, 1.56, 0.64, 1] as const;
 
+/**
+ * Horizontal travel is capped below the narrowest gutter.
+ *
+ * `--gutter` bottoms out at 20px on small screens, so a 40px slide put half
+ * the element past the viewport edge on the way in — clipped by the root's
+ * `overflow-x: hidden` and visibly cropping the first characters of a line.
+ * 16px stays inside the gutter at every breakpoint and still reads as a slide.
+ */
+const SLIDE_X = 16;
+
 /** Hidden states, one per `data-reveal` value in the original system. */
 const hiddenByVariant: Record<RevealVariant, TargetAndTransition> = {
   up: { opacity: 0, y: 32 },
   fade: { opacity: 0, y: 0 },
   scale: { opacity: 0, y: 14, scale: 0.94 },
-  left: { opacity: 0, x: -40 },
-  right: { opacity: 0, x: 40 },
+  left: { opacity: 0, x: -SLIDE_X },
+  right: { opacity: 0, x: SLIDE_X },
   blur: { opacity: 0, y: 16, filter: "blur(14px)" },
   pop: { opacity: 0, y: 10, scale: 0.8 },
   clip: { opacity: 0, clipPath: "inset(0 0 100% 0)" },

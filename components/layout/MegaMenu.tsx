@@ -83,14 +83,23 @@ export function MegaMenu({ open, id, onPointerEnter, onPointerLeave }: MegaMenuP
       </div>
 
       <div className="mt-5 flex flex-wrap items-center justify-between gap-4 border-t border-ink-900/10 pt-4">
-        <p className="max-w-[52ch] text-sm text-ink-500">
+        <p className="max-w-[46ch] text-sm text-ink-500">
           Not sure which line you need? Tell us the volumes and the outcome — we&rsquo;ll
           map it to a staffing model.
         </p>
-        <Button href="/#contact" size="sm">
-          <ButtonLabel>Talk to an expert</ButtonLabel>
-          <ArrowRight />
-        </Button>
+        <div className="flex flex-wrap items-center gap-3">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-[0.4rem] font-display text-sm font-semibold text-ink-900 transition-transform duration-[180ms] hover:translate-x-[2px]"
+          >
+            All solutions
+            <ArrowRight aria-hidden className="size-4" />
+          </Link>
+          <Button href="/#contact" size="sm">
+            <ButtonLabel>Talk to an expert</ButtonLabel>
+            <ArrowRight />
+          </Button>
+        </div>
       </div>
     </div>
   );

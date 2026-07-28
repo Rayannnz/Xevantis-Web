@@ -1,4 +1,4 @@
-import type { Post } from "@/lib/types";
+import { getLatestResources } from "@/lib/resources";
 import { cn } from "@/lib/utils";
 import {
   Container,
@@ -11,34 +11,12 @@ import {
 import { Button, ButtonLabel } from "@/components/ui/Button";
 import { Reveal } from "@/components/motion/Reveal";
 import { SplitWords } from "@/components/motion/SplitWords";
-import { ArrowUpRight, BarChart, LedgerOutline, PersonOutline } from "@/components/icons";
-
-const POSTS: Post[] = [
-  {
-    date: "18 Nov 2026",
-    category: "Interview",
-    title:
-      "Marcus Delgado on the impact of Generative AI in consumer goods support",
-    art: "bg-[linear-gradient(140deg,var(--color-lilac-200),var(--color-blush-200))]",
-    icon: <PersonOutline width={86} height={86} />,
-  },
-  {
-    date: "02 Nov 2026",
-    category: "Playbook",
-    title: "Transforming customer service in the home furnishings industry",
-    art: "bg-[linear-gradient(140deg,var(--color-mint-200),var(--color-sky-200))]",
-    icon: <BarChart width={86} height={86} />,
-  },
-  {
-    date: "21 Oct 2026",
-    category: "Benchmark",
-    title: "What 4 million tickets taught us about first-contact resolution",
-    art: "bg-[linear-gradient(140deg,var(--color-sun-200),var(--color-blush-100))]",
-    icon: <LedgerOutline width={86} height={86} />,
-  },
-];
+import { ArrowUpRight } from "@/components/icons";
+import { ResourceArtIcon } from "@/components/resources/ResourceArtIcon";
 
 export function Insights() {
+  const posts = getLatestResources(3);
+
   return (
     <Section id="insights">
       <Container width="wide">
@@ -54,8 +32,8 @@ export function Insights() {
         </SectionHead>
 
         <div className="grid grid-cols-1 gap-6 min-[621px]:grid-cols-2 min-[861px]:grid-cols-3">
-          {POSTS.map((post, index) => (
-            <Reveal key={post.title} delay={index * 120} className="flex">
+          {posts.map((post, index) => (
+            <Reveal key={post.slug} delay={index * 120} className="flex">
               <article
                 className={cn(
                   "group flex w-full flex-col gap-4 overflow-hidden rounded-xl",
@@ -72,7 +50,7 @@ export function Insights() {
                       post.art,
                     )}
                   >
-                    {post.icon}
+                    <ResourceArtIcon name={post.icon} size={86} />
                   </div>
                 </div>
 
@@ -80,12 +58,12 @@ export function Insights() {
                   <div className="flex items-center gap-2 text-xs uppercase tracking-wide text-ink-400">
                     <span>{post.date}</span>
                     <span>·</span>
-                    <span>{post.category}</span>
+                    <span>{post.type}</span>
                   </div>
                   <h3 className="font-display text-lg font-bold leading-[1.3] tracking-tight">
                     {post.title}
                   </h3>
-                  <TextLink href="#insights" className="justify-self-start">
+                  <TextLink href="/resources" className="justify-self-start">
                     Read article
                     <ArrowUpRight />
                   </TextLink>
@@ -96,7 +74,7 @@ export function Insights() {
         </div>
 
         <Reveal className="mt-12 flex flex-wrap justify-center gap-3">
-          <Button href="#insights" variant="secondary">
+          <Button href="/resources" variant="secondary">
             <ButtonLabel>Check out all our resources</ButtonLabel>
           </Button>
         </Reveal>

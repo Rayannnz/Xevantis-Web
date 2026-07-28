@@ -247,6 +247,142 @@ export function LedgerOutline(props: IconProps) {
   );
 }
 
+/* ---------- Service pages: process phases ---------- */
+
+export function Compass(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="m15.5 8.5-2 5-5 2 2-5Z" />
+    </svg>
+  );
+}
+
+export function Route(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <circle cx="6" cy="6" r="2.5" />
+      <circle cx="18" cy="18" r="2.5" />
+      <path d="M8.5 6H14a3.5 3.5 0 0 1 0 7h-4a3.5 3.5 0 0 0 0 7h5.5" />
+    </svg>
+  );
+}
+
+export function PenNib(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <path d="M4 20 9 9l6-5 5 5-5 6-11 5Z" />
+      <path d="m9 9 6 6" />
+      <circle cx="12" cy="12" r="1.6" />
+    </svg>
+  );
+}
+
+export function Beaker(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <path d="M9 3v6L4.5 17A2.5 2.5 0 0 0 6.7 21h10.6a2.5 2.5 0 0 0 2.2-4L15 9V3" />
+      <path d="M8 3h8M7.2 14h9.6" />
+    </svg>
+  );
+}
+
+export function Rocket(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <path d="M12 2c3.4 2.3 5 5.8 5 9.4L14.5 15h-5L7 11.4C7 7.8 8.6 4.3 12 2Z" />
+      <path d="M9.5 15 8 20l4-2 4 2-1.5-5" />
+      <circle cx="12" cy="10" r="1.8" />
+    </svg>
+  );
+}
+
+/* ---------- Service pages: differentiators ---------- */
+
+export function Users(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.7} aria-hidden {...props}>
+      <circle cx="9" cy="8" r="3.4" />
+      <path d="M3 20c0-3.3 2.7-5.4 6-5.4S15 16.7 15 20" />
+      <path d="M16 5.4A3.4 3.4 0 0 1 16 12M17.5 14.9c2.1.7 3.5 2.4 3.5 5.1" />
+    </svg>
+  );
+}
+
+export function Cycle(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <path d="M20 12a8 8 0 0 1-13.7 5.6M4 12a8 8 0 0 1 13.7-5.6" />
+      <path d="M17 3v4h-4M7 21v-4h4" />
+    </svg>
+  );
+}
+
+export function Chat(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <path d="M20 15a3 3 0 0 1-3 3H9l-5 3V6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3Z" />
+      <path d="M8.5 9h7M8.5 12.5h4" />
+    </svg>
+  );
+}
+
+export function Lock(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <rect x="4" y="10" width="16" height="11" rx="3" />
+      <path d="M8 10V7a4 4 0 0 1 8 0v3M12 14.5v2.5" />
+    </svg>
+  );
+}
+
+export function Clock(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5.2l3.4 2" />
+    </svg>
+  );
+}
+
+export function Layers(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <path d="m12 3 9 4.6-9 4.6-9-4.6Z" />
+      <path d="m3.6 12 8.4 4.3 8.4-4.3M3.6 16.5 12 20.8l8.4-4.3" />
+    </svg>
+  );
+}
+
+export function Gauge(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.8} aria-hidden {...props}>
+      <path d="M4 18a9 9 0 1 1 16 0" />
+      <path d="m12 14 4-4" />
+      <circle cx="12" cy="15" r="1.6" />
+    </svg>
+  );
+}
+
+export function Globe(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" {...stroke} strokeWidth={1.7} aria-hidden {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3.5 9.5h17M3.5 14.5h17" />
+      <path d="M12 3c-2.4 2.4-3.6 5.4-3.6 9s1.2 6.6 3.6 9c2.4-2.4 3.6-5.4 3.6-9S14.4 5.4 12 3Z" />
+    </svg>
+  );
+}
+
+/** Opening quotation mark, set solid. Decorative only. */
+export function QuoteMark(props: IconProps) {
+  return (
+    <svg viewBox="0 0 32 24" fill="currentColor" aria-hidden {...props}>
+      <path d="M0 24V13.4C0 6.4 3.9 1.9 11.4 0l1.5 3.9C8.4 5.4 6 8 5.8 11.6H12V24Zm19 0V13.4C19 6.4 22.9 1.9 30.4 0l1.5 3.9c-4.5 1.5-6.9 4.1-7.1 7.7H31V24Z" />
+    </svg>
+  );
+}
+
 /* ---------- Social ---------- */
 
 export function LinkedIn(props: IconProps) {

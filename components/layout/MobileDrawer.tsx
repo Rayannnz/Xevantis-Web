@@ -7,10 +7,10 @@ import { ALL_SOLUTIONS, PRIMARY_NAV } from "@/lib/content";
 import { Button, ButtonLabel } from "@/components/ui/Button";
 import type { NavLink } from "@/lib/types";
 
-/** The primary nav plus a top-level entry into the solution list. */
+/** The primary nav plus a top-level entry into the solutions index. */
 const DRAWER_NAV: NavLink[] = [
   ...PRIMARY_NAV.slice(0, 2),
-  { label: "BPO Solutions", href: "/#services" },
+  { label: "BPO Solutions", href: "/services" },
   ...PRIMARY_NAV.slice(2),
 ];
 
@@ -77,7 +77,7 @@ export function MobileDrawer({ id, open, onClose }: MobileDrawerProps) {
       ))}
 
       <p className="mb-2 mt-7 font-display text-xs font-bold uppercase tracking-widest text-ink-400">
-        BPO Solutions
+        All solutions
       </p>
 
       {/* The full solution set at reading size, not display size, so the whole

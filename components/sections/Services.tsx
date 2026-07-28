@@ -13,30 +13,35 @@ import { Reveal } from "@/components/motion/Reveal";
 import { SplitWords } from "@/components/motion/SplitWords";
 import { ArrowUpRight, Brackets, Headset, Ledger, ShieldCheck } from "@/components/icons";
 
-const SERVICES: Service[] = [
+/** Each card opens the full service page; `href` is the route, not an anchor. */
+const SERVICES: (Service & { href: string })[] = [
   {
     title: "Customer Support",
     body: "Voice, chat, email, social and app-store replies — staffed by people who know your product, not a script.",
     accent: "sky",
     icon: <Headset />,
+    href: "/services/customer-service",
   },
   {
-    title: "Back Office",
-    body: "Order management, claims, billing exceptions and data ops — the invisible work that decides your margin.",
+    title: "Admin Support",
+    body: "Order management, data operations and scheduling — the invisible work that decides how much your team gets done.",
     accent: "blush",
     icon: <Ledger />,
+    href: "/services/admin-support",
   },
   {
-    title: "Trust & Safety",
-    body: "Content moderation, fraud review and policy enforcement, with wellbeing programmes built into the roster.",
-    accent: "lilac",
-    icon: <ShieldCheck />,
-  },
-  {
-    title: "Software Pods",
-    body: "Full-stack, mobile and data engineers who ship inside your repo, your sprint, your definition of done.",
+    title: "Finance & Accounting",
+    body: "Payables, receivables and month-end close run by qualified accountants working directly in your ledger.",
     accent: "mint",
+    icon: <ShieldCheck />,
+    href: "/services/finance-and-accounting",
+  },
+  {
+    title: "IT Outsourcing",
+    body: "Service desk, monitoring and application support from named engineers — priced per team, never per ticket.",
+    accent: "lilac",
     icon: <Brackets />,
+    href: "/services/it-outsourcing",
   },
 ];
 
@@ -63,7 +68,7 @@ export function Services() {
                 <CardTitle>{service.title}</CardTitle>
                 <CardBody>{service.body}</CardBody>
                 <CardFoot>
-                  <TextLink href="#contact">
+                  <TextLink href={service.href}>
                     Learn more
                     <ArrowUpRight />
                   </TextLink>

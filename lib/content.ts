@@ -1,3 +1,4 @@
+import { SERVICE_GROUPS } from "./services";
 import type {
   FooterColumn,
   LaunchStep,
@@ -10,56 +11,27 @@ import type {
 export const PRIMARY_NAV: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/#about" },
-  { label: "Resources", href: "/#insights" },
+  { label: "Resources", href: "/resources" },
   { label: "Contact", href: "/#contact" },
 ];
 
 /**
- * Every solution link points at the services section for now — there are no
- * per-service pages yet. Repoint each href when they exist.
+ * Solution groups are derived from the service registry, so a new service
+ * appears in the mega menu, the drawer and the services index by being added
+ * in one place.
  *
  * Links in the shared shell (header, drawer, footer) are root-relative rather
  * than bare hashes: a bare `#services` resolves against whatever route is
  * current, so it would break the moment the shell renders on a second route.
  */
-export const SOLUTION_GROUPS: { heading: string; links: NavLink[] }[] = [
-  {
-    heading: "Core functions",
-    links: [
-      { label: "IT Outsourcing", href: "/#services" },
-      { label: "Finance & Accounting", href: "/#services" },
-      { label: "Finance Outsourcing", href: "/#services" },
-      { label: "Sales & Marketing", href: "/#services" },
-    ],
-  },
-  {
-    heading: "Customer & admin",
-    links: [
-      { label: "Customer Service", href: "/#services" },
-      { label: "Live Chat Outsourcing", href: "/#services" },
-      { label: "Admin Support", href: "/#services" },
-      { label: "Legal Process Outsourcing", href: "/#services" },
-    ],
-  },
-  {
-    heading: "HR & payroll",
-    links: [
-      { label: "HR Outsourcing", href: "/#services" },
-      { label: "Payroll Outsourcing", href: "/#services" },
-      { label: "HR vs PEO Guide", href: "/#services" },
-      { label: "HR for Retail", href: "/#services" },
-    ],
-  },
-  {
-    heading: "Models & sectors",
-    links: [
-      { label: "Small Business", href: "/#services" },
-      { label: "Ecommerce BPO", href: "/#services" },
-      { label: "Nearshore BPO", href: "/#services" },
-      { label: "M&A Deal Flow", href: "/#services" },
-    ],
-  },
-];
+export const SOLUTION_GROUPS: { heading: string; links: NavLink[] }[] =
+  SERVICE_GROUPS.map((group) => ({
+    heading: group.heading,
+    links: group.services.map((service) => ({
+      label: service.name,
+      href: `/services/${service.slug}`,
+    })),
+  }));
 
 /** Flattened for the drawer, so nothing in the mega menu is unreachable on touch. */
 export const ALL_SOLUTIONS: NavLink[] = SOLUTION_GROUPS.flatMap(
@@ -192,13 +164,13 @@ export const INTEGRATIONS: string[][] = [
 
 export const FOOTER_COLUMNS: FooterColumn[] = [
   {
-    title: "Services",
+    title: "Solutions",
     links: [
-      { label: "Customer support", href: "/#services" },
-      { label: "Back office", href: "/#services" },
-      { label: "Trust & safety", href: "/#services" },
-      { label: "Software pods", href: "/#services" },
-      { label: "Digital operations", href: "/#services" },
+      { label: "IT outsourcing", href: "/services/it-outsourcing" },
+      { label: "Customer service", href: "/services/customer-service" },
+      { label: "Finance & accounting", href: "/services/finance-and-accounting" },
+      { label: "HR outsourcing", href: "/services/hr-outsourcing" },
+      { label: "All BPO solutions", href: "/services" },
     ],
   },
   {
@@ -206,7 +178,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
     links: [
       { label: "About us", href: "/" },
       { label: "Customers", href: "/#proof" },
-      { label: "Insights", href: "/#insights" },
+      { label: "Insights", href: "/resources" },
       { label: "Careers", href: "/" },
       { label: "Contact", href: "/#contact" },
     ],
@@ -215,8 +187,8 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
     title: "Resources",
     links: [
       { label: "Design system", href: "/design-system" },
-      { label: "Playbooks", href: "/#insights" },
-      { label: "Benchmarks", href: "/#insights" },
+      { label: "Playbooks", href: "/resources" },
+      { label: "Benchmarks", href: "/resources" },
       { label: "Security", href: "/" },
       { label: "Status", href: "/" },
     ],
