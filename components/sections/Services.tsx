@@ -1,86 +1,78 @@
-import { Icon } from "../ui/Icon";
-import { TextLink } from "../ui/Button";
-import { Eyebrow, LogoItem, Marquee } from "../ui/Primitives";
-import { services, customerLogos, integrations } from "@/lib/content";
+import type { Service } from "@/lib/types";
+import {
+  Container,
+  Eyebrow,
+  headingClass,
+  leadClass,
+  Section,
+  SectionHead,
+  TextLink,
+} from "@/components/ui/primitives";
+import { Card, CardBody, CardFoot, CardIcon, CardTitle } from "@/components/ui/Card";
+import { Reveal } from "@/components/motion/Reveal";
+import { SplitWords } from "@/components/motion/SplitWords";
+import { ArrowUpRight, Brackets, Headset, Ledger, ShieldCheck } from "@/components/icons";
 
-export function LogoStrip() {
-  return (
-    <section className="logo-strip" aria-label="Trusted by">
-      <Marquee speed="slow">
-        {customerLogos.map((l) => (
-          <LogoItem key={l.name} name={l.name} icon={l.icon} />
-        ))}
-      </Marquee>
-    </section>
-  );
-}
+const SERVICES: Service[] = [
+  {
+    title: "Customer Support",
+    body: "Voice, chat, email, social and app-store replies — staffed by people who know your product, not a script.",
+    accent: "sky",
+    icon: <Headset />,
+  },
+  {
+    title: "Back Office",
+    body: "Order management, claims, billing exceptions and data ops — the invisible work that decides your margin.",
+    accent: "blush",
+    icon: <Ledger />,
+  },
+  {
+    title: "Trust & Safety",
+    body: "Content moderation, fraud review and policy enforcement, with wellbeing programmes built into the roster.",
+    accent: "lilac",
+    icon: <ShieldCheck />,
+  },
+  {
+    title: "Software Pods",
+    body: "Full-stack, mobile and data engineers who ship inside your repo, your sprint, your definition of done.",
+    accent: "mint",
+    icon: <Brackets />,
+  },
+];
 
 export function Services() {
   return (
-    <section className="section" id="services">
-      <div className="container container--wide">
-        <div className="section-head section-head--center">
-          <Eyebrow center>What we run for you</Eyebrow>
-          <h2 data-split="words" data-stagger="45">
-            More growth, less risk.
-          </h2>
-          <p className="lead" data-reveal="" data-delay="200">
-            Four capability lines, one contract, one delivery leader. Take one or take all four —
-            the operating model doesn&apos;t change.
-          </p>
-        </div>
+    <Section id="services">
+      <Container width="wide">
+        <SectionHead align="center">
+          <Reveal as="span">
+            <Eyebrow centered>What we run for you</Eyebrow>
+          </Reveal>
+          <SplitWords text="More growth, less risk." stagger={45} className={headingClass} />
+          <Reveal as="p" delay={200} className={leadClass}>
+            Four capability lines, one contract, one delivery leader. Take one or take
+            all four — the operating model doesn&rsquo;t change.
+          </Reveal>
+        </SectionHead>
 
-        <div className="grid grid--4 services" data-stagger="110">
-          {services.map((s) => (
-            <article
-              className="card card--hover card--wash"
-              data-accent={s.accent}
-              data-reveal="up"
-              data-tilt="7"
-              data-spotlight=""
-              key={s.title}
-            >
-              <div className="card__icon">
-                <Icon name={s.icon} />
-              </div>
-              <h3 className="card__title">{s.title}</h3>
-              <p className="card__body">{s.body}</p>
-              <div className="card__foot">
-                <TextLink href="#contact">Learn more</TextLink>
-              </div>
-            </article>
+        <div className="grid grid-cols-1 gap-5 min-[621px]:grid-cols-2 min-[1025px]:grid-cols-4">
+          {SERVICES.map((service, index) => (
+            <Reveal key={service.title} delay={index * 110} className="flex">
+              <Card as="article" lift wash accent={service.accent} className="w-full">
+                <CardIcon accent={service.accent}>{service.icon}</CardIcon>
+                <CardTitle>{service.title}</CardTitle>
+                <CardBody>{service.body}</CardBody>
+                <CardFoot>
+                  <TextLink href="#contact">
+                    Learn more
+                    <ArrowUpRight />
+                  </TextLink>
+                </CardFoot>
+              </Card>
+            </Reveal>
           ))}
         </div>
-      </div>
-    </section>
-  );
-}
-
-export function Integrations() {
-  return (
-    <section className="section" data-tint="paper">
-      <div className="container container--wide">
-        <div className="section-head section-head--center">
-          <h2 data-split="words" data-stagger="40">
-            Valentisys plugs into the stack you already run.
-          </h2>
-          <div className="cluster" style={{ justifyContent: "center" }} data-reveal="" data-delay="220">
-            <a className="btn btn--primary" href="#contact">
-              <span className="btn__label">Build your team</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="stack" style={{ ["--gap" as string]: "1rem" }}>
-        {integrations.map((row, i) => (
-          <Marquee reverse={i === 1} key={i}>
-            {row.map((name) => (
-              <LogoItem key={name} name={name} />
-            ))}
-          </Marquee>
-        ))}
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 }

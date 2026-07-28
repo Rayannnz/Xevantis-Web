@@ -1,48 +1,43 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Inter, Caveat, JetBrains_Mono } from "next/font/google";
-import { ClientRuntime } from "@/components/ClientRuntime";
+import { Caveat, Inter, JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
+import Link from "next/link";
+import { ScrollProgress } from "@/components/motion/ScrollProgress";
+import { CursorBlob } from "@/components/motion/CursorBlob";
+import { MotionProvider } from "@/components/motion/MotionProvider";
+import { ToastProvider } from "@/components/ui/Toast";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-jakarta",
+  subsets: ["latin"],
   display: "swap",
 });
+
 const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
   variable: "--font-inter",
+  subsets: ["latin"],
   display: "swap",
 });
+
 const caveat = Caveat({
-  subsets: ["latin"],
-  weight: ["600", "700"],
   variable: "--font-caveat",
+  subsets: ["latin"],
   display: "swap",
 });
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
+
+const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
+  subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://valentisys.example"),
-  title: {
-    default: "Valentisys — Outsourcing & software teams, built to make you better",
-    template: "%s — Valentisys",
-  },
+  title: "Valentisys — Outsourcing & software teams, built to make you better",
   description:
     "Valentisys blends world-class BPO talent with product engineers. Dedicated CX, back-office and software squads live in 2 weeks — not 2 quarters.",
-  // Icons come from app/icon.png + app/apple-icon.png via file convention.
-  openGraph: {
-    type: "website",
-    siteName: "Valentisys",
-    title: "Valentisys — Outsourcing & software teams, built to make you better",
-    description:
-      "Dedicated CX, back-office and software squads live in 2 weeks — not 2 quarters.",
+  icons: {
+    icon: "/img/favicon.png",
+    apple: "/img/logo-mark.png",
   },
 };
 
@@ -50,32 +45,27 @@ export const viewport: Viewport = {
   themeColor: "#fbf8f2",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="en"
-      className={`${jakarta.variable} ${inter.variable} ${caveat.variable} ${jetbrains.variable}`}
-      suppressHydrationWarning
+      className={`${jakarta.variable} ${inter.variable} ${caveat.variable} ${jetbrainsMono.variable}`}
     >
-      <head>
-        {/*
-          Must run before first paint. Scroll-reveal only hides content when JS
-          is present to reveal it again — `html:not(.js)` in animations.css
-          keeps everything visible otherwise. Setting the class in the server
-          render instead would break that fallback, since the markup would
-          claim JS even when it is disabled.
-        */}
-        <script
-          dangerouslySetInnerHTML={{ __html: 'document.documentElement.classList.add("js")' }}
-        />
-      </head>
       <body>
-        <a className="skip-link" href="#main">
+        <Link
+          href="#main"
+          className="absolute left-4 top-[-100%] z-[500] rounded-pill bg-ink-900 px-5 py-3 font-semibold text-paper-050 transition-[top] duration-[180ms] ease-out-quad focus-visible:top-4"
+        >
           Skip to content
-        </a>
-        <div className="scroll-progress" aria-hidden="true" />
-        {children}
-        <ClientRuntime />
+        </Link>
+
+        <ScrollProgress />
+        <MotionProvider>
+          <ToastProvider>{children}</ToastProvider>
+        </MotionProvider>
+        <CursorBlob />
       </body>
     </html>
   );

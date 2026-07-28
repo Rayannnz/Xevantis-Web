@@ -1,131 +1,299 @@
-import type { CSSProperties, ReactNode } from "react";
-import { Icon, type IconName } from "./Icon";
+import Link from "next/link";
+import type { ComponentPropsWithoutRef, ReactNode } from "react";
+import { cn } from "@/lib/utils";
+import type { Accent, Tint } from "@/lib/types";
 
-/* Small structural helpers shared by both pages. Every one of these is a
-   server component — behaviour comes from the data-* engines, not from React
-   state, so none of this ships JavaScript. */
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
 
-export function Marquee({
-  children,
-  reverse,
-  speed,
+type ContainerWidth = "narrow" | "page" | "wide";
+
+const WIDTHS: Record<ContainerWidth, string> = {
+  narrow: "max-w-narrow",
+  page: "max-w-page",
+  wide: "max-w-wide",
+};
+
+export function Container({
+  width = "page",
   className,
-  style,
+  children,
 }: {
-  children: ReactNode;
-  reverse?: boolean;
-  speed?: "fast" | "slow";
+  width?: ContainerWidth;
   className?: string;
-  style?: CSSProperties;
+  children: ReactNode;
 }) {
   return (
-    <div
-      className={["marquee", reverse && "marquee--reverse", speed && `marquee--${speed}`, className]
-        .filter(Boolean)
-        .join(" ")}
-      data-marquee=""
-      style={style}
-    >
-      <div className="marquee__track">{children}</div>
+    <div className={cn("mx-auto w-full px-[var(--gutter)]", WIDTHS[width], className)}>
+      {children}
     </div>
   );
 }
 
-export function LogoItem({ name, icon }: { name: string; icon?: IconName }) {
+/** Tinted section washes. `aurora` animates; the rest are flat. */
+const TINTS: Record<Tint, string> = {
+  sun: "bg-sun-100",
+  mint: "bg-mint-100",
+  lilac: "bg-lilac-100",
+  blush: "bg-blush-100",
+  sky: "bg-sky-100",
+  paper: "bg-paper-050",
+  ink: "bg-ink-900",
+  aurora: "bg-aurora",
+};
+
+export function Section({
+  id,
+  tint,
+  tight = false,
+  flushTop = false,
+  className,
+  children,
+}: {
+  id?: string;
+  tint?: Tint;
+  tight?: boolean;
+  flushTop?: boolean;
+  className?: string;
+  children: ReactNode;
+}) {
   return (
-    <span className="logo-strip__item">
-      {icon && <Icon name={icon} />}
-      {name}
-    </span>
+    <section
+      id={id}
+      className={cn(
+        "relative",
+        tight ? "py-[var(--section-y-tight)]" : "py-[var(--section-y)]",
+        flushTop && "pt-0",
+        tint && TINTS[tint],
+        className,
+      )}
+    >
+      {children}
+    </section>
   );
 }
 
-export function Eyebrow({ children, center }: { children: ReactNode; center?: boolean }) {
+export function SectionHead({
+  align = "start",
+  className,
+  children,
+}: {
+  align?: "start" | "center" | "split";
+  className?: string;
+  children: ReactNode;
+}) {
   return (
-    <span className={`eyebrow${center ? " eyebrow--center" : ""}`} data-reveal="">
+    <div
+      className={cn(
+        "mb-[clamp(2.5rem,2rem+2vw,4rem)] grid gap-4",
+        align === "center" && "mx-auto max-w-[720px] justify-items-center text-center",
+        align === "start" && "max-w-[720px]",
+        align === "split" &&
+          "gap-8 md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] md:items-end",
+        className,
+      )}
+    >
+      {children}
+    </div>
+  );
+}
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+/** Section heading ramp — h2 defaults from the original base stylesheet. */
+export const headingClass =
+  "font-display text-4xl font-bold leading-snug tracking-tighter";
+
+/** Standfirst under a heading. Exported as a string too, so a `Reveal` can
+ *  render the paragraph itself without nesting one <p> inside another. */
+export const leadClass = "text-lg text-ink-500";
+
+export function Lead({
+  className,
+  children,
+}: {
+  className?: string;
+  children: ReactNode;
+}) {
+  return <p className={cn(leadClass, className)}>{children}</p>;
+}
+
+/** The small tracked label above a section heading. */
+export function Eyebrow({
+  centered = false,
+  className,
+  children,
+}: {
+  centered?: boolean;
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center gap-2 font-display text-xs font-bold uppercase tracking-widest text-ink-500",
+        !centered &&
+          "before:h-[2px] before:w-[22px] before:rounded-pill before:bg-current before:opacity-45 before:content-['']",
+        className,
+      )}
+    >
       {children}
     </span>
   );
 }
 
-/** Hand-drawn underline that draws itself when the phrase scrolls into view. */
-export function Underline({ children }: { children: ReactNode }) {
+/** Handwritten accent — used sparingly, at most once per section. */
+export function Hand({
+  className,
+  children,
+}: {
+  className?: string;
+  children: ReactNode;
+}) {
   return (
-    <span className="mark mark--underline">
+    <span className={cn("font-hand text-[1.35em] font-bold leading-[0.9] tracking-[0]", className)}>
       {children}
-      <svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M4 8C46 3 108 2 196 6" />
-      </svg>
     </span>
   );
 }
 
-export function Wave({ fill = "var(--sun-100)" }: { fill?: string }) {
+/* ==========================================================================
+   BADGE
+   ========================================================================== */
+
+type BadgeTone = Accent | "ink" | "outline" | "default";
+
+const BADGE_TONES: Record<BadgeTone, string> = {
+  default: "bg-ink-050",
+  sun: "bg-sun-200",
+  mint: "bg-mint-200",
+  lilac: "bg-lilac-200",
+  blush: "bg-blush-200",
+  sky: "bg-sky-200",
+  ink: "bg-ink-900 text-paper-050",
+  outline: "border border-ink-900 bg-transparent",
+};
+
+export function Badge({
+  tone = "default",
+  className,
+  children,
+}: {
+  tone?: BadgeTone;
+  className?: string;
+  children: ReactNode;
+}) {
   return (
-    <div className="wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+    <span
+      className={cn(
+        "inline-flex h-[30px] items-center gap-[0.45rem] rounded-pill px-3",
+        "font-display text-xs font-semibold tracking-wide whitespace-nowrap text-ink-900",
+        BADGE_TONES[tone],
+        className,
+      )}
+    >
+      {children}
+    </span>
+  );
+}
+
+/** Glass pill — only ever placed over a gradient or imagery. */
+export function PillGlass({
+  className,
+  children,
+}: {
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <span
+      className={cn(
+        "inline-flex h-[38px] items-center gap-[0.55rem] rounded-pill pl-[0.9rem] pr-[1.1rem]",
+        "border border-white/90 bg-white/70 shadow-sm backdrop-blur-[14px] backdrop-saturate-[140%]",
+        "text-sm font-medium",
+        className,
+      )}
+    >
+      {children}
+    </span>
+  );
+}
+
+/** Availability dot with an expanding ring. */
+export function PulseDot({ className }: { className?: string }) {
+  return (
+    <span
+      aria-hidden
+      className={cn(
+        "relative size-[9px] shrink-0 rounded-full bg-signal-success",
+        "after:absolute after:inset-0 after:rounded-full after:bg-inherit after:content-['']",
+        "after:animate-pulse-ring",
+        className,
+      )}
+    />
+  );
+}
+
+/* ==========================================================================
+   TEXT LINK
+   ========================================================================== */
+
+export function TextLink({
+  href,
+  className,
+  children,
+  ...rest
+}: { href: string; className?: string; children: ReactNode } & Omit<
+  ComponentPropsWithoutRef<"a">,
+  "href" | "className" | "children"
+>) {
+  return (
+    <Link
+      href={href}
+      className={cn(
+        "relative inline-flex items-center gap-[0.4rem] font-semibold text-ink-900",
+        // Underline wipes in from the left and out to the right.
+        "after:absolute after:-bottom-[3px] after:left-0 after:h-[2px] after:w-full after:rounded-[2px]",
+        "after:origin-[100%_50%] after:scale-x-0 after:bg-current after:content-['']",
+        "after:transition-transform after:duration-[280ms] after:ease-out-expo",
+        "hover:after:origin-[0_50%] hover:after:scale-x-100",
+        "[&>svg]:size-[1em] [&>svg]:transition-transform [&>svg]:duration-[280ms] [&>svg]:ease-out-expo",
+        "hover:[&>svg]:translate-x-[2px] hover:[&>svg]:-translate-y-[2px]",
+        className,
+      )}
+      {...rest}
+    >
+      {children}
+    </Link>
+  );
+}
+
+/* ==========================================================================
+   DIVIDERS
+   ========================================================================== */
+
+export function Wave({ fill = "var(--color-sun-100)" }: { fill?: string }) {
+  return (
+    <div aria-hidden className="relative block h-[clamp(48px,6vw,96px)] w-full leading-[0]">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none" className="size-full">
         <path d="M0 40c180 46 340 46 540 12s420-54 640-12 260 40 260 40V0H0Z" fill={fill} />
       </svg>
     </div>
   );
 }
 
-export function Badge({
-  children,
-  tone,
-  outline,
-}: {
-  children: ReactNode;
-  tone?: "sun" | "mint" | "lilac" | "blush" | "sky" | "ink";
-  outline?: boolean;
-}) {
+/** The signature multicolour band, drifting on a 22s loop. */
+export function Ribbon() {
   return (
-    <span className={["badge", tone && `badge--${tone}`, outline && "badge--outline"].filter(Boolean).join(" ")}>
-      {children}
-    </span>
-  );
-}
-
-export function Counter({
-  value,
-  suffix,
-  prefix,
-  decimals,
-  duration,
-  className,
-}: {
-  value: number;
-  suffix?: string;
-  prefix?: string;
-  decimals?: number;
-  duration?: number;
-  className?: string;
-}) {
-  return (
-    <span
-      className={["counter", className].filter(Boolean).join(" ")}
-      data-count={value}
-      {...(suffix ? { "data-suffix": suffix } : {})}
-      {...(prefix ? { "data-prefix": prefix } : {})}
-      {...(decimals ? { "data-decimals": String(decimals) } : {})}
-      {...(duration ? { "data-duration": String(duration) } : {})}
-    >
-      {/* SSR fallback: renders the real number so the page is correct with
-          JS off, then the engine animates up to it on first view. */}
-      {prefix}
-      {value.toFixed(decimals ?? 0)}
-      {suffix}
-    </span>
-  );
-}
-
-export function Meter({ value, delay }: { value: number; delay?: number }) {
-  return (
-    <div className="meter">
-      <div
-        className="meter__fill"
-        style={{ "--value": value, ...(delay ? { "--delay": `${delay}ms` } : {}) } as CSSProperties}
-      />
-    </div>
+    <div
+      aria-hidden
+      className={cn(
+        "noise relative h-[clamp(90px,12vw,150px)] bg-aurora animate-ribbon",
+        "rounded-[0_0_50%_50%/0_0_100%_100%]",
+      )}
+    />
   );
 }

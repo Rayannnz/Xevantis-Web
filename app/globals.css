@@ -1,31 +1,506 @@
-/* ==========================================================================
-   Next.js entry point for the design system stylesheets.
+@import "tailwindcss";
 
-   The four files below are the framework-agnostic source of truth and are
-   shared verbatim with the static build (index.html / design-system.html).
-   They are imported rather than copied, so there is exactly one definition of
-   every token. Order matters: tokens → base → animations → components.
+/* ==========================================================================
+   VALENTISYS — DESIGN TOKENS AS TAILWIND THEME
+   Every primitive from the original tokens.css lives here, so the values are
+   preserved exactly while becoming first-class Tailwind utilities
+   (bg-sun-300, text-4xl, rounded-2xl, shadow-sticker, ease-out-expo, ...).
    ========================================================================== */
 
-@import "../assets/css/tokens.css";
-@import "../assets/css/base.css";
-@import "../assets/css/animations.css";
-@import "../assets/css/components.css";
+/* `static` keeps every token in the output. Tailwind otherwise emits only the
+   variables backing a generated utility, which would drop the steps the design
+   system page renders dynamically (colour ramps, gradient swatches). */
+@theme static {
+  /* ---------- Colour: Ink — the near-black spine of the brand ---------- */
+  --color-ink-900: #0e0d12;
+  --color-ink-800: #17161d;
+  --color-ink-700: #26242e;
+  --color-ink-600: #3a3745;
+  --color-ink-500: #55515f;
+  --color-ink-400: #7b7786;
+  --color-ink-300: #a5a1b0;
+  --color-ink-200: #cdc9d6;
+  --color-ink-100: #e6e3ec;
+  --color-ink-050: #f2f0f6;
 
-/* --------------------------------------------------------------------------
-   next/font bridge.
+  /* ---------- Colour: Paper — warm off-whites ---------- */
+  --color-paper-000: #ffffff;
+  --color-paper-050: #fdfbf7;
+  --color-paper-100: #fbf8f2;
+  --color-paper-200: #f5f0e6;
 
-   tokens.css names font families as plain strings so the static build can use
-   a <link> to Google Fonts. Under Next the families are self-hosted by
-   next/font, which exposes each one as a CSS variable on <html>. Remapping
-   here keeps tokens.css untouched and framework-agnostic — nothing else in
-   the system needs to know which loader is in play.
-   -------------------------------------------------------------------------- */
-:root {
-  --font-display: var(--font-jakarta), "Segoe UI Variable Display", "Segoe UI", system-ui,
-    -apple-system, sans-serif;
-  --font-body: var(--font-inter), "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system,
-    sans-serif;
+  /* ---------- Colour: Sun — primary accent ---------- */
+  --color-sun-050: #fffae0;
+  --color-sun-100: #fff3ba;
+  --color-sun-200: #ffe98a;
+  --color-sun-300: #ffdd57;
+  --color-sun-400: #ffd12b;
+  --color-sun-500: #f5bd00;
+
+  /* ---------- Colour: Mint — reliability ---------- */
+  --color-mint-050: #edfcf4;
+  --color-mint-100: #d3f6e4;
+  --color-mint-200: #a8ecca;
+  --color-mint-300: #74dfab;
+  --color-mint-400: #43cd8c;
+  --color-mint-500: #1faa6c;
+
+  /* ---------- Colour: Lilac — intelligence, AI ---------- */
+  --color-lilac-050: #f4f0ff;
+  --color-lilac-100: #e6dfff;
+  --color-lilac-200: #d0c3ff;
+  --color-lilac-300: #b39fff;
+  --color-lilac-400: #9578ff;
+  --color-lilac-500: #7350f0;
+
+  /* ---------- Colour: Blush — human touch, CX ---------- */
+  --color-blush-050: #fff1ee;
+  --color-blush-100: #ffdfd8;
+  --color-blush-200: #ffc4b7;
+  --color-blush-300: #ffa48f;
+  --color-blush-400: #ff7f63;
+  --color-blush-500: #f2593a;
+
+  /* ---------- Colour: Sky — scale, infrastructure ---------- */
+  --color-sky-050: #eef7ff;
+  --color-sky-100: #d5ecff;
+  --color-sky-200: #b0dbff;
+  --color-sky-300: #82c5ff;
+  --color-sky-400: #55acff;
+  --color-sky-500: #1d84e6;
+
+  /* ---------- Colour: Brand — sampled from the logo ---------- */
+  --color-brand-violet: #8250f0;
+  --color-brand-violet-light: #a98bf5;
+  --color-brand-indigo: #3c1e96;
+  --color-brand-navy: #1e1450;
+
+  /* ---------- Colour: Signal — functional states only ---------- */
+  --color-signal-success: #1faa6c;
+  --color-signal-warning: #f5a300;
+  --color-signal-danger: #e03a2f;
+  --color-signal-info: #1d84e6;
+
+  /* ---------- Typography ---------- */
+  --font-display: var(--font-jakarta), "Segoe UI Variable Display", "Segoe UI",
+    system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-inter), "Segoe UI Variable Text", "Segoe UI",
+    system-ui, -apple-system, sans-serif;
   --font-hand: var(--font-caveat), "Segoe Script", "Bradley Hand", cursive;
-  --font-mono: var(--font-jetbrains), ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --font-mono: var(--font-jetbrains), ui-monospace, "Cascadia Mono", Consolas,
+    monospace;
+
+  /* Fluid scale — 1.250 minor third at mobile, 1.333 at desktop.
+     Paired line-heights match the element defaults of the original base.css;
+     a `leading-*` utility overrides them wherever the design differs. */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1.5;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.8125rem;
+  --text-sm--line-height: 1.5;
+  --text-base: clamp(0.9375rem, 0.9rem + 0.18vw, 1.0625rem);
+  --text-base--line-height: 1.65;
+  --text-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  --text-lg--line-height: 1.65;
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-xl--line-height: 1.14;
+  --text-2xl: clamp(1.5rem, 1.28rem + 1vw, 2rem);
+  --text-2xl--line-height: 1.14;
+  --text-3xl: clamp(1.875rem, 1.5rem + 1.6vw, 2.75rem);
+  --text-3xl--line-height: 1.14;
+  --text-4xl: clamp(2.25rem, 1.6rem + 2.9vw, 3.75rem);
+  --text-4xl--line-height: 1.14;
+  --text-5xl: clamp(2.75rem, 1.7rem + 4.6vw, 5rem);
+  --text-5xl--line-height: 1.02;
+  --text-6xl: clamp(3.25rem, 1.6rem + 7vw, 6.75rem);
+  --text-6xl--line-height: 0.96;
+  /* The hero sits in a ~640px column, so its display size is tuned to land on
+     three lines rather than five — deliberately smaller than --text-6xl. */
+  --text-hero: clamp(2.5rem, 1.7rem + 3.1vw, 4.5rem);
+  --text-hero--line-height: 0.98;
+
+  --leading-tight: 1.02;
+  --leading-snug: 1.14;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --tracking-tighter: -0.045em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: -0.01em;
+  --tracking-wide: 0.02em;
+  --tracking-widest: 0.14em;
+
+  /* ---------- Containers ---------- */
+  --container-narrow: 780px;
+  --container-page: 1240px;
+  --container-wide: 1480px;
+
+  /* ---------- Radius ---------- */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 44px;
+  --radius-pill: 999px;
+  --radius-blob: 62% 38% 44% 56% / 48% 52% 48% 52%;
+
+  /* ---------- Elevation: soft (ambient) and sticker (hard offset) ---------- */
+  --shadow-xs: 0 1px 2px rgb(14 13 18 / 0.06);
+  --shadow-sm: 0 2px 8px rgb(14 13 18 / 0.06), 0 1px 2px rgb(14 13 18 / 0.04);
+  --shadow-md: 0 10px 26px -8px rgb(14 13 18 / 0.14),
+    0 2px 6px rgb(14 13 18 / 0.05);
+  --shadow-lg: 0 26px 60px -20px rgb(14 13 18 / 0.22),
+    0 6px 16px rgb(14 13 18 / 0.06);
+  --shadow-xl: 0 48px 90px -32px rgb(14 13 18 / 0.3);
+  --shadow-glow-sun: 0 18px 50px -14px rgb(245 189 0 / 0.55);
+  --shadow-sticker: 4px 4px 0 #0e0d12;
+  --shadow-sticker-lg: 8px 8px 0 #0e0d12;
+  --shadow-sticker-hover: 6px 6px 0 #0e0d12;
+  --shadow-sticker-active: 1px 1px 0 #0e0d12;
+  --shadow-focus-sun: 0 0 0 4px rgb(255 209 43 / 0.35);
+  --shadow-focus-danger: 0 0 0 4px rgb(224 58 47 / 0.14);
+
+  /* ---------- Easing ---------- */
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: linear(
+    0,
+    0.4 8%,
+    0.82 18%,
+    1.02 27%,
+    1.06 34%,
+    1.01 45%,
+    0.995 60%,
+    1
+  );
+
+  /* ---------- Ambient animations ---------- */
+  --animate-float: float-y 7s var(--ease-in-out-soft) infinite;
+  --animate-float-slow: float-y 11s var(--ease-in-out-soft) infinite;
+  --animate-drift: drift 14s var(--ease-in-out-soft) infinite;
+  --animate-blob: blob-morph 16s var(--ease-in-out-soft) infinite;
+  --animate-spin-slow: spin-slow 26s linear infinite;
+  --animate-bob: bob 3.2s var(--ease-in-out-soft) infinite;
+  --animate-aurora: wave-slide 18s linear infinite;
+  --animate-ribbon: wave-slide 22s linear infinite;
+  --animate-marquee: marquee-x var(--marquee-duration, 38s) linear infinite;
+  --animate-pulse-ring: pulse-ring 2.4s var(--ease-out-quad) infinite;
+
+  @keyframes float-y {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg));
+    }
+    50% {
+      transform: translate3d(0, -14px, 0) rotate(var(--rot, 0deg));
+    }
+  }
+
+  @keyframes drift {
+    0% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    33% {
+      transform: translate3d(3%, -4%, 0) scale(1.05);
+    }
+    66% {
+      transform: translate3d(-3%, 3%, 0) scale(0.97);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+  }
+
+  @keyframes blob-morph {
+    0%,
+    100% {
+      border-radius: 62% 38% 44% 56% / 48% 52% 48% 52%;
+    }
+    25% {
+      border-radius: 40% 60% 62% 38% / 58% 42% 58% 42%;
+    }
+    50% {
+      border-radius: 55% 45% 33% 67% / 38% 62% 38% 62%;
+    }
+    75% {
+      border-radius: 33% 67% 58% 42% / 63% 34% 66% 37%;
+    }
+  }
+
+  @keyframes spin-slow {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes bob {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(6px);
+    }
+  }
+
+  @keyframes wave-slide {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: 200%;
+    }
+  }
+
+  @keyframes marquee-x {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @keyframes sheen {
+    from {
+      transform: translateX(-120%) skewX(-14deg);
+    }
+    to {
+      transform: translateX(240%) skewX(-14deg);
+    }
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.85);
+      opacity: 0.65;
+    }
+    70% {
+      transform: scale(1.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.9);
+      opacity: 0;
+    }
+  }
+}
+
+/* ==========================================================================
+   ROOT VARIABLES
+   Values that are consumed as raw CSS (fluid paddings, gradients, layout
+   constants) rather than as a Tailwind utility namespace.
+   ========================================================================== */
+
+:root {
+  --header-height: 76px;
+  --gutter: clamp(1.25rem, 0.75rem + 2vw, 2.5rem);
+  --section-y: clamp(4.5rem, 3rem + 6vw, 9rem);
+  --section-y-tight: clamp(3rem, 2rem + 3vw, 5rem);
+  --card-padding: clamp(1.5rem, 1rem + 1.6vw, 2.25rem);
+
+  /* The "aurora wave" is the signature brand texture. */
+  --grad-aurora: linear-gradient(
+    100deg,
+    var(--color-mint-100) 0%,
+    var(--color-sky-100) 26%,
+    var(--color-lilac-100) 52%,
+    var(--color-blush-100) 76%,
+    var(--color-sun-100) 100%
+  );
+  --grad-brand: linear-gradient(
+    135deg,
+    var(--color-brand-violet) 0%,
+    var(--color-brand-indigo) 100%
+  );
+  --grad-sunrise: linear-gradient(
+    135deg,
+    var(--color-sun-200),
+    var(--color-blush-200)
+  );
+  --grad-cool: linear-gradient(
+    135deg,
+    var(--color-sky-100),
+    var(--color-lilac-200)
+  );
+  --grad-ink: linear-gradient(
+    160deg,
+    var(--color-ink-800),
+    var(--color-ink-900) 60%
+  );
+}
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-height) + 1.5rem);
+    /* Contains stray horizontal overflow from decorative layers. Must be
+       `hidden` on <html>, not `clip` on <body>: overflow on either element
+       propagates to the viewport, and a clip/visible pair there makes the
+       viewport unscrollable on both axes. `hidden` on the root keeps the
+       viewport as the scroll container, so position: sticky still works. */
+    overflow-x: hidden;
+  }
+
+  body {
+    background: var(--color-paper-100);
+    color: var(--color-ink-900);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: var(--leading-relaxed);
+    letter-spacing: var(--tracking-normal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-sun-300);
+    color: var(--color-ink-900);
+  }
+
+  /* Focus: visible, branded, never removed. */
+  :focus-visible {
+    outline: 2px solid var(--color-lilac-400);
+    outline-offset: 3px;
+    border-radius: var(--radius-xs);
+  }
+
+  /* Custom scrollbar (progressive enhancement) */
+  @supports selector(::-webkit-scrollbar) {
+    ::-webkit-scrollbar {
+      width: 11px;
+      height: 11px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-ink-200);
+      border: 3px solid var(--color-paper-100);
+      border-radius: var(--radius-pill);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-ink-300);
+    }
+  }
+}
+
+/* ==========================================================================
+   UTILITIES
+   Only what Tailwind genuinely cannot express: pseudo-element textures and
+   gradient tokens whose values are multi-stop.
+   ========================================================================== */
+
+/* Grain overlay laid over the aurora washes. */
+@utility noise {
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.16'/%3E%3C/svg%3E");
+  }
+}
+
+@utility bg-aurora {
+  background: var(--grad-aurora);
+  background-size: 200% 100%;
+}
+
+@utility bg-brand-gradient {
+  background: var(--grad-brand);
+}
+
+@utility bg-sunrise {
+  background: var(--grad-sunrise);
+}
+
+@utility bg-cool {
+  background: var(--grad-cool);
+}
+
+@utility bg-ink-gradient {
+  background: var(--grad-ink);
+}
+
+/* Light sweep across a dark surface on hover. */
+@utility sheen {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: -30% -60%;
+    pointer-events: none;
+    opacity: 0;
+    background: linear-gradient(
+      115deg,
+      transparent 0%,
+      rgb(255 255 255 / 0) 35%,
+      rgb(255 255 255 / 0.55) 50%,
+      rgb(255 255 255 / 0) 65%,
+      transparent 100%
+    );
+  }
+
+  &:hover::after {
+    opacity: 1;
+    animation: sheen 1.5s var(--ease-out-quad);
+  }
+}
+
+/* Fades the marquee in and out at the container edges. */
+@utility marquee-mask {
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* ==========================================================================
+   PAGE TRANSITIONS (progressive enhancement)
+   ========================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+/* ==========================================================================
+   REDUCED MOTION — hard stop on everything decorative.
+   Content still becomes visible; nothing depends on animation to appear.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -1,66 +1,130 @@
-import { Icon, Stars } from "../ui/Icon";
-import { TextLink } from "../ui/Button";
-import { Eyebrow } from "../ui/Primitives";
-import { testimonials, posts } from "@/lib/content";
+"use client";
+
+import { cn } from "@/lib/utils";
+import { TESTIMONIALS } from "@/lib/content";
+import { useCarousel } from "@/hooks/useCarousel";
+import {
+  Container,
+  Eyebrow,
+  headingClass,
+  Section,
+  SectionHead,
+} from "@/components/ui/primitives";
+import { Button } from "@/components/ui/Button";
+import { CardTitle } from "@/components/ui/Card";
+import { Reveal } from "@/components/motion/Reveal";
+import { SplitWords } from "@/components/motion/SplitWords";
+import { ArrowLeft, ArrowRight, Star } from "@/components/icons";
+
+const AUTOPLAY_MS = 6000;
+
+/** Slide widths drive `perView`, so the breakpoints live here and nowhere else. */
+const SLIDE_WIDTH = cn(
+  "flex-[0_0_100%]",
+  "min-[641px]:flex-[0_0_calc((100%_-_20px)/2)]",
+  "min-[981px]:flex-[0_0_calc((100%_-_40px)/3)]",
+);
 
 export function Testimonials() {
+  const {
+    rootRef,
+    trackRef,
+    index,
+    maxIndex,
+    offset,
+    goTo,
+    next,
+    previous,
+    isVisible,
+    pauseHandlers,
+    dragHandlers,
+  } = useCarousel({ count: TESTIMONIALS.length, autoplay: AUTOPLAY_MS });
+
   return (
-    <section className="section" id="proof" data-tint="paper">
-      <div className="container container--wide">
-        <div className="section-head section-head--split">
-          <div className="stack">
-            <Eyebrow>Proof</Eyebrow>
-            <h2 data-split="words" data-stagger="45">
-              Validated by experts, valued by 150+ customers.
-            </h2>
+    <Section id="proof" tint="paper">
+      <Container width="wide">
+        <SectionHead align="split" className="max-w-none">
+          <div className="grid grid-cols-[minmax(0,1fr)] content-start gap-4">
+            <Reveal as="span" className="justify-self-start">
+              <Eyebrow>Proof</Eyebrow>
+            </Reveal>
+            <SplitWords
+              text="Validated by experts, valued by 150+ customers."
+              stagger={45}
+              className={headingClass}
+            />
           </div>
-          <div className="cluster" style={{ justifyContent: "flex-end" }} data-reveal="" data-delay="150">
-            <div className="carousel-nav">
-              <button
-                className="btn btn--secondary btn--icon"
-                type="button"
-                data-carousel-prev=""
+
+          <Reveal delay={150} className="flex justify-end">
+            <div className="flex items-center gap-2">
+              <Button
+                variant="secondary"
+                iconOnly
                 aria-label="Previous testimonials"
+                onClick={previous}
               >
-                <Icon name="arrowLeft" />
-              </button>
-              <button
-                className="btn btn--secondary btn--icon"
-                type="button"
-                data-carousel-next=""
+                <ArrowLeft />
+              </Button>
+              <Button
+                variant="secondary"
+                iconOnly
                 aria-label="Next testimonials"
+                onClick={next}
               >
-                <Icon name="arrowRight" />
-              </button>
+                <ArrowRight />
+              </Button>
             </div>
-          </div>
-        </div>
+          </Reveal>
+        </SectionHead>
 
         <div
-          className="quotes"
-          data-carousel=""
-          data-autoplay="6000"
+          ref={rootRef}
+          role="group"
           aria-roledescription="carousel"
           aria-label="Customer testimonials"
+          className="relative overflow-hidden"
+          {...pauseHandlers}
         >
-          <div className="quotes__viewport">
-            <div className="quotes__track" data-carousel-track="">
-              {testimonials.map((t) => (
-                <article className="quote" style={{ background: t.surface }} key={t.title}>
-                  <Stars />
-                  <h3 className="card__title">{t.title}</h3>
-                  <p className="quote__text">{t.quote}</p>
-                  <div className="quote__author">
+          <div className="overflow-hidden">
+            <div
+              ref={trackRef}
+              className="flex gap-5 transition-transform duration-[720ms] ease-out-expo will-change-transform"
+              style={{ transform: `translate3d(${offset}px, 0, 0)` }}
+              {...dragHandlers}
+            >
+              {TESTIMONIALS.map((testimonial, slide) => (
+                <article
+                  key={testimonial.title}
+                  aria-hidden={!isVisible(slide)}
+                  className={cn(
+                    "flex flex-col gap-4 rounded-xl border border-ink-900/10 p-[var(--card-padding)]",
+                    SLIDE_WIDTH,
+                    testimonial.surface,
+                  )}
+                >
+                  {/* role="img" — aria-label is ignored on a generic element. */}
+                  <div className="flex gap-[3px] text-sun-500" role="img" aria-label="Rated 5 out of 5">
+                    {Array.from({ length: 5 }, (_, star) => (
+                      <Star key={star} className="size-4" />
+                    ))}
+                  </div>
+
+                  <CardTitle>{testimonial.title}</CardTitle>
+                  <p className="text-base text-ink-500">{testimonial.quote}</p>
+
+                  <div className="mt-auto flex items-center gap-3 border-t border-ink-900/10 pt-4">
                     <span
-                      className="quote__avatar"
-                      style={{ background: `var(--${t.accent}-300)` }}
+                      className={cn(
+                        "grid size-[42px] shrink-0 place-items-center rounded-full font-display font-bold",
+                        testimonial.avatar,
+                      )}
                     >
-                      {t.initials}
+                      {testimonial.initials}
                     </span>
                     <div>
-                      <strong style={{ fontFamily: "var(--font-display)" }}>{t.role}</strong>
+                      <strong className="font-display">{testimonial.role}</strong>
                       <br />
-                      <span className="caption">{t.meta}</span>
+                      <span className="text-xs text-ink-400">{testimonial.meta}</span>
                     </div>
                   </div>
                 </article>
@@ -68,124 +132,26 @@ export function Testimonials() {
             </div>
           </div>
 
-          <div className="cluster" style={{ justifyContent: "center", marginTop: "2rem" }}>
-            <div className="dots" data-carousel-dots="" role="tablist" aria-label="Choose slide" />
+          <div className="mt-8 flex justify-center">
+            <div className="flex items-center gap-[6px]">
+              {Array.from({ length: maxIndex + 1 }, (_, dot) => (
+                <button
+                  key={dot}
+                  type="button"
+                  aria-label={`Go to slide ${dot + 1}`}
+                  aria-current={dot === index ? "true" : undefined}
+                  onClick={() => goTo(dot)}
+                  className={cn(
+                    "h-2 cursor-pointer rounded-pill",
+                    "[transition:width_280ms_var(--ease-out-expo),background-color_280ms_ease]",
+                    dot === index ? "w-[26px] bg-ink-900" : "w-2 bg-ink-200",
+                  )}
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  );
-}
-
-export function Insights() {
-  return (
-    <section className="section" id="insights">
-      <div className="container container--wide">
-        <div className="section-head section-head--center">
-          <h2 data-split="words" data-stagger="45">
-            See what&apos;s new and what&apos;s next.
-          </h2>
-          <p className="lead" data-reveal="" data-delay="180">
-            Thought leadership and actionable insights to help you grow faster.
-          </p>
-        </div>
-
-        <div className="grid grid--3" data-stagger="120">
-          {posts.map((p) => (
-            <article className="post" data-reveal="up" key={p.title}>
-              <div className="post__media">
-                <div className={`post__art art--${p.art}`}>
-                  <Icon name={p.icon} width={86} height={86} style={{ color: "var(--ink-900)" }} />
-                </div>
-              </div>
-              <div className="post__body">
-                <div className="post__meta">
-                  <span>{p.date}</span>
-                  <span>·</span>
-                  <span>{p.kind}</span>
-                </div>
-                <h3 className="post__title">{p.title}</h3>
-                <TextLink href="#insights">Read article</TextLink>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        <div className="cluster" style={{ justifyContent: "center", marginTop: "3rem" }} data-reveal="">
-          <a className="btn btn--secondary" href="#insights">
-            <span className="btn__label">Check out all our resources</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export function CTA() {
-  return (
-    <section className="section" id="contact">
-      <div className="container container--wide">
-        <div className="cta anim-aurora noise" data-reveal="scale">
-          <svg
-            className="cta__doodles"
-            viewBox="0 0 1200 400"
-            preserveAspectRatio="xMidYMid slice"
-            fill="none"
-            stroke="var(--ink-900)"
-            strokeWidth="2"
-            opacity=".35"
-            aria-hidden="true"
-          >
-            <circle cx="120" cy="90" r="34" className="anim-float" />
-            <path d="M1060 70c22-24 54-6 40 22s-52 22-40-22Z" className="anim-float anim-float--delay" />
-            <path d="M90 320c40-30 80 20 120-10" strokeLinecap="round" className="anim-bob" />
-            <path d="M980 330h70M1015 295v70" strokeLinecap="round" className="anim-float" />
-            <circle cx="640" cy="40" r="12" />
-            <circle cx="200" cy="200" r="7" fill="var(--ink-900)" />
-          </svg>
-
-          <Eyebrow center>Let&apos;s build it</Eyebrow>
-          <h2 className="cta__title" style={{ margin: ".75rem 0 1rem" }} data-split="words" data-stagger="50">
-            Outsourcing + engineering, built to make you better.
-          </h2>
-          <p
-            className="lead u-max-60 u-mx-auto"
-            style={{ color: "var(--ink-700)" }}
-            data-reveal=""
-            data-delay="200"
-          >
-            Tell us the volumes and the outcome you need. We&apos;ll come back within one business
-            day with a staffing model, a timeline and a price.
-          </p>
-
-          <form
-            className="cluster"
-            style={{ justifyContent: "center", marginTop: "2rem" }}
-            data-demo-form="Thanks — a delivery lead will reach out within one business day."
-            noValidate
-          >
-            <div className="inline-form">
-              <label className="u-sr-only" htmlFor="cta-email">
-                Work email
-              </label>
-              <input
-                className="input"
-                id="cta-email"
-                type="email"
-                name="email"
-                placeholder="you@company.com"
-                required
-              />
-              <button className="btn btn--primary" type="submit">
-                <span className="btn__label">Get started</span>
-              </button>
-            </div>
-          </form>
-          <p className="caption" style={{ marginTop: ".85rem" }} data-reveal="" data-delay="320">
-            No sales sequence. One reply from a human who runs delivery.
-          </p>
-        </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 }

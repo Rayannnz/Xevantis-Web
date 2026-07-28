@@ -1,38 +1,42 @@
-import { Header, Drawer } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { Ribbon, Wave } from "@/components/ui/primitives";
 import { Hero } from "@/components/sections/Hero";
+import { LogoMarquee } from "@/components/sections/LogoMarquee";
 import { ValueProp } from "@/components/sections/ValueProp";
-import { LogoStrip, Services, Integrations } from "@/components/sections/Services";
-import { Process, ScaleBand, Stats } from "@/components/sections/Process";
-import { Testimonials, Insights, CTA } from "@/components/sections/Testimonials";
-import { Wave } from "@/components/ui/Primitives";
-import "./landing.css";
+import { SpotlightQuote } from "@/components/sections/SpotlightQuote";
+import { Services } from "@/components/sections/Services";
+import { Integrations } from "@/components/sections/Integrations";
+import { Process } from "@/components/sections/Process";
+import { ScaleBand } from "@/components/sections/ScaleBand";
+import { Stats } from "@/components/sections/Stats";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { Insights } from "@/components/sections/Insights";
+import { CtaBand } from "@/components/sections/CtaBand";
 
-export default function LandingPage() {
+export default function HomePage() {
   return (
     <>
       <Header />
-      <Drawer />
 
-      <main id="main">
+      {/* tabIndex makes the skip link actually move focus, not just scroll. */}
+      <main id="main" tabIndex={-1}>
         <span id="top" />
 
         <Hero />
-        <LogoStrip />
+        <LogoMarquee />
         <ValueProp />
+        <SpotlightQuote />
         <Wave />
         <Services />
-
-        {/* Signature aurora ribbon divider */}
-        <div className="ribbon noise" aria-hidden="true" />
-
+        <Ribbon />
         <Integrations />
         <Process />
         <ScaleBand />
         <Stats />
         <Testimonials />
         <Insights />
-        <CTA />
+        <CtaBand />
       </main>
 
       <Footer />
