@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Caveat, Inter, JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import Link from "next/link";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
-import { CursorBlob } from "@/components/motion/CursorBlob";
 import { MotionProvider } from "@/components/motion/MotionProvider";
 import { ToastProvider } from "@/components/ui/Toast";
 import "./globals.css";
@@ -65,7 +64,6 @@ export default function RootLayout({
         <MotionProvider>
           <ToastProvider>{children}</ToastProvider>
         </MotionProvider>
-        <CursorBlob />
       </body>
     </html>
   );
