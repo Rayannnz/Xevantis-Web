@@ -29,7 +29,7 @@ const PHASE_ICONS: ReactNode[] = [
   <Rocket key="launch" />,
 ];
 
-/** Rail geometry. The node is centred on the line, so both read from this. */
+/** Rail geometry. The node is centered on the line, so both read from this. */
 const NODE = 56;
 
 export function ProcessTimeline({

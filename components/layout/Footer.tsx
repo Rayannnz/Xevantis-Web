@@ -92,7 +92,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-ink-900/10 pt-6 text-sm text-ink-400">
-          <span>© {new Date().getFullYear()} Valentisys. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Xevantis. All rights reserved.</span>
 
           <div className="flex flex-wrap items-center gap-3">
             {COMPLIANCE_BADGES.map((badge) => (

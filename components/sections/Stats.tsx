@@ -4,7 +4,7 @@ import { Counter } from "@/components/ui/Counter";
 import { Reveal } from "@/components/motion/Reveal";
 
 /**
- * The one dark band on the page. Colours are stated outright rather than
+ * The one dark band on the page. Colors are stated outright rather than
  * routed through a theme scope: a single section does not justify a whole
  * inversion layer, and the rendered result is identical.
  */

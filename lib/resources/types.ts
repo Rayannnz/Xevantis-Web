@@ -52,7 +52,7 @@ export interface Resource {
   /** Gradient utility class for the art panel. */
   art: string;
   /**
-   * UI colour, paired with `art` by hand rather than derived from it. The
+   * UI color, paired with `art` by hand rather than derived from it. The
    * gradient is artwork and can mix two ramps; the accent drives chrome that
    * has to stay legible on paper (badges, hover glow), so it names one ramp.
    */

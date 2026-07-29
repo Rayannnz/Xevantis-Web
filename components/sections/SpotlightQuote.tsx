@@ -15,7 +15,7 @@ export function SpotlightQuote() {
         </Reveal>
 
         <Reveal as="p" delay={120} className="text-2xl font-semibold leading-[1.35]">
-          &ldquo;The Valentisys pod is genuinely flexible with sudden changes and
+          &ldquo;The Xevantis pod is genuinely flexible with sudden changes and
           controls 100% of routing every minute — the best our clients have ever had
           on a daily basis.&rdquo;
         </Reveal>

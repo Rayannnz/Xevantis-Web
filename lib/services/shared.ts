@@ -15,7 +15,7 @@ export const SECTION_EYEBROWS = {
   benefits: "Business impact",
   process: "How we work",
   tech: "Technology",
-  why: "Why Valentisys",
+  why: "Why Xevantis",
   cases: "Selected work",
   quotes: "Client voice",
   faq: "Questions",

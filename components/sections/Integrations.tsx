@@ -11,7 +11,7 @@ export function Integrations() {
       <Container width="wide">
         <SectionHead align="center">
           <SplitWords
-            text="Valentisys plugs into the stack you already run."
+            text="Xevantis plugs into the stack you already run."
             stagger={40}
             className={headingClass}
           />

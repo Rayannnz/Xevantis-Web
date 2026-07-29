@@ -12,7 +12,7 @@ import { useState } from "react";
  */
 let played = false;
 
-const WORDMARK = "Valentisys";
+const WORDMARK = "Xevantis";
 
 /**
  * Load screen: the wordmark types itself onto the paper field, then the logo
@@ -20,8 +20,8 @@ const WORDMARK = "Valentisys";
  * retreats into the bottom-left corner.
  *
  * Corner-anchored `clip-path: circle()` sweeps, the same mechanism the
- * reference site uses. Anchoring the radius to a corner rather than the centre
- * is the point — the visitor sees an arc travelling across the screen, never a
+ * reference site uses. Anchoring the radius to a corner rather than the center
+ * is the point — the visitor sees an arc traveling across the screen, never a
  * circle closing in on itself.
  *
  * Deliberately pure CSS on server-rendered markup, sequenced with delays rather

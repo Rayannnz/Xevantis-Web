@@ -4,7 +4,7 @@ import type { Accent } from "./types";
  * Accent → utility class lookups.
  *
  * Tailwind cannot see `bg-${accent}-300`, so every accent-driven surface has to
- * resolve through a literal map. Centralising them here means a service page
+ * resolve through a literal map. Centralizing them here means a service page
  * picks its accent once and the whole page follows.
  */
 
@@ -26,7 +26,7 @@ export const ACCENT_WASH: Record<Accent, string> = {
   sky: "bg-sky-100",
 };
 
-/** 050-step wash — the lightest tint that still reads as coloured. */
+/** 050-step wash — the lightest tint that still reads as colored. */
 export const ACCENT_TINT: Record<Accent, string> = {
   sun: "bg-sun-050",
   mint: "bg-mint-050",

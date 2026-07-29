@@ -17,8 +17,8 @@ import { SplitWords } from "@/components/motion/SplitWords";
  * Two letters, derived from the name — "Next.js" → "NX", "AWS" → "AW".
  *
  * Deliberately a monogram rather than the real vendor logo: shipping thirty
- * third-party marks means thirty trademark licences and a wall of clashing
- * brand colours, and neither improves the page.
+ * third-party marks means thirty trademark licenses and a wall of clashing
+ * brand colors, and neither improves the page.
  */
 function monogram(name: string) {
   const words = name.replace(/[^\p{L}\p{N} ]/gu, "").split(/\s+/).filter(Boolean);

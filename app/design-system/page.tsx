@@ -53,9 +53,9 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Valentisys — Design System",
+  title: "Xevantis — Design System",
   description:
-    "Foundations, components and motion for the Valentisys BPO & software agency brand.",
+    "Foundations, components and motion for the Xevantis BPO & software agency brand.",
 };
 
 const RAMPS = [
@@ -90,7 +90,7 @@ const RAMPS = [
 ];
 
 const MOTION_TOKENS: [string, string, string][] = [
-  ["--dur-instant", "90ms", "Colour/opacity flips, hover tint"],
+  ["--dur-instant", "90ms", "Color/opacity flips, hover tint"],
   ["--dur-fast", "180ms", "Buttons, links, focus rings"],
   ["--dur-base", "280ms", "Nav pills, tilt return, dropdowns"],
   ["--dur-slow", "480ms", "Card lift, accordion, drawer, liquid fill"],
@@ -114,7 +114,7 @@ const LAYOUT_TOKENS: [string, string, string][] = [
 const A11Y: [string, string][] = [
   [
     "Contrast",
-    "Body copy is ink-900 on paper (≈16:1). Muted text uses ink-500 (≈7:1). Pastels are backgrounds only — never text colour.",
+    "Body copy is ink-900 on paper (≈16:1). Muted text uses ink-500 (≈7:1). Pastels are backgrounds only — never text color.",
   ],
   [
     "Focus",
@@ -157,7 +157,7 @@ export default function DesignSystemPage() {
           <Container width="wide">
             <div className="grid max-w-[760px] gap-5 pt-[var(--header-height)]">
               <Reveal as="span" className="justify-self-start">
-                <Eyebrow>Valentisys · Design System v1.0</Eyebrow>
+                <Eyebrow>Xevantis · Design System v1.0</Eyebrow>
               </Reveal>
               <SplitWords
                 as="h1"
@@ -213,7 +213,7 @@ export default function DesignSystemPage() {
       <footer className="bg-paper-200 pb-8 pt-[clamp(3rem,2rem+4vw,5rem)]">
         <Container width="wide">
           <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-ink-400">
-            <span>© {new Date().getFullYear()} Valentisys — Design System v1.0</span>
+            <span>© {new Date().getFullYear()} Xevantis — Design System v1.0</span>
             <TextLink href="/">Landing page</TextLink>
           </div>
         </Container>
@@ -245,7 +245,7 @@ function LogoBlock() {
         <Demo className="justify-center py-10">
           <Image
             src="/img/logo-valentisys.png"
-            alt="Valentisys primary lockup"
+            alt="Xevantis primary lockup"
             width={240}
             height={64}
             className="h-16 w-auto"
@@ -254,7 +254,7 @@ function LogoBlock() {
         <Demo className="justify-center py-10">
           <Image
             src="/img/logo-mark.png"
-            alt="Valentisys mark"
+            alt="Xevantis mark"
             width={80}
             height={80}
             className="h-20 w-auto"
@@ -269,7 +269,7 @@ function LogoBlock() {
         <Demo dark className="justify-center">
           <Image src="/img/logo-mark.png" alt="" width={48} height={48} className="h-12 w-auto" />
           <span className="font-display text-2xl font-extrabold tracking-tighter text-paper-050">
-            Valentisys
+            Xevantis
           </span>
         </Demo>
       </div>
@@ -281,7 +281,7 @@ function LogoBlock() {
       </p>
 
       <h3 className="mb-4 mt-10 font-display text-2xl font-bold leading-snug tracking-tight">
-        Brand colours in the mark
+        Brand colors in the mark
       </h3>
       <Swatches>
         <Swatch name="violet" hex="#8250F0" value="var(--brand-violet)" background="var(--color-brand-violet)" />
@@ -306,9 +306,9 @@ function LogoBlock() {
           <DoDontItem tone="dont">
             <Rules
               items={[
-                "Don't recolour, outline, or add a shadow to the mark.",
+                "Don't recolor, outline, or add a shadow to the mark.",
                 "Don't stretch, rotate, or crop the orbit ring.",
-                "Don't set the navy lockup on ink or on a saturated colour.",
+                "Don't set the navy lockup on ink or on a saturated color.",
                 "Don't rebuild the wordmark in Plus Jakarta Sans — it is custom.",
               ]}
             />
@@ -383,7 +383,7 @@ function ColorBlock() {
           <DoDontItem tone="dont">
             <p className="mt-[0.4rem] text-sm text-ink-500">
               Stack pastel on pastel, set body text in a 300-level tint, or use two
-              accent colours in one CTA.
+              accent colors in one CTA.
             </p>
           </DoDontItem>
         </DoDont>
@@ -767,7 +767,7 @@ function FormsBlock() {
       intro={
         <>
           Pill fields, 52px tall, with a 4px Sun focus ring — visible against every
-          surface in the palette. Errors set <Token>aria-invalid</Token>, never colour
+          surface in the palette. Errors set <Token>aria-invalid</Token>, never color
           alone.
         </>
       }
@@ -1012,7 +1012,9 @@ function VoiceBlock() {
           <CardBody>
             Direct, numerate, warm. Lead with the outcome and the number; skip the
             adjectives. Say &ldquo;live in 14 days&rdquo;, not &ldquo;rapid
-            deployment&rdquo;. Never say &ldquo;resources&rdquo; about people.
+            deployment&rdquo;. Never say &ldquo;resources&rdquo; about people. US
+            English throughout — &ldquo;optimize&rdquo;, &ldquo;program&rdquo;,
+            &ldquo;center&rdquo;, &ldquo;PTO&rdquo;.
           </CardBody>
         </Card>
         <Card surface="flat">

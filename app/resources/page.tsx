@@ -8,7 +8,7 @@ import { ResourceHero } from "@/components/resources/ResourceHero";
 import { FeaturedResources } from "@/components/resources/FeaturedResources";
 import { ResourceBrowser } from "@/components/resources/ResourceBrowser";
 
-const TITLE = "Resources | Insights for building better teams — Valentisys";
+const TITLE = "Resources | Insights for building better teams — Xevantis";
 const DESCRIPTION =
   "Playbooks, benchmarks and interviews on outsourcing, CX and the operating models that keep named teams shipping.";
 
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Valentisys Resources",
+  name: "Xevantis Resources",
   description: DESCRIPTION,
   url: absoluteUrl("/resources"),
   mainEntity: {

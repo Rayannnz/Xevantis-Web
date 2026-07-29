@@ -20,7 +20,7 @@ import { TrustedBy } from "@/components/service/TrustedBy";
 import { ServiceCta } from "@/components/service/ServiceCta";
 import { ArrowRight } from "@/components/icons";
 
-const TITLE = "BPO Solutions | Sixteen Outsourcing Services — Valentisys";
+const TITLE = "BPO Solutions | Sixteen Outsourcing Services — Xevantis";
 const DESCRIPTION =
   "Sixteen BPO solutions under one operating model: IT, finance, customer, admin, HR and payroll outsourcing, plus sector and delivery models. Named teams, live in 14 days.";
 
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Valentisys BPO solutions",
+  name: "Xevantis BPO solutions",
   itemListElement: SERVICE_SUMMARY_GROUPS.flatMap((group) => group.services).map(
     (service, index) => ({
       "@type": "ListItem",

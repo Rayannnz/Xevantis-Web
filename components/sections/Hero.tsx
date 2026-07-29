@@ -47,7 +47,7 @@ export function Hero() {
             />
 
             <Reveal as="p" delay={220} className="max-w-[46ch] text-lg text-ink-500">
-              Valentisys pairs world-class BPO talent with product engineers, so your
+              Xevantis pairs world-class BPO talent with product engineers, so your
               support desk and your roadmap finally move at the same speed. Dedicated
               squads live in <MarkUnderline>2 weeks</MarkUnderline>.
             </Reveal>
@@ -95,7 +95,7 @@ export function Hero() {
                 </div>
 
                 <h2 className="mb-3 font-display text-xl font-bold leading-snug tracking-tight">
-                  30 days with Valentisys
+                  30 days with Xevantis
                 </h2>
 
                 <div className="grid grid-cols-[minmax(0,1fr)] content-start gap-4">
@@ -157,7 +157,7 @@ export function Hero() {
   );
 }
 
-/** Drifting colour orbs behind the hero copy. */
+/** Drifting color orbs behind the hero copy. */
 function HeroBackdrop() {
   return (
     <div

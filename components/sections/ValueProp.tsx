@@ -34,7 +34,7 @@ export function ValueProp() {
           >
             <Eyebrow>Why teams switch</Eyebrow>
             <h2 className="font-display text-4xl font-bold leading-snug tracking-tighter">
-              You deserve better than a call centre.
+              You deserve better than a call center.
             </h2>
             <Lead>
               Most outsourcing sells you seats. We build teams — recruited for your
@@ -53,7 +53,7 @@ export function ValueProp() {
 
             <div className="flex flex-wrap items-center gap-3">
               <Button href="#contact" variant="sticker">
-                <ButtonLabel>Take Valentisys for a spin</ButtonLabel>
+                <ButtonLabel>Take Xevantis for a spin</ButtonLabel>
               </Button>
             </div>
           </Reveal>

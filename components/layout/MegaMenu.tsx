@@ -24,9 +24,9 @@ interface MegaMenuProps {
 }
 
 /**
- * Anchored to the centred header container rather than to its trigger.
+ * Anchored to the centered header container rather than to its trigger.
  *
- * A 16-link panel centred on the nav item would hang off the right edge of the
+ * A 16-link panel centered on the nav item would hang off the right edge of the
  * viewport, and it cannot use `position: fixed` either — the backdrop filter on
  * the header bar makes that element the containing block for fixed
  * descendants. Anchoring to the container is the one option that always fits.

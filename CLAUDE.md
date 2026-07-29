@@ -16,9 +16,9 @@ There is no test suite and no test runner installed. The `/design-system` route 
 
 ## Project
 
-Marketing site for **Valentisys**, a BPO + software agency. Next.js 16 App Router, React 19, TypeScript strict, Tailwind CSS v4, framer-motion. Fully static — no database, no API routes, no auth. The only environment variable is `NEXT_PUBLIC_SITE_URL` (falls back to `https://valentisys.com`; set it per deploy or preview canonicals point at production).
+Marketing site for **Xevantis**, a BPO + software agency. Next.js 16 App Router, React 19, TypeScript strict, Tailwind CSS v4, framer-motion. Fully static — no database, no API routes, no auth. The only environment variable is `NEXT_PUBLIC_SITE_URL` (falls back to `https://xevantis.com`; set it per deploy or preview canonicals point at production).
 
-Naming trap: the brand is spelled **Valentisys** in all copy. The repo folder (`Valentysis`) and the package name (`xevantis`) are both wrong and are not the brand.
+Naming trap: the brand is **Xevantis** in all copy. The repo folder is still `Valentysis` and the logo asset is still `public/img/logo-valentisys.png` — both are pre-rebrand leftovers, not the brand.
 
 ## Architecture
 
@@ -40,7 +40,7 @@ Homepage/shell content lives in `lib/content.ts` with types in `lib/types.ts`. T
 
 ### Design tokens live in CSS, not a Tailwind config
 
-There is no `tailwind.config.*`. Tailwind v4 is configured CSS-first in `app/globals.css` via `@theme static` — colour ramps, fluid type scale, containers, radii, shadows, easings and keyframe animations are all tokens there, exposed as ordinary utilities (`bg-sun-300`, `text-hero`, `max-w-page`, `rounded-pill`, `shadow-sticker`, `ease-out-expo`, `animate-float`). `static` is required: it keeps every step in the output for the ramps the design-system page renders dynamically.
+There is no `tailwind.config.*`. Tailwind v4 is configured CSS-first in `app/globals.css` via `@theme static` — color ramps, fluid type scale, containers, radii, shadows, easings and keyframe animations are all tokens there, exposed as ordinary utilities (`bg-sun-300`, `text-hero`, `max-w-page`, `rounded-pill`, `shadow-sticker`, `ease-out-expo`, `animate-float`). `static` is required: it keeps every step in the output for the ramps the design-system page renders dynamically.
 
 Never hardcode a hex or a duration in a component — add or reuse a token. Multi-stop gradients and pseudo-element textures that Tailwind cannot express are `@utility` blocks in the same file (`noise`, `bg-aurora`, `sheen`, `marquee-mask`).
 
@@ -70,7 +70,7 @@ Motion accessibility is handled in two places and both matter: the `prefers-redu
 - `cn()` from `lib/utils.ts` (clsx + tailwind-merge) for every conditional class list.
 - Icons are hand-drawn 2px-outline SVGs in `components/icons/index.tsx`, sized by the caller. `lucide-react` is in `package.json` but unused — do not introduce it; its geometry does not match the sticker family.
 - Comments in this codebase explain *why* a non-obvious choice was made (the 16px reveal slide, `overflow-x: hidden` on `<html>`, `@theme static`). Match that: skip narration, keep the reasoning that would otherwise be re-litigated.
-- Copy is British-inflected and specific ("Named specialists, not a rotating pool"). The design-system page documents voice rules — e.g. never say "resources" about people.
+- Copy is **US English** and specific ("Named specialists, not a rotating pool"): `optimize`, `program`, `center`, `license`, `catalog`, `judgment`, `advisor`, `PTO` (not "holiday"), `schedule` (not "rota"). Dates render `en-US` via `formatDate`. The design-system page documents voice rules — e.g. never say "resources" about people.
 
 ## Cursor rule: `.cursor/rules/ponytail.mdc` (always applies)
 

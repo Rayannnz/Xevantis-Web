@@ -52,7 +52,7 @@ assert.equal(page, totalPages);
 assert.ok(items.length <= PAGE_SIZE);
 assert.ok(items.length > 0);
 
-// The UTC pin: without it this renders as the 17th anywhere west of Greenwich.
-assert.equal(formatDate("2026-11-18"), "18 Nov 2026");
+// The UTC pin: without it this renders as the 17th anywhere west of UTC.
+assert.equal(formatDate("2026-11-18"), "Nov 18, 2026");
 
 console.log("lib/resources self-check ok");

@@ -5,7 +5,7 @@ import type { SVGProps } from "react";
  *
  * These are hand-drawn to the brand's 2px-outline sticker family and do not
  * map cleanly onto Lucide's geometry, so swapping them for a library set would
- * change the design. Centralising them here removes the duplication instead —
+ * change the design. Centralizing them here removes the duplication instead —
  * the arrow alone appeared six times in the source markup.
  *
  * Sizing is deliberately left to the caller: buttons size their icon in `em`,

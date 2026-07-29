@@ -178,7 +178,7 @@ function DeckRow({
   );
 }
 
-/** Drifting colour orbs, tuned so neither one sits behind the headline. */
+/** Drifting color orbs, tuned so neither one sits behind the headline. */
 function HeroBackdrop() {
   return (
     <div

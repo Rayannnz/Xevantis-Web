@@ -28,7 +28,7 @@ export function Brand({
   return (
     <Link
       href={href}
-      aria-label="Valentisys home"
+      aria-label="Xevantis home"
       className={cn("group inline-flex shrink-0 items-center gap-[0.6rem]", className)}
     >
       <Image

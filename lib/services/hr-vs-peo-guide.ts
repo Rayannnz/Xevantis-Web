@@ -139,7 +139,7 @@ export const hrVsPeoGuide: ServiceContent = {
     {
       title: "Establish your true current cost",
       duration: "Week 1",
-      body: "HR salaries, payroll processing, benefits brokerage, insurance, software licences and the management time absorbed by HR admin. Most companies underestimate this by a third, which distorts every comparison that follows.",
+      body: "HR salaries, payroll processing, benefits brokerage, insurance, software licenses and the management time absorbed by HR admin. Most companies underestimate this by a third, which distorts every comparison that follows.",
     },
     {
       title: "Define what you will not give up",
@@ -229,7 +229,7 @@ export const hrVsPeoGuide: ServiceContent = {
       figure: "network",
     },
     {
-      industry: "UK logistics, 480 staff",
+      industry: "US logistics, 480 staff",
       title: "Left a PEO after the percentage caught up",
       challenge:
         "Payroll costs rising with headcount and wage inflation, meaning the PEO fee grew 40% in two years while the service delivered stayed identical.",
@@ -251,7 +251,7 @@ export const hrVsPeoGuide: ServiceContent = {
       solution:
         "A hybrid: benefits and insurance stayed with the PEO, payroll processing moved to a dedicated pod. Not every decision has to be all or nothing.",
       results: [
-        { value: 99.98, decimals: 2, suffix: "%", label: "Payslip accuracy after transition" },
+        { value: 99.98, decimals: 2, suffix: "%", label: "Pay stub accuracy after transition" },
         { value: 0, label: "Change to employee benefits" },
         { value: 3, suffix: " mo", label: "Transition time" },
       ],
@@ -368,7 +368,7 @@ export const hrVsPeoGuide: ServiceContent = {
   },
 
   seo: {
-    title: "HR Outsourcing vs PEO | Cost, Control & Exit Comparison — Valentisys",
+    title: "HR Outsourcing vs PEO | Cost, Control & Exit Comparison — Xevantis",
     description:
       "A straight comparison of HR outsourcing and a PEO: co-employment, cost at scale, control over hiring and exits, benefits, and what leaving actually involves. Written by a provider who sells one side and says so.",
   },

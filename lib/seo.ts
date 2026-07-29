@@ -9,10 +9,10 @@ import type { Article, Resource } from "./resources/types";
  * without it every canonical on a preview would point at production.
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://valentisys.com"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://xevantis.com"
 ).replace(/\/$/, "");
 
-export const SITE_NAME = "Valentisys";
+export const SITE_NAME = "Xevantis";
 
 export const absoluteUrl = (path: string) =>
   `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
@@ -114,7 +114,7 @@ export function articleJsonLd(resource: Resource, article: Article) {
 }
 
 /**
- * Schema.org `Service`, wired to the organisation and the FAQ block.
+ * Schema.org `Service`, wired to the organization and the FAQ block.
  *
  * Returned as an array so one `<script>` carries both graphs — Google reads a
  * top-level array fine, and it keeps the page to a single injected node.

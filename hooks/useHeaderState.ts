@@ -11,7 +11,7 @@ interface HeaderState {
 
 /**
  * One scroll listener, throttled to a frame. `pinned` opts a page out of the
- * hide-on-scroll behaviour (the design-system shell keeps its nav on screen).
+ * hide-on-scroll behavior (the design-system shell keeps its nav on screen).
  */
 export function useHeaderState(pinned = false): HeaderState {
   const [state, setState] = useState<HeaderState>({ stuck: false, hidden: false });

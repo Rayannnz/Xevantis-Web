@@ -22,7 +22,7 @@ interface SubscribeFormProps {
  *
  * There is no backend here — the original site was a static build — so submit
  * validates, clears, and announces. Errors set `aria-invalid` and move focus;
- * colour alone never carries the message.
+ * color alone never carries the message.
  */
 export function SubscribeForm({
   successMessage,
@@ -92,7 +92,7 @@ export function SubscribeForm({
         </Button>
       </div>
 
-      {/* Colour alone never carries the message. */}
+      {/* Color alone never carries the message. */}
       {invalid ? (
         <p id={errorId} className="mt-2 px-[1.15rem] text-xs text-signal-danger">
           Enter a valid work email address.

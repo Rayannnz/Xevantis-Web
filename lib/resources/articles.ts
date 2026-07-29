@@ -3,13 +3,13 @@ import type { Article, Author } from "./types";
 /**
  * Article bodies, keyed by resource slug.
  *
- * Deliberately a separate module from the catalogue in `index.ts`. The browser
+ * Deliberately a separate module from the catalog in `index.ts`. The browser
  * on `/resources` is a client component and imports `RESOURCES`; if the bodies
  * lived on those objects, every word of all fifteen articles would ship in the
  * client bundle to render a grid of headlines. Only the detail route imports
  * this file, and only on the server.
  *
- * Figures throughout are Valentisys' own delivery data, framed as such.
+ * Figures throughout are Xevantis' own delivery data, framed as such.
  */
 
 const MARCUS: Author = {
@@ -62,7 +62,7 @@ export const ARTICLES: Record<string, Article> = {
     body: [
       {
         kind: "para",
-        text: "We did not start with a model. We started with a transcript review: two thousand contacts, read by four people, sorted into what the agent had to decide and what the agent merely had to type. That split turned out to be the whole project. Roughly 60% of the words leaving our floor were assembly — pulling an order status, restating a returns window, formatting a courier reference. None of it needed judgement. All of it took time.",
+        text: "We did not start with a model. We started with a transcript review: two thousand contacts, read by four people, sorted into what the agent had to decide and what the agent merely had to type. That split turned out to be the whole project. Roughly 60% of the words leaving our floor were assembly — pulling an order status, restating a returns window, formatting a courier reference. None of it needed judgment. All of it took time.",
       },
       { kind: "heading", text: "What we automated first" },
       {
@@ -112,7 +112,7 @@ export const ARTICLES: Record<string, Article> = {
       },
     ],
     takeaways: [
-      "Separate assembly from judgement before you evaluate a single model.",
+      "Separate assembly from judgment before you evaluate a single model.",
       "Draft-and-edit keeps accountability on the floor where it belongs.",
       "Watch satisfaction, not handle time — speed is the easy metric to fake.",
       "Budget more onboarding, not less: spotting a wrong draft is a senior skill.",
@@ -126,7 +126,7 @@ export const ARTICLES: Record<string, Article> = {
     body: [
       {
         kind: "para",
-        text: "Furniture is the only retail category where the customer waits a quarter of a year and then has to be physically present to receive the thing they bought. That structure, not the product, dictates the support model. Contacts do not arrive evenly; they cluster hard around three points, and a rota built on average weekly volume will be wrong at all three.",
+        text: "Furniture is the only retail category where the customer waits a quarter of a year and then has to be physically present to receive the thing they bought. That structure, not the product, dictates the support model. Contacts do not arrive evenly; they cluster hard around three points, and a staffing schedule built on average weekly volume will be wrong at all three.",
       },
       { kind: "heading", text: "The three moments" },
       {
@@ -140,7 +140,7 @@ export const ARTICLES: Record<string, Article> = {
       },
       {
         kind: "para",
-        text: "Across the furnishings programmes we run, those three bands account for the large majority of contacts and nearly all of the negative sentiment. The quiet weeks between them are quiet precisely because nothing is happening — which is also why proactive contact in week two removes work rather than creating it.",
+        text: "Across the furnishings programs we run, those three bands account for the large majority of contacts and nearly all of the negative sentiment. The quiet weeks between them are quiet precisely because nothing is happening — which is also why proactive contact in week two removes work rather than creating it.",
       },
       {
         kind: "figures",
@@ -153,7 +153,7 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "Staff the window, not the week" },
       {
         kind: "para",
-        text: "The instinct is to smooth the rota. Resist it. Delivery windows are known in advance — they are on the manifest — so the volume is forecastable to the day. We build the rota off the delivery schedule rather than off last month's contact volume, and the difference in queue times during peak bands is substantial.",
+        text: "The instinct is to smooth the staffing schedule. Resist it. Delivery windows are known in advance — they are on the manifest — so the volume is forecastable to the day. We build the staffing schedule off the delivery dates rather than off last month's contact volume, and the difference in queue times during peak bands is substantial.",
       },
       {
         kind: "quote",
@@ -173,11 +173,11 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "Write the damage flow first" },
       {
         kind: "para",
-        text: "Damage is the contact type with the widest quality spread between a good desk and a poor one, because it needs photographs, a judgement about repairability and a decision the customer will accept. Build that flow before anything else: what to ask for, what qualifies for replacement versus part, and who decides. Everything else in furnishings support is comparatively mechanical.",
+        text: "Damage is the contact type with the widest quality spread between a good desk and a poor one, because it needs photographs, a judgment about repairability and a decision the customer will accept. Build that flow before anything else: what to ask for, what qualifies for replacement versus part, and who decides. Everything else in furnishings support is comparatively mechanical.",
       },
     ],
     takeaways: [
-      "Build the rota from the delivery manifest, not from average weekly volume.",
+      "Build the staffing schedule from the delivery manifest, not from average weekly volume.",
       "Proactive contact in week two removes more work than it creates.",
       "A capped parts budget on the desk beats an approval queue every time.",
       "Design the damage flow first — it has the widest quality spread.",
@@ -228,7 +228,7 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "The re-contact trap" },
       {
         kind: "para",
-        text: "A caution on optimising this metric directly. FCR can be improved by making it harder to come back — burying the contact route, stretching response times on follow-ups, closing tickets aggressively. All three show up as an improvement. All three are worse for the customer. Pair FCR with re-contact rate and satisfaction, and treat any movement in FCR that is not matched in those two as a measurement artefact rather than a win.",
+        text: "A caution on optimizing this metric directly. FCR can be improved by making it harder to come back — burying the contact route, stretching response times on follow-ups, closing tickets aggressively. All three show up as an improvement. All three are worse for the customer. Pair FCR with re-contact rate and satisfaction, and treat any movement in FCR that is not matched in those two as a measurement artifact rather than a win.",
       },
       {
         kind: "callout",
@@ -246,7 +246,7 @@ export const ARTICLES: Record<string, Article> = {
 
   "nearshore-it-squad-staffing": {
     standfirst:
-      "Four hours of overlap changes what a squad can own. A look at the staffing maths behind a twenty-one-day start.",
+      "Four hours of overlap changes what a squad can own. A look at the staffing math behind a twenty-one-day start.",
     author: TOM,
     body: [
       {
@@ -271,7 +271,7 @@ export const ARTICLES: Record<string, Article> = {
         text: "Offshore squads get told what to build. Nearshore squads get to argue about it. That argument is where the engineering actually happens.",
         attribution: "Tom Okonkwo",
       },
-      { kind: "heading", text: "The twenty-one day maths" },
+      { kind: "heading", text: "The twenty-one day math" },
       {
         kind: "para",
         text: "A twenty-one day start is not a recruiting claim, it is a bench claim. It works because the people already exist — in a delivery hub, on an adjacent engagement, with the language and the stack already verified. What takes the three weeks is context, not hiring: repository access, domain walkthroughs, a first shipped change, and the security paperwork that nobody enjoys but nobody can skip.",
@@ -306,17 +306,17 @@ export const ARTICLES: Record<string, Article> = {
 
   "finance-close-outsourcing-playbook": {
     standfirst:
-      "Reconciliations first, judgement last. The handover order that keeps your controller sleeping through the first outsourced close.",
+      "Reconciliations first, judgment last. The handover order that keeps your controller sleeping through the first outsourced close.",
     author: PRIYA,
     body: [
       {
         kind: "para",
         text: "Most failed finance handovers fail in the same way: everything moves at once, on a month boundary, and the first close under the new arrangement is also the first time anyone has tested it. The fix is unglamorous. Move the work in the order of how mechanical it is, and never let a close be the first run of a process.",
       },
-      { kind: "heading", text: "Order the handover by judgement, not by volume" },
+      { kind: "heading", text: "Order the handover by judgment, not by volume" },
       {
         kind: "para",
-        text: "The temptation is to move the biggest queues first, because that is where the cost sits. Move the most mechanical first instead. Bank and card reconciliations have a right answer that can be checked by anyone; accruals and provisions do not. Building trust on work with a verifiable output means that when you do hand over judgement, both sides already know the quality baseline.",
+        text: "The temptation is to move the biggest queues first, because that is where the cost sits. Move the most mechanical first instead. Bank and card reconciliations have a right answer that can be checked by anyone; accruals and provisions do not. Building trust on work with a verifiable output means that when you do hand over judgment, both sides already know the quality baseline.",
       },
       {
         kind: "list",
@@ -332,7 +332,7 @@ export const ARTICLES: Record<string, Article> = {
       {
         kind: "figures",
         items: [
-          { value: "2", label: "Parallel closes before judgement moves" },
+          { value: "2", label: "Parallel closes before judgment moves" },
           { value: "30d", label: "Typical transition for stages one to three" },
           { value: "1", label: "Named reviewer, retained in-house throughout" },
         ],
@@ -340,7 +340,7 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "Run the first close twice" },
       {
         kind: "para",
-        text: "Parallel running is expensive and everyone tries to skip it. Do not. For the two closes either side of a judgement handover, both teams produce the output and the numbers are compared line by line before anything is filed. The variances you find are almost never arithmetic — they are differences in assumption that would otherwise have surfaced in an audit.",
+        text: "Parallel running is expensive and everyone tries to skip it. Do not. For the two closes either side of a judgment handover, both teams produce the output and the numbers are compared line by line before anything is filed. The variances you find are almost never arithmetic — they are differences in assumption that would otherwise have surfaced in an audit.",
       },
       {
         kind: "quote",
@@ -360,7 +360,7 @@ export const ARTICLES: Record<string, Article> = {
     ],
     takeaways: [
       "Sequence the handover by how mechanical the work is, not how large it is.",
-      "Run two parallel closes either side of any judgement transfer.",
+      "Run two parallel closes either side of any judgment transfer.",
       "Variances in parallel running are undocumented assumptions — capture them.",
       "Final review and sign-off stay in-house, permanently.",
     ],
@@ -373,7 +373,7 @@ export const ARTICLES: Record<string, Article> = {
     body: [
       {
         kind: "para",
-        text: "HR shared services benchmarks are unusually hard to compare, because the scope hiding behind the phrase varies enormously. A desk that handles payroll queries, absence and policy questions is not doing the same job as one that also runs onboarding, right-to-work checks and case management. Every figure below is scoped to the first definition, and we have said so wherever a desk in our sample sat outside it.",
+        text: "HR shared services benchmarks are unusually hard to compare, because the scope hiding behind the phrase varies enormously. A desk that handles payroll queries, absence and policy questions is not doing the same job as one that also runs onboarding, I-9 checks and case management. Every figure below is scoped to the first definition, and we have said so wherever a desk in our sample sat outside it.",
       },
       { kind: "heading", text: "Case cost by band" },
       {
@@ -395,7 +395,7 @@ export const ARTICLES: Record<string, Article> = {
       },
       {
         kind: "quote",
-        text: "Acknowledgement is not service. We have watched desks optimise their first-response SLA into the ground while satisfaction went nowhere.",
+        text: "Acknowledgement is not service. We have watched desks optimize their first-response SLA into the ground while satisfaction went nowhere.",
         attribution: "Sarah Whitfield",
       },
       { kind: "heading", text: "Where the desks diverged most" },
@@ -404,7 +404,7 @@ export const ARTICLES: Record<string, Article> = {
         items: [
           "Policy interpretation. Desks with a written escalation path to an HR business partner resolved faster than desks where agents guessed or deflected.",
           "Payroll adjacency. Desks that could see payroll data resolved pay queries at first touch; desks that had to refer them did not.",
-          "Case categorisation. Sprawling taxonomies produced worse reporting and no better routing than compact ones.",
+          "Case categorization. Sprawling taxonomies produced worse reporting and no better routing than compact ones.",
           "Language coverage in multi-country desks, which drove more variance in satisfaction than any staffing ratio.",
         ],
       },
@@ -429,7 +429,7 @@ export const ARTICLES: Record<string, Article> = {
     body: [
       {
         kind: "para",
-        text: "Sales operations gets treated as overhead because its output is legible only when it fails. Nobody praises a routing rule that worked. Everybody notices the enterprise lead that sat unassigned over a weekend. This paper sets out what the function actually costs, what it returns, and where the build-versus-outsource line sits for a mid-market revenue organisation.",
+        text: "Sales operations gets treated as overhead because its output is legible only when it fails. Nobody praises a routing rule that worked. Everybody notices the enterprise lead that sat unassigned over a weekend. This paper sets out what the function actually costs, what it returns, and where the build-versus-outsource line sits for a mid-market revenue organization.",
       },
       { kind: "heading", text: "What the pod actually does" },
       {
@@ -445,7 +445,7 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "The cost of not having one" },
       {
         kind: "para",
-        text: "The expensive failure is not the missed lead. It is the forecast that was wrong because stage definitions drifted, and the quarter that was planned against it. When we audit revenue organisations without a dedicated ops function, the recurring pattern is that account executives are doing ops work badly, in time they would otherwise spend selling, and the resulting data is trusted more than it deserves to be.",
+        text: "The expensive failure is not the missed lead. It is the forecast that was wrong because stage definitions drifted, and the quarter that was planned against it. When we audit revenue organizations without a dedicated ops function, the recurring pattern is that account executives are doing ops work badly, in time they would otherwise spend selling, and the resulting data is trusted more than it deserves to be.",
       },
       {
         kind: "figures",
@@ -463,7 +463,7 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "Build or outsource" },
       {
         kind: "para",
-        text: "Build when your routing logic is a genuine competitive asset, when your CRM is heavily customised in ways that take months to learn, or when the function is large enough to offer a career path. Outsource when the work is real but sub-scale — when you need two people's worth of capability and one person's worth of budget, and when hiring a single ops manager would leave you with a single point of failure and no cover.",
+        text: "Build when your routing logic is a genuine competitive asset, when your CRM is heavily customized in ways that take months to learn, or when the function is large enough to offer a career path. Outsource when the work is real but sub-scale — when you need two people's worth of capability and one person's worth of budget, and when hiring a single ops manager would leave you with a single point of failure and no cover.",
       },
       {
         kind: "callout",
@@ -473,7 +473,7 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "How to measure it" },
       {
         kind: "para",
-        text: "Do not measure a sales ops pod on ticket volume; it rewards the wrong behaviour. Measure it on forecast accuracy, on time-to-first-touch for inbound leads, and on the proportion of pipeline with clean, complete records. Those three tell you whether the function is doing its job, and none of them can be inflated by working harder on the wrong things.",
+        text: "Do not measure a sales ops pod on ticket volume; it rewards the wrong behavior. Measure it on forecast accuracy, on time-to-first-touch for inbound leads, and on the proportion of pipeline with clean, complete records. Those three tell you whether the function is doing its job, and none of them can be inflated by working harder on the wrong things.",
       },
     ],
     takeaways: [
@@ -558,13 +558,13 @@ export const ARTICLES: Record<string, Article> = {
       },
       {
         kind: "quote",
-        text: "We stopped arguing about whether the sample was fair and started arguing about the actual behaviour. That is a much better argument to be having.",
+        text: "We stopped arguing about whether the sample was fair and started arguing about the actual behavior. That is a much better argument to be having.",
         attribution: "Aoife Brennan",
       },
       { kind: "heading", text: "What went wrong first" },
       {
         kind: "para",
-        text: "We published scores before we had calibrated them, and the floor lost confidence in the system within a fortnight. Automated scoring is harsh on things it can measure — greeting present, hold procedure followed — and blind to things it cannot, like an agent who defuses a genuinely angry customer through tone alone. Agents noticed the gap immediately, and they were right to.",
+        text: "We published scores before we had calibrated them, and the floor lost confidence in the system within two weeks. Automated scoring is harsh on things it can measure — greeting present, hold procedure followed — and blind to things it cannot, like an agent who defuses a genuinely angry customer through tone alone. Agents noticed the gap immediately, and they were right to.",
       },
       {
         kind: "list",
@@ -693,7 +693,7 @@ export const ARTICLES: Record<string, Article> = {
       },
       {
         kind: "quote",
-        text: "Nobody has ever been criticised for holding their own audit trail. Plenty have been criticised for discovering they could not produce one.",
+        text: "Nobody has ever been criticized for holding their own audit trail. Plenty have been criticized for discovering they could not produce one.",
         attribution: "Sarah Whitfield",
       },
       { kind: "heading", text: "Design for the audit, not the incident" },
@@ -740,7 +740,7 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "Disputes are an invoicing problem" },
       {
         kind: "para",
-        text: "Dispute rate correlated most strongly with invoice accuracy and with whether the invoice carried the reference the customer's accounts payable system required. Pods that fixed their invoice template saw disputes fall without changing anything about collections at all. It is the cheapest intervention available and it is consistently deprioritised because it belongs to somebody else's team.",
+        text: "Dispute rate correlated most strongly with invoice accuracy and with whether the invoice carried the reference the customer's accounts payable system required. Pods that fixed their invoice template saw disputes fall without changing anything about collections at all. It is the cheapest intervention available and it is consistently deprioritized because it belongs to somebody else's team.",
       },
       {
         kind: "quote",
@@ -754,7 +754,7 @@ export const ARTICLES: Record<string, Article> = {
           "Percentage of invoices paid without any contact — the cleanest signal of billing quality.",
           "Time from invoice issue to first query, which tells you how fast problems surface.",
           "Dispute rate by root cause, not by value.",
-          "Promise-to-pay kept rate, which predicts collectability better than ageing does.",
+          "Promise-to-pay kept rate, which predicts collectability better than aging does.",
         ],
       },
       {
@@ -767,13 +767,13 @@ export const ARTICLES: Record<string, Article> = {
       "Cadence — early and regular — separates the top quartile, not escalation.",
       "Most disputes originate in the invoice, not in the collections process.",
       "Track paid-without-contact rate as your billing quality measure.",
-      "Promise-to-pay kept rate predicts collectability better than ageing.",
+      "Promise-to-pay kept rate predicts collectability better than aging.",
     ],
   },
 
   "demand-gen-outsourcing-white-paper": {
     standfirst:
-      "A decision framework built on channel maturity and feedback-loop length, with the break-even maths for both routes.",
+      "A decision framework built on channel maturity and feedback-loop length, with the break-even math for both routes.",
     author: DANNY,
     body: [
       {
@@ -783,7 +783,7 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "The two variables" },
       {
         kind: "para",
-        text: "Channel maturity is how well understood the channel is inside your organisation — whether you have a working model of what performs and why. Feedback-loop length is how long between spending money and knowing whether it worked. Paid search on a self-serve product might be days. Field marketing into enterprise accounts might be three quarters.",
+        text: "Channel maturity is how well understood the channel is inside your organization — whether you have a working model of what performs and why. Feedback-loop length is how long between spending money and knowing whether it worked. Paid search on a self-serve product might be days. Field marketing into enterprise accounts might be three quarters.",
       },
       {
         kind: "list",
@@ -838,7 +838,7 @@ export const ARTICLES: Record<string, Article> = {
     body: [
       {
         kind: "para",
-        text: "Retention teams generally start paying attention at renewal, or at the first drop in usage. Both are late. In the SaaS onboarding programmes we run, the contacts that predict churn arrive in the second week of the account's life, and they usually arrive in the general support queue looking like ordinary questions.",
+        text: "Retention teams generally start paying attention at renewal, or at the first drop in usage. Both are late. In the SaaS onboarding programs we run, the contacts that predict churn arrive in the second week of the account's life, and they usually arrive in the general support queue looking like ordinary questions.",
       },
       { kind: "heading", text: "What the signal looks like" },
       {
@@ -870,7 +870,7 @@ export const ARTICLES: Record<string, Article> = {
       { kind: "heading", text: "Staffing the window" },
       {
         kind: "para",
-        text: "Route new accounts to a named subset of the desk for their first ninety days. Not a separate team — a tagged queue with the same people, so they see the same account more than once and can recognise the second and third contact for what it is. Pattern recognition across contacts is the entire mechanism, and it does not survive round-robin routing.",
+        text: "Route new accounts to a named subset of the desk for their first ninety days. Not a separate team — a tagged queue with the same people, so they see the same account more than once and can recognize the second and third contact for what it is. Pattern recognition across contacts is the entire mechanism, and it does not survive round-robin routing.",
       },
       { kind: "heading", text: "Close the loop to the account team" },
       {
@@ -905,17 +905,17 @@ export const ARTICLES: Record<string, Article> = {
         kind: "list",
         ordered: true,
         items: [
-          "Every non-standard contract — anything with bespoke allowances, notice terms or bonus mechanics.",
+          "Every non-standard contract — anything with custom allowances, notice terms or bonus mechanics.",
           "Historic corrections still in flight, including anything owed to a leaver.",
           "The full statutory calendar for every jurisdiction in scope, with filing owners named.",
-          "Salary sacrifice and benefit arrangements, with their effective dates.",
+          "Pre-tax deductions and benefit arrangements, with their effective dates.",
           "Any employee on a legacy scheme that no longer applies to new starters.",
           "Court orders, attachments of earnings and any deduction with a legal basis.",
         ],
       },
       {
         kind: "para",
-        text: "Those six are first because each one is invisible in a standard data extract and catastrophic when missed. A bespoke bonus mechanic that nobody documented will run correctly for two cycles on inherited logic and then fail silently when the logic is rebuilt.",
+        text: "Those six are first because each one is invisible in a standard data extract and catastrophic when missed. A custom bonus mechanic that nobody documented will run correctly for two cycles on inherited logic and then fail silently when the logic is rebuilt.",
       },
       {
         kind: "figures",
@@ -929,8 +929,8 @@ export const ARTICLES: Record<string, Article> = {
       {
         kind: "list",
         items: [
-          "Starter, leaver and change workflows, including who is authorised to approve each.",
-          "Pension enrolment and re-enrolment logic with assessment dates.",
+          "Starter, leaver and change workflows, including who is authorized to approve each.",
+          "401(k) enrollment and re-enrollment logic with assessment dates.",
           "Expense and mileage policies where they affect taxable pay.",
           "Absence and statutory pay rules, especially any enhancement above statutory minimum.",
           "The approval chain for the payroll run itself, with named deputies.",
@@ -939,7 +939,7 @@ export const ARTICLES: Record<string, Article> = {
       },
       {
         kind: "quote",
-        text: "Every payroll disaster I have seen was documented somewhere. It was documented in the head of someone who was on annual leave.",
+        text: "Every payroll disaster I have seen was documented somewhere. It was documented in the head of someone who was on PTO.",
         attribution: "Sarah Whitfield",
       },
       { kind: "heading", text: "Run parallel, then cut over" },
@@ -950,7 +950,7 @@ export const ARTICLES: Record<string, Article> = {
       {
         kind: "callout",
         title: "Name the deputy",
-        text: "For every approval in the payroll chain, name a deputy and test that they can actually complete the step. Payroll deadlines do not move for annual leave, and this is the single most common cause of a late first run.",
+        text: "For every approval in the payroll chain, name a deputy and test that they can actually complete the step. Payroll deadlines do not move for PTO, and this is the single most common cause of a late first run.",
       },
     ],
     takeaways: [

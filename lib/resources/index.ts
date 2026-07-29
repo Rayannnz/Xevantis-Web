@@ -99,7 +99,7 @@ export const RESOURCES: readonly Resource[] = [
     slug: "nearshore-it-squad-staffing",
     title: "How nearshore IT squads cut time-to-hire without cutting quality",
     excerpt:
-      "Four hours of overlap changes what a squad can own. A look at the staffing maths behind a 21-day start.",
+      "Four hours of overlap changes what a squad can own. A look at the staffing math behind a 21-day start.",
     date: "2026-10-14",
     readTime: 6,
     type: "Blog",
@@ -114,7 +114,7 @@ export const RESOURCES: readonly Resource[] = [
     slug: "finance-close-outsourcing-playbook",
     title: "A 30-day playbook for outsourcing month-end close",
     excerpt:
-      "Reconciliations first, judgement last. The handover order that keeps your controller sleeping through the first close.",
+      "Reconciliations first, judgment last. The handover order that keeps your controller sleeping through the first close.",
     date: "2026-10-07",
     readTime: 11,
     type: "Playbook",
@@ -226,7 +226,7 @@ export const RESOURCES: readonly Resource[] = [
     slug: "demand-gen-outsourcing-white-paper",
     title: "White paper: when to outsource demand gen vs keep it in-house",
     excerpt:
-      "A decision framework built on channel maturity and feedback loop length, with the break-even maths for both routes.",
+      "A decision framework built on channel maturity and feedback loop length, with the break-even math for both routes.",
     date: "2026-08-01",
     readTime: 14,
     type: "White paper",
@@ -269,11 +269,11 @@ export const RESOURCES: readonly Resource[] = [
 /**
  * `Resource.date` is a bare ISO day, which `new Date` reads as UTC midnight.
  * Formatting that without pinning the zone renders the previous day for anyone
- * west of Greenwich, so the zone is fixed rather than left to the runtime.
+ * west of UTC, so the zone is fixed rather than left to the runtime.
  */
-const DATE_FORMAT = new Intl.DateTimeFormat("en-GB", {
-  day: "2-digit",
+const DATE_FORMAT = new Intl.DateTimeFormat("en-US", {
   month: "short",
+  day: "numeric",
   year: "numeric",
   timeZone: "UTC",
 });

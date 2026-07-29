@@ -39,15 +39,15 @@ export const hrForRetail: ServiceContent = {
 
   hero: {
     title: "Retail HR that keeps the floor staffed.",
-    highlight: "back on the shop floor",
-    body: "Volume hiring, onboarding, shift compliance and an employee helpdesk built for a distributed hourly workforce — so your store managers get back on the shop floor instead of chasing references and right-to-work checks.",
+    highlight: "back on the sales floor",
+    body: "Volume hiring, onboarding, shift compliance and an employee helpdesk built for a distributed hourly workforce — so your store managers get back on the sales floor instead of chasing references and I-9 checks.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
     trust: "Onboarding chains ahead of the peak season",
     chips: [
       { value: "9 days", label: "Median time to fill a store vacancy" },
       { value: "8 hrs", label: "Weekly time returned per store manager" },
-      { value: "100%", label: "Right-to-work records complete" },
+      { value: "100%", label: "I-9 records complete" },
     ],
     figure: "network",
   },
@@ -85,13 +85,13 @@ export const hrForRetail: ServiceContent = {
       "Volume vacancy posting across job boards and local channels",
       "Application screening and telephone pre-screening at scale",
       "Interview scheduling coordinated directly with store managers",
-      "Right-to-work, reference and age verification administration",
+      "I-9, reference and age verification administration",
       "Offer letters, contracts and starter pack issue",
       "Onboarding coordination and first-week induction tracking",
       "Seasonal peak recruitment planning and delivery",
-      "Working time, break and young-worker compliance monitoring",
-      "Absence, sickness and shift-swap administration",
-      "Employee helpdesk covering pay, holiday and shift queries",
+      "Hours, break and minor-employment compliance monitoring",
+      "Absence, sick leave and shift-swap administration",
+      "Employee helpdesk covering pay, PTO and shift questions",
       "Employee relations casework administration across sites",
       "Leaver processing, exit interviews and turnover reporting by store",
     ],
@@ -101,7 +101,7 @@ export const hrForRetail: ServiceContent = {
 
   benefits: [
     {
-      title: "Vacancies filled before the rota breaks",
+      title: "Vacancies filled before the schedule breaks",
       body: "In retail a slow hire is an unstaffed shift, which is lost trade and an overtime bill. Same-day candidate contact and coordinated scheduling are what take days out of the process.",
       metric: { value: 9, suffix: " days", label: "Median time to fill a store vacancy" },
       link: { label: "See the hiring process", href: "#process" },
@@ -123,8 +123,8 @@ export const hrForRetail: ServiceContent = {
     },
     {
       title: "Compliance records that survive an inspection",
-      body: "Right-to-work, age verification and working time records are exactly where distributed retail exposure sits. Central administration with expiry monitoring closes the gap that site-level filing always leaves.",
-      metric: { value: 100, suffix: "%", label: "Right-to-work documentation complete and in date" },
+      body: "I-9, age verification and hours-worked records are exactly where distributed retail exposure sits. Central administration with expiry monitoring closes the gap that site-level filing always leaves.",
+      metric: { value: 100, suffix: "%", label: "I-9 documentation complete and in date" },
       link: { label: "How compliance is tracked", href: "#whats-included" },
       figure: "layers",
     },
@@ -139,7 +139,7 @@ export const hrForRetail: ServiceContent = {
     {
       title: "Hiring engine design",
       duration: "Week 1–2",
-      body: "Standardised role templates, screening criteria, channel mix per location and a scheduling process that fits around trading hours rather than office ones.",
+      body: "Standardized role templates, screening criteria, channel mix per location and a scheduling process that fits around trading hours rather than office ones.",
     },
     {
       title: "Recruit the pod",
@@ -149,7 +149,7 @@ export const hrForRetail: ServiceContent = {
     {
       title: "Pilot region",
       duration: "Week 2–3",
-      body: "Live in one region first, with store managers giving direct feedback. Rolling out to 200 sites without testing the manager experience is how these programmes get rejected.",
+      body: "Live in one region first, with store managers giving direct feedback. Rolling out to 200 sites without testing the manager experience is how these programs get rejected.",
     },
     {
       title: "Roll out",
@@ -174,7 +174,7 @@ export const hrForRetail: ServiceContent = {
     { name: "Greenhouse", category: "Applicant tracking" },
     { name: "Indeed", category: "Job distribution" },
     { name: "Sterling", category: "Background checks" },
-    { name: "Yoti", category: "Right-to-work verification" },
+    { name: "Checkr", category: "I-9 & background verification" },
     { name: "DocuSign", category: "E-signature" },
     { name: "Zendesk", category: "Employee helpdesk" },
     { name: "WhatsApp Business", category: "Candidate contact" },
@@ -192,11 +192,11 @@ export const hrForRetail: ServiceContent = {
     },
     {
       title: "Store managers are the customer",
-      body: "We pilot in one region and change the process based on manager feedback before rolling out. A programme managers work around is worse than no programme.",
+      body: "We pilot in one region and change the process based on manager feedback before rolling out. A program managers work around is worse than no program.",
     },
     {
-      title: "Compliance centralised",
-      body: "Right-to-work, age verification and working time records held and monitored centrally with expiry alerting. Site-level filing is where distributed retail exposure always accumulates.",
+      title: "Compliance centralized",
+      body: "I-9, age verification and hours-worked records held and monitored centrally with expiry alerting. Site-level filing is where distributed retail exposure always accumulates.",
     },
     {
       title: "Candidate contact where candidates are",
@@ -213,12 +213,12 @@ export const hrForRetail: ServiceContent = {
       industry: "Fashion retail",
       title: "Nine hundred seasonal hires across 140 stores",
       challenge:
-        "A Q4 peak requiring 900 temporary staff, previously handled by store managers and agency labour at a substantial premium.",
+        "A Q4 peak requiring 900 temporary staff, previously handled by store managers and agency labor at a substantial premium.",
       solution:
-        "Peak planning from August, a centralised screening funnel with WhatsApp candidate contact, and interview slots coordinated around each store's trading pattern.",
+        "Peak planning from August, a centralized screening funnel with WhatsApp candidate contact, and interview slots coordinated around each store's trading pattern.",
       results: [
         { value: 900, suffix: "+", label: "Seasonal hires delivered" },
-        { value: 61, suffix: "%", label: "Lower cost than agency labour" },
+        { value: 61, suffix: "%", label: "Lower cost than agency labor" },
         { value: 100, suffix: "%", label: "Stores fully staffed by peak week one" },
       ],
       accent: "sun",
@@ -241,11 +241,11 @@ export const hrForRetail: ServiceContent = {
     },
     {
       industry: "Convenience retail",
-      title: "Closing a right-to-work exposure across 210 sites",
+      title: "Closing an I-9 exposure across 210 sites",
       challenge:
-        "Right-to-work documentation held in store, incomplete or expired for an estimated 15% of staff, ahead of a compliance review.",
+        "I-9 documentation held in store, incomplete or expired for an estimated 15% of staff, ahead of a compliance review.",
       solution:
-        "Central digital verification and record-holding, a full remediation programme by region, and automated expiry alerting before any document lapsed.",
+        "Central digital verification and record-holding, a full remediation program by region, and automated expiry alerting before any document lapsed.",
       results: [
         { value: 100, suffix: "%", label: "Documentation complete and in date" },
         { value: 210, label: "Sites remediated in 9 weeks" },
@@ -277,7 +277,7 @@ export const hrForRetail: ServiceContent = {
     },
     {
       quote:
-        "Fifteen percent of our right-to-work records were incomplete and nobody knew. Nine weeks later it was a hundred percent.",
+        "Fifteen percent of our I-9 records were incomplete and nobody knew. Nine weeks later it was a hundred percent.",
       name: "Halima Yusuf",
       role: "Head of HR",
       company: "Duonode",
@@ -303,7 +303,7 @@ export const hrForRetail: ServiceContent = {
         "Text and WhatsApp primarily, because response rates are minutes rather than days. Email-first recruitment is a large part of why time-to-fill in retail is usually worse than it needs to be.",
     },
     {
-      question: "Can you handle right-to-work and age verification?",
+      question: "Can you handle I-9 and age verification?",
       answer:
         "Yes, including digital verification, central record holding and expiry alerting. Distributed site-level filing is where retail compliance exposure almost always accumulates.",
     },
@@ -313,7 +313,7 @@ export const hrForRetail: ServiceContent = {
         "We work with chains from 10 to 500 sites. Rollout is region by region after a pilot, with the pod scaling as sites come on rather than staffing for the end state on day one.",
     },
     {
-      question: "Do you handle working time and break compliance?",
+      question: "Do you handle hours and break compliance?",
       answer:
         "We monitor and report against your rules from scheduling data, and flag breaches for your managers to resolve. Scheduling itself stays with your operations team, who own the trading decisions.",
     },
@@ -364,8 +364,8 @@ export const hrForRetail: ServiceContent = {
   },
 
   seo: {
-    title: "HR for Retail | Volume Hiring & Multi-Site HR Support — Valentisys",
+    title: "HR for Retail | Volume Hiring & Multi-Site HR Support — Xevantis",
     description:
-      "Retail HR built for high turnover, seasonal peaks and shift work. Nine-day time-to-fill, 900+ seasonal hires per peak, centralised right-to-work compliance across every site.",
+      "Retail HR built for high turnover, seasonal peaks and shift work. Nine-day time-to-fill, 900+ seasonal hires per peak, centralized I-9 compliance across every site.",
   },
 };

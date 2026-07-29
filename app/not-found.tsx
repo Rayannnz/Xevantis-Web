@@ -6,7 +6,7 @@ import { Header } from "@/components/layout/Header";
 import { ArrowRight } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Page not found — Valentisys",
+  title: "Page not found — Xevantis",
 };
 
 export default function NotFound() {

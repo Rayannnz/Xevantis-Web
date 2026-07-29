@@ -55,7 +55,7 @@ export const hrOutsourcing: ServiceContent = {
   overview: {
     eyebrow: "Service overview",
     title: "The administrative two-thirds of HR.",
-    body: "Most HR teams are small and spend the majority of their week on coordination: scheduling interviews, chasing references, issuing contracts, answering the same holiday question and maintaining records. None of it is the work an HR director was hired to do.",
+    body: "Most HR teams are small and spend the majority of their week on coordination: scheduling interviews, chasing references, issuing contracts, answering the same PTO question and maintaining records. None of it is the work an HR director was hired to do.",
     panels: [
       {
         heading: "What it is",
@@ -84,10 +84,10 @@ export const hrOutsourcing: ServiceContent = {
     items: [
       "Job description drafting and vacancy posting across channels",
       "Applicant screening, scheduling and candidate communication",
-      "Reference, right-to-work and background check administration",
+      "Reference, I-9 and background check administration",
       "Offer letters, contracts and onboarding pack preparation",
       "Onboarding and induction coordination across locations",
-      "Employee helpdesk for policy, holiday, benefits and payroll queries",
+      "Employee helpdesk for policy, PTO, benefits and payroll questions",
       "HRIS record maintenance and data quality management",
       "Absence, leave and working-time tracking",
       "Employee relations casework administration and documentation",
@@ -109,7 +109,7 @@ export const hrOutsourcing: ServiceContent = {
     },
     {
       title: "Employees who get answers the same day",
-      body: "A four-hour helpdesk response means managers stop being the first line for holiday and policy questions. It is a small change that returns a surprising amount of management time.",
+      body: "A four-hour helpdesk response means managers stop being the first line for PTO and policy questions. It is a small change that returns a surprising amount of management time.",
       metric: { value: 4, suffix: " hrs", label: "Median employee helpdesk response" },
       link: { label: "How the helpdesk works", href: "#process" },
       figure: "pulse",
@@ -139,12 +139,12 @@ export const hrOutsourcing: ServiceContent = {
     {
       title: "Process & compliance design",
       duration: "Week 1–2",
-      body: "Documented procedures for each administrative flow, the escalation boundary to your HR leadership, and a data protection design reviewed by your DPO.",
+      body: "Documented procedures for each administrative flow, the escalation boundary to your HR leadership, and a data protection design reviewed by your privacy team.",
     },
     {
       title: "Recruit",
       duration: "Week 1–2",
-      body: "HR coordinators and advisors matched to your jurisdiction and sector, CIPD-qualified or equivalent where the role requires it. You interview every finalist and hold the veto.",
+      body: "HR coordinators and advisors matched to your jurisdiction and sector, SHRM-certified or equivalent where the role requires it. You interview every finalist and hold the veto.",
     },
     {
       title: "Train & shadow",
@@ -188,7 +188,7 @@ export const hrOutsourcing: ServiceContent = {
     },
     {
       title: "Qualified HR advisors",
-      body: "Pods include CIPD-qualified advisors or the local equivalent, not only coordinators. Casework administration handled by someone without HR training is a risk rather than a saving.",
+      body: "Pods include SHRM-certified advisors or the local equivalent, not only coordinators. Casework administration handled by someone without HR training is a risk rather than a saving.",
     },
     {
       title: "Documentation as standard",
@@ -196,7 +196,7 @@ export const hrOutsourcing: ServiceContent = {
     },
     {
       title: "Your HRIS, your data",
-      body: "We work inside your systems under your data controller responsibilities. Employee data never moves into a platform of ours, which keeps your DPO's life simple.",
+      body: "We work inside your systems under your data controller responsibilities. Employee data never moves into a platform of ours, which keeps your privacy team's life simple.",
     },
     {
       title: "We flag the management problems",
@@ -215,7 +215,7 @@ export const hrOutsourcing: ServiceContent = {
       challenge:
         "Constant driver and warehouse recruitment across eleven sites, coordinated by depot managers between operational duties, losing candidates to faster competitors.",
       solution:
-        "Centralised recruitment coordination with same-day candidate contact and interview scheduling handled entirely by the pod, leaving managers only the interviews themselves.",
+        "Centralized recruitment coordination with same-day candidate contact and interview scheduling handled entirely by the pod, leaving managers only the interviews themselves.",
       results: [
         { value: 18, suffix: " days", label: "Time to hire, from 34" },
         { value: 27, suffix: "%", label: "Fewer offer declines" },
@@ -243,7 +243,7 @@ export const hrOutsourcing: ServiceContent = {
       industry: "Care services",
       title: "Getting compliance documentation audit-ready",
       challenge:
-        "A regulated workforce where right-to-work, DBS and training records were incomplete across roughly a fifth of employees ahead of an inspection.",
+        "A regulated workforce where I-9, background check and training records were incomplete across roughly a fifth of employees ahead of an inspection.",
       solution:
         "A full records audit, systematic remediation with a chase cycle, and ongoing expiry monitoring with alerts before any certification lapsed.",
       results: [
@@ -259,7 +259,7 @@ export const hrOutsourcing: ServiceContent = {
   quotes: [
     {
       quote:
-        "We looked at a PEO and realised we would be giving up control of our own hiring. This gave us the administrative relief without the co-employment.",
+        "We looked at a PEO and realized we would be giving up control of our own hiring. This gave us the administrative relief without the co-employment.",
       name: "Rachel Osei-Bonsu",
       role: "HR Director",
       company: "Peakline",
@@ -305,17 +305,17 @@ export const hrOutsourcing: ServiceContent = {
     {
       question: "Are your HR staff qualified?",
       answer:
-        "Advisors are CIPD-qualified or hold the local equivalent, supported by trained coordinators. Employee relations matters are only handled by qualified advisors, never by coordination staff.",
+        "Advisors are SHRM-certified or hold the local equivalent, supported by trained coordinators. Employee relations matters are only handled by qualified advisors, never by coordination staff.",
     },
     {
       question: "Do you work in our HRIS?",
       answer:
-        "Yes — Workday, BambooHR, HiBob, SuccessFactors, Personio and others, under your licences and permissions. Employee data stays within your systems and your data controller responsibilities.",
+        "Yes — Workday, BambooHR, HiBob, SuccessFactors, Personio and others, under your licenses and permissions. Employee data stays within your systems and your data controller responsibilities.",
     },
     {
       question: "How do you handle employee data protection?",
       answer:
-        "You remain the data controller; we act as processor under a DPA reviewed by your DPO. ISO 27001 certified and SOC 2 Type II audited, with least-privilege access and quarterly access review.",
+        "You remain the data controller; we act as processor under a DPA reviewed by your privacy team. ISO 27001 certified and SOC 2 Type II audited, with least-privilege access and quarterly access review.",
     },
     {
       question: "Can you handle recruitment as well as administration?",
@@ -325,7 +325,7 @@ export const hrOutsourcing: ServiceContent = {
     {
       question: "Which jurisdictions do you cover?",
       answer:
-        "UK, Ireland, US, Canada, Australia and much of Western Europe, with local employment law support through partner counsel. We will tell you where our depth is thinner rather than improvise.",
+        "US, Canada, Mexico, Ireland, Australia and much of Western Europe, with local employment law support through partner counsel. We will tell you where our depth is thinner rather than improvise.",
     },
     {
       question: "How quickly can a pod start?",
@@ -335,7 +335,7 @@ export const hrOutsourcing: ServiceContent = {
     {
       question: "What happens to our internal HR team?",
       answer:
-        "In our engagements they typically move onto retention, performance, organisational design and casework decisions. The pod handles coordination and administration, not the judgement work.",
+        "In our engagements they typically move onto retention, performance, organizational design and casework decisions. The pod handles coordination and administration, not the judgment work.",
     },
     {
       question: "Do you provide employment law advice?",
@@ -364,7 +364,7 @@ export const hrOutsourcing: ServiceContent = {
   },
 
   seo: {
-    title: "HR Outsourcing | Recruitment, Onboarding & Employee Helpdesk — Valentisys",
+    title: "HR Outsourcing | Recruitment, Onboarding & Employee Helpdesk — Xevantis",
     description:
       "Outsourced HR administration covering recruitment coordination, onboarding, records, employee helpdesk and ER casework support. Never a co-employer — you keep every decision.",
   },

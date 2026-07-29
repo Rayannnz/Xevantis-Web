@@ -11,8 +11,8 @@ import type { ResourceIcon } from "@/lib/resources";
  * was rejected for the reason Lucide was: the geometry has to match the sticker
  * family, and a pastel hand-drawn brand fights literal corporate photography.
  *
- * Deliberately wordless. A chart with labelled figures on a marketing card
- * reads as a claim about real numbers; unlabelled bars read as illustration.
+ * Deliberately wordless. A chart with labeled figures on a marketing card
+ * reads as a claim about real numbers; unlabeled bars read as illustration.
  *
  * The viewBox matches the 16/10 card. `slice` lets the featured tile crop the
  * scene like a photograph when its panel runs taller.

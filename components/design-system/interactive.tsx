@@ -84,7 +84,7 @@ export function DocsAside() {
   );
 }
 
-/** Colour chip that copies its token to the clipboard. */
+/** Color chip that copies its token to the clipboard. */
 export function Swatch({
   value,
   name,
@@ -130,7 +130,7 @@ export function Swatch({
   );
 }
 
-/** One step in a colour ramp. Click to copy the token. */
+/** One step in a color ramp. Click to copy the token. */
 export function RampStep({
   token,
   label,

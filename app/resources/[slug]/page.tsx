@@ -43,7 +43,7 @@ export default async function ResourceArticleRoute({
   const resource = getResource(slug);
   const article = resource ? getArticle(slug) : undefined;
 
-  // A catalogue entry with no body would otherwise render an empty article.
+  // A catalog entry with no body would otherwise render an empty article.
   if (!resource || !article) notFound();
 
   return (

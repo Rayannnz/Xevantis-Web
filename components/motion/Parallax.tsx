@@ -15,8 +15,8 @@ interface ParallaxProps {
 /**
  * Scroll-linked vertical drift.
  *
- * The offset pair puts progress 0 at "element centre level with the viewport
- * bottom" and 1 at "centre level with the viewport top", which is the same
+ * The offset pair puts progress 0 at "element center level with the viewport
+ * bottom" and 1 at "center level with the viewport top", which is the same
  * −0.5…0.5 window the original engine measured by hand.
  */
 export function Parallax({

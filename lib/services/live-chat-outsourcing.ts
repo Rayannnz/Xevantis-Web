@@ -21,14 +21,14 @@ export const liveChatOutsourcing: ServiceContent = {
     },
     tech: {
       title: "Chat platforms and the routing behind them.",
-      body: "We work in your widget under your licences. Where you have no platform yet, we implement one you own.",
+      body: "We work in your widget under your licenses. Where you have no platform yet, we implement one you own.",
     },
     why: {
       title: "Why this beats an offshore chat vendor or a bot.",
       body: "Chat quality collapses in two predictable ways: too many concurrent conversations, and agents who cannot answer without escalating.",
     },
     cases: {
-      title: "Chat programmes we run.",
+      title: "Chat programs we run.",
       body: "Three deployments measured on response time, conversion assist, and what happened to phone volume afterwards.",
     },
     faq: {
@@ -40,7 +40,7 @@ export const liveChatOutsourcing: ServiceContent = {
   hero: {
     title: "Chat answered in under thirty seconds, at 3am.",
     highlight: "capped at three conversations",
-    body: "Dedicated chat specialists rostered against your real traffic curve, capped at three conversations each so quality holds. Trained to resolve and, where it fits, to sell — not to apologise and open a ticket.",
+    body: "Dedicated chat specialists rostered against your real traffic curve, capped at three conversations each so quality holds. Trained to resolve and, where it fits, to sell — not to apologize and open a ticket.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
     trust: "Chat pods available for the next peak cycle",
@@ -67,7 +67,7 @@ export const liveChatOutsourcing: ServiceContent = {
       },
       {
         heading: "The business case",
-        body: "Higher conversion among engaged visitors, deflected phone and email volume, and coverage at hours no in-house rota would justify.",
+        body: "Higher conversion among engaged visitors, deflected phone and email volume, and coverage at hours no in-house schedule would justify.",
       },
       {
         heading: "Why us",
@@ -205,7 +205,7 @@ export const liveChatOutsourcing: ServiceContent = {
     },
     {
       title: "Your platform, your transcripts",
-      body: "We work in your widget under your licences. No third-party chat tool appears on your site and no transcript data leaves your stack.",
+      body: "We work in your widget under your licenses. No third-party chat tool appears on your site and no transcript data leaves your stack.",
     },
   ],
 
@@ -260,7 +260,7 @@ export const liveChatOutsourcing: ServiceContent = {
   quotes: [
     {
       quote:
-        "Forty percent of our chat traffic had never been answered by anyone. We only found that out because they analysed the hourly curve before quoting.",
+        "Forty percent of our chat traffic had never been answered by anyone. We only found that out because they analyzed the hourly curve before quoting.",
       name: "Delphine Mercier",
       role: "Head of Digital",
       company: "Solstice",
@@ -316,7 +316,7 @@ export const liveChatOutsourcing: ServiceContent = {
     {
       question: "Which platform do we need?",
       answer:
-        "Yours. We work in Intercom, Zendesk, LiveChat, Gorgias, Drift, Tidio and others under your licences. Where you have no platform, we implement one in your name rather than ours.",
+        "Yours. We work in Intercom, Zendesk, LiveChat, Gorgias, Drift, Tidio and others under your licenses. Where you have no platform, we implement one in your name rather than ours.",
     },
     {
       question: "How do you measure conversion impact?",
@@ -365,7 +365,7 @@ export const liveChatOutsourcing: ServiceContent = {
   },
 
   seo: {
-    title: "Live Chat Outsourcing | 24/7 Chat Support & Conversion — Valentisys",
+    title: "Live Chat Outsourcing | 24/7 Chat Support & Conversion — Xevantis",
     description:
       "Dedicated live chat teams rostered to your traffic curve, capped at three concurrent conversations. 24-second median response, 19% conversion lift among engaged visitors.",
   },

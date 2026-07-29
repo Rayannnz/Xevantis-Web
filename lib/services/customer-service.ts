@@ -12,7 +12,7 @@ export const customerService: ServiceContent = {
 
   sections: {
     benefits: {
-      title: "What a support programme should move.",
+      title: "What a support program should move.",
       body: "Four numbers baselined before transition and reported weekly after it. Cost per contact is only one, and rarely the most valuable.",
     },
     process: {
@@ -21,19 +21,19 @@ export const customerService: ServiceContent = {
     },
     tech: {
       title: "Your helpdesk, your telephony, your data.",
-      body: "We operate in your stack. No proprietary platform, no forced migration and no per-seat licence from us.",
+      body: "We operate in your stack. No proprietary platform, no forced migration and no per-seat license from us.",
     },
     why: {
       title: "Why satisfaction goes up rather than down.",
       body: "Outsourced support has a bad reputation for three specific reasons: scripts, rotation and handle-time targets. We built the model against all three.",
     },
     cases: {
-      title: "Programmes we run.",
+      title: "Programs we run.",
       body: "Three operations judged on satisfaction, resolution time, and contact volume that stopped existing at all.",
     },
     faq: {
       title: "Quality, coverage and control.",
-      body: "The questions that separate a support partner from a call centre.",
+      body: "The questions that separate a support partner from a call center.",
     },
   },
 
@@ -45,7 +45,7 @@ export const customerService: ServiceContent = {
     secondaryCta: SECONDARY_CTA,
     trust: "CX pods onboarding now — 11 seats left this quarter",
     chips: [
-      { value: "4.8/5", label: "Average CSAT across managed programmes" },
+      { value: "4.8/5", label: "Average CSAT across managed programs" },
       { value: "14 days", label: "Signed scope to a trained team live" },
       { value: "24/7", label: "Coverage from six delivery hubs" },
     ],
@@ -103,7 +103,7 @@ export const customerService: ServiceContent = {
     {
       title: "Satisfaction that rises after transition",
       body: "Named specialists who stay on your account build genuine product knowledge, and customers respond to that more than to any process change. Scripts and rotation are why outsourced support usually costs a point of CSAT.",
-      metric: { value: 4.8, decimals: 1, suffix: "/5", label: "Average CSAT across managed programmes" },
+      metric: { value: 4.8, decimals: 1, suffix: "/5", label: "Average CSAT across managed programs" },
       link: { label: "How agents are trained", href: "#process" },
       figure: "pulse",
     },
@@ -171,8 +171,8 @@ export const customerService: ServiceContent = {
     { name: "Gorgias", category: "E-commerce support" },
     { name: "HubSpot Service Hub", category: "Service platform" },
     { name: "Twilio", category: "Telephony" },
-    { name: "Genesys", category: "Contact centre" },
-    { name: "Five9", category: "Cloud contact centre" },
+    { name: "Genesys", category: "Contact center" },
+    { name: "Five9", category: "Cloud contact center" },
     { name: "Talkdesk", category: "Voice platform" },
     { name: "Klaus", category: "Quality assurance" },
     { name: "Assembled", category: "Workforce management" },
@@ -321,7 +321,7 @@ export const customerService: ServiceContent = {
     {
       question: "Do we keep our own helpdesk?",
       answer:
-        "Yes. We work in your Zendesk, Intercom, Freshdesk or Service Cloud under your licences. There is no proprietary platform to adopt and no customer data leaving your stack.",
+        "Yes. We work in your Zendesk, Intercom, Freshdesk or Service Cloud under your licenses. There is no proprietary platform to adopt and no customer data leaving your stack.",
     },
     {
       question: "How does escalation to our team work?",
@@ -341,7 +341,7 @@ export const customerService: ServiceContent = {
     {
       question: "How is data protected?",
       answer:
-        "ISO 27001 certified and SOC 2 Type II audited, with clean-desk floors, managed devices, restricted access and DLP. GDPR, PCI DSS and HIPAA controls are layered on where your data requires them.",
+        "ISO 27001 certified and SOC 2 Type II audited, with clean-desk floors, managed devices, restricted access and DLP. GDPR, CCPA, PCI DSS and HIPAA controls are layered on where your data requires them.",
     },
     {
       question: "What is the commercial model?",
@@ -365,7 +365,7 @@ export const customerService: ServiceContent = {
   },
 
   seo: {
-    title: "Customer Service Outsourcing | Dedicated CX Pods — Valentisys",
+    title: "Customer Service Outsourcing | Dedicated CX Pods — Xevantis",
     description:
       "Voice, email, social and ticket support from named specialists trained on your product. 4.8/5 average CSAT, live in 14 days, priced per seat rather than per contact.",
   },

@@ -6,7 +6,7 @@ import type { FigureVariant } from "@/lib/services/types";
  * Generated section artwork.
  *
  * The brand has no photography library, and stock imagery would undercut a
- * page whose whole argument is that the work is bespoke. These are drawn from
+ * page whose whole argument is that the work is custom. These are drawn from
  * the same ramp as everything else, so a service's accent flows through its
  * illustrations automatically — and they cost one inline SVG rather than a
  * 300 KB hero JPEG, with no layout shift and nothing to lazy-load.
@@ -286,7 +286,7 @@ function LayerStack({ ramp }: { ramp: Ramp }) {
   );
 }
 
-/** Five-stage flow with a travelling marker — process, delivery, automation. */
+/** Five-stage flow with a traveling marker — process, delivery, automation. */
 function Pipeline({ ramp }: { ramp: Ramp }) {
   const stages = [0, 1, 2, 3];
 

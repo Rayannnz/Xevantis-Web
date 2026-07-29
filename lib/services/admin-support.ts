@@ -29,7 +29,7 @@ export const adminSupport: ServiceContent = {
     },
     cases: {
       title: "Operations we run.",
-      body: "Three programmes measured on turnaround time, error rate, and the senior hours returned to people who cost more.",
+      body: "Three programs measured on turnaround time, error rate, and the senior hours returned to people who cost more.",
     },
     faq: {
       title: "Scope, security and how tasks reach us.",
@@ -87,7 +87,7 @@ export const adminSupport: ServiceContent = {
       "Data entry, validation, cleansing and enrichment",
       "CRM and system record maintenance",
       "Document processing, indexing and records management",
-      "Diary management, meeting scheduling and travel booking",
+      "Calendar management, meeting scheduling and travel booking",
       "Inbox triage and correspondence drafting",
       "Supplier and customer onboarding administration",
       "Report compilation and distribution on a fixed cadence",
@@ -139,7 +139,7 @@ export const adminSupport: ServiceContent = {
     {
       title: "Process design",
       duration: "Days 4–7",
-      body: "Documented procedures, quality checklists, turnaround targets and the intake route. Where a task depends on undocumented judgement, we capture that explicitly.",
+      body: "Documented procedures, quality checklists, turnaround targets and the intake route. Where a task depends on undocumented judgment, we capture that explicitly.",
     },
     {
       title: "Recruit",
@@ -193,7 +193,7 @@ export const adminSupport: ServiceContent = {
     },
     {
       title: "Cover, not a single assistant",
-      body: "A pod means holiday, sickness and peaks are absorbed. A single virtual assistant is a single point of failure with a personal calendar.",
+      body: "A pod means PTO, sick days and peaks are absorbed. A single virtual assistant is a single point of failure with a personal calendar.",
     },
     {
       title: "Quality is sampled",
@@ -291,7 +291,7 @@ export const adminSupport: ServiceContent = {
     {
       question: "What kinds of task can you take on?",
       answer:
-        "Anything routine, rule-based and documentable: order processing, data work, scheduling, document preparation, research, reporting and inbox triage. If a task depends on judgement we cannot capture, we will say so during the audit.",
+        "Anything routine, rule-based and documentable: order processing, data work, scheduling, document preparation, research, reporting and inbox triage. If a task depends on judgment we cannot capture, we will say so during the audit.",
     },
     {
       question: "How do tasks reach the team?",
@@ -306,7 +306,7 @@ export const adminSupport: ServiceContent = {
     {
       question: "Is this the same as hiring a virtual assistant?",
       answer:
-        "No. A pod has documented procedures, quality sampling, holiday and sickness cover and a team lead accountable for turnaround. A single assistant has none of those and is a single point of failure.",
+        "No. A pod has documented procedures, quality sampling, PTO and sick cover and a team lead accountable for turnaround. A single assistant has none of those and is a single point of failure.",
     },
     {
       question: "Will the same people work on our account?",
@@ -365,7 +365,7 @@ export const adminSupport: ServiceContent = {
   },
 
   seo: {
-    title: "Admin Support Outsourcing | Back-Office & Data Operations — Valentisys",
+    title: "Admin Support Outsourcing | Back-Office & Data Operations — Xevantis",
     description:
       "Dedicated admin pods for order processing, data operations, scheduling and executive support. Four-hour turnaround, 99.6% accuracy, documented procedures you own.",
   },

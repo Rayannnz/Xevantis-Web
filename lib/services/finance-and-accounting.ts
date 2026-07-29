@@ -40,7 +40,7 @@ export const financeAndAccounting: ServiceContent = {
   hero: {
     title: "A five-day close, every month, without heroics.",
     highlight: "qualified accountants",
-    body: "Accounts payable, receivable, bank reconciliation and month-end close run by qualified accountants working directly in your ledger — under your approval limits, with segregation of duties your auditor will recognise.",
+    body: "Accounts payable, receivable, bank reconciliation and month-end close run by qualified accountants working directly in your ledger — under your approval limits, with segregation of duties your auditor will recognize.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
     trust: "Finance pods onboarding for the new financial year",
@@ -92,17 +92,17 @@ export const financeAndAccounting: ServiceContent = {
       "Prepayments, accruals and journal preparation",
       "Month-end close checklist execution and balance sheet reconciliations",
       "Management accounts pack preparation to your template",
-      "VAT and sales tax return preparation for review",
+      "Sales and use tax return preparation for review",
       "Audit schedule preparation and auditor query support",
     ],
-    note: "Approval and payment release always stay with your team. We prepare, reconcile and evidence; your named approvers authorise. That separation is written into the process design.",
+    note: "Approval and payment release always stay with your team. We prepare, reconcile and evidence; your named approvers authorize. That separation is written into the process design.",
     figure: "layers",
   },
 
   benefits: [
     {
       title: "A close that finishes when it should",
-      body: "A documented close checklist with owners and daily cut-off points, worked by a team whose only job that week is the close. Reporting deadlines stop depending on two people cancelling their evenings.",
+      body: "A documented close checklist with owners and daily cut-off points, worked by a team whose only job that week is the close. Reporting deadlines stop depending on two people canceling their evenings.",
       metric: { value: 5, suffix: " days", label: "Median working days to close, down from 12" },
       link: { label: "See the close process", href: "#process" },
       figure: "dashboard",
@@ -139,7 +139,7 @@ export const financeAndAccounting: ServiceContent = {
     {
       title: "Controls design",
       duration: "Week 1–2",
-      body: "Segregation of duties, approval matrix, evidence requirements and the boundary between preparation and authorisation — reviewed with your financial controller and, where relevant, your auditor.",
+      body: "Segregation of duties, approval matrix, evidence requirements and the boundary between preparation and authorization — reviewed with your financial controller and, where relevant, your auditor.",
     },
     {
       title: "Recruit",
@@ -216,7 +216,7 @@ export const financeAndAccounting: ServiceContent = {
       challenge:
         "Nine legal entities, inconsistent coding across sites, and a close that finished on day twelve — leaving the board pack perpetually late.",
       solution:
-        "A standardised chart of accounts and coding ruleset, a documented close checklist with daily cut-offs, and a seven-person pod owning reconciliations and journals.",
+        "A standardized chart of accounts and coding ruleset, a documented close checklist with daily cut-offs, and a seven-person pod owning reconciliations and journals.",
       results: [
         { value: 5, suffix: " days", label: "Working days to close" },
         { value: 9, label: "Entities on one close calendar" },
@@ -227,13 +227,13 @@ export const financeAndAccounting: ServiceContent = {
     },
     {
       industry: "Wholesale distribution",
-      title: "Releasing £2.4m from an aged ledger",
+      title: "Releasing $3m from an aged ledger",
       challenge:
         "Receivables averaging 68 days with no systematic chase cycle, and disputes that sat unlogged until a customer stopped paying entirely.",
       solution:
-        "A documented chase cycle by ageing bucket, same-day dispute logging with escalation to account managers, and weekly ledger reviews with the commercial team.",
+        "A documented chase cycle by aging bucket, same-day dispute logging with escalation to account managers, and weekly ledger reviews with the commercial team.",
       results: [
-        { value: 2.4, decimals: 1, prefix: "£", suffix: "m", label: "Working capital released" },
+        { value: 3, decimals: 1, prefix: "$", suffix: "m", label: "Working capital released" },
         { value: 22, suffix: " days", label: "Reduction in days sales outstanding" },
         { value: 91, suffix: "%", label: "Disputes logged within 24 hours" },
       ],
@@ -296,12 +296,12 @@ export const financeAndAccounting: ServiceContent = {
     {
       question: "How is segregation of duties maintained?",
       answer:
-        "We prepare, reconcile and evidence; your named approvers authorise and release payment. The pod never has payment release rights. The control design is documented and shared with your auditor.",
+        "We prepare, reconcile and evidence; your named approvers authorize and release payment. The pod never has payment release rights. The control design is documented and shared with your auditor.",
     },
     {
       question: "Do you work in our accounting system?",
       answer:
-        "Yes. NetSuite, SAP, Dynamics, Xero, QuickBooks, Sage, Oracle and others, under your licences and your user permissions. There is no shadow ledger and nothing is re-keyed.",
+        "Yes. NetSuite, SAP, Dynamics, Xero, QuickBooks, Sage, Oracle and others, under your licenses and your user permissions. There is no shadow ledger and nothing is re-keyed.",
     },
     {
       question: "How long until the team is running the close?",
@@ -321,7 +321,7 @@ export const financeAndAccounting: ServiceContent = {
     {
       question: "Do you prepare statutory accounts and tax returns?",
       answer:
-        "We prepare VAT and sales tax returns and audit schedules for your review. Statutory accounts filing and tax advisory stay with your accountants — we provide the underlying schedules.",
+        "We prepare sales and use tax returns and audit schedules for your review. Statutory accounts filing and tax advisory stay with your accountants — we provide the underlying schedules.",
     },
     {
       question: "How is data protected?",
@@ -365,7 +365,7 @@ export const financeAndAccounting: ServiceContent = {
   },
 
   seo: {
-    title: "Finance & Accounting Outsourcing | AP, AR & Month-End Close — Valentisys",
+    title: "Finance & Accounting Outsourcing | AP, AR & Month-End Close — Xevantis",
     description:
       "Qualified accountants running accounts payable, receivable, reconciliations and month-end close in your ledger. Five-day close, 99.7% accuracy, segregation of duties by design.",
   },

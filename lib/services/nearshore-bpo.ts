@@ -21,14 +21,14 @@ export const nearshoreBpo: ServiceContent = {
     },
     tech: {
       title: "Delivery infrastructure across the hubs.",
-      body: "The same platforms and controls in every location, so a multi-hub programme runs one standard rather than three.",
+      body: "The same platforms and controls in every location, so a multi-hub program runs one standard rather than three.",
     },
     why: {
       title: "Why the overlap changes how the team works.",
       body: "A team that shares your working day participates in your business. A team that does not, processes tickets from it.",
     },
     cases: {
-      title: "Nearshore programmes we run.",
+      title: "Nearshore programs we run.",
       body: "Three engagements chosen for overlap, language, or a data residency requirement that ruled offshore out.",
     },
     faq: {
@@ -90,7 +90,7 @@ export const nearshoreBpo: ServiceContent = {
       "Sales development and lead qualification",
       "Trust, safety and content moderation",
       "Spanish, Portuguese, English, Polish, German and Romanian delivery",
-      "Accent-neutral voice teams for North American programmes",
+      "Accent-neutral voice teams for North American programs",
       "GDPR-resident delivery from EU hubs",
       "Nearshore and offshore blended models where cost allows",
       "One contract, one reporting pack, one delivery lead across hubs",
@@ -109,7 +109,7 @@ export const nearshoreBpo: ServiceContent = {
     },
     {
       title: "Language that fits the market",
-      body: "Latin American hubs give native Spanish and Portuguese with accent-neutral English for North American voice programmes. European hubs cover German, Polish and Romanian alongside strong English.",
+      body: "Latin American hubs give native Spanish and Portuguese with accent-neutral English for North American voice programs. European hubs cover German, Polish and Romanian alongside strong English.",
       metric: { value: 6, label: "Languages delivered natively across nearshore hubs" },
       link: { label: "Talk about your markets", href: "#contact" },
       figure: "pulse",
@@ -137,7 +137,7 @@ export const nearshoreBpo: ServiceContent = {
       body: "Your timezone, languages, data residency requirements and the collaboration intensity of the work. We recommend a hub — sometimes an offshore one — with the reasoning written down.",
     },
     {
-      title: "Cost modelling",
+      title: "Cost modeling",
       duration: "Week 1",
       body: "A side-by-side comparison of onshore, nearshore and offshore for your specific scope, including the handover cost that offshore models usually leave out of the headline figure.",
     },
@@ -159,7 +159,7 @@ export const nearshoreBpo: ServiceContent = {
     {
       title: "Go live & run",
       duration: "Week 3 onward",
-      body: "Ramped start with the team lead on shift, then weekly performance reviews held during your working day rather than summarised into an overnight email.",
+      body: "Ramped start with the team lead on shift, then weekly performance reviews held during your working day rather than summarized into an overnight email.",
     },
   ],
 
@@ -167,8 +167,8 @@ export const nearshoreBpo: ServiceContent = {
     { name: "Zendesk", category: "Helpdesk" },
     { name: "Salesforce", category: "CRM" },
     { name: "Intercom", category: "Messaging" },
-    { name: "Genesys", category: "Contact centre" },
-    { name: "Five9", category: "Cloud contact centre" },
+    { name: "Genesys", category: "Contact center" },
+    { name: "Five9", category: "Cloud contact center" },
     { name: "NetSuite", category: "ERP" },
     { name: "ServiceNow", category: "ITSM" },
     { name: "Slack", category: "Collaboration" },
@@ -195,11 +195,11 @@ export const nearshoreBpo: ServiceContent = {
     },
     {
       title: "Accent-neutral voice",
-      body: "Latin American hubs are screened specifically for accent neutrality on North American voice programmes, which is a different assessment from general English fluency.",
+      body: "Latin American hubs are screened specifically for accent neutrality on North American voice programs, which is a different assessment from general English fluency.",
     },
     {
       title: "One standard across hubs",
-      body: "Same recruitment, training, quality sampling and security controls in every location. A blended nearshore-offshore programme runs one operating model, not two.",
+      body: "Same recruitment, training, quality sampling and security controls in every location. A blended nearshore-offshore program runs one operating model, not two.",
     },
     {
       title: "Reviews in your working day",
@@ -212,7 +212,7 @@ export const nearshoreBpo: ServiceContent = {
       industry: "US healthcare technology",
       title: "Colombia over Manila, for the overlap",
       challenge:
-        "A technical support programme requiring constant escalation to a US engineering team, where an offshore trial had produced a 24-hour question cycle.",
+        "A technical support program requiring constant escalation to a US engineering team, where an offshore trial had produced a 24-hour question cycle.",
       solution:
         "A Bogotá pod with seven hours of daily overlap, joining the same stand-ups as the engineering team and escalating in real time rather than by ticket.",
       results: [
@@ -227,7 +227,7 @@ export const nearshoreBpo: ServiceContent = {
       industry: "German financial services",
       title: "An EU hub because the data could not leave",
       challenge:
-        "Customer service requiring German language and processing of EU personal data, where any non-EU location added a transfer mechanism the DPO would not accept.",
+        "Customer service requiring German language and processing of EU personal data, where any non-EU location added a transfer mechanism their privacy team would not accept.",
       solution:
         "A Kraków pod delivering German and English support entirely within the EU, with data residency documented for the client's regulator.",
       results: [
@@ -242,9 +242,9 @@ export const nearshoreBpo: ServiceContent = {
       industry: "US retail",
       title: "A blend that beat both options alone",
       challenge:
-        "High volume overnight email and chat with a smaller daytime voice programme needing accent-neutral English, where either location alone was the wrong answer.",
+        "High volume overnight email and chat with a smaller daytime voice program needing accent-neutral English, where either location alone was the wrong answer.",
       solution:
-        "Voice from Mexico City for daytime overlap and accent neutrality, asynchronous email from Manila overnight, run as one programme with one delivery lead.",
+        "Voice from Mexico City for daytime overlap and accent neutrality, asynchronous email from Manila overnight, run as one program with one delivery lead.",
       results: [
         { value: 24, suffix: "/7", label: "Coverage across two hubs" },
         { value: 29, suffix: "%", label: "Cheaper than nearshore alone" },
@@ -258,7 +258,7 @@ export const nearshoreBpo: ServiceContent = {
   quotes: [
     {
       quote:
-        "They quoted us an offshore option that was cheaper and told us why it would not work for this particular programme. Then we chose nearshore knowing exactly what we were paying for.",
+        "They quoted us an offshore option that was cheaper and told us why it would not work for this particular program. Then we chose nearshore knowing exactly what we were paying for.",
       name: "Grant Whitmore",
       role: "VP Customer Operations",
       company: "Aurora Health",
@@ -267,7 +267,7 @@ export const nearshoreBpo: ServiceContent = {
     },
     {
       quote:
-        "Our DPO ruled out every non-EU location in the first meeting. Kraków solved a compliance problem, and the cost saving was almost incidental.",
+        "Our privacy team ruled out every non-EU location in the first meeting. Kraków solved a compliance problem, and the cost saving was almost incidental.",
       name: "Annika Lorenz",
       role: "Head of Service",
       company: "Vertex Pay",
@@ -319,12 +319,12 @@ export const nearshoreBpo: ServiceContent = {
     {
       question: "Which services can be delivered nearshore?",
       answer:
-        "All of them — customer service, chat, back office, finance, IT, sales development and moderation. Nearshore is a location choice, not a restricted service catalogue.",
+        "All of them — customer service, chat, back office, finance, IT, sales development and moderation. Nearshore is a location choice, not a restricted service catalog.",
     },
     {
       question: "Can we blend nearshore and offshore?",
       answer:
-        "Yes, and it is often the best answer. Daytime collaborative work nearshore, overnight asynchronous volume offshore, run as one programme with one delivery lead and one reporting pack.",
+        "Yes, and it is often the best answer. Daytime collaborative work nearshore, overnight asynchronous volume offshore, run as one program with one delivery lead and one reporting pack.",
     },
     {
       question: "Is the quality standard the same across hubs?",
@@ -337,7 +337,7 @@ export const nearshoreBpo: ServiceContent = {
         "About three weeks, the same as any hub. Shortlists within 96 hours, then training and a graded readiness gate before anyone works live.",
     },
     {
-      question: "What about accent for voice programmes?",
+      question: "What about accent for voice programs?",
       answer:
         "Latin American hubs are screened specifically for accent neutrality on North American voice work, which is assessed separately from general English fluency and is a genuine differentiator of the region.",
     },
@@ -358,12 +358,12 @@ export const nearshoreBpo: ServiceContent = {
   ],
 
   cta: {
-    title: "Get all three locations modelled.",
+    title: "Get all three locations modeled.",
     body: "Tell us the scope, the languages and the collaboration the work needs. We will model onshore, nearshore and offshore side by side — including the cases where we recommend the cheaper option.",
   },
 
   seo: {
-    title: "Nearshore BPO | LatAm & Eastern Europe Delivery Teams — Valentisys",
+    title: "Nearshore BPO | LatAm & Eastern Europe Delivery Teams — Xevantis",
     description:
       "Nearshore teams in Mexico, Colombia, Poland and Romania with seven hours of daily overlap, native Spanish and Portuguese, EU data residency and 46% savings versus onshore.",
   },

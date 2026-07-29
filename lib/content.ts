@@ -47,7 +47,7 @@ export const LAUNCH_STEPS: LaunchStep[] = [
 
 export const WHY_SWITCH: string[] = [
   "Named specialists, not a rotating pool — you keep the same people.",
-  "Engineers and CX in one contract, so fixes ship instead of queueing.",
+  "Engineers and CX in one contract, so fixes ship instead of queuing.",
   "Month-to-month after month three. No 3-year lock-in, ever.",
 ];
 
@@ -58,7 +58,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
       "A delivery lead runs a two-day immersion: ticket taxonomy, escalation paths, tone of voice, systems access and the twenty edge cases that actually cause churn.",
   },
   {
-    title: "We design a customised toolkit for your offer & team",
+    title: "We design a customized toolkit for your offer & team",
     detail:
       "Macros, QA rubric, knowledge base, routing rules and reporting schema — all built before a single agent is hired, then handed to you as your IP.",
   },
@@ -94,13 +94,13 @@ export const STATS: Stat[] = [
   {
     value: 150,
     suffix: "+",
-    label: "Customers scaling with Valentisys pods today",
+    label: "Customers scaling with Xevantis pods today",
   },
   {
     value: 4.8,
     decimals: 1,
     trailing: "/5",
-    label: "Average CSAT across all managed programmes",
+    label: "Average CSAT across all managed programs",
   },
   {
     value: 38,
@@ -118,7 +118,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     title: "The best BPO partner we've worked with",
     quote:
-      "With a good transition, we were able to sit our contact centre team almost 100% quality and cost accuracy. Supporting fifteen thousand tickets a month stopped being a fire drill and became a routine.",
+      "With a good transition, we were able to sit our contact center team almost 100% quality and cost accuracy. Supporting fifteen thousand tickets a month stopped being a fire drill and became a routine.",
     role: "Head of Customer Ops",
     meta: "Industry: E-commerce · 300–1,000 staff",
     initials: "HP",
@@ -138,7 +138,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     title: "A partner with exceptional understanding of our culture",
     quote:
-      "Valentisys embedded strategic decisions to significantly reduce failure response times. The team's ability to scale to customers from diverse linguistic backgrounds makes the workflow seamless.",
+      "Xevantis embedded strategic decisions to significantly reduce failure response times. The team's ability to scale to customers from diverse linguistic backgrounds makes the workflow seamless.",
     role: "Customer Support Manager",
     meta: "Industry: Fintech · 100–300 staff",
     initials: "CS",
@@ -198,6 +198,6 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
 export const COMPLIANCE_BADGES = [
   "ISO 27001",
   "SOC 2 Type II",
-  "GDPR ready",
+  "CCPA & GDPR ready",
   "PCI DSS",
 ];

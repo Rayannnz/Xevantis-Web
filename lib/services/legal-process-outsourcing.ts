@@ -21,7 +21,7 @@ export const legalProcessOutsourcing: ServiceContent = {
     },
     tech: {
       title: "Contract, review and eDiscovery platforms.",
-      body: "We work in your systems under your licences, inside your document retention and privilege boundaries.",
+      body: "We work in your systems under your licenses, inside your document retention and privilege boundaries.",
     },
     why: {
       title: "Why general counsel keep the team on the panel.",
@@ -67,7 +67,7 @@ export const legalProcessOutsourcing: ServiceContent = {
       },
       {
         heading: "The business case",
-        body: "Volume work at roughly a third of external counsel rates, faster turnaround for the business, and your own lawyers freed for the matters that need judgement.",
+        body: "Volume work at roughly a third of external counsel rates, faster turnaround for the business, and your own lawyers freed for the matters that need judgment.",
       },
       {
         heading: "Why us",
@@ -84,7 +84,7 @@ export const legalProcessOutsourcing: ServiceContent = {
     items: [
       "Contract review against your playbook with deviation reporting",
       "NDA, MSA and standard-form drafting and negotiation support",
-      "Contract abstraction, summarisation and obligation extraction",
+      "Contract abstraction, summarization and obligation extraction",
       "Contract lifecycle management data entry and renewals tracking",
       "First-pass document review for litigation and investigations",
       "Privilege and responsiveness coding under supervision",
@@ -109,7 +109,7 @@ export const legalProcessOutsourcing: ServiceContent = {
     },
     {
       title: "Contracts that stop blocking the business",
-      body: "A 24-hour standard review turnaround means sales stops waiting a fortnight for a redline. Legal's reputation inside a company is set almost entirely by how long the queue is.",
+      body: "A 24-hour standard review turnaround means sales stops waiting two weeks for a redline. Legal's reputation inside a company is set almost entirely by how long the queue is.",
       metric: { value: 24, suffix: " hrs", label: "Standard contract review turnaround" },
       link: { label: "How the queue is run", href: "#process" },
       figure: "pipeline",
@@ -192,7 +192,7 @@ export const legalProcessOutsourcing: ServiceContent = {
     },
     {
       title: "Calibration before release",
-      body: "The pod reviews in parallel with your team until agreement rates hold. Nothing reaches the business during calibration, which typically takes a fortnight.",
+      body: "The pod reviews in parallel with your team until agreement rates hold. Nothing reaches the business during calibration, which typically takes two weeks.",
     },
     {
       title: "Senior sampling on every output",
@@ -234,7 +234,7 @@ export const legalProcessOutsourcing: ServiceContent = {
       results: [
         { value: 1.2, decimals: 1, suffix: "m", label: "Documents reviewed" },
         { value: 98.9, decimals: 1, suffix: "%", label: "Accuracy on sampled sets" },
-        { value: 2.9, decimals: 1, prefix: "£", suffix: "m", label: "Below the firm-rate estimate" },
+        { value: 3.6, decimals: 1, prefix: "$", suffix: "m", label: "Below the firm-rate estimate" },
       ],
       accent: "sky",
       figure: "layers",
@@ -249,7 +249,7 @@ export const legalProcessOutsourcing: ServiceContent = {
       results: [
         { value: 900, label: "Contracts abstracted" },
         { value: 41, label: "Auto-renewals identified before triggering" },
-        { value: 380, prefix: "£", suffix: "k", label: "Annualised spend avoided" },
+        { value: 475, prefix: "$", suffix: "k", label: "Annualized spend avoided" },
       ],
       accent: "mint",
       figure: "network",
@@ -364,7 +364,7 @@ export const legalProcessOutsourcing: ServiceContent = {
   },
 
   seo: {
-    title: "Legal Process Outsourcing | Contract & Document Review — Valentisys",
+    title: "Legal Process Outsourcing | Contract & Document Review — Xevantis",
     description:
       "Qualified lawyers handling contract review, document review and compliance administration under your supervision and privilege. 64% below external counsel rates, 24-hour turnaround.",
   },

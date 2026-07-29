@@ -52,12 +52,12 @@ export const metadata: Metadata = {
   // so a relative `alternates.canonical` becomes absolute automatically.
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Valentisys — Outsourcing & software teams, built to make you better",
+    default: "Xevantis — Outsourcing & software teams, built to make you better",
     // Service pages set their own full title; this only wraps the ones that don't.
     template: "%s",
   },
   description:
-    "Valentisys blends world-class BPO talent with product engineers. Dedicated CX, back-office and software squads live in 2 weeks — not 2 quarters.",
+    "Xevantis blends world-class BPO talent with product engineers. Dedicated CX, back-office and software squads live in 2 weeks — not 2 quarters.",
   icons: {
     icon: "/img/favicon.png",
     apple: "/img/logo-mark.png",
@@ -73,7 +73,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
+      lang="en-US"
       className={`${jakarta.variable} ${inter.variable} ${caveat.variable} ${quicksand.variable} ${jetbrainsMono.variable}`}
     >
       <body>

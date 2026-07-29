@@ -67,7 +67,7 @@ export const smallBusiness: ServiceContent = {
       },
       {
         heading: "The business case",
-        body: "Specialist capability at part-time cost, cover when your one person is ill or on holiday, and no employment risk or recruitment cycle.",
+        body: "Specialist capability at part-time cost, cover when your one person is sick or on PTO, and no employment risk or recruitment cycle.",
       },
       {
         heading: "Why us",
@@ -83,16 +83,16 @@ export const smallBusiness: ServiceContent = {
     body: "Seats can be split across functions and adjusted each month. You are not buying a fixed shape for a year.",
     items: [
       "Customer support across email, chat and phone",
-      "Order processing and fulfilment coordination",
+      "Order processing and fulfillment coordination",
       "Bookkeeping, invoicing and expense processing",
       "Credit control and payment chasing",
-      "Diary management and appointment scheduling",
+      "Calendar management and appointment scheduling",
       "Inbox triage and correspondence handling",
       "Data entry, CRM upkeep and list building",
       "IT helpdesk and device support",
       "Social media monitoring and response",
       "Research, quotes and proposal preparation",
-      "Holiday and sickness cover for your existing staff",
+      "PTO and sick cover for your existing staff",
       "A named account lead who knows your business",
     ],
     note: "There is no setup fee, no minimum seat count above one, and no charge for the scoping call. If we think you do not need us yet, we will say so on that call.",
@@ -109,8 +109,8 @@ export const smallBusiness: ServiceContent = {
     },
     {
       title: "Cover when your one person is away",
-      body: "In a small business, one person's holiday is a function going offline for a fortnight. A pod absorbs that without you noticing, which is often the first thing clients say they value.",
-      metric: { value: 0, suffix: " days", label: "Coverage gaps from holiday or sickness" },
+      body: "In a small business, one person's PTO is a function going offline for two weeks. A pod absorbs that without you noticing, which is often the first thing clients say they value.",
+      metric: { value: 0, suffix: " days", label: "Coverage gaps from PTO or sick leave" },
       link: { label: "How cover works", href: "#why-us" },
       figure: "pulse",
     },
@@ -154,7 +154,7 @@ export const smallBusiness: ServiceContent = {
     {
       title: "Start working",
       duration: "Day 10",
-      body: "A ramped first week with your review on everything, easing off as accuracy holds. Your account lead checks in daily through the first fortnight.",
+      body: "A ramped first week with your review on everything, easing off as accuracy holds. Your account lead checks in daily through the first two weeks.",
     },
     {
       title: "Adjust monthly",
@@ -188,7 +188,7 @@ export const smallBusiness: ServiceContent = {
       body: "Not a ten-seat minimum with a small-business discount. We will quote half a seat where that is genuinely the right answer, and several of our accounts are exactly that.",
     },
     {
-      title: "No procurement theatre",
+      title: "No procurement theater",
       body: "A scoping call, a one-page proposal and a start date. A 40-person company should not need a statement of work and an implementation plan to get help with its inbox.",
     },
     {
@@ -205,7 +205,7 @@ export const smallBusiness: ServiceContent = {
     },
     {
       title: "A named account lead",
-      body: "One person who knows your business, not a ticket queue. At this size, being able to send a message and get an answer matters more than a service catalogue.",
+      body: "One person who knows your business, not a ticket queue. At this size, being able to send a message and get an answer matters more than a service catalog.",
     },
   ],
 
@@ -234,7 +234,7 @@ export const smallBusiness: ServiceContent = {
         "A two-day-a-week bookkeeping seat covering invoicing, reconciliation and a documented credit control cycle, leaving the office manager to her actual job.",
       results: [
         { value: 41, suffix: " days", label: "Days sales outstanding, from 70" },
-        { value: 118, prefix: "£", suffix: "k", label: "Cash brought forward" },
+        { value: 148, prefix: "$", suffix: "k", label: "Cash brought forward" },
         { value: 2, suffix: " days", label: "Per week of resource" },
       ],
       accent: "mint",
@@ -271,7 +271,7 @@ export const smallBusiness: ServiceContent = {
       quote:
         "On the first call they told us our volume did not justify a seat yet and to come back in six months. We came back in five.",
       name: "Nadia Sadiq",
-      role: "Managing Director",
+      role: "CEO",
       company: "Solstice",
       initials: "NS",
       rating: 5,
@@ -291,7 +291,7 @@ export const smallBusiness: ServiceContent = {
     {
       question: "What is the actual minimum?",
       answer:
-        "One seat, and we will quote half a seat where that is genuinely right. Several of our small business accounts are part-time, and it is a normal arrangement rather than a favour.",
+        "One seat, and we will quote half a seat where that is genuinely right. Several of our small business accounts are part-time, and it is a normal arrangement rather than a favor.",
     },
     {
       question: "How small is too small?",
@@ -365,7 +365,7 @@ export const smallBusiness: ServiceContent = {
   },
 
   seo: {
-    title: "Outsourcing for Small Business | From One Seat — Valentisys",
+    title: "Outsourcing for Small Business | From One Seat — Xevantis",
     description:
       "Right-sized outsourcing for companies under 100 people: support, admin, bookkeeping and IT from one seat or less. No enterprise minimums, no setup fee, 30 days' notice.",
   },

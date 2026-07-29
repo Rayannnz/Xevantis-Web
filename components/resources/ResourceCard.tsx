@@ -101,7 +101,7 @@ export function ArtChip({
 
 /**
  * Date · read time, plus whatever the caller appends. `<time>` carries the ISO
- * value that the en-GB display string throws away.
+ * value that the en-US display string throws away.
  */
 export function ResourceMeta({
   resource,

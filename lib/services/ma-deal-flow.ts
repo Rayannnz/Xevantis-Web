@@ -25,11 +25,11 @@ export const maDealFlow: ServiceContent = {
     },
     why: {
       title: "Why deal teams keep the capacity on retainer.",
-      body: "M&A workload is spiky in a way that permanent headcount handles badly and advisers handle expensively.",
+      body: "M&A workload is spiky in a way that permanent headcount handles badly and advisors handle expensively.",
     },
     cases: {
       title: "Mandates we have supported.",
-      body: "Three engagements: a buy-side screening programme, a sell-side data room, and a post-merger integration nobody had staffed.",
+      body: "Three engagements: a buy-side screening program, a sell-side data room, and a post-merger integration nobody had staffed.",
     },
     faq: {
       title: "Confidentiality, conflicts and scope.",
@@ -39,14 +39,14 @@ export const maDealFlow: ServiceContent = {
 
   hero: {
     title: "Deal capacity that flexes with your pipeline.",
-    highlight: "not at adviser rates",
-    body: "Target screening, data room preparation, diligence support and integration operations, staffed by analysts under your direction — the volume work of a deal handled properly, and not at adviser rates.",
+    highlight: "not at advisor rates",
+    body: "Target screening, data room preparation, diligence support and integration operations, staffed by analysts under your direction — the volume work of a deal handled properly, and not at advisor rates.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
     trust: "Deal support teams available for Q1 mandates",
     chips: [
       { value: "3x", label: "Targets screened per analyst month" },
-      { value: "-58%", label: "Versus adviser rates for the same work" },
+      { value: "-58%", label: "Versus advisor rates for the same work" },
       { value: "72 hrs", label: "To scale a team for a live deal" },
     ],
     figure: "network",
@@ -55,7 +55,7 @@ export const maDealFlow: ServiceContent = {
   overview: {
     eyebrow: "Service overview",
     title: "The volume work around a deal, done at the right cost.",
-    body: "Corporate development teams are small and their workload arrives in bursts. When a deal goes live, the screening, document indexing, diligence tracking and integration planning either falls on two overworked people or goes to advisers at several hundred pounds an hour.",
+    body: "Corporate development teams are small and their workload arrives in bursts. When a deal goes live, the screening, document indexing, diligence tracking and integration planning either falls on two overworked people or goes to advisors at several hundred pounds an hour.",
     panels: [
       {
         heading: "What it is",
@@ -67,11 +67,11 @@ export const maDealFlow: ServiceContent = {
       },
       {
         heading: "The business case",
-        body: "More targets screened per month, diligence that runs to schedule, and adviser fees reserved for judgement work rather than document handling.",
+        body: "More targets screened per month, diligence that runs to schedule, and advisor fees reserved for judgment work rather than document handling.",
       },
       {
         heading: "Why us",
-        body: "We are not advisers and take no success fee. Our interest is in the work being done well, not in the deal completing.",
+        body: "We are not advisors and take no success fee. Our interest is in the work being done well, not in the deal completing.",
       },
     ],
     figure: "pipeline",
@@ -90,7 +90,7 @@ export const maDealFlow: ServiceContent = {
       "Virtual data room setup, indexing and permissioning",
       "Sell-side document collection, redaction and preparation",
       "Diligence request list tracking and response coordination",
-      "Q&A log management across workstreams and advisers",
+      "Q&A log management across workstreams and advisors",
       "Integration planning: workstream trackers and synergy logs",
       "Post-merger operational support across finance, HR and IT",
       "Deal calendar management and completion checklist tracking",
@@ -108,22 +108,22 @@ export const maDealFlow: ServiceContent = {
       figure: "dashboard",
     },
     {
-      title: "Diligence that runs to the timetable",
+      title: "Diligence that runs to schedule",
       body: "Deals slip on document collection and Q&A coordination far more often than on findings. Dedicated tracking keeps every workstream visible and every outstanding request owned.",
-      metric: { value: 94, suffix: "%", label: "Of supported deals meeting the diligence timetable" },
+      metric: { value: 94, suffix: "%", label: "Of supported deals meeting the diligence schedule" },
       link: { label: "How diligence is tracked", href: "#whats-included" },
       figure: "pipeline",
     },
     {
-      title: "Adviser fees spent on judgement",
-      body: "Document indexing and request-list chasing do not need a corporate finance associate's rate. Moving the volume work leaves the adviser budget for the negotiation and structuring that earns it.",
-      metric: { value: 58, suffix: "%", label: "Lower than adviser rates for equivalent work" },
+      title: "Advisor fees spent on judgment",
+      body: "Document indexing and request-list chasing do not need a corporate finance associate's rate. Moving the volume work leaves the advisor budget for the negotiation and structuring that earns it.",
+      metric: { value: 58, suffix: "%", label: "Lower than advisor rates for equivalent work" },
       link: { label: "Talk about your pipeline", href: "#contact" },
       figure: "layers",
     },
     {
       title: "Integration that starts before completion",
-      body: "The first hundred days are usually planned in the fortnight after signing, by people already exhausted. Standing capacity means workstream trackers and synergy logs exist before completion rather than after it.",
+      body: "The first hundred days are usually planned in the two weeks after signing, by people already exhausted. Standing capacity means workstream trackers and synergy logs exist before completion rather than after it.",
       metric: { value: 72, suffix: " hrs", label: "To scale a team when a deal goes live" },
       link: { label: "See the integration case", href: "#work" },
       figure: "network",
@@ -139,7 +139,7 @@ export const maDealFlow: ServiceContent = {
     {
       title: "Pipeline build",
       duration: "Ongoing",
-      body: "Target universe mapping and scored screening against your criteria, delivered as longlists with reasoning. You decide what advances; we never filter on judgement you have not delegated.",
+      body: "Target universe mapping and scored screening against your criteria, delivered as longlists with reasoning. You decide what advances; we never filter on judgment you have not delegated.",
     },
     {
       title: "Pre-diligence preparation",
@@ -149,7 +149,7 @@ export const maDealFlow: ServiceContent = {
     {
       title: "Diligence support",
       duration: "Live deal",
-      body: "Data room indexing, request tracking, Q&A log management and workstream coordination across your advisers. Capacity scales within 72 hours of a deal going live.",
+      body: "Data room indexing, request tracking, Q&A log management and workstream coordination across your advisors. Capacity scales within 72 hours of a deal going live.",
     },
     {
       title: "Signing to completion",
@@ -173,8 +173,8 @@ export const maDealFlow: ServiceContent = {
     { name: "Salesforce", category: "Pipeline tracking" },
     { name: "PitchBook", category: "Market data" },
     { name: "Capital IQ", category: "Financial data" },
-    { name: "Companies House", category: "Filings research" },
-    { name: "Excel", category: "Modelling" },
+    { name: "SEC EDGAR", category: "Filings research" },
+    { name: "Excel", category: "Modeling" },
     { name: "Power BI", category: "Reporting" },
     { name: "Smartsheet", category: "Integration tracking" },
     { name: "Asana", category: "Workstream management" },
@@ -183,7 +183,7 @@ export const maDealFlow: ServiceContent = {
   differentiators: [
     {
       title: "No success fee, ever",
-      body: "We are not advisers and take no percentage of a completed deal. Our interest is in the work being accurate, which is a materially different incentive from wanting the deal to close.",
+      body: "We are not advisors and take no percentage of a completed deal. Our interest is in the work being accurate, which is a materially different incentive from wanting the deal to close.",
     },
     {
       title: "Capacity inside 72 hours",
@@ -194,8 +194,8 @@ export const maDealFlow: ServiceContent = {
       body: "Analysts are conflict-checked before assignment and ring-fenced to a single client where a mandate requires it. Sector-adjacent work is declined rather than managed with a policy.",
     },
     {
-      title: "We do not exercise your judgement",
-      body: "Screening is scored against criteria you set, with the reasoning shown. Analysts do not silently filter out targets on judgement you have not explicitly delegated.",
+      title: "We do not exercise your judgment",
+      body: "Screening is scored against criteria you set, with the reasoning shown. Analysts do not silently filter out targets on judgment you have not explicitly delegated.",
     },
     {
       title: "Integration capacity, not just plans",
@@ -218,7 +218,7 @@ export const maDealFlow: ServiceContent = {
       results: [
         { value: 47, label: "Targets screened monthly, from 15" },
         { value: 4, label: "Proprietary deals originated in year one" },
-        { value: 58, suffix: "%", label: "Lower cost than adviser screening" },
+        { value: 58, suffix: "%", label: "Lower cost than advisor screening" },
       ],
       accent: "lilac",
       figure: "dashboard",
@@ -244,11 +244,11 @@ export const maDealFlow: ServiceContent = {
       challenge:
         "A completed acquisition with a hundred-day plan on paper and no operational capacity to execute it across finance, HR and IT.",
       solution:
-        "Workstream tracking plus actual delivery capacity: a finance pod for ledger consolidation, an HR pod for contract harmonisation, and IT support for systems migration.",
+        "Workstream tracking plus actual delivery capacity: a finance pod for ledger consolidation, an HR pod for contract harmonization, and IT support for systems migration.",
       results: [
         { value: 100, suffix: " days", label: "Plan delivered on schedule" },
         { value: 3, label: "Workstreams staffed operationally" },
-        { value: 72, suffix: "%", label: "Of identified synergies realised in year one" },
+        { value: 72, suffix: "%", label: "Of identified synergies realized in year one" },
       ],
       accent: "mint",
       figure: "network",
@@ -287,9 +287,9 @@ export const maDealFlow: ServiceContent = {
 
   faqs: [
     {
-      question: "Are you a corporate finance adviser?",
+      question: "Are you a corporate finance advisor?",
       answer:
-        "No. We provide analytical and operational capacity under your direction. Valuation opinions, negotiation and regulated advice come from your advisers — we do the volume work around them and take no success fee.",
+        "No. We provide analytical and operational capacity under your direction. Valuation opinions, negotiation and regulated advice come from your advisors — we do the volume work around them and take no success fee.",
     },
     {
       question: "How do you handle confidentiality?",
@@ -314,7 +314,7 @@ export const maDealFlow: ServiceContent = {
     {
       question: "Do your analysts build the financial model?",
       answer:
-        "They populate and maintain models to your structure and assumptions, and prepare comparables analysis. The assumptions and the judgement stay with your team, and we do not vary that.",
+        "They populate and maintain models to your structure and assumptions, and prepare comparables analysis. The assumptions and the judgment stay with your team, and we do not vary that.",
     },
     {
       question: "Which data rooms do you work in?",
@@ -329,7 +329,7 @@ export const maDealFlow: ServiceContent = {
     {
       question: "What size deals do you support?",
       answer:
-        "Typically £5m to £500m enterprise value. Below that the process rarely justifies dedicated support; above it, deal teams usually have their own capacity and want us on integration instead.",
+        "Typically $6m to $600m enterprise value. Below that the process rarely justifies dedicated support; above it, deal teams usually have their own capacity and want us on integration instead.",
     },
     {
       question: "How is it priced?",
@@ -363,7 +363,7 @@ export const maDealFlow: ServiceContent = {
   },
 
   seo: {
-    title: "M&A Deal Flow Support | Screening, Diligence & Integration — Valentisys",
+    title: "M&A Deal Flow Support | Screening, Diligence & Integration — Xevantis",
     description:
       "Analytical and operational deal support: target screening, data room preparation, diligence tracking and post-merger integration. No success fee, capacity scales in 72 hours.",
   },

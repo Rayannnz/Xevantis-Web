@@ -190,7 +190,7 @@ function FloatingChip({
   );
 }
 
-/** Drifting colour orbs. Purely decorative, so the whole layer is inert. */
+/** Drifting color orbs. Purely decorative, so the whole layer is inert. */
 function HeroBackdrop({ accent }: { accent: ServiceContent["accent"] }) {
   return (
     <div

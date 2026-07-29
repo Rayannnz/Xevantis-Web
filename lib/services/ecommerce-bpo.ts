@@ -40,7 +40,7 @@ export const ecommerceBpo: ServiceContent = {
   hero: {
     title: "An ecommerce operation that survives its own peak.",
     highlight: "contracted in August",
-    body: "Customer support, order operations, returns and marketplace management from a team that knows your catalogue — with surge capacity contracted in August, trained by October, and working in peak week one.",
+    body: "Customer support, order operations, returns and marketplace management from a team that knows your catalog — with surge capacity contracted in August, trained by October, and working in peak week one.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
     trust: "Peak capacity being reserved for the next season now",
@@ -71,7 +71,7 @@ export const ecommerceBpo: ServiceContent = {
       },
       {
         heading: "Why us",
-        body: "Surge staff come from the same delivery hub and are trained on your catalogue before peak — not agency temps meeting your product in November.",
+        body: "Surge staff come from the same delivery hub and are trained on your catalog before peak — not agency temps meeting your product in November.",
       },
     ],
     figure: "network",
@@ -89,13 +89,13 @@ export const ecommerceBpo: ServiceContent = {
       "Carrier liaison, claims and lost-parcel investigation",
       "Marketplace account management: Amazon, eBay, Etsy and others",
       "Marketplace case handling, A-to-z claims and appeals",
-      "Product listing creation, enrichment and catalogue maintenance",
+      "Product listing creation, enrichment and catalog maintenance",
       "Review and rating monitoring with response handling",
       "Fraud screening and chargeback dispute preparation",
       "Peak forecasting, surge planning and capacity reservation",
       "Self-service deflection design for the top contact drivers",
     ],
-    note: "We work in your platform, your helpdesk and your marketplace seller accounts as authorised users. Account ownership, review history and seller ratings always stay in your name.",
+    note: "We work in your platform, your helpdesk and your marketplace seller accounts as authorized users. Account ownership, review history and seller ratings always stay in your name.",
     figure: "pipeline",
   },
 
@@ -154,7 +154,7 @@ export const ecommerceBpo: ServiceContent = {
     {
       title: "Peak training",
       duration: "6 weeks before",
-      body: "Surge staff trained on your catalogue, policies and systems well before the season, with a graded readiness gate. They start peak week one already productive.",
+      body: "Surge staff trained on your catalog, policies and systems well before the season, with a graded readiness gate. They start peak week one already productive.",
     },
     {
       title: "Run & debrief",
@@ -175,7 +175,7 @@ export const ecommerceBpo: ServiceContent = {
     { name: "Gorgias", category: "Ecommerce helpdesk" },
     { name: "Zendesk", category: "Helpdesk" },
     { name: "Klaviyo", category: "Customer messaging" },
-    { name: "ShipStation", category: "Fulfilment" },
+    { name: "ShipStation", category: "Fulfillment" },
     { name: "Loop Returns", category: "Returns" },
     { name: "Signifyd", category: "Fraud screening" },
     { name: "NetSuite", category: "ERP" },
@@ -185,10 +185,10 @@ export const ecommerceBpo: ServiceContent = {
   differentiators: [
     {
       title: "Peak contracted in advance",
-      body: "Surge capacity is reserved and priced a quarter ahead. Providers who quote peak in October are quoting agency labour, and you pay for that in both cost and quality.",
+      body: "Surge capacity is reserved and priced a quarter ahead. Providers who quote peak in October are quoting agency labor, and you pay for that in both cost and quality.",
     },
     {
-      title: "Surge staff trained on your catalogue",
+      title: "Surge staff trained on your catalog",
       body: "Peak hires come from the same delivery hub and train six weeks before the season. They are productive in peak week one rather than learning your returns policy during it.",
     },
     {
@@ -201,7 +201,7 @@ export const ecommerceBpo: ServiceContent = {
     },
     {
       title: "Your seller accounts stay yours",
-      body: "We operate as authorised users on your accounts. Ratings, review history and account standing are never held by us, so changing supplier never costs you a channel.",
+      body: "We operate as authorized users on your accounts. Ratings, review history and account standing are never held by us, so changing supplier never costs you a channel.",
     },
     {
       title: "A written post-mortem every January",
@@ -291,17 +291,17 @@ export const ecommerceBpo: ServiceContent = {
     {
       question: "When should we start planning peak?",
       answer:
-        "A full quarter ahead. Surge capacity is reserved in August for a November peak, with training six weeks before the season. Anyone quoting you peak capacity in October is quoting agency labour.",
+        "A full quarter ahead. Surge capacity is reserved in August for a November peak, with training six weeks before the season. Anyone quoting you peak capacity in October is quoting agency labor.",
     },
     {
       question: "Will peak staff know our products?",
       answer:
-        "Yes. Surge staff come from the same delivery hub and complete catalogue, policy and systems training with a graded readiness gate before the season starts.",
+        "Yes. Surge staff come from the same delivery hub and complete catalog, policy and systems training with a graded readiness gate before the season starts.",
     },
     {
       question: "Can you manage our marketplace accounts?",
       answer:
-        "Yes — Amazon, eBay, Etsy, Walmart and others. Case handling, appeals, listing maintenance and metric monitoring, always as authorised users on your accounts rather than as the account owner.",
+        "Yes — Amazon, eBay, Etsy, Walmart and others. Case handling, appeals, listing maintenance and metric monitoring, always as authorized users on your accounts rather than as the account owner.",
     },
     {
       question: "Who owns the seller accounts?",
@@ -316,7 +316,7 @@ export const ecommerceBpo: ServiceContent = {
     {
       question: "Can you handle returns processing?",
       answer:
-        "Yes, to your policy — authorisation, tracking, inspection liaison with your warehouse, refund or exchange processing, and carrier claims for lost returns.",
+        "Yes, to your policy — authorization, tracking, inspection liaison with your warehouse, refund or exchange processing, and carrier claims for lost returns.",
     },
     {
       question: "What about fraud and chargebacks?",
@@ -326,7 +326,7 @@ export const ecommerceBpo: ServiceContent = {
     {
       question: "Which platforms do you work in?",
       answer:
-        "Shopify, BigCommerce, Magento, WooCommerce and custom stacks, with Gorgias, Zendesk or your existing helpdesk. We work in your systems under your licences.",
+        "Shopify, BigCommerce, Magento, WooCommerce and custom stacks, with Gorgias, Zendesk or your existing helpdesk. We work in your systems under your licenses.",
     },
     {
       question: "How does peak pricing work?",
@@ -365,7 +365,7 @@ export const ecommerceBpo: ServiceContent = {
   },
 
   seo: {
-    title: "Ecommerce BPO | Peak Support, Order Ops & Marketplace Management — Valentisys",
+    title: "Ecommerce BPO | Peak Support, Order Ops & Marketplace Management — Xevantis",
     description:
       "Ecommerce support, returns, order operations and marketplace management with surge capacity contracted a quarter ahead. Zero peak backlog, 34% WISMO reduction.",
   },

@@ -16,7 +16,7 @@ export const itOutsourcing: ServiceContent = {
       body: "Four outcomes we baseline before transition and report weekly against. Ticket volume is only one of them, and rarely the most valuable.",
     },
     process: {
-      title: "From estate audit to a team on the rota.",
+      title: "From estate audit to a team on the schedule.",
       body: "Six phases over roughly three weeks. The knowledge capture phase is the one that decides whether month four is calm or expensive.",
     },
     tech: {
@@ -29,7 +29,7 @@ export const itOutsourcing: ServiceContent = {
     },
     cases: {
       title: "Estates we run.",
-      body: "Three engagements measured on resolution time, repeat-incident rate, and the cost of a follow-the-sun rota.",
+      body: "Three engagements measured on resolution time, repeat-incident rate, and the cost of a follow-the-sun schedule.",
     },
     faq: {
       title: "Coverage, security and control.",
@@ -92,7 +92,7 @@ export const itOutsourcing: ServiceContent = {
       "Application support and vendor escalation management",
       "Backup verification and restore testing",
       "Security operations: vulnerability triage and posture reporting",
-      "Asset inventory, licence tracking and renewal alerts",
+      "Asset inventory, license tracking and renewal alerts",
       "Knowledge base authoring and runbook maintenance",
     ],
     note: "Runbooks, knowledge base articles and process documentation are your intellectual property, delivered continuously rather than in a final handover week.",
@@ -154,7 +154,7 @@ export const itOutsourcing: ServiceContent = {
     {
       title: "Go live",
       duration: "Week 3",
-      body: "A ramped start on a subset of queues with your team shadowing, moving to full scope as resolution quality holds. The service delivery manager is on shift throughout the first fortnight.",
+      body: "A ramped start on a subset of queues with your team shadowing, moving to full scope as resolution quality holds. The service delivery manager is on shift throughout the first two weeks.",
     },
     {
       title: "Run & reduce",
@@ -178,7 +178,7 @@ export const itOutsourcing: ServiceContent = {
     { name: "Nagios", category: "Infrastructure monitoring" },
     { name: "AWS", category: "Cloud" },
     { name: "Microsoft Azure", category: "Cloud" },
-    { name: "VMware", category: "Virtualisation" },
+    { name: "VMware", category: "Virtualization" },
     { name: "Veeam", category: "Backup" },
     { name: "CrowdStrike", category: "Endpoint security" },
     { name: "Cisco Meraki", category: "Networking" },
@@ -216,7 +216,7 @@ export const itOutsourcing: ServiceContent = {
       industry: "Manufacturing",
       title: "Follow-the-sun cover across nine sites",
       challenge:
-        "Plants running three shifts across four timezones, with an IT team available only during UK office hours and production stoppages waiting until morning.",
+        "Plants running three shifts across four timezones, with an IT team available only during headquarters office hours and production stoppages waiting until morning.",
       solution:
         "A twelve-person pod rostered against actual incident volume by hour, with site-specific runbooks written during a three-week knowledge capture phase.",
       results: [
@@ -233,7 +233,7 @@ export const itOutsourcing: ServiceContent = {
       challenge:
         "Eleven thousand tickets a quarter and an internal team with no capacity to look at why the same issues kept returning.",
       solution:
-        "Problem management on the top recurring clusters found three causes — a VPN profile, a printer driver policy and a licence sync — accounting for 38% of all tickets.",
+        "Problem management on the top recurring clusters found three causes — a VPN profile, a printer driver policy and a license sync — accounting for 38% of all tickets.",
       results: [
         { value: 38, suffix: "%", label: "Of ticket volume traced to 3 causes" },
         { value: 31, suffix: "%", label: "Reduction in total tickets" },
@@ -248,7 +248,7 @@ export const itOutsourcing: ServiceContent = {
       challenge:
         "An incumbent supplier exiting with 30 days' notice, no runbooks, and two clinical applications only one departing engineer understood.",
       solution:
-        "Accelerated knowledge capture running in parallel with a shadow rota, prioritising the clinical systems, with the pod live before the incumbent's last day.",
+        "Accelerated knowledge capture running in parallel with a shadow schedule, prioritizing the clinical systems, with the pod live before the incumbent's last day.",
       results: [
         { value: 30, suffix: " days", label: "To full service transfer" },
         { value: 0, label: "Clinical system outages during handover" },
@@ -271,7 +271,7 @@ export const itOutsourcing: ServiceContent = {
     },
     {
       quote:
-        "Our incumbent left with 30 days' notice and no documentation. Valentisys were live before the last engineer walked out.",
+        "Our incumbent left with 30 days' notice and no documentation. Xevantis were live before the last engineer walked out.",
       name: "Marisa Colton",
       role: "Head of Technology",
       company: "Aurora Health",
@@ -293,12 +293,12 @@ export const itOutsourcing: ServiceContent = {
     {
       question: "How quickly can a team take over?",
       answer:
-        "Three weeks for a typical estate. Where an incumbent is exiting at short notice we have transferred in 30 days, running an accelerated knowledge capture in parallel with a shadow rota.",
+        "Three weeks for a typical estate. Where an incumbent is exiting at short notice we have transferred in 30 days, running an accelerated knowledge capture in parallel with a shadow schedule.",
     },
     {
       question: "Do we keep our own ITSM tooling?",
       answer:
-        "Yes. We work in your ServiceNow, Jira Service Management, Freshservice or Zendesk under your licences. There is no proprietary platform to adopt and your ticket data never leaves your tenancy.",
+        "Yes. We work in your ServiceNow, Jira Service Management, Freshservice or Zendesk under your licenses. There is no proprietary platform to adopt and your ticket data never leaves your tenancy.",
     },
     {
       question: "What service levels do you commit to?",
@@ -362,12 +362,12 @@ export const itOutsourcing: ServiceContent = {
   ],
 
   cta: {
-    title: "Get an estate audit and a rota this month.",
+    title: "Get an estate audit and a schedule this month.",
     body: "Tell us the estate, the ticket volume and the cover you need. We will come back within one business day with a pod shape, service levels and a price.",
   },
 
   seo: {
-    title: "IT Outsourcing | Managed Service Desk & Infrastructure Support — Valentisys",
+    title: "IT Outsourcing | Managed Service Desk & Infrastructure Support — Xevantis",
     description:
       "Dedicated IT pods covering service desk, infrastructure monitoring, endpoint management and problem management. 24/7 cover, priced per team not per ticket, live in three weeks.",
   },

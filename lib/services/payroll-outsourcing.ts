@@ -45,7 +45,7 @@ export const payrollOutsourcing: ServiceContent = {
     secondaryCta: SECONDARY_CTA,
     trust: "Onboarding for the new tax year now",
     chips: [
-      { value: "99.98%", label: "Payslip accuracy across managed payrolls" },
+      { value: "99.98%", label: "Pay stub accuracy across managed payrolls" },
       { value: "0", label: "Missed pay dates since 2019" },
       { value: "23", label: "Countries covered" },
     ],
@@ -84,18 +84,18 @@ export const payrollOutsourcing: ServiceContent = {
     items: [
       "Payroll data collection, validation and variance checking",
       "Gross-to-net calculation across all pay elements",
-      "Statutory deductions, pensions and auto-enrolment administration",
-      "Benefits, salary sacrifice and expense processing",
-      "Payslip production and secure distribution",
+      "Statutory deductions, 401(k) and auto-enrollment administration",
+      "Benefits, pre-tax deductions and expense processing",
+      "Pay stub production and secure distribution",
       "Payment file preparation for your approval and release",
       "Statutory filing: RTI, FPS, EPS and local equivalents",
       "Year-end processing, P60s, P11Ds and local equivalents",
       "Starters, leavers and mid-cycle change processing",
       "Employee payroll query handling and resolution",
       "Payroll reconciliation to the general ledger",
-      "Statutory absence: sickness, maternity, paternity and parental leave",
+      "Statutory absence: sick leave, FMLA and parental leave",
     ],
-    note: "Payment release always stays with your authorised signatories. We prepare, reconcile and evidence the payment file; your team approves and releases it. That separation is never varied.",
+    note: "Payment release always stays with your authorized signatories. We prepare, reconcile and evidence the payment file; your team approves and releases it. That separation is never varied.",
     figure: "network",
   },
 
@@ -108,9 +108,9 @@ export const payrollOutsourcing: ServiceContent = {
       figure: "pulse",
     },
     {
-      title: "Errors caught before the payslip, not after",
+      title: "Errors caught before the pay stub, not after",
       body: "Variance checking against the prior cycle flags anything unusual before calculation completes. A payroll error found afterwards costs an off-cycle payment, an apology and a great deal of trust.",
-      metric: { value: 99.98, decimals: 2, suffix: "%", label: "Payslip accuracy across managed payrolls" },
+      metric: { value: 99.98, decimals: 2, suffix: "%", label: "Pay stub accuracy across managed payrolls" },
       link: { label: "How checking works", href: "#whats-included" },
       figure: "dashboard",
     },
@@ -134,7 +134,7 @@ export const payrollOutsourcing: ServiceContent = {
     {
       title: "Payroll audit",
       duration: "Week 1",
-      body: "Pay elements, populations, pension schemes, benefits, historic errors and current documentation. We report where the process depends on undocumented knowledge, which is usually the real risk.",
+      body: "Pay elements, populations, 401(k) plans, benefits, historic errors and current documentation. We report where the process depends on undocumented knowledge, which is usually the real risk.",
     },
     {
       title: "Calendar & controls",
@@ -171,11 +171,11 @@ export const payrollOutsourcing: ServiceContent = {
     { name: "Xero Payroll", category: "Payroll platform" },
     { name: "Deel", category: "Global payroll" },
     { name: "Papaya Global", category: "Global payroll" },
-    { name: "IRIS", category: "UK payroll" },
-    { name: "BrightPay", category: "UK payroll" },
+    { name: "ADP", category: "US payroll" },
+    { name: "Paychex", category: "US payroll" },
     { name: "Gusto", category: "US payroll" },
-    { name: "NEST", category: "Pensions" },
-    { name: "Smart Pension", category: "Pensions" },
+    { name: "Fidelity", category: "401(k)" },
+    { name: "Empower", category: "401(k)" },
     { name: "BambooHR", category: "HRIS" },
     { name: "NetSuite", category: "General ledger" },
     { name: "Power BI", category: "Reporting" },
@@ -192,7 +192,7 @@ export const payrollOutsourcing: ServiceContent = {
     },
     {
       title: "Payment release stays with you",
-      body: "We prepare, reconcile and evidence the payment file. Your authorised signatories approve and release it. That separation is written into the process and never varied.",
+      body: "We prepare, reconcile and evidence the payment file. Your authorized signatories approve and release it. That separation is written into the process and never varied.",
     },
     {
       title: "Qualified payroll managers",
@@ -230,7 +230,7 @@ export const payrollOutsourcing: ServiceContent = {
       challenge:
         "A payroll manager retiring after twenty-two years, with most of the process undocumented and no trained successor anywhere in the business.",
       solution:
-        "A knowledge capture programme run alongside her final four months, two parallel cycles before her departure, and full documentation of every exception she had been carrying.",
+        "A knowledge capture program run alongside her final four months, two parallel cycles before her departure, and full documentation of every exception she had been carrying.",
       results: [
         { value: 2, label: "Clean parallel cycles before handover" },
         { value: 0, label: "Errors in the first live cycle" },
@@ -247,7 +247,7 @@ export const payrollOutsourcing: ServiceContent = {
       solution:
         "Automated hours import with validation rules, variance checking against the prior week, and a same-day query resolution route for employees.",
       results: [
-        { value: 99.98, decimals: 2, suffix: "%", label: "Payslip accuracy" },
+        { value: 99.98, decimals: 2, suffix: "%", label: "Pay stub accuracy" },
         { value: 3, label: "Off-cycle corrections monthly, from 40" },
         { value: 62, suffix: "%", label: "Fewer payroll queries" },
       ],
@@ -277,7 +277,7 @@ export const payrollOutsourcing: ServiceContent = {
     },
     {
       quote:
-        "Forty off-cycle corrections a month down to three. Our staff stopped assuming their payslip would be wrong.",
+        "Forty off-cycle corrections a month down to three. Our staff stopped assuming their pay stub would be wrong.",
       name: "Marcia Fontaine",
       role: "People Director",
       company: "Duonode",
@@ -295,12 +295,12 @@ export const payrollOutsourcing: ServiceContent = {
     {
       question: "Who releases the payment?",
       answer:
-        "Your authorised signatories, always. We prepare, reconcile and evidence the payment file; your team approves and releases. The pod never holds payment authority.",
+        "Your authorized signatories, always. We prepare, reconcile and evidence the payment file; your team approves and releases. The pod never holds payment authority.",
     },
     {
       question: "Which countries do you cover?",
       answer:
-        "Twenty-three, including the UK, Ireland, US, Canada, most of Western Europe, Poland, India, the Philippines, Australia and several Latin American markets. We will decline a market rather than learn it on your payroll.",
+        "Twenty-three, including the US, Canada, Mexico, Ireland, most of Western Europe, Poland, India, the Philippines, Australia and several Latin American markets. We will decline a market rather than learn it on your payroll.",
     },
     {
       question: "Who is liable if there is an error?",
@@ -313,7 +313,7 @@ export const payrollOutsourcing: ServiceContent = {
         "Yes — RTI, FPS, EPS and local equivalents, tracked on the same calendar as the cycle with submission confirmations evidenced. Year-end, P60s and P11Ds are included.",
     },
     {
-      question: "Can you run weekly and fortnightly payrolls?",
+      question: "Can you run weekly and biweekly payrolls?",
       answer:
         "Yes, including mixed-frequency populations. High-frequency payrolls with variable hours benefit most from automated validation, because that is where manual error rates are highest.",
     },
@@ -325,12 +325,12 @@ export const payrollOutsourcing: ServiceContent = {
     {
       question: "How is payroll data protected?",
       answer:
-        "You remain data controller; we process under a DPA reviewed by your DPO. ISO 27001 certified and SOC 2 Type II audited, with segregated access, encrypted payslip distribution and quarterly access review.",
+        "You remain data controller; we process under a DPA reviewed by your privacy team. ISO 27001 certified and SOC 2 Type II audited, with segregated access, encrypted pay stub distribution and quarterly access review.",
     },
     {
       question: "Can you work in our existing payroll software?",
       answer:
-        "Yes, under your licences. Where you have no system or the current one is the constraint, we will implement one in your name — never in ours, so you are never locked to us by the platform.",
+        "Yes, under your licenses. Where you have no system or the current one is the constraint, we will implement one in your name — never in ours, so you are never locked to us by the platform.",
     },
     {
       question: "How long does transition take?",
@@ -364,8 +364,8 @@ export const payrollOutsourcing: ServiceContent = {
   },
 
   seo: {
-    title: "Payroll Outsourcing | Multi-Country Payroll & Statutory Filing — Valentisys",
+    title: "Payroll Outsourcing | Multi-Country Payroll & Statutory Filing — Xevantis",
     description:
-      "Managed payroll across 23 countries with two parallel cycles before go-live, 99.98% payslip accuracy and no missed pay dates since 2019. Payment release always stays with you.",
+      "Managed payroll across 23 countries with two parallel cycles before go-live, 99.98% pay stub accuracy and no missed pay dates since 2019. Payment release always stays with you.",
   },
 };

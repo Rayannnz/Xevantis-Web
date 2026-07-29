@@ -63,15 +63,15 @@ export const financeOutsourcing: ServiceContent = {
       },
       {
         heading: "Who it's for",
-        body: "Companies between £2m and £75m turnover, private equity portfolio businesses needing tighter reporting, and groups whose finance leadership left mid-cycle.",
+        body: "Companies between $2.5m and $95m revenue, private equity portfolio businesses needing tighter reporting, and groups whose finance leadership left mid-cycle.",
       },
       {
         heading: "The business case",
-        body: "Senior finance judgement at roughly a third of a permanent hire's cost, available immediately, with no severance exposure if the shape of the need changes.",
+        body: "Senior finance judgment at roughly a third of a permanent hire's cost, available immediately, with no severance exposure if the shape of the need changes.",
       },
       {
         heading: "Why us",
-        body: "The fractional controller is supported by a full pod, so you get senior judgement without paying senior rates for the work underneath it.",
+        body: "The fractional controller is supported by a full pod, so you get senior judgment without paying senior rates for the work underneath it.",
       },
     ],
     figure: "layers",
@@ -91,7 +91,7 @@ export const financeOutsourcing: ServiceContent = {
       "Treasury: banking relationships, facilities and covenant tracking",
       "Lender and investor reporting packs",
       "Business partnering with department heads on their budgets",
-      "Financial modelling for scenarios, funding and investment cases",
+      "Financial modeling for scenarios, funding and investment cases",
       "Audit management and year-end coordination",
       "Finance process, systems and controls improvement",
     ],
@@ -109,13 +109,13 @@ export const financeOutsourcing: ServiceContent = {
     },
     {
       title: "Cash visibility thirteen weeks out",
-      body: "A rolling weekly forecast built from receipts and commitments rather than from the annual budget. Most cash crises were visible eight weeks earlier to anyone modelling it properly.",
+      body: "A rolling weekly forecast built from receipts and commitments rather than from the annual budget. Most cash crises were visible eight weeks earlier to anyone modeling it properly.",
       metric: { value: 13, suffix: " wks", label: "Rolling cash forecast horizon, updated weekly" },
       link: { label: "How treasury is handled", href: "#whats-included" },
       figure: "pulse",
     },
     {
-      title: "Senior judgement without the permanent hire",
+      title: "Senior judgment without the permanent hire",
       body: "A controller or CFO in the room for pricing, funding and investment decisions, at roughly a third of the loaded cost. You can scale the seniority up or down as the business changes.",
       metric: { value: 33, suffix: "%", label: "Of an equivalent permanent hire's loaded cost" },
       link: { label: "Talk about the right shape", href: "#contact" },
@@ -134,7 +134,7 @@ export const financeOutsourcing: ServiceContent = {
     {
       title: "Diagnostic",
       duration: "Week 1–2",
-      body: "A review of your reporting, controls, systems and cash process, delivered as a written assessment with prioritised recommendations. It is yours whether or not you engage us further.",
+      body: "A review of your reporting, controls, systems and cash process, delivered as a written assessment with prioritized recommendations. It is yours whether or not you engage us further.",
     },
     {
       title: "Shape the function",
@@ -171,10 +171,10 @@ export const financeOutsourcing: ServiceContent = {
     { name: "Fathom", category: "Reporting" },
     { name: "Power BI", category: "Dashboards" },
     { name: "Looker Studio", category: "Dashboards" },
-    { name: "Causal", category: "Financial modelling" },
+    { name: "Causal", category: "Financial modeling" },
     { name: "Anaplan", category: "Planning" },
     { name: "Float", category: "Cash forecasting" },
-    { name: "Excel", category: "Modelling" },
+    { name: "Excel", category: "Modeling" },
     { name: "Google Sheets", category: "Collaboration" },
     { name: "Stripe", category: "Revenue data" },
     { name: "Snowflake", category: "Warehouse" },
@@ -216,7 +216,7 @@ export const financeOutsourcing: ServiceContent = {
       challenge:
         "Reporting on a cash basis, no cohort or unit economics, and a lead investor asking for metrics the company could not produce.",
       solution:
-        "Revenue recognised properly, a cohort and unit economics model built from source data, and a monthly board pack rebuilt around the metrics the round would be judged on.",
+        "Revenue recognized properly, a cohort and unit economics model built from source data, and a monthly board pack rebuilt around the metrics the round would be judged on.",
       results: [
         { value: 5, suffix: " days", label: "To board pack, from 6 weeks" },
         { value: 3, suffix: " wks", label: "Diligence completed, from a projected 8" },
@@ -280,7 +280,7 @@ export const financeOutsourcing: ServiceContent = {
       quote:
         "The thirteen-week cash forecast showed us a problem in March that we would have found in May. That is the whole value proposition.",
       name: "Nigel Braithwaite",
-      role: "Managing Director",
+      role: "CEO",
       company: "Gridworks",
       initials: "NB",
       rating: 5,
@@ -291,7 +291,7 @@ export const financeOutsourcing: ServiceContent = {
     {
       question: "How is this different from Finance & Accounting outsourcing?",
       answer:
-        "Finance & Accounting covers the transactional layer — invoices, reconciliations, close. Finance Outsourcing is everything above it: reporting, planning, cash, treasury and senior judgement. Many clients take both under one contract.",
+        "Finance & Accounting covers the transactional layer — invoices, reconciliations, close. Finance Outsourcing is everything above it: reporting, planning, cash, treasury and senior judgment. Many clients take both under one contract.",
     },
     {
       question: "How senior are the fractional controllers?",
@@ -316,7 +316,7 @@ export const financeOutsourcing: ServiceContent = {
     {
       question: "Do you help with fundraising?",
       answer:
-        "We build the model, prepare the data room and answer financial diligence. We do not act as a corporate finance adviser or take a success fee — that is a different regulated role and we will introduce you to one.",
+        "We build the model, prepare the data room and answer financial diligence. We do not act as a corporate finance advisor or take a success fee — that is a different regulated role and we will introduce you to one.",
     },
     {
       question: "What if we want to hire a permanent finance leader?",
@@ -331,7 +331,7 @@ export const financeOutsourcing: ServiceContent = {
     {
       question: "What does the diagnostic cost?",
       answer:
-        "A fixed fee, typically two weeks of work, producing a written assessment of reporting, controls, systems and cash with prioritised recommendations. You keep it regardless of what you do next.",
+        "A fixed fee, typically two weeks of work, producing a written assessment of reporting, controls, systems and cash with prioritized recommendations. You keep it regardless of what you do next.",
     },
     {
       question: "Are you independent of our auditors and lenders?",
@@ -361,11 +361,11 @@ export const financeOutsourcing: ServiceContent = {
 
   cta: {
     title: "Start with a diagnostic, not a contract.",
-    body: "Two weeks, a fixed fee, and a written assessment of your finance operation with prioritised recommendations. Yours to keep and act on with or without us.",
+    body: "Two weeks, a fixed fee, and a written assessment of your finance operation with prioritized recommendations. Yours to keep and act on with or without us.",
   },
 
   seo: {
-    title: "Finance Outsourcing | Fractional CFO, FP&A & Reporting — Valentisys",
+    title: "Finance Outsourcing | Fractional CFO, FP&A & Reporting — Xevantis",
     description:
       "A complete outsourced finance function: management reporting, FP&A, 13-week cash forecasting, treasury and a fractional controller or CFO at a third of a permanent hire's cost.",
   },

@@ -285,7 +285,7 @@ export function Wave({ fill = "var(--color-sun-100)" }: { fill?: string }) {
   );
 }
 
-/** The signature multicolour band, drifting on a 22s loop. */
+/** The signature multicolor band, drifting on a 22s loop. */
 export function Ribbon() {
   return (
     <div

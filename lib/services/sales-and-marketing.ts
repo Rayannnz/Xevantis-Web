@@ -29,11 +29,11 @@ export const salesAndMarketing: ServiceContent = {
     },
     cases: {
       title: "Pipeline we have built.",
-      body: "Three programmes measured on accepted opportunities and closed revenue, not on activity counts.",
+      body: "Three programs measured on accepted opportunities and closed revenue, not on activity counts.",
     },
     faq: {
       title: "Quality, ownership and how we are measured.",
-      body: "The questions that separate a sales partner from a dialling service.",
+      body: "The questions that separate a sales partner from a dialing service.",
     },
   },
 
@@ -63,7 +63,7 @@ export const salesAndMarketing: ServiceContent = {
       },
       {
         heading: "Who it's for",
-        body: "B2B companies with an average contract value above roughly £8,000, a defined ideal customer profile, and closers who are currently doing their own prospecting.",
+        body: "B2B companies with an average contract value above roughly $10,000, a defined ideal customer profile, and closers who are currently doing their own prospecting.",
       },
       {
         heading: "The business case",
@@ -85,7 +85,7 @@ export const salesAndMarketing: ServiceContent = {
       "Ideal customer profile definition and account tiering",
       "Target list building, enrichment and verification",
       "Multi-channel outbound: email, phone, LinkedIn and video",
-      "Sequence design, copy testing and cadence optimisation",
+      "Sequence design, copy testing and cadence optimization",
       "Inbound lead qualification and speed-to-lead response",
       "Discovery calls and qualification to an agreed framework",
       "Meeting booking, confirmation and no-show recovery",
@@ -116,7 +116,7 @@ export const salesAndMarketing: ServiceContent = {
     },
     {
       title: "Inbound answered in minutes, not days",
-      body: "Speed to lead is the single most reliable predictor of conversion on inbound, and almost every company is slower than it believes. Coverage across timezones means enquiries are worked when they arrive.",
+      body: "Speed to lead is the single most reliable predictor of conversion on inbound, and almost every company is slower than it believes. Coverage across timezones means inquiries are worked when they arrive.",
       metric: { value: 6, suffix: " min", label: "Median inbound response time" },
       link: { label: "See the coverage model", href: "#why-us" },
       figure: "network",
@@ -139,7 +139,7 @@ export const salesAndMarketing: ServiceContent = {
     {
       title: "Build the list",
       duration: "Week 1–2",
-      body: "Target accounts and contacts sourced, enriched and verified. We reject more data than we keep; dialling a bad list is the fastest way to burn a domain and a team's morale.",
+      body: "Target accounts and contacts sourced, enriched and verified. We reject more data than we keep; dialing a bad list is the fastest way to burn a domain and a team's morale.",
     },
     {
       title: "Message",
@@ -157,7 +157,7 @@ export const salesAndMarketing: ServiceContent = {
       body: "A ramped start on one segment with every call reviewed, widening as acceptance rates hold. First meetings typically land in week five.",
     },
     {
-      title: "Optimise",
+      title: "Optimize",
       duration: "Weekly",
       body: "Weekly pipeline review with your sales leadership covering acceptance rate, segment performance and message testing. Underperforming segments are cut rather than defended.",
     },
@@ -197,7 +197,7 @@ export const salesAndMarketing: ServiceContent = {
     },
     {
       title: "Sales operations included",
-      body: "An analyst on every pod keeps CRM data, routing and stage discipline clean. Most outsourced SDR programmes quietly degrade the CRM they run in.",
+      body: "An analyst on every pod keeps CRM data, routing and stage discipline clean. Most outsourced SDR programs quietly degrade the CRM they run in.",
     },
     {
       title: "Transparent tooling costs",
@@ -229,7 +229,7 @@ export const salesAndMarketing: ServiceContent = {
       industry: "Industrial equipment",
       title: "Answering inbound before the competition did",
       challenge:
-        "High-value inbound enquiries arriving outside office hours and being worked the next morning, by which time prospects had contacted two competitors.",
+        "High-value inbound inquiries arriving outside office hours and being worked the next morning, by which time prospects had contacted two competitors.",
       solution:
         "Extended-hours qualification cover from two hubs with a six-minute response target, routing straight into the regional rep's calendar.",
       results: [
@@ -244,7 +244,7 @@ export const salesAndMarketing: ServiceContent = {
       industry: "Professional services",
       title: "Cutting cost per opportunity by killing two segments",
       challenge:
-        "An outbound programme spread across five verticals with a rising cost per opportunity and no view of which segment was producing revenue.",
+        "An outbound program spread across five verticals with a rising cost per opportunity and no view of which segment was producing revenue.",
       solution:
         "Segment-level tracking through to closed-won revealed two verticals producing meetings but no closes. Budget moved to the three that converted.",
       results: [
@@ -311,7 +311,7 @@ export const salesAndMarketing: ServiceContent = {
     {
       question: "What contract values does this work for?",
       answer:
-        "Generally an average contract value above about £8,000. Below that the economics of a human SDR rarely work, and we will tell you that rather than take the engagement.",
+        "Generally an average contract value above about $10,000. Below that the economics of a human SDR rarely work, and we will tell you that rather than take the engagement.",
     },
     {
       question: "Who owns the data and sequences?",
@@ -329,14 +329,14 @@ export const salesAndMarketing: ServiceContent = {
         "Yes, and inbound qualification usually produces the faster return. Speed to lead is the most reliable conversion lever in B2B and almost every company underestimates their own response time.",
     },
     {
-      question: "What about compliance — GDPR, CAN-SPAM, cold calling rules?",
+      question: "What about compliance — CAN-SPAM, TCPA, cold calling rules?",
       answer:
-        "Lawful basis is documented per market, suppression lists are maintained, and opt-outs are honoured across all channels. Your DPO reviews the approach before any outreach begins.",
+        "Lawful basis is documented per market, suppression lists are maintained, and opt-outs are honored across all channels. Your privacy team reviews the approach before any outreach begins.",
     },
     {
       question: "Can the team sell in other languages?",
       answer:
-        "Yes — native speakers across English, Spanish, Portuguese, French, German, Italian and Dutch as standard. Multi-market programmes run one qualification standard across all languages.",
+        "Yes — native speakers across English, Spanish, Portuguese, French, German, Italian and Dutch as standard. Multi-market programs run one qualification standard across all languages.",
     },
     {
       question: "Do you do the marketing side too?",
@@ -346,7 +346,7 @@ export const salesAndMarketing: ServiceContent = {
     {
       question: "What is the minimum term?",
       answer:
-        "Six months. The first five weeks produce no meetings by design, so a three-month engagement would end just as the programme reached steady state. After six months it is month-to-month.",
+        "Six months. The first five weeks produce no meetings by design, so a three-month engagement would end just as the program reached steady state. After six months it is month-to-month.",
     },
   ],
 
@@ -365,7 +365,7 @@ export const salesAndMarketing: ServiceContent = {
   },
 
   seo: {
-    title: "Sales & Marketing Outsourcing | Outsourced SDR & Lead Qualification — Valentisys",
+    title: "Sales & Marketing Outsourcing | Outsourced SDR & Lead Qualification — Xevantis",
     description:
       "Dedicated SDR pods running outbound, inbound qualification and CRM hygiene in your systems. Measured on sales-accepted opportunities, not meetings booked. 78% acceptance rate.",
   },

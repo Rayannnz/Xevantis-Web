@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   VALENTISYS — DESIGN TOKENS AS TAILWIND THEME
+   XEVANTIS — DESIGN TOKENS AS TAILWIND THEME
    Every primitive from the original tokens.css lives here, so the values are
    preserved exactly while becoming first-class Tailwind utilities
    (bg-sun-300, text-4xl, rounded-2xl, shadow-sticker, ease-out-expo, ...).
@@ -9,9 +9,9 @@
 
 /* `static` keeps every token in the output. Tailwind otherwise emits only the
    variables backing a generated utility, which would drop the steps the design
-   system page renders dynamically (colour ramps, gradient swatches). */
+   system page renders dynamically (color ramps, gradient swatches). */
 @theme static {
-  /* ---------- Colour: Ink — the near-black spine of the brand ---------- */
+  /* ---------- Color: Ink — the near-black spine of the brand ---------- */
   --color-ink-900: #0e0d12;
   --color-ink-800: #17161d;
   --color-ink-700: #26242e;
@@ -23,13 +23,13 @@
   --color-ink-100: #e6e3ec;
   --color-ink-050: #f2f0f6;
 
-  /* ---------- Colour: Paper — warm off-whites ---------- */
+  /* ---------- Color: Paper — warm off-whites ---------- */
   --color-paper-000: #ffffff;
   --color-paper-050: #fdfbf7;
   --color-paper-100: #fbf8f2;
   --color-paper-200: #f5f0e6;
 
-  /* ---------- Colour: Sun — primary accent ---------- */
+  /* ---------- Color: Sun — primary accent ---------- */
   --color-sun-050: #fffae0;
   --color-sun-100: #fff3ba;
   --color-sun-200: #ffe98a;
@@ -37,7 +37,7 @@
   --color-sun-400: #ffd12b;
   --color-sun-500: #f5bd00;
 
-  /* ---------- Colour: Mint — reliability ---------- */
+  /* ---------- Color: Mint — reliability ---------- */
   --color-mint-050: #edfcf4;
   --color-mint-100: #d3f6e4;
   --color-mint-200: #a8ecca;
@@ -45,7 +45,7 @@
   --color-mint-400: #43cd8c;
   --color-mint-500: #1faa6c;
 
-  /* ---------- Colour: Lilac — intelligence, AI ---------- */
+  /* ---------- Color: Lilac — intelligence, AI ---------- */
   --color-lilac-050: #f4f0ff;
   --color-lilac-100: #e6dfff;
   --color-lilac-200: #d0c3ff;
@@ -53,7 +53,7 @@
   --color-lilac-400: #9578ff;
   --color-lilac-500: #7350f0;
 
-  /* ---------- Colour: Blush — human touch, CX ---------- */
+  /* ---------- Color: Blush — human touch, CX ---------- */
   --color-blush-050: #fff1ee;
   --color-blush-100: #ffdfd8;
   --color-blush-200: #ffc4b7;
@@ -61,7 +61,7 @@
   --color-blush-400: #ff7f63;
   --color-blush-500: #f2593a;
 
-  /* ---------- Colour: Sky — scale, infrastructure ---------- */
+  /* ---------- Color: Sky — scale, infrastructure ---------- */
   --color-sky-050: #eef7ff;
   --color-sky-100: #d5ecff;
   --color-sky-200: #b0dbff;
@@ -69,13 +69,13 @@
   --color-sky-400: #55acff;
   --color-sky-500: #1d84e6;
 
-  /* ---------- Colour: Brand — sampled from the logo ---------- */
+  /* ---------- Color: Brand — sampled from the logo ---------- */
   --color-brand-violet: #8250f0;
   --color-brand-violet-light: #a98bf5;
   --color-brand-indigo: #3c1e96;
   --color-brand-navy: #1e1450;
 
-  /* ---------- Colour: Signal — functional states only ---------- */
+  /* ---------- Color: Signal — functional states only ---------- */
   --color-signal-success: #1faa6c;
   --color-signal-warning: #f5a300;
   --color-signal-danger: #e03a2f;
@@ -202,9 +202,9 @@
        sun      920 → 1440
        out     1460 → 2060
 
-     Both sweep radii are anchored to a corner, never the centre. That is the
+     Both sweep radii are anchored to a corner, never the center. That is the
      whole trick: with the origin off in a corner the visitor only ever sees an
-     arc travelling past, so it reads as a wipe rather than a growing ball.
+     arc traveling past, so it reads as a wipe rather than a growing ball.
      Each stage waits for the one before it — overlapping the out with the sun
      sweep clips the bottom-left away before the accent has reached it. */
   --animate-type-in: type-in 280ms var(--ease-out-back) both;
