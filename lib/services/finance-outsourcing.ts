@@ -7,7 +7,7 @@ export const financeOutsourcing: ServiceContent = {
   accent: "lilac",
   eyebrow: "Finance Function",
   summary:
-    "A complete finance function — reporting, FP&A, treasury and a fractional controller — for companies not ready to hire one.",
+    "A finance function you cannot yet justify hiring — monthly reporting, cash forecasting and a fractional controller who tells you what the numbers mean.",
   trustLabel: "Acting as the finance function for",
 
   sections: {
@@ -16,7 +16,7 @@ export const financeOutsourcing: ServiceContent = {
       body: "Transactional outsourcing lowers cost. A finance function changes decisions, which is a different and larger return.",
     },
     process: {
-      title: "From diagnostic to a board pack you trust.",
+      title: "From diagnostic to numbers you actually trust.",
       body: "Six phases. The first produces a written assessment of your finance operation that is yours regardless of what you do next.",
     },
     tech: {
@@ -29,7 +29,7 @@ export const financeOutsourcing: ServiceContent = {
     },
     cases: {
       title: "Finance functions we run.",
-      body: "Three companies at different stages: pre-Series B, post-acquisition, and one preparing for a sale.",
+      body: "Three businesses at different stages: one opening a second location, one whose bookkeeper left mid-year, and one preparing to sell the practice.",
     },
     faq: {
       title: "Seniority, independence and scope.",
@@ -38,16 +38,16 @@ export const financeOutsourcing: ServiceContent = {
   },
 
   hero: {
-    title: "A finance function, not just a ledger.",
-    highlight: "before you can justify",
-    body: "Management reporting, FP&A, cash forecasting and a fractional controller or CFO — the senior finance capability most companies need well before you can justify a six-figure permanent hire.",
+    title: "A finance person, not just a bookkeeper.",
+    highlight: "before they can justify",
+    body: "Monthly reporting that means something, cash forecasting, pricing and profitability work, and a fractional controller on the end of the phone — the senior finance help most practices need long before they can justify a six-figure hire.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
     trust: "Fractional controllers available from January",
     chips: [
-      { value: "Day 5", label: "Board pack in your inbox each month" },
+      { value: "Day 5", label: "Numbers in your inbox every month" },
       { value: "13 wk", label: "Rolling cash forecast, updated weekly" },
-      { value: "1/3", label: "Cost of an equivalent permanent hire" },
+      { value: "1/3", label: "Cost of the equivalent permanent hire" },
     ],
     figure: "pulse",
   },
@@ -55,23 +55,23 @@ export const financeOutsourcing: ServiceContent = {
   overview: {
     eyebrow: "Service overview",
     title: "Everything above the ledger, staffed properly.",
-    body: "Bookkeeping tells you what happened. A finance function tells you what it means and what to do about it. Most growing companies buy the first, need the second, and bridge the gap with a founder doing spreadsheets on Sunday.",
+    body: "Bookkeeping tells you what happened. A finance function tells you what it means and what to do about it — which provider is actually profitable, whether the second location works, what next quarter's cash looks like. Most owners buy the first, need the second, and bridge the gap with a spreadsheet on a Sunday.",
     panels: [
       {
         heading: "What it is",
-        body: "A layered team: a fractional controller or CFO, a management accountant and an analyst, delivering reporting, planning and treasury alongside your existing bookkeeping.",
+        body: "A fractional controller supported by an accountant and an analyst, delivering monthly reporting, forecasting and profitability work alongside whoever does your bookkeeping.",
       },
       {
         heading: "Who it's for",
-        body: "Companies between $2.5m and $95m revenue, private equity portfolio businesses needing tighter reporting, and groups whose finance leadership left mid-cycle.",
+        body: "Practices and firms roughly $2m to $50m in revenue: multi-location clinics and dental groups, growing law and engineering firms, agencies opening a second office, and any owner whose bookkeeper just resigned.",
       },
       {
         heading: "The business case",
-        body: "Senior finance judgment at roughly a third of a permanent hire's cost, available immediately, with no severance exposure if the shape of the need changes.",
+        body: "Senior finance judgment at roughly a third of a permanent hire, available immediately, with no severance exposure if what you need changes shape in a year.",
       },
       {
         heading: "Why us",
-        body: "The fractional controller is supported by a full pod, so you get senior judgment without paying senior rates for the work underneath it.",
+        body: "The controller is supported by a small team, so you get senior judgment without paying senior rates for the spreadsheet work underneath it.",
       },
     ],
     figure: "layers",
@@ -80,30 +80,30 @@ export const financeOutsourcing: ServiceContent = {
   included: {
     eyebrow: "Scope",
     title: "Reporting, planning, cash and the conversations around them.",
-    body: "One monthly rate by pod shape. Board attendance, lender reporting and investor support are inside it rather than billed hourly.",
+    body: "One monthly rate by shape. Partner meetings, bank calls and lender reporting are inside it rather than billed hourly.",
     items: [
-      "Monthly management accounts with commentary and variance analysis",
-      "Board pack preparation and attendance at board meetings",
+      "Monthly accounts with plain-English commentary and variance analysis",
+      "A partner or owner meeting each month, attended in person or by video",
       "Annual budgeting and quarterly reforecasting",
-      "Rolling 13-week cash flow forecast, updated weekly",
-      "Unit economics, margin analysis and pricing support",
-      "KPI framework design and performance dashboards",
-      "Treasury: banking relationships, facilities and covenant tracking",
-      "Lender and investor reporting packs",
-      "Business partnering with department heads on their budgets",
-      "Financial modeling for scenarios, funding and investment cases",
-      "Audit management and year-end coordination",
-      "Finance process, systems and controls improvement",
+      "Rolling 13-week cash forecast, updated weekly",
+      "Profitability by location, provider, service line or matter type",
+      "Pricing and fee schedule analysis",
+      "A short dashboard of the numbers you should actually watch",
+      "Banking relationships, line of credit and covenant tracking",
+      "Lender and landlord reporting packs",
+      "Modeling for a second location, an equipment purchase or a hire",
+      "Year-end coordination with your CPA",
+      "Practice valuation support and preparation for a sale",
     ],
-    note: "Where you already have bookkeeping in place — internal or outsourced — we work above it. Where you do not, our Finance & Accounting pod handles the transactional layer under the same contract.",
+    note: "Where you already have bookkeeping — in-house or outsourced — we work above it. Where you do not, our Bookkeeping & Accounting service handles that layer under the same contract, so nobody can blame the other one.",
     figure: "dashboard",
   },
 
   benefits: [
     {
       title: "Numbers early enough to act on",
-      body: "Management accounts with real commentary by working day five, not a rough figure at the end of the following month. Late reporting is only useful for filing; early reporting changes the quarter it describes.",
-      metric: { value: 5, suffix: " days", label: "Working days to management accounts with commentary" },
+      body: "Accounts with real commentary by working day five, not a rough figure at the end of the following month. Late numbers are only useful for filing a tax return; early numbers change the quarter they describe.",
+      metric: { value: 5, suffix: " days", label: "Working days to monthly accounts with commentary" },
       link: { label: "See the reporting cycle", href: "#process" },
       figure: "dashboard",
     },
@@ -116,15 +116,15 @@ export const financeOutsourcing: ServiceContent = {
     },
     {
       title: "Senior judgment without the permanent hire",
-      body: "A controller or CFO in the room for pricing, funding and investment decisions, at roughly a third of the loaded cost. You can scale the seniority up or down as the business changes.",
+      body: "A controller in the room for pricing, a new location, an equipment purchase or a partner buy-in, at roughly a third of the loaded cost of hiring one. Scale it up or down as the practice changes.",
       metric: { value: 33, suffix: "%", label: "Of an equivalent permanent hire's loaded cost" },
       link: { label: "Talk about the right shape", href: "#contact" },
       figure: "network",
     },
     {
-      title: "A business that is easier to fund",
-      body: "Lenders and investors respond to clean reporting, defensible forecasts and quick answers in diligence. Finance quality is not usually why a deal happens, but it is often why one stalls.",
-      metric: { value: 4, suffix: " wks", label: "Median diligence response time saved at raise" },
+      title: "A business that is easier to borrow against — or sell",
+      body: "Banks and buyers respond to clean reporting, defensible forecasts and quick answers to their questions. Finance quality is rarely why a deal happens, but it is very often why one stalls.",
+      metric: { value: 4, suffix: " wks", label: "Median time saved answering a lender or buyer" },
       link: { label: "See the case studies", href: "#work" },
       figure: "layers",
     },
@@ -144,12 +144,12 @@ export const financeOutsourcing: ServiceContent = {
     {
       title: "Reporting foundation",
       duration: "Week 3–6",
-      body: "Chart of accounts review, KPI definitions, board pack template and the management accounts format, agreed with you and your investors before the first cycle runs.",
+      body: "Chart of accounts review, the handful of numbers worth watching, and the format of the monthly report, agreed with you and your CPA before the first cycle runs.",
     },
     {
       title: "First cycle",
       duration: "Month 2",
-      body: "The first full close, board pack and cash forecast produced under the new format, with your existing team involved so nothing depends on a single handover conversation.",
+      body: "The first full close, monthly report and cash forecast produced in the new format, with your existing people involved so nothing depends on a single handover conversation.",
     },
     {
       title: "Planning",
@@ -164,74 +164,74 @@ export const financeOutsourcing: ServiceContent = {
   ],
 
   tech: [
-    { name: "NetSuite", category: "ERP" },
-    { name: "Xero", category: "Accounting" },
     { name: "QuickBooks", category: "Accounting" },
+    { name: "Xero", category: "Accounting" },
     { name: "Sage Intacct", category: "Accounting" },
     { name: "Fathom", category: "Reporting" },
-    { name: "Power BI", category: "Dashboards" },
-    { name: "Looker Studio", category: "Dashboards" },
-    { name: "Causal", category: "Financial modeling" },
-    { name: "Anaplan", category: "Planning" },
     { name: "Float", category: "Cash forecasting" },
+    { name: "Looker Studio", category: "Dashboards" },
+    { name: "Power BI", category: "Dashboards" },
     { name: "Excel", category: "Modeling" },
     { name: "Google Sheets", category: "Collaboration" },
-    { name: "Stripe", category: "Revenue data" },
-    { name: "Snowflake", category: "Warehouse" },
-    { name: "BlackLine", category: "Reconciliation" },
-    { name: "Coupa", category: "Spend management" },
+    { name: "Open Dental", category: "Dental production data" },
+    { name: "Athenahealth", category: "Medical production data" },
+    { name: "Clio", category: "Legal billing data" },
+    { name: "Deltek", category: "Project accounting" },
+    { name: "Bill.com", category: "Bill pay" },
+    { name: "Square", category: "Payments" },
+    { name: "Stripe", category: "Payments" },
   ],
 
   differentiators: [
     {
       title: "Senior people, genuinely",
-      body: "Fractional controllers and CFOs with fifteen years or more, most with sector-specific experience. You meet them before engaging and they stay on your account.",
+      body: "Fractional controllers with fifteen years or more, most with direct experience of practices and firms your size. You meet them before engaging and they stay on your account.",
     },
     {
       title: "Layered so you are not overpaying",
-      body: "The controller does controller work; an analyst does the analysis underneath. Paying senior rates for schedule preparation is the most common waste in fractional finance.",
+      body: "The controller does controller work; an analyst does the spreadsheet work underneath. Paying senior rates for schedule preparation is the most common waste in fractional finance.",
     },
     {
       title: "In the room for the decisions",
-      body: "Board meetings, lender calls and pricing discussions are included rather than billed hourly. A finance function that only reports is a reporting service.",
+      body: "Your monthly owner or partner meeting, bank calls and pricing discussions are included rather than billed hourly. A finance function that only reports is a reporting service.",
     },
     {
-      title: "Independent of your auditors",
-      body: "We hold no audit relationship and take no commission from software or lenders. Recommendations carry no commercial interest of ours.",
+      title: "No commission, from anyone",
+      body: "We hold no audit relationship, take no referral fee from software vendors or lenders, and do not sell you anything else. Recommendations carry no commercial interest of ours.",
     },
     {
       title: "Built to be replaced",
-      body: "When you are ready for a permanent finance director, we will write the role, sit on the panel and hand over. Several of our best references are companies that outgrew us.",
+      body: "When you are ready for a permanent controller, we will write the role, sit on the panel and hand over. Several of our best references are practices that outgrew us.",
     },
     {
-      title: "One contract with the transactional layer",
-      body: "Where you need bookkeeping too, the same contract covers it. No boundary disputes between the people preparing the numbers and the people explaining them.",
+      title: "One contract with the bookkeeping",
+      body: "Where you need the transactional layer too, the same contract covers it. No arguments between the people preparing the numbers and the person explaining them.",
     },
   ],
 
   cases: [
     {
-      industry: "SaaS",
-      title: "Getting reporting investor-ready before a Series B",
+      industry: "Dental group · Brooklyn, NY",
+      title: "Deciding whether the third location actually worked",
       challenge:
-        "Reporting on a cash basis, no cohort or unit economics, and a lead investor asking for metrics the company could not produce.",
+        "Two profitable offices and a third opened eighteen months earlier that the owner suspected was losing money, with overhead allocated evenly across all three and no way to see which was true.",
       solution:
-        "Revenue recognized properly, a cohort and unit economics model built from source data, and a monthly board pack rebuilt around the metrics the round would be judged on.",
+        "Costs rebuilt by location from source data, provider-level profitability, and a monthly report that showed each office standing on its own — including the shared costs the third office had been quietly carrying for the other two.",
       results: [
-        { value: 5, suffix: " days", label: "To board pack, from 6 weeks" },
-        { value: 3, suffix: " wks", label: "Diligence completed, from a projected 8" },
-        { value: 24, prefix: "$", suffix: "m", label: "Round closed" },
+        { value: 5, suffix: " days", label: "To monthly numbers, from 6 weeks" },
+        { value: 3, label: "Locations reported separately for the first time" },
+        { value: 118, prefix: "$", suffix: "k", label: "Annual loss identified and closed" },
       ],
       accent: "lilac",
       figure: "dashboard",
     },
     {
-      industry: "Manufacturing",
-      title: "Covering a finance director exit mid-year",
+      industry: "Engineering firm · Westchester County, NY",
+      title: "Covering a controller exit mid-year",
       challenge:
-        "A finance director leaving four weeks before year end, with covenant reporting due and no internal successor.",
+        "A firm's only finance person resigning four weeks before year end, with a bank covenant to report on, a line of credit to renew and nobody internally who could do either.",
       solution:
-        "A fractional controller in place within eight days, year-end and covenant reporting delivered on time, and a permanent recruitment process run in parallel.",
+        "A fractional controller in place within eight days, year-end and covenant reporting delivered on time, and a permanent recruitment process run in parallel rather than in a panic.",
       results: [
         { value: 8, suffix: " days", label: "To a controller in place" },
         { value: 100, suffix: "%", label: "Covenant deadlines met" },
@@ -241,15 +241,15 @@ export const financeOutsourcing: ServiceContent = {
       figure: "pipeline",
     },
     {
-      industry: "Consumer goods",
-      title: "Finding the products that were losing money",
+      industry: "Multi-specialty practice · Long Island, NY",
+      title: "Finding the services that were losing money",
       challenge:
-        "Growing revenue with flat profit, and a costing model that allocated overhead evenly across a range of 140 SKUs.",
+        "Growing revenue with flat profit, and a payer mix where reimbursement varied enormously by service line while overhead was spread evenly across all of them.",
       solution:
-        "Activity-based costing rebuilt from production and logistics data, revealing that 22 SKUs consumed 60% of handling cost while contributing 9% of margin.",
+        "Costing rebuilt from scheduling and staffing data, revealing that four service lines consumed 60% of clinical time while contributing 9% of margin — two were repriced, one renegotiated, one dropped.",
       results: [
-        { value: 22, label: "SKUs identified as loss-making" },
-        { value: 6.1, decimals: 1, suffix: " pts", label: "Gross margin improvement" },
+        { value: 4, label: "Service lines identified as loss-making" },
+        { value: 6.1, decimals: 1, suffix: " pts", label: "Margin improvement" },
         { value: 13, suffix: " wks", label: "From engagement to decision" },
       ],
       accent: "mint",
@@ -260,93 +260,93 @@ export const financeOutsourcing: ServiceContent = {
   quotes: [
     {
       quote:
-        "We were about to hire a finance director we could not really afford. Two years later we did hire one, and by then we knew exactly what the role needed to be.",
-      name: "Gareth Mullan",
-      role: "Chief Executive",
-      company: "Solstice",
-      initials: "GM",
+        "We were about to hire a controller we could not really afford. Two years later we did hire one, and by then we knew exactly what the role needed to be.",
+      name: "Practice Owner",
+      role: "Three-location dental group",
+      company: "Brooklyn, NY",
+      initials: "PO",
       rating: 5,
     },
     {
       quote:
-        "Our lead investor said the diligence pack was the cleanest they had seen from a company our size. That was entirely down to six months of preparation.",
-      name: "Amelie Rousseau",
-      role: "Founder",
-      company: "Vertex Pay",
-      initials: "AR",
+        "Our controller resigned a month before year end. They had someone in place in eight days and our bank never knew anything had happened.",
+      name: "Principal",
+      role: "Engineering firm",
+      company: "Westchester County, NY",
+      initials: "PR",
       rating: 5,
     },
     {
       quote:
-        "The thirteen-week cash forecast showed us a problem in March that we would have found in May. That is the whole value proposition.",
-      name: "Nigel Braithwaite",
-      role: "CEO",
-      company: "Gridworks",
-      initials: "NB",
+        "The thirteen-week cash forecast showed us a problem in March that we would have found in May. That is the whole thing, really.",
+      name: "Managing Physician",
+      role: "Multi-specialty practice",
+      company: "Long Island, NY",
+      initials: "MD",
       rating: 5,
     },
   ],
 
   faqs: [
     {
-      question: "How is this different from Finance & Accounting outsourcing?",
+      question: "How is this different from your bookkeeping service?",
       answer:
-        "Finance & Accounting covers the transactional layer — invoices, reconciliations, close. Finance Outsourcing is everything above it: reporting, planning, cash, treasury and senior judgment. Many clients take both under one contract.",
+        "Bookkeeping covers the transactional layer — bills, claims, reconciliations, the close. This is everything above it: what the numbers mean, what next quarter's cash looks like, and whether the decision you are weighing actually works. Many clients take both under one contract.",
     },
     {
       question: "How senior are the fractional controllers?",
       answer:
-        "Fifteen years or more, typically former financial controllers or finance directors, most with sector-specific background. You meet them before engaging and they stay on your account rather than rotating.",
+        "Fifteen years or more, typically former controllers or finance directors, most with direct experience of practices and firms your size. You meet them before engaging and they stay on your account rather than rotating.",
     },
     {
       question: "How many days a month do we get?",
       answer:
-        "Shaped to the business, commonly two to six controller days plus a management accountant and analyst underneath. We size it during the diagnostic and adjust as the business changes.",
+        "Shaped to the business, commonly two to six controller days plus an accountant and analyst underneath. We size it during the diagnostic and adjust as things change.",
     },
     {
-      question: "Will they attend our board meetings?",
+      question: "Will they actually meet with us?",
       answer:
-        "Yes, board attendance and lender calls are included in the monthly rate. A finance function that only produces documents is a reporting service, which is not what this is.",
+        "Yes — a monthly owner or partner meeting, plus bank calls, are included in the rate. A finance function that only emails you a report is a reporting service, which is not what this is.",
     },
     {
-      question: "Can you work alongside our existing bookkeeper or accountant?",
+      question: "Can you work alongside our existing bookkeeper or CPA?",
       answer:
-        "Yes, and often we do. We work above the transactional layer wherever it sits. Where the current arrangement is the constraint, we will say so during the diagnostic rather than quietly work around it.",
+        "Yes, and often we do. We work above the transactional layer wherever it sits, and we make your CPA's year-end faster and cheaper. Where the current arrangement is the actual constraint, we will say so rather than quietly work around it.",
     },
     {
-      question: "Do you help with fundraising?",
+      question: "Can you help us open a second location?",
       answer:
-        "We build the model, prepare the data room and answer financial diligence. We do not act as a corporate finance advisor or take a success fee — that is a different regulated role and we will introduce you to one.",
+        "This is one of the most common reasons owners call us. We model the fit-out, the ramp, the staffing and the cash gap, and we will tell you if the numbers do not work — which is sometimes the answer.",
     },
     {
-      question: "What if we want to hire a permanent finance leader?",
+      question: "Can you help us get a loan or a line of credit?",
       answer:
-        "We will write the role, sit on the interview panel and hand over properly. Several of our strongest references are companies that outgrew the arrangement, which is the intended outcome.",
+        "We build the model, prepare what the bank asks for and answer their questions. We do not broker the loan or take a fee from a lender, which is a different role and one where the incentives get muddy.",
     },
     {
-      question: "Can you help a private equity portfolio company?",
+      question: "What if we want to sell the practice?",
       answer:
-        "Yes. Portfolio reporting, covenant tracking, 100-day plans and integration reporting are common engagements. We work to the sponsor's reporting requirements from the first cycle.",
+        "We prepare the financials a buyer will actually diligence, usually starting twelve to eighteen months out because that is how far back they will look. We are not brokers and take no success fee; we will introduce you to one if you want.",
+    },
+    {
+      question: "What if we want to hire a permanent controller?",
+      answer:
+        "We will write the role, sit on the interview panel and hand over properly. Several of our strongest references are practices that outgrew the arrangement, which is the intended outcome.",
     },
     {
       question: "What does the diagnostic cost?",
       answer:
-        "A fixed fee, typically two weeks of work, producing a written assessment of reporting, controls, systems and cash with prioritized recommendations. You keep it regardless of what you do next.",
-    },
-    {
-      question: "Are you independent of our auditors and lenders?",
-      answer:
-        "Completely. We hold no audit relationship and take no commission from software vendors, lenders or brokers. Any recommendation we make carries no commercial interest of ours.",
+        "A fixed fee, typically two weeks of work, producing a written assessment of your reporting, controls, systems and cash with prioritized recommendations. You keep it regardless of what you do next.",
     },
     {
       question: "What is the minimum term?",
       answer:
-        "Three months after the diagnostic, then month-to-month with 30 days' notice. Three months covers a full reporting cycle plus a reforecast, which is the minimum to judge the arrangement.",
+        "Three months after the diagnostic, then month-to-month with 30 days' notice. Three months covers a full reporting cycle plus a reforecast, which is the minimum needed to judge the arrangement fairly.",
     },
     {
-      question: "Which sectors do you know well?",
+      question: "Which industries do you know well?",
       answer:
-        "SaaS and subscription, manufacturing and distribution, professional services, consumer goods and healthcare. We will tell you if your sector is outside our depth rather than learn on your time.",
+        "Medical and dental practices, pharmacies, law firms, engineering and architecture practices, accounting firms and real estate agencies. We will tell you if your industry is outside our depth rather than learn on your time.",
     },
   ],
 
@@ -365,8 +365,8 @@ export const financeOutsourcing: ServiceContent = {
   },
 
   seo: {
-    title: "Finance Outsourcing | Fractional CFO, FP&A & Reporting — Xevantis",
+    title: "Fractional Controller & CFO for Small Businesses — Xevantis",
     description:
-      "A complete outsourced finance function: management reporting, FP&A, 13-week cash forecasting, treasury and a fractional controller or CFO at a third of a permanent hire's cost.",
+      "An outsourced finance function for practices and firms across the US: monthly reporting with commentary, 13-week cash forecasting, profitability by location or service line, and a fractional controller at a third of a permanent hire's cost.",
   },
 };

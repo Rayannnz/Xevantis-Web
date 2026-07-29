@@ -10,19 +10,19 @@ export function SpotlightQuote() {
             aria-hidden
             className="grid size-[88px] place-items-center rounded-full border-[3px] border-ink-900 bg-paper-000 font-display text-[1.6rem] font-extrabold"
           >
-            SN
+            OM
           </div>
         </Reveal>
 
         <Reveal as="p" delay={120} className="text-2xl font-semibold leading-[1.35]">
-          &ldquo;The Xevantis pod is genuinely flexible with sudden changes and
-          controls 100% of routing every minute — the best our clients have ever had
-          on a daily basis.&rdquo;
+          &ldquo;I run a nine-person office. I did not want a vendor, I wanted one more
+          competent person. That is what I got, and she has been with us two years
+          now.&rdquo;
         </Reveal>
 
         <Reveal as="p" delay={220} className="mt-5 text-sm text-ink-500">
-          <strong className="text-ink-900">Sarah Nakamura</strong> · Director of
-          Customer Experience, Lumen Retail
+          <strong className="text-ink-900">Office Manager</strong> · Multi-specialty
+          medical practice, Westchester County, NY
         </Reveal>
       </Container>
     </Section>

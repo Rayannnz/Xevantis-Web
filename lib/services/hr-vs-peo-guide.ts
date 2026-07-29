@@ -4,7 +4,7 @@ import { CONTACT_HREF, SECONDARY_CTA } from "./shared";
 /**
  * A decision guide rather than a service line, so the shared sections are used
  * for comparison content: `benefits` are the four decision factors, `process`
- * is how to run the decision, and `cases` are companies that chose differently.
+ * is how to run the decision, and `cases` are businesses that chose differently.
  */
 export const hrVsPeoGuide: ServiceContent = {
   slug: "hr-vs-peo-guide",
@@ -33,7 +33,7 @@ export const hrVsPeoGuide: ServiceContent = {
       body: "We sell HR outsourcing, which is a reason to read this critically. Here is why we think it is still the honest comparison.",
     },
     cases: {
-      title: "Three companies, three different answers.",
+      title: "Three businesses, three different answers.",
       body: "Two chose a PEO, one chose HR outsourcing, and one later switched. What drove each decision.",
     },
     faq: {
@@ -45,7 +45,7 @@ export const hrVsPeoGuide: ServiceContent = {
   hero: {
     title: "HR outsourcing or a PEO? It depends on four things.",
     highlight: "we will say so",
-    body: "A PEO is the right answer for a good number of companies, and we do not sell one. Where the model fits you better than ours does, we will say so — this guide exists to make that decision quickly rather than after a nine-month contract.",
+    body: "A PEO is the right answer for a good number of small businesses, and we do not sell one. Where it fits you better than we do, we will say so — this guide exists to help you decide quickly rather than nine months into a contract.",
     primaryCta: { label: "Get a side-by-side model", href: CONTACT_HREF },
     secondaryCta: SECONDARY_CTA,
     trust: "Comparison models prepared within one business day",
@@ -72,7 +72,7 @@ export const hrVsPeoGuide: ServiceContent = {
       },
       {
         heading: "Where a PEO wins",
-        body: "Small headcounts wanting big-company benefits, US companies needing multi-state compliance without entities, and businesses with no HR capability at all.",
+        body: "Small practices and firms wanting health plans they could not buy alone, businesses with staff in several states, and offices with no HR capability at all.",
       },
       {
         heading: "Where outsourcing wins",
@@ -100,14 +100,14 @@ export const hrVsPeoGuide: ServiceContent = {
       "Some hiring and termination processes require PEO approval",
       "Historic HR and payroll data may be harder to extract on exit",
     ],
-    note: "None of this makes a PEO the wrong choice. For a 40-person US company that wants Fortune 500 health plans and has no HR function, it is often clearly the right one. It is a trade, and it should be made deliberately.",
+    note: "None of this makes a PEO the wrong choice. For a 40-person practice that wants health plans it could never buy on its own and has no HR capability at all, it is often clearly the right one. It is a trade, and it should be made deliberately rather than by default.",
     figure: "pipeline",
   },
 
   benefits: [
     {
       title: "Cost, once you model it properly",
-      body: "PEO pricing is usually a percentage of payroll, so it scales with salary inflation and headcount whether or not the service changes. Outsourcing is normally a fixed fee. The crossover point is typically somewhere between 80 and 150 employees.",
+      body: "PEO pricing is usually a percentage of payroll, so it rises with wage growth and headcount whether or not the service changes. Outsourced HR is normally a fixed fee. The crossover is typically somewhere between 80 and 150 staff.",
       metric: { value: 120, label: "Typical headcount where fixed-fee outsourcing overtakes a PEO" },
       link: { label: "See how to model it", href: "#process" },
       figure: "dashboard",
@@ -121,7 +121,7 @@ export const hrVsPeoGuide: ServiceContent = {
     },
     {
       title: "Benefits: better plans, or your plans",
-      body: "A PEO pools employees to buy health and insurance benefits a smaller employer could not access alone. That is a genuine advantage, particularly in the US — and it reverses on exit, when you have to source cover again from a standing start.",
+      body: "A PEO pools employees across its client base to buy health and insurance benefits a small employer could never access alone. That is a real advantage — and it reverses on exit, when you have to source cover again from a standing start.",
       metric: { value: 3, suffix: " mo", label: "Typical lead time to re-establish benefits after a PEO exit" },
       link: { label: "Read the exit questions", href: "#faq" },
       figure: "layers",
@@ -139,7 +139,7 @@ export const hrVsPeoGuide: ServiceContent = {
     {
       title: "Establish your true current cost",
       duration: "Week 1",
-      body: "HR salaries, payroll processing, benefits brokerage, insurance, software licenses and the management time absorbed by HR admin. Most companies underestimate this by a third, which distorts every comparison that follows.",
+      body: "Any HR salary, payroll processing, benefits brokerage, insurance, software and the owner or office manager time absorbed by HR admin. Most businesses underestimate this by a third, which distorts every comparison that follows.",
     },
     {
       title: "Define what you will not give up",
@@ -149,7 +149,7 @@ export const hrVsPeoGuide: ServiceContent = {
     {
       title: "Model both options at three horizons",
       duration: "Week 2–3",
-      body: "Today's headcount, plus your two-year and five-year plans. Percentage-of-payroll pricing and fixed-fee pricing diverge sharply over time, and the decision should be made on the trajectory rather than year one.",
+      body: "Today's headcount plus your two-year and five-year plans. Percentage-of-payroll and fixed-fee pricing diverge sharply over time, and this decision should be made on the trajectory rather than on year one.",
     },
     {
       title: "Test the edge cases",
@@ -169,20 +169,22 @@ export const hrVsPeoGuide: ServiceContent = {
   ],
 
   tech: [
-    { name: "Workday", category: "HRIS — kept under outsourcing" },
-    { name: "BambooHR", category: "HRIS — kept under outsourcing" },
-    { name: "HiBob", category: "HRIS — kept under outsourcing" },
-    { name: "Personio", category: "HRIS — kept under outsourcing" },
-    { name: "Greenhouse", category: "ATS — kept under outsourcing" },
-    { name: "Workable", category: "ATS — kept under outsourcing" },
+    { name: "Gusto", category: "HR & payroll — kept under outsourcing" },
+    { name: "BambooHR", category: "HR system — kept under outsourcing" },
+    { name: "Rippling", category: "HR & payroll — kept under outsourcing" },
+    { name: "Paychex", category: "Payroll — kept under outsourcing" },
+    { name: "ADP", category: "Payroll — kept under outsourcing" },
+    { name: "Workable", category: "Applicant tracking — kept under outsourcing" },
+    { name: "Indeed", category: "Job posting — kept under outsourcing" },
+    { name: "Homebase", category: "Scheduling — kept under outsourcing" },
     { name: "TriNet", category: "PEO platform" },
     { name: "Justworks", category: "PEO platform" },
     { name: "Insperity", category: "PEO platform" },
     { name: "ADP TotalSource", category: "PEO platform" },
-    { name: "Deel", category: "EOR & global payroll" },
-    { name: "Remote", category: "EOR & global payroll" },
-    { name: "Gusto", category: "Payroll" },
-    { name: "Sage Payroll", category: "Payroll" },
+    { name: "Paychex PEO", category: "PEO platform" },
+    { name: "Sequoia One", category: "PEO platform" },
+    { name: "Guideline", category: "401(k) — differs by model" },
+    { name: "Checkr", category: "Background checks — differs by model" },
   ],
 
   differentiators: [
@@ -192,11 +194,11 @@ export const hrVsPeoGuide: ServiceContent = {
     },
     {
       title: "We tell clients to use a PEO",
-      body: "Several times a year we recommend a PEO and lose the engagement. For a small US company with no HR function and a need for competitive health plans, it is usually the right answer.",
+      body: "Several times a year we recommend a PEO and lose the engagement. For a small practice with no HR capability and a real need for competitive health plans, it is usually the right answer.",
     },
     {
       title: "Built from real transitions",
-      body: "This guide comes from companies we have moved onto outsourcing, and from several we have helped exit a PEO. The exit friction described here is observed rather than theoretical.",
+      body: "This guide comes from businesses we have moved onto outsourced HR, and from several we have helped exit a PEO. The exit friction described here is observed rather than theoretical.",
     },
     {
       title: "The exit question comes first",
@@ -214,14 +216,14 @@ export const hrVsPeoGuide: ServiceContent = {
 
   cases: [
     {
-      industry: "US technology, 45 staff",
+      industry: "Medical practice · 45 staff · NY, NJ & CT",
       title: "Chose a PEO — and it was the right call",
       challenge:
-        "A 45-person company across six states, no HR function, and health plan quotes far worse than employees were used to at larger employers.",
+        "A 45-person practice with staff in three states, no HR capability at all, and health plan quotes far worse than what staff had been used to at hospital systems.",
       solution:
-        "We recommended a PEO. Multi-state compliance, workers' compensation and pooled benefits genuinely outweighed the loss of control at that size, and we said so.",
+        "We recommended a PEO. Multi-state compliance, workers' compensation and pooled benefits genuinely outweighed the loss of control at that size, and we said so rather than selling around it.",
       results: [
-        { value: 6, label: "States covered without entities" },
+        { value: 3, label: "States covered without separate entities" },
         { value: 31, suffix: "%", label: "Better benefit value than standalone quotes" },
         { value: 0, label: "Engagements won by us" },
       ],
@@ -229,30 +231,30 @@ export const hrVsPeoGuide: ServiceContent = {
       figure: "network",
     },
     {
-      industry: "US logistics, 480 staff",
+      industry: "Home care agency · 480 staff · Bronx, NY",
       title: "Left a PEO after the percentage caught up",
       challenge:
-        "Payroll costs rising with headcount and wage inflation, meaning the PEO fee grew 40% in two years while the service delivered stayed identical.",
+        "Payroll rising with headcount and wage growth, which meant the PEO fee grew 40% in two years while the service delivered stayed exactly the same.",
       solution:
-        "A fixed-fee HR outsourcing and payroll arrangement, sequenced around the benefits renewal date, with a six-month unwind of the co-employment structure.",
+        "A fixed-fee HR and payroll arrangement, sequenced around the benefits renewal date, with a six-month unwind of the co-employment structure so nobody's coverage lapsed.",
       results: [
         { value: 42, suffix: "%", label: "Lower annual HR and payroll cost" },
         { value: 6, suffix: " mo", label: "To fully unwind co-employment" },
-        { value: 100, suffix: "%", label: "Of contracts reissued on their own terms" },
+        { value: 100, suffix: "%", label: "Of staff reissued on the agency's own terms" },
       ],
       accent: "mint",
       figure: "dashboard",
     },
     {
-      industry: "Healthcare services, 210 staff",
+      industry: "Dental group · 210 staff · Long Island, NY",
       title: "Kept the PEO but moved payroll out",
       challenge:
-        "Happy with the PEO's benefits and insurance, frustrated by payroll errors and an inability to get answers on statutory filing.",
+        "Happy with the PEO's benefits and insurance, frustrated by repeated payroll errors and an inability to get a straight answer about a state filing.",
       solution:
-        "A hybrid: benefits and insurance stayed with the PEO, payroll processing moved to a dedicated pod. Not every decision has to be all or nothing.",
+        "A hybrid: benefits and insurance stayed with the PEO, payroll processing moved to a dedicated specialist. Not every decision has to be all or nothing, and this one rarely is.",
       results: [
         { value: 99.98, decimals: 2, suffix: "%", label: "Pay stub accuracy after transition" },
-        { value: 0, label: "Change to employee benefits" },
+        { value: 0, label: "Change to staff benefits" },
         { value: 3, suffix: " mo", label: "Transition time" },
       ],
       accent: "lilac",
@@ -263,29 +265,29 @@ export const hrVsPeoGuide: ServiceContent = {
   quotes: [
     {
       quote:
-        "They told us to sign with a PEO and walked away from the deal. Three years later, when we outgrew it, they were the first call we made.",
-      name: "Jordan Feltz",
-      role: "Chief Executive",
-      company: "Duonode",
-      initials: "JF",
+        "They told us to sign with a PEO and walked away from the work. Three years later, when we outgrew it, they were the first call we made.",
+      name: "Managing Physician",
+      role: "Medical practice, 45 staff",
+      company: "NY, NJ & CT",
+      initials: "MD",
       rating: 5,
     },
     {
       quote:
-        "Nobody had explained that the fee was a percentage of payroll. Our costs rose 40% in two years for exactly the same service.",
-      name: "Elaine Murdoch",
-      role: "Finance Director",
-      company: "Peakline",
-      initials: "EM",
+        "Nobody had explained that the fee was a percentage of payroll. Our cost rose 40% in two years for exactly the same service.",
+      name: "Agency Director",
+      role: "Home care agency, 480 staff",
+      company: "Bronx, NY",
+      initials: "AD",
       rating: 5,
     },
     {
       quote:
         "The exit questions in this guide are the ones I wish someone had made me ask before we signed the first time.",
-      name: "Samir Haddad",
-      role: "HR Director",
-      company: "Gridworks",
-      initials: "SH",
+      name: "Practice Administrator",
+      role: "Dental group, 210 staff",
+      company: "Long Island, NY",
+      initials: "PA",
       rating: 5,
     },
   ],
@@ -299,7 +301,7 @@ export const hrVsPeoGuide: ServiceContent = {
     {
       question: "Is a PEO cheaper than HR outsourcing?",
       answer:
-        "At small headcounts, usually yes, especially in the US where pooled benefits carry real value. Because PEO pricing is typically a percentage of payroll, fixed-fee outsourcing tends to overtake it somewhere between 80 and 150 employees.",
+        "At small headcounts, usually yes — pooled benefits carry real value when you have fifteen staff. Because PEO pricing is typically a percentage of payroll, fixed-fee outsourced HR tends to overtake it somewhere between 80 and 150 staff.",
     },
     {
       question: "Do we lose control of hiring and firing with a PEO?",
@@ -368,8 +370,8 @@ export const hrVsPeoGuide: ServiceContent = {
   },
 
   seo: {
-    title: "HR Outsourcing vs PEO | Cost, Control & Exit Comparison — Xevantis",
+    title: "HR Outsourcing vs PEO for Small Businesses | Cost & Control — Xevantis",
     description:
-      "A straight comparison of HR outsourcing and a PEO: co-employment, cost at scale, control over hiring and exits, benefits, and what leaving actually involves. Written by a provider who sells one side and says so.",
+      "A straight comparison for US small businesses: co-employment, what a PEO costs as you grow, control over hiring and firing, pooled benefits, and what leaving actually involves. Written by a provider who sells one side and says so.",
   },
 };

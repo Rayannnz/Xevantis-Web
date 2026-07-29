@@ -311,7 +311,12 @@ export function ResourceBrowser({ resources }: { resources: readonly Resource[] 
           ) : (
             <ul
               ref={revealRef}
-              className="grid grid-cols-1 gap-x-6 gap-y-10 min-[621px]:grid-cols-2 min-[961px]:grid-cols-3"
+              // One column then three. PAGE_SIZE and the catalog length are
+              // both multiples of three, so an unfiltered page always fills
+              // square (3 x 3, then 3 x 2). A two-column step would break that
+              // on every page. A narrow filter can still return an off-multiple
+              // count, which no fixed column choice can prevent.
+              className="grid grid-cols-1 gap-x-6 gap-y-10 min-[961px]:grid-cols-3"
             >
               {/* popLayout pulls exiting cards out of flow so the survivors
                   close the gap immediately instead of after the fade. */}

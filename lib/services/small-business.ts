@@ -7,29 +7,29 @@ export const smallBusiness: ServiceContent = {
   accent: "sun",
   eyebrow: "Small Business",
   summary:
-    "Outsourcing sized for companies under 100 people — part-time seats, no enterprise minimums, and a contract you can leave in 30 days.",
-  trustLabel: "Supporting growing businesses like",
+    "Help sized for a practice or firm under 100 people — part-time seats, a real minimum of one, and a contract you can leave in 30 days.",
+  trustLabel: "Supporting local businesses like",
 
   sections: {
     benefits: {
-      title: "What outsourcing gives a small company.",
-      body: "Different from what it gives an enterprise. For a small business the value is coverage and capability, not headcount arbitrage.",
+      title: "What this gives a small practice or firm.",
+      body: "For a business your size the value is coverage and capability — having someone competent at the thing, and having them when your one person is out.",
     },
     process: {
-      title: "Live in ten days, without a procurement process.",
-      body: "Six phases. Deliberately lighter than our enterprise transitions, because a 40-person company should not need a project plan to hire help.",
+      title: "Working in ten days, without a procurement process.",
+      body: "Six phases, deliberately light. A twelve-person office should not need a project plan to get help with its inbox.",
     },
     tech: {
-      title: "The tools small businesses actually use.",
-      body: "We work in what you already have. Nobody here will tell you to buy an enterprise platform you do not need.",
+      title: "The tools local businesses actually run.",
+      body: "We work in what you already have. Nobody here will tell you to buy a platform you do not need.",
     },
     why: {
-      title: "Why this is not a scaled-down enterprise contract.",
-      body: "Most BPOs serve small companies with the same contract structure they use for a bank, which is why the experience is so poor.",
+      title: "Why this is not a big contract cut down.",
+      body: "Most providers serve a small practice with the same contract structure they use for a bank, which is why the experience is so poor.",
     },
     cases: {
       title: "Businesses we support.",
-      body: "Three companies between 12 and 80 people, and what one or two seats actually changed.",
+      body: "Three offices between 12 and 80 people, and what one or two seats actually changed.",
     },
     faq: {
       title: "Minimums, commitment and how small is too small.",
@@ -38,14 +38,14 @@ export const smallBusiness: ServiceContent = {
   },
 
   hero: {
-    title: "Outsourcing that does not require you to be an enterprise.",
+    title: "Help sized for the business you actually run.",
     highlight: "half a seat",
-    body: "Support, admin, bookkeeping or IT cover from one seat upward — or half a seat if that is genuinely what you need. No enterprise minimums, no procurement process, and 30 days' notice after the first quarter.",
+    body: "Front desk cover, admin, bookkeeping or IT from one seat upward — or half a seat if that is genuinely what you need. No ten-seat minimum, no procurement process, and 30 days' notice after the first quarter.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
-    trust: "Taking on small business accounts this month",
+    trust: "Taking on new local accounts this month, in all 50 states",
     chips: [
-      { value: "1 seat", label: "Minimum engagement, part-time available" },
+      { value: "1 seat", label: "Real minimum, part-time available" },
       { value: "10 days", label: "From first call to someone working" },
       { value: "30 days", label: "Notice period after month three" },
     ],
@@ -55,23 +55,23 @@ export const smallBusiness: ServiceContent = {
   overview: {
     eyebrow: "Service overview",
     title: "The help you need is smaller than most providers will sell.",
-    body: "A 40-person company usually needs about a seat and a half of support, a day a week of bookkeeping and someone answering IT questions. Most outsourcing providers will not quote below ten seats, so small businesses end up hiring a generalist who does all three badly.",
+    body: "A twelve-person office usually needs about a seat and a half of front desk cover, a day a week of bookkeeping and someone to answer IT questions. Most providers will not quote below ten seats, so small businesses end up hiring one generalist who does all three badly.",
     panels: [
       {
         heading: "What it is",
-        body: "Right-sized seats across customer support, admin, bookkeeping and IT — full-time, part-time or shared, under one contract and one point of contact.",
+        body: "Right-sized seats across front desk, admin, bookkeeping and IT — full-time, part-time or shared, under one contract and one person you call.",
       },
       {
         heading: "Who it's for",
-        body: "Companies from roughly 5 to 100 employees: agencies, e-commerce brands, professional services firms, SaaS startups and local service businesses.",
+        body: "Practices and firms from roughly 5 to 100 people: medical and dental clinics, pharmacies, law firms, engineering and accounting practices, real estate agencies and local service businesses.",
       },
       {
         heading: "The business case",
-        body: "Specialist capability at part-time cost, cover when your one person is sick or on PTO, and no employment risk or recruitment cycle.",
+        body: "Real capability at part-time cost, cover when your one person is sick or on PTO, and no employment risk or recruiting cycle.",
       },
       {
         heading: "Why us",
-        body: "The same delivery model, quality standards and people as our enterprise accounts — just sized to what you actually need, and honest about when that is nothing.",
+        body: "The same recruiting, training and security standards we apply to every account — sized to what you actually need, and honest about when that is nothing yet.",
       },
     ],
     figure: "layers",
@@ -82,15 +82,15 @@ export const smallBusiness: ServiceContent = {
     title: "Pick what you need. Change it monthly.",
     body: "Seats can be split across functions and adjusted each month. You are not buying a fixed shape for a year.",
     items: [
-      "Customer support across email, chat and phone",
-      "Order processing and fulfillment coordination",
+      "Front desk cover: calls, scheduling and intake",
+      "Insurance verification and prior authorization follow-up",
       "Bookkeeping, invoicing and expense processing",
-      "Credit control and payment chasing",
-      "Calendar management and appointment scheduling",
-      "Inbox triage and correspondence handling",
-      "Data entry, CRM upkeep and list building",
-      "IT helpdesk and device support",
-      "Social media monitoring and response",
+      "Billing, collections and payment chasing",
+      "Calendar management and appointment reminders",
+      "Inbox triage and routine correspondence",
+      "Data entry and keeping your records current",
+      "IT help desk and device support",
+      "Review responses and social media monitoring",
       "Research, quotes and proposal preparation",
       "PTO and sick cover for your existing staff",
       "A named account lead who knows your business",
@@ -102,14 +102,14 @@ export const smallBusiness: ServiceContent = {
   benefits: [
     {
       title: "A specialist instead of a generalist",
-      body: "Small companies hire one person to do support, admin and bookkeeping, and get someone competent at one of the three. Part-time seats let you buy actual capability in each rather than an average across all of them.",
+      body: "Small offices hire one person to do the front desk, the paperwork and the books, and get someone competent at one of the three. Part-time seats let you buy real capability in each rather than an average across all of them.",
       metric: { value: 1, label: "Minimum seat, splittable across functions" },
       link: { label: "See what a seat covers", href: "#whats-included" },
       figure: "network",
     },
     {
       title: "Cover when your one person is away",
-      body: "In a small business, one person's PTO is a function going offline for two weeks. A pod absorbs that without you noticing, which is often the first thing clients say they value.",
+      body: "In a small office, one person's PTO is a whole function going offline for two weeks. A trained backup absorbs that without you noticing, which is often the first thing clients say they value.",
       metric: { value: 0, suffix: " days", label: "Coverage gaps from PTO or sick leave" },
       link: { label: "How cover works", href: "#why-us" },
       figure: "pulse",
@@ -149,7 +149,7 @@ export const smallBusiness: ServiceContent = {
     {
       title: "Document the basics",
       duration: "Days 5–8",
-      body: "A lightweight process document for the main tasks — enough to be repeatable, not an enterprise procedure manual. We write it; you review it.",
+      body: "A short written procedure for the main tasks — enough to be repeatable, not a manual nobody will read. We write it; you review it.",
     },
     {
       title: "Start working",
@@ -164,22 +164,22 @@ export const smallBusiness: ServiceContent = {
   ],
 
   tech: [
-    { name: "Xero", category: "Accounting" },
     { name: "QuickBooks", category: "Accounting" },
-    { name: "Shopify", category: "E-commerce" },
+    { name: "Xero", category: "Accounting" },
+    { name: "Open Dental", category: "Dental practice" },
+    { name: "Athenahealth", category: "Medical records" },
+    { name: "Clio", category: "Legal practice" },
+    { name: "Follow Up Boss", category: "Real estate CRM" },
     { name: "HubSpot", category: "CRM" },
-    { name: "Pipedrive", category: "CRM" },
-    { name: "Google Workspace", category: "Productivity" },
-    { name: "Microsoft 365", category: "Productivity" },
-    { name: "Zendesk", category: "Support" },
-    { name: "Freshdesk", category: "Support" },
-    { name: "Intercom", category: "Chat" },
-    { name: "Slack", category: "Communication" },
-    { name: "Asana", category: "Task management" },
-    { name: "Trello", category: "Task management" },
+    { name: "Google Workspace", category: "Email & calendar" },
+    { name: "Microsoft 365", category: "Email & calendar" },
+    { name: "RingCentral", category: "Phone system" },
+    { name: "Weave", category: "Practice phones" },
+    { name: "Gusto", category: "Payroll" },
     { name: "Calendly", category: "Scheduling" },
+    { name: "Square", category: "Payments" },
     { name: "Stripe", category: "Payments" },
-    { name: "Notion", category: "Documentation" },
+    { name: "Slack", category: "Communication" },
   ],
 
   differentiators: [
@@ -189,11 +189,11 @@ export const smallBusiness: ServiceContent = {
     },
     {
       title: "No procurement theater",
-      body: "A scoping call, a one-page proposal and a start date. A 40-person company should not need a statement of work and an implementation plan to get help with its inbox.",
+      body: "A scoping call, a one-page proposal and a start date. A twelve-person office should not need a statement of work and an implementation plan to get help with its inbox.",
     },
     {
-      title: "Same standards as the enterprise accounts",
-      body: "The same recruitment, training, quality sampling and security controls. Small clients get a smaller team, not a lesser one.",
+      title: "The same standards everywhere",
+      body: "The same recruiting, training, quality sampling and security controls we apply to a fifty-seat account. A small client gets a smaller team, not a lesser one.",
     },
     {
       title: "We will tell you not to bother",
@@ -211,29 +211,29 @@ export const smallBusiness: ServiceContent = {
 
   cases: [
     {
-      industry: "E-commerce, 14 staff",
-      title: "Half a seat that handled every customer email",
+      industry: "Chiropractic clinic · Staten Island, NY · 6 staff",
+      title: "Half a seat that answered every call",
       challenge:
-        "A founder answering support emails between 9pm and midnight, with response times slipping to two days during promotions.",
+        "An owner returning missed calls between 8pm and 10pm, with new-patient inquiries going two days without a reply during busy weeks.",
       solution:
-        "A half-time support seat covering the inbox and order queries, with a documented escalation route for anything genuinely needing the founder.",
+        "A half-time seat covering the phone during treatment hours and the inbox after close, with a written escalation route for anything genuinely needing the owner.",
       results: [
         { value: 2, suffix: " hrs", label: "Response time, from 2 days" },
-        { value: 14, suffix: " hrs", label: "Weekly founder time returned" },
+        { value: 14, suffix: " hrs", label: "Weekly owner time returned" },
         { value: 0.5, decimals: 1, label: "Seats required" },
       ],
       accent: "sun",
       figure: "pulse",
     },
     {
-      industry: "Design agency, 32 staff",
-      title: "Bookkeeping and credit control for two days a week",
+      industry: "Accounting firm · Yonkers, NY · 32 staff",
+      title: "Bookkeeping and collections for two days a week",
       challenge:
-        "An office manager doing bookkeeping badly alongside four other roles, with receivables drifting past 70 days and no time to chase.",
+        "An office manager doing the firm's own books badly alongside four other roles, with the firm's receivables drifting past 70 days while it chased its clients' books instead.",
       solution:
-        "A two-day-a-week bookkeeping seat covering invoicing, reconciliation and a documented credit control cycle, leaving the office manager to her actual job.",
+        "A two-day-a-week seat covering invoicing, reconciliation and a written collections cycle, leaving the office manager to the job she was actually hired for.",
       results: [
-        { value: 41, suffix: " days", label: "Days sales outstanding, from 70" },
+        { value: 41, suffix: " days", label: "Days in receivables, from 70" },
         { value: 148, prefix: "$", suffix: "k", label: "Cash brought forward" },
         { value: 2, suffix: " days", label: "Per week of resource" },
       ],
@@ -241,12 +241,12 @@ export const smallBusiness: ServiceContent = {
       figure: "dashboard",
     },
     {
-      industry: "Professional services, 80 staff",
+      industry: "Architecture practice · Manhattan, NY · 80 staff",
       title: "IT cover without a first IT hire",
       challenge:
-        "Growing past the point where the most technical person could keep helping colleagues, but not big enough to justify a full-time IT hire.",
+        "Growing past the point where the most technical associate could keep helping colleagues, but not large enough to justify a full-time IT salary in Manhattan.",
       solution:
-        "A shared IT helpdesk seat covering device support, account administration and vendor liaison, with escalation to our infrastructure team when needed.",
+        "A shared help desk seat covering devices, accounts and software vendor liaison, escalating to our infrastructure engineers for anything involving the file server or the network.",
       results: [
         { value: 1, label: "Seat, shared coverage" },
         { value: 45, suffix: " min", label: "Median response to staff requests" },
@@ -261,28 +261,28 @@ export const smallBusiness: ServiceContent = {
     {
       quote:
         "Every other provider wanted a ten-seat minimum. We needed half a person. They quoted half a person.",
-      name: "Jamie Wren",
-      role: "Founder",
-      company: "Duonode",
-      initials: "JW",
+      name: "Clinic Owner",
+      role: "Chiropractic clinic, 6 staff",
+      company: "Staten Island, NY",
+      initials: "CO",
       rating: 5,
     },
     {
       quote:
         "On the first call they told us our volume did not justify a seat yet and to come back in six months. We came back in five.",
-      name: "Nadia Sadiq",
-      role: "CEO",
-      company: "Solstice",
-      initials: "NS",
+      name: "Managing Partner",
+      role: "Accounting firm, 32 staff",
+      company: "Yonkers, NY",
+      initials: "MP",
       rating: 5,
     },
     {
       quote:
-        "We have changed the shape three times in a year as the business moved. Not once has it been a contract conversation.",
-      name: "Peter Lund",
-      role: "Operations Lead",
-      company: "Gridworks",
-      initials: "PL",
+        "We have changed the shape three times in a year as the practice moved. Not once has it been a contract conversation.",
+      name: "Office Manager",
+      role: "Architecture practice, 80 staff",
+      company: "Manhattan, NY",
+      initials: "OM",
       rating: 5,
     },
   ],
@@ -301,7 +301,7 @@ export const smallBusiness: ServiceContent = {
     {
       question: "Can one person cover several functions?",
       answer:
-        "Yes, and it is common — support in the morning, bookkeeping in the afternoon, for example. We match candidates to your specific combination rather than to a job title.",
+        "Yes, and it is common — phones in the morning, insurance follow-up and bookkeeping in the afternoon, for example. We match candidates to your specific combination rather than to a job title.",
     },
     {
       question: "Is there a setup fee?",
@@ -321,27 +321,27 @@ export const smallBusiness: ServiceContent = {
     {
       question: "Do we get the same quality as your larger clients?",
       answer:
-        "Same recruitment process, same training, same quality sampling, same security controls. The team is smaller; the standard is not different.",
+        "Same recruiting process, same training, same quality sampling, same security controls. The team is smaller; the standard is not different.",
     },
     {
       question: "What happens when we grow?",
       answer:
-        "The seat grows with you, and the person usually stays. Several of our enterprise accounts started as one part-time seat, which is a good outcome for everyone.",
+        "The seat grows with you, and the person usually stays. Several of our largest accounts started as one part-time seat, which is a good outcome for everyone.",
     },
     {
-      question: "Will they work in our timezone?",
+      question: "Will they work our hours?",
       answer:
-        "Yes. We staff from the hub that overlaps your working day. For most small business accounts that means the same hours as your team, not a handover email.",
+        "Yes. We staff against your actual office hours, including a Saturday clinic or a late night before a deadline. You get overlap with your own team, not a handover email.",
     },
     {
       question: "How does security work at this size?",
       answer:
-        "The same controls as our enterprise accounts: managed devices, least-privilege access, ISO 27001 and SOC 2 Type II. Small clients are not a lower security tier.",
+        "The same controls regardless of account size: managed devices, least-privilege access, SOC 2 Type II, and a signed business associate agreement wherever patient information is involved. A small client is not a lower security tier.",
     },
     {
-      question: "Can we start with one function and add more?",
+      question: "Can we start with one thing and add more?",
       answer:
-        "Yes, and most clients do. Support first is common, then admin or bookkeeping once the relationship is established. Adding is a monthly call, not a new contract.",
+        "Yes, and most clients do. Phone cover first is common, then paperwork or bookkeeping once the relationship is established. Adding is a monthly call, not a new contract.",
     },
     {
       question: "How is it priced?",
@@ -365,8 +365,8 @@ export const smallBusiness: ServiceContent = {
   },
 
   seo: {
-    title: "Outsourcing for Small Business | From One Seat — Xevantis",
+    title: "Small Business Support | From One Seat, Any US State — Xevantis",
     description:
-      "Right-sized outsourcing for companies under 100 people: support, admin, bookkeeping and IT from one seat or less. No enterprise minimums, no setup fee, 30 days' notice.",
+      "Right-sized support for practices and firms under 100 people: front desk, admin, bookkeeping and IT from one seat or less. For clinics, law firms, pharmacies and local offices. No ten-seat minimum, no setup fee, 30 days' notice.",
   },
 };

@@ -79,15 +79,15 @@ export function ResourceHero() {
 
             <SplitWords
               as="h1"
-              text="Insights for building better teams."
+              text="Guides for running a small business better."
               stagger={45}
               className="mt-4 font-display text-hero font-extrabold tracking-tighter"
             />
 
             <Reveal as="p" delay={200} className="mt-5 max-w-[52ch] text-lg text-ink-500">
-              Playbooks, benchmarks and interviews from the delivery floor — written
-              by the specialists running the pods, not by a content team guessing at
-              what they do.
+              Playbooks, benchmarks and interviews for clinics, firms, pharmacies and
+              local offices — written by the people who run this work, much of it from
+              what we see across New York, and all of it usable anywhere in the US.
             </Reveal>
 
             <Reveal

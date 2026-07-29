@@ -182,7 +182,8 @@ function Related({ resources }: { resources: Resource[] }) {
           />
         </Reveal>
 
-        <ul className="grid grid-cols-1 gap-x-6 gap-y-10 min-[621px]:grid-cols-2 min-[961px]:grid-cols-3">
+        {/* Always three companion pieces, so one column then three. */}
+        <ul className="grid grid-cols-1 gap-x-6 gap-y-10 min-[961px]:grid-cols-3">
           {resources.map((resource, index) => (
             <Reveal as="li" key={resource.slug} delay={index * 110} className="flex">
               <ResourceCard resource={resource} />

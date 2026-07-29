@@ -23,16 +23,20 @@ export function Insights() {
       <Container width="wide">
         <SectionHead align="center">
           <SplitWords
-            text="See what's new and what's next."
+            text="Written for the people who run the place."
             stagger={45}
             className={headingClass}
           />
           <Reveal as="p" delay={180} className={leadClass}>
-            Thought leadership and actionable insights to help you grow faster.
+            Practical guides for small and local businesses — much of it written from
+            what we see running New York offices, and all of it applicable anywhere in
+            the US.
           </Reveal>
         </SectionHead>
 
-        <div className="grid grid-cols-1 gap-6 min-[621px]:grid-cols-2 min-[861px]:grid-cols-3">
+        {/* Three posts, so one column then three — a two-column step would
+            leave a single card stranded on its own row. */}
+        <div className="grid grid-cols-1 gap-6 min-[861px]:grid-cols-3">
           {posts.map((post, index) => (
             <Reveal key={post.slug} delay={index * 120} className="flex">
               <article

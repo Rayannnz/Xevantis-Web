@@ -21,19 +21,20 @@ export function ScaleBand() {
                   <h2 className="m-0 font-display text-3xl font-bold leading-snug tracking-tighter">
                     SurgeShield
                   </h2>
-                  <p className="text-sm font-semibold">Scale without limits</p>
+                  <p className="text-sm font-semibold">Cover for the weeks that break you</p>
                 </div>
               </div>
 
               <p className="text-lg text-ink-700">
-                From expected surges to the demand spike nobody forecast: we hold a
-                trained bench on standby and flex your pod up to 3× within 72 hours,
-                then back down without penalty.
+                A small office has no bench. When flu season hits, when tax season
+                lands, or when someone quits with two weeks&rsquo; notice, we add
+                trained cover within 72 hours and take it back off when it&rsquo;s over
+                — no penalty either way.
               </p>
 
               <div className="flex flex-wrap items-center gap-3">
                 <Button href="#contact" magnetic={0.25}>
-                  <ButtonLabel>Speak to an expert</ButtonLabel>
+                  <ButtonLabel>Talk to someone today</ButtonLabel>
                 </Button>
               </div>
             </div>

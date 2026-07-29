@@ -18,27 +18,28 @@ export function CtaBand() {
           </Reveal>
 
           <SplitWords
-            text="Outsourcing + engineering, built to make you better."
+            text="Tell us what's eating your week."
             stagger={50}
             className="mb-4 mt-3 font-display text-5xl font-bold leading-[0.98] tracking-tighter"
           />
 
           <Reveal as="p" delay={200} className="mx-auto max-w-[60ch] text-lg text-ink-700">
-            Tell us the volumes and the outcome you need. We&rsquo;ll come back within
-            one business day with a staffing model, a timeline and a price.
+            Whether you run a clinic in Queens or a firm in Tulsa, we&rsquo;ll come back
+            within one business day with who we&rsquo;d put on it, when they&rsquo;d
+            start and what it costs per month.
           </Reveal>
 
           <SubscribeForm
-            successMessage="Thanks — a delivery lead will reach out within one business day."
+            successMessage="Thanks — someone who actually runs the work will reply within one business day."
             inputId="cta-email"
             label="Work email"
-            placeholder="you@company.com"
+            placeholder="you@yourpractice.com"
             cta="Get started"
             className="mt-8 flex justify-center"
           />
 
           <Reveal as="p" delay={320} className="mt-[0.85rem] text-xs text-ink-400">
-            No sales sequence. One reply from a human who runs delivery.
+            No sales sequence. One reply from a human, not a sales development rep.
           </Reveal>
         </Reveal>
       </Container>

@@ -39,137 +39,145 @@ export const ALL_SOLUTIONS: NavLink[] = SOLUTION_GROUPS.flatMap(
 );
 
 export const LAUNCH_STEPS: LaunchStep[] = [
-  { title: "Scope", detail: "Volumes, tooling, SLAs, edge cases.", accent: "sun" },
-  { title: "Recruit", detail: "Shortlist in 96 hours, you interview.", accent: "mint" },
-  { title: "Train", detail: "Your playbook, our academy, live sims.", accent: "lilac" },
-  { title: "Go live", detail: "Weekly QBR-grade reporting from day one.", accent: "blush" },
+  { title: "Scope", detail: "Your front desk, your files, your busy hours.", accent: "sun" },
+  { title: "Match", detail: "Two candidates in 96 hours, you interview.", accent: "mint" },
+  { title: "Train", detail: "Your intake scripts, your software, live practice.", accent: "lilac" },
+  { title: "Go live", detail: "A weekly call with the person who runs it.", accent: "blush" },
 ];
 
 export const WHY_SWITCH: string[] = [
-  "Named specialists, not a rotating pool — you keep the same people.",
-  "Engineers and CX in one contract, so fixes ship instead of queuing.",
-  "Month-to-month after month three. No 3-year lock-in, ever.",
+  "The same named person every day — not whoever picks up the phone.",
+  "Start at one seat, or half of one. No minimum team size.",
+  "Month-to-month after month three. No multi-year contract, ever.",
 ];
 
+/**
+ * Five steps, written for an owner-operator rather than a procurement team:
+ * the reader is usually the person who currently does this work themselves.
+ */
 export const PROCESS_STEPS: ProcessStep[] = [
   {
-    title: "We learn your product, tools and support workflows",
+    title: "We sit with you for a morning and learn how the office actually runs",
     detail:
-      "A delivery lead runs a two-day immersion: ticket taxonomy, escalation paths, tone of voice, systems access and the twenty edge cases that actually cause churn.",
+      "Which calls matter, what your software is, who signs off on what, and the dozen situations your front desk handles by instinct because nobody ever wrote them down.",
   },
   {
-    title: "We design a customized toolkit for your offer & team",
+    title: "We write the playbook you never had time to write",
     detail:
-      "Macros, QA rubric, knowledge base, routing rules and reporting schema — all built before a single agent is hired, then handed to you as your IP.",
+      "Intake scripts, scheduling rules, insurance and billing steps, escalation paths — documented before anyone is hired, and yours to keep whether you stay with us or not.",
   },
   {
-    title: "We recruit and assemble your dream team",
+    title: "We shortlist people who have worked in your industry",
     detail:
-      "Shortlist within 96 hours from a 40,000-strong talent pool. You interview every finalist and hold the veto — nobody joins your pod without your yes.",
+      "Two candidates within 96 hours, screened for the specifics — dental insurance verification, legal intake, prior-authorization calls. You interview both and hold the veto.",
   },
   {
-    title: "Your pod trains on your product, platform and playbooks",
+    title: "They train on your systems before they touch a real patient or client",
     detail:
-      "Two weeks of academy: product certification, live call simulation, shadowing and a graded readiness gate. Nobody touches a real customer before passing it.",
+      "Two weeks in your practice management or case software, live call practice against your scripts, and a readiness check you sign off on.",
   },
   {
-    title: "Go live & scale on a weekly check-in cadence",
+    title: "Go live, then a standing weekly call with the person who runs it",
     detail:
-      "Weekly performance reviews, monthly business reviews, and a shared dashboard you can open any time. Add or remove seats with 30 days' notice.",
+      "No account managers who have never seen your queue. Add or drop a seat with 30 days' notice, no penalty and no renegotiation.",
   },
 ];
 
 export const SURGE_MOMENTS: string[] = [
-  "Holiday seasons",
-  "Sporting events",
-  "Product launches",
-  "Brand campaigns",
-  "Tax & renewal season",
-  "Back-to-school",
-  "Crisis management",
-  "Weather events",
+  "Flu and vaccine season",
+  "Open enrollment",
+  "Tax season",
+  "Spring home-buying season",
+  "Staff PTO and leave",
+  "Back-to-school physicals",
+  "A sudden resignation",
+  "Snow days and closures",
 ];
 
 export const STATS: Stat[] = [
   {
-    value: 150,
+    value: 240,
     suffix: "+",
-    label: "Customers scaling with Xevantis pods today",
+    label: "Local US businesses running on Xevantis teams today",
   },
   {
     value: 4.8,
     decimals: 1,
     trailing: "/5",
-    label: "Average CSAT across all managed programs",
+    label: "Average client rating across every managed account",
   },
   {
-    value: 38,
+    value: 34,
     suffix: "%",
-    label: "Median cost reduction in the first two quarters",
+    label: "Median saving against hiring the same role locally",
   },
   {
     value: 14,
     suffix: " days",
-    label: "From signed scope to a fully trained team going live",
+    label: "From signed scope to a trained person answering your phone",
   },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    title: "The best BPO partner we've worked with",
+    title: "Our front desk finally gets to look patients in the eye",
     quote:
-      "With a good transition, we were able to sit our contact center team almost 100% quality and cost accuracy. Supporting fifteen thousand tickets a month stopped being a fire drill and became a routine.",
-    role: "Head of Customer Ops",
-    meta: "Industry: E-commerce · 300–1,000 staff",
-    initials: "HP",
+      "Two people were answering phones and checking in patients at the same time, badly. Xevantis took the calls and the insurance verification. Same two staff, no more waiting room backlog, and we stopped losing new-patient calls to voicemail.",
+    role: "Practice Manager",
+    meta: "Family dental practice · Queens, NY · 4 providers",
+    initials: "PM",
     surface: "bg-sky-050",
     avatar: "bg-sun-300",
   },
   {
-    title: "Consistently delivering excellent outcomes",
+    title: "Every new-client call gets answered now",
     quote:
-      "Thanks to ready-set-and-adapt certified products, no more than 30 disputed ambiguities. The team is technically brilliant, but what stands out is how fast they push back when our process is the problem.",
-    role: "VP of Support",
-    meta: "Industry: Gaming · 1,000+ staff",
-    initials: "VP",
+      "We are a six-attorney firm. Intake calls used to hit voicemail whenever we were in court, and people who need a lawyer call the next name on the list. Their intake specialist knows our matter types and screens conflicts before it reaches us.",
+    role: "Managing Partner",
+    meta: "Personal injury firm · Brooklyn, NY · 6 attorneys",
+    initials: "MP",
     surface: "bg-mint-050",
     avatar: "bg-mint-300",
   },
   {
-    title: "A partner with exceptional understanding of our culture",
+    title: "They pushed back when our process was the problem",
     quote:
-      "Xevantis embedded strategic decisions to significantly reduce failure response times. The team's ability to scale to customers from diverse linguistic backgrounds makes the workflow seamless.",
-    role: "Customer Support Manager",
-    meta: "Industry: Fintech · 100–300 staff",
-    initials: "CS",
+      "Three weeks in they told us our refill callback workflow was creating half its own volume, and showed the numbers. Nobody we have hired before has done that. We changed it and the queue dropped by a third.",
+    role: "Pharmacist-in-Charge",
+    meta: "Independent pharmacy · 2 locations · Bronx, NY",
+    initials: "PC",
     surface: "bg-lilac-050",
     avatar: "bg-lilac-300",
   },
   {
-    title: "Engineering and support finally in one room",
+    title: "Bookkeeping and the website came from the same contract",
     quote:
-      'Bugs surfaced by the support pod get fixed by the same vendor\'s engineers in the same sprint. Our backlog of "known issues customers keep writing about" went from 47 to 6 in a quarter.',
-    role: "CTO",
-    meta: "Industry: SaaS · 100–300 staff",
-    initials: "CT",
+      "We needed month-end cleaned up and a project portal our clients could actually log into. Getting both from one team meant nobody could blame the other one. The portal shipped in the same quarter the books got current.",
+    role: "Principal",
+    meta: "Structural engineering firm · Long Island City, NY · 18 staff",
+    initials: "PE",
     surface: "bg-blush-050",
     avatar: "bg-blush-300",
   },
 ];
 
+/**
+ * The tools a small practice or firm actually runs, not the enterprise stack.
+ * These are what a prospect scans for their own software before they call.
+ */
 export const INTEGRATIONS: string[][] = [
-  ["Zendesk", "Intercom", "Salesforce", "HubSpot", "Shopify", "Slack", "Stripe", "Jira"],
-  ["Twilio", "Genesys", "Freshdesk", "NetSuite", "Snowflake", "Linear", "GitHub", "Notion"],
+  ["Dentrix", "Open Dental", "Athenahealth", "eClinicalWorks", "Clio", "MyCase", "QuickBooks", "Xero"],
+  ["Salesforce", "HubSpot", "Google Workspace", "Microsoft 365", "RingCentral", "Follow Up Boss", "Gusto", "Square"],
 ];
 
 export const FOOTER_COLUMNS: FooterColumn[] = [
   {
     title: "Solutions",
     links: [
-      { label: "IT outsourcing", href: "/services/it-outsourcing" },
-      { label: "Customer service", href: "/services/customer-service" },
-      { label: "Finance & accounting", href: "/services/finance-and-accounting" },
-      { label: "HR outsourcing", href: "/services/hr-outsourcing" },
+      { label: "Small business support", href: "/services/small-business" },
+      { label: "Front desk & customer calls", href: "/services/customer-service" },
+      { label: "Bookkeeping & accounting", href: "/services/finance-and-accounting" },
+      { label: "IT support", href: "/services/it-outsourcing" },
       { label: "All BPO solutions", href: "/services" },
     ],
   },
@@ -177,7 +185,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
     title: "Company",
     links: [
       { label: "About us", href: "/" },
-      { label: "Customers", href: "/#proof" },
+      { label: "Who we work with", href: "/#proof" },
       { label: "Insights", href: "/resources" },
       { label: "Careers", href: "/" },
       { label: "Contact", href: "/#contact" },
@@ -196,8 +204,8 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
 ];
 
 export const COMPLIANCE_BADGES = [
-  "ISO 27001",
+  "HIPAA compliant",
   "SOC 2 Type II",
-  "CCPA & GDPR ready",
+  "CCPA & state privacy ready",
   "PCI DSS",
 ];

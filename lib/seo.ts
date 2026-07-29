@@ -137,7 +137,12 @@ export function serviceJsonLd(service: ServiceContent) {
         url: SITE_URL,
         logo: absoluteUrl("/img/logo-valentisys.png"),
       },
-      areaServed: "Worldwide",
+      // We sell nationwide but rank locally, so the graph names the country and
+      // the metro we publish for rather than one or the other.
+      areaServed: [
+        { "@type": "Country", name: "United States" },
+        { "@type": "City", name: "New York" },
+      ],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: `${service.name} engagements`,
@@ -165,6 +170,8 @@ export function serviceJsonLd(service: ServiceContent) {
         {
           "@type": "ListItem",
           position: 2,
+          // Must match the visible breadcrumb in `ServiceHero`, or the
+          // rendered trail and the structured data disagree.
           name: "BPO Solutions",
           item: absoluteUrl("/services"),
         },

@@ -45,7 +45,10 @@ export function CaseStudies({
           </Reveal>
         </SectionHead>
 
-        <div className="grid gap-5 min-[721px]:grid-cols-2 min-[1121px]:grid-cols-3">
+        {/* Three case studies per service, so the grid goes straight from one
+            column to three. A two-column step would leave a single orphan
+            card on every service page. */}
+        <div className="grid gap-5 min-[900px]:grid-cols-3">
           {cases.map((study, index) => (
             <Reveal key={study.title} delay={index * 110} className="flex">
               <article

@@ -7,8 +7,8 @@ export const itOutsourcing: ServiceContent = {
   accent: "sky",
   eyebrow: "IT Outsourcing",
   summary:
-    "Service desk, infrastructure monitoring and application support run by a named team in your tooling, on your service levels.",
-  trustLabel: "Running IT operations for",
+    "Help desk, backups, security and the office network, run by named engineers who know your practice — for offices too small to hire their own IT person.",
+  trustLabel: "Running IT for",
 
   sections: {
     benefits: {
@@ -16,62 +16,62 @@ export const itOutsourcing: ServiceContent = {
       body: "Four outcomes we baseline before transition and report weekly against. Ticket volume is only one of them, and rarely the most valuable.",
     },
     process: {
-      title: "From estate audit to a team on the schedule.",
-      body: "Six phases over roughly three weeks. The knowledge capture phase is the one that decides whether month four is calm or expensive.",
+      title: "From a walkthrough of your office to a team on call.",
+      body: "Six phases over roughly three weeks. Writing down how your office actually works is the phase that decides whether month four is calm or expensive.",
     },
     tech: {
-      title: "We work in your stack.",
-      body: "No proprietary platform to license and no forced migration. These are the tools our engineers operate in daily.",
+      title: "We work in the software you already have.",
+      body: "No platform to license and no forced migration. These are the tools our engineers work in every day, including the ones specific to clinics and firms.",
     },
     why: {
-      title: "Why IT directors keep the team past the pilot.",
-      body: "Managed IT has a reputation for ticket-closing over problem-solving. The commercial model is usually why, so we changed it.",
+      title: "Why offices keep the team past the trial.",
+      body: "Small-business IT has a reputation for closing tickets rather than solving problems. The way it is priced is usually why, so we changed it.",
     },
     cases: {
-      title: "Estates we run.",
-      body: "Three engagements measured on resolution time, repeat-incident rate, and the cost of a follow-the-sun schedule.",
+      title: "Offices we look after.",
+      body: "Three engagements measured on response time, repeat problems, and what the alternative would have cost.",
     },
     faq: {
       title: "Coverage, security and control.",
-      body: "The questions a CIO asks before handing over any part of the estate.",
+      body: "What an owner or office manager asks before handing over the passwords.",
     },
   },
 
   hero: {
-    title: "IT operations run by a team you interviewed.",
+    title: "The IT department your office is too small to hire.",
     highlight: "fixing the cause",
-    body: "Service desk, infrastructure monitoring, application support and endpoint management from named engineers working in your tooling. We are paid to reduce tickets, which means fixing the cause rather than closing the symptom.",
+    body: "Help desk, backups, patching, security and the network — from named engineers who learn your office and answer when you call. We are paid per team, not per ticket, which means fixing the cause rather than closing the symptom.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
-    trust: "Two IT pods opening for Q1 onboarding",
+    trust: "Onboarding offices from 5 to 100 staff, anywhere in the US",
     chips: [
-      { value: "8 min", label: "Median first response, P1 incidents" },
-      { value: "-29%", label: "Ticket volume after two quarters" },
-      { value: "24/7", label: "Cover from six delivery hubs" },
+      { value: "8 min", label: "Median response when something is down" },
+      { value: "-29%", label: "Fewer problems after two quarters" },
+      { value: "1", label: "Person you call, who knows your office" },
     ],
     figure: "network",
   },
 
   overview: {
     eyebrow: "Service overview",
-    title: "Closing tickets faster is not the same as having fewer.",
-    body: "Most managed IT contracts are priced per ticket or per seat, so nobody is rewarded for removing the reason people raise them. Ours is priced per team, which is why problem management is in the scope rather than sold as a project.",
+    title: "Fixing things faster is not the same as having fewer things break.",
+    body: "Most small-business IT is billed by the hour or by the visit, so nobody is rewarded for removing the reason you keep calling. Ours is a flat monthly rate, which is why finding root causes is in the scope rather than sold as a project.",
     panels: [
       {
         heading: "What it is",
-        body: "A dedicated IT pod — service desk analysts, infrastructure and application engineers, and a service delivery manager — working your estate to agreed service levels.",
+        body: "Named engineers covering your help desk, devices, backups, network and security, plus one delivery lead who knows your office and answers the phone.",
       },
       {
         heading: "Who it's for",
-        body: "Companies with 100–5,000 staff whose internal IT team is absorbed by day-to-day support, and groups needing follow-the-sun cover without staffing three shifts.",
+        body: "Clinics, firms and offices from 5 to 100 staff — too big for whoever is least afraid of computers, too small to justify a $130k IT hire.",
       },
       {
         heading: "The business case",
-        body: "Round-the-clock cover at a fraction of three in-house shifts, plus a falling ticket rate as recurring causes get engineered out rather than absorbed.",
+        body: "Proper coverage for a fraction of an in-house salary, and fewer problems each quarter as recurring causes get engineered out instead of absorbed.",
       },
       {
         heading: "Why us",
-        body: "Problem management is contractual. Every month we report the top five recurring incident causes and what we did about them.",
+        body: "Root-cause work is contractual. Every month we report the five things that keep breaking and what we did about them.",
       },
     ],
     figure: "layers",
@@ -109,22 +109,22 @@ export const itOutsourcing: ServiceContent = {
     },
     {
       title: "Ticket volume that falls quarter on quarter",
-      body: "Every recurring incident gets a root cause and a permanent fix, reported monthly. Because the pod is priced per team rather than per ticket, removing work is in our interest as well as yours.",
+      body: "Every recurring problem gets a root cause and a permanent fix, reported monthly. Because we are paid a flat rate rather than by the hour, removing work is in our interest as well as yours.",
       metric: { value: 29, suffix: "%", label: "Median reduction in ticket volume at six months" },
       link: { label: "How problem management works", href: "#why-us" },
       figure: "dashboard",
     },
     {
-      title: "Round-the-clock cover without three shifts",
-      body: "Six delivery hubs make genuine 24/7 staffing affordable, rostered against your real incident curve. Weekend and overnight incidents stop waiting for someone's alarm to go off.",
-      metric: { value: 3, suffix: "x", label: "Cheaper than staffing three in-house shifts" },
+      title: "Coverage without a salary on the books",
+      body: "Named engineers scheduled against when your office is actually open, including the Saturday clinic and the night before a filing deadline. No single point of failure who takes vacation.",
+      metric: { value: 3, suffix: "x", label: "Cheaper than an in-house hire at this size" },
       link: { label: "Talk through coverage", href: "#contact" },
       figure: "network",
     },
     {
-      title: "An estate that is finally documented",
-      body: "Knowledge capture is a scoped phase, not an afterthought. Runbooks and asset records get written as the pod learns the estate, which is also what protects you if you ever move supplier.",
-      metric: { value: 100, suffix: "%", label: "Of supported services with a maintained runbook" },
+      title: "An office that is finally written down",
+      body: "Documenting how your systems work is a scoped phase, not an afterthought. It gets written as the team learns your office, and it is also what protects you if you ever change providers.",
+      metric: { value: 100, suffix: "%", label: "Of your systems with written instructions" },
       link: { label: "See the transition", href: "#process" },
       figure: "layers",
     },
@@ -132,78 +132,76 @@ export const itOutsourcing: ServiceContent = {
 
   process: [
     {
-      title: "Estate audit",
+      title: "Office walkthrough",
       duration: "Week 1",
-      body: "Asset inventory, ticket history, monitoring coverage and the applications nobody has documented. We report what is unsupported or out of warranty before anything else is agreed.",
+      body: "Every device, every login, every piece of software you pay for, and the machine in the closet nobody wants to discuss. We report what is unsupported or out of warranty before anything else is agreed.",
     },
     {
-      title: "Service design",
+      title: "Agree the ground rules",
       duration: "Week 1–2",
-      body: "Severity definitions, response and resolution targets, escalation matrix and the boundary between us and your internal team. Ambiguity here is where managed IT relationships fail.",
+      body: "What counts as urgent, how fast we answer, who we may call, and what we are allowed to change without asking. Ambiguity here is where these relationships fail.",
     },
     {
-      title: "Knowledge capture",
+      title: "Write it down",
       duration: "Week 2–3",
-      body: "Shadowing your current team, writing runbooks for the top fifty recurring issues, and recording the tribal knowledge that currently lives in two people's heads.",
+      body: "Shadowing whoever currently handles this, writing instructions for the fifty things that go wrong most, and capturing what currently lives in one person's head.",
     },
     {
-      title: "Onboard the pod",
+      title: "Onboard the team",
       duration: "Week 2–3",
-      body: "Named engineers matched to the estate, tooling access provisioned, and a graded readiness check. Nobody takes a live ticket before passing it.",
+      body: "Named engineers matched to your office and your industry's software, access provisioned, and a readiness check. Nobody touches a live problem before passing it.",
     },
     {
       title: "Go live",
       duration: "Week 3",
-      body: "A ramped start on a subset of queues with your team shadowing, moving to full scope as resolution quality holds. The service delivery manager is on shift throughout the first two weeks.",
+      body: "A ramped start on part of the workload with your people watching, moving to full scope as quality holds. Your delivery lead is reachable throughout the first two weeks.",
     },
     {
       title: "Run & reduce",
       duration: "Ongoing",
-      body: "Weekly service reviews, monthly problem management reporting on the top five recurring causes, and a continuous improvement backlog owned by the pod.",
+      body: "A standing weekly call, a monthly report on the five things that keep breaking, and an improvement list the team owns rather than you.",
     },
   ],
 
   tech: [
-    { name: "ServiceNow", category: "ITSM" },
-    { name: "Jira Service Management", category: "ITSM" },
-    { name: "Freshservice", category: "ITSM" },
-    { name: "Zendesk", category: "Ticketing" },
-    { name: "Microsoft Intune", category: "Endpoint management" },
+    { name: "Microsoft 365", category: "Email & files" },
+    { name: "Google Workspace", category: "Email & files" },
+    { name: "Freshservice", category: "Help desk" },
+    { name: "Microsoft Intune", category: "Device management" },
     { name: "Jamf", category: "Apple management" },
-    { name: "Microsoft 365", category: "Productivity" },
-    { name: "Google Workspace", category: "Productivity" },
-    { name: "Active Directory", category: "Identity" },
-    { name: "Okta", category: "Identity" },
-    { name: "Datadog", category: "Monitoring" },
-    { name: "Nagios", category: "Infrastructure monitoring" },
-    { name: "AWS", category: "Cloud" },
-    { name: "Microsoft Azure", category: "Cloud" },
-    { name: "VMware", category: "Virtualization" },
+    { name: "Datto", category: "Backup" },
     { name: "Veeam", category: "Backup" },
-    { name: "CrowdStrike", category: "Endpoint security" },
+    { name: "SentinelOne", category: "Endpoint security" },
+    { name: "Duo", category: "Multi-factor auth" },
+    { name: "1Password", category: "Password management" },
+    { name: "Ubiquiti", category: "Networking" },
     { name: "Cisco Meraki", category: "Networking" },
+    { name: "Open Dental", category: "Dental practice" },
+    { name: "Athenahealth", category: "Medical records" },
+    { name: "Clio", category: "Legal practice" },
+    { name: "Autodesk", category: "Engineering & CAD" },
   ],
 
   differentiators: [
     {
-      title: "Priced per team, not per ticket",
-      body: "A per-ticket contract gives a supplier every reason to leave the cause in place. Ours gives us the opposite incentive, and the monthly problem report proves we act on it.",
+      title: "A flat monthly rate, not an hourly invoice",
+      body: "Billing by the hour gives a provider every reason to leave the cause in place. A flat rate gives us the opposite incentive, and the monthly report proves we act on it.",
     },
     {
       title: "You interview every engineer",
-      body: "Named analysts and engineers assigned to your estate, not a shared queue. You meet every finalist and hold the veto before anyone joins.",
+      body: "Named engineers assigned to your office, not a rotating queue. You meet every finalist and hold the veto before anyone joins.",
     },
     {
-      title: "Documentation as we go",
-      body: "Runbooks and knowledge articles are written during knowledge capture and maintained monthly. An estate only we understand is a failure of the engagement.",
+      title: "Written down as we go",
+      body: "Instructions and system records are written while we learn your office and kept current monthly. An office only we understand is a failure of the engagement.",
     },
     {
-      title: "Security built into the service",
-      body: "Vulnerability triage, patch compliance and access review are part of the monthly reporting rather than a separate security retainer.",
+      title: "Security and compliance included",
+      body: "Patch status, access review and — for clinics — the HIPAA controls that get asked about are part of the monthly report, not a separate security retainer.",
     },
     {
-      title: "Genuine follow-the-sun",
-      body: "Six hubs across Asia, Eastern Europe and Latin America. Overnight cover means engineers on shift, not an on-call phone in a different timezone.",
+      title: "We know your industry's software",
+      body: "Practice management, case management and CAD are not generic office IT. Engineers are matched to offices running the tools they already support.",
     },
     {
       title: "Month-to-month after month three",
@@ -213,46 +211,46 @@ export const itOutsourcing: ServiceContent = {
 
   cases: [
     {
-      industry: "Manufacturing",
-      title: "Follow-the-sun cover across nine sites",
+      industry: "Medical clinic · Queens, NY",
+      title: "A ransomware scare, and the backup nobody had tested",
       challenge:
-        "Plants running three shifts across four timezones, with an IT team available only during headquarters office hours and production stoppages waiting until morning.",
+        "A six-provider primary care clinic hit by an encrypted workstation. The nightly backup had been failing silently since February, which nobody discovered until the day it was needed.",
       solution:
-        "A twelve-person pod rostered against actual incident volume by hour, with site-specific runbooks written during a three-week knowledge capture phase.",
+        "Contained and rebuilt in 36 hours from an older copy, then a rebuilt backup design with an offline copy, monthly test restores, and the HIPAA risk analysis the practice had never had written.",
       results: [
-        { value: 8, suffix: " min", label: "Median P1 first response" },
-        { value: 71, suffix: "%", label: "Fewer production stoppages over 4 hours" },
-        { value: 34, suffix: "%", label: "Lower cost than in-house shift cover" },
+        { value: 36, suffix: " hrs", label: "From incident to fully operational" },
+        { value: 0, label: "Patient records permanently lost" },
+        { value: 12, suffix: " mo", label: "Verified restores since, all passing" },
       ],
       accent: "sky",
       figure: "network",
     },
     {
-      industry: "Professional services",
-      title: "Cutting ticket volume by fixing three root causes",
+      industry: "Structural engineering · Long Island City, NY",
+      title: "Twelve people, four home offices and a 6 GB model",
       challenge:
-        "Eleven thousand tickets a quarter and an internal team with no capacity to look at why the same issues kept returning.",
+        "An 18-person firm running hybrid after a move, with drafters pulling large models across residential connections over a VPN. Model opens took twenty minutes and staff had started emailing copies to each other.",
       solution:
-        "Problem management on the top recurring clusters found three causes — a VPN profile, a printer driver policy and a license sync — accounting for 38% of all tickets.",
+        "Active models moved to remote desktop sessions next to the data, everything else to cloud storage, and a written folder structure that ended the emailed-copy habit.",
       results: [
-        { value: 38, suffix: "%", label: "Of ticket volume traced to 3 causes" },
-        { value: 31, suffix: "%", label: "Reduction in total tickets" },
-        { value: 2, suffix: " FTE", label: "Internal capacity returned" },
+        { value: 20, suffix: " min", label: "Model open time, down to under 2" },
+        { value: 4, label: "Home offices working at office speed" },
+        { value: 0, label: "Version conflicts since the migration" },
       ],
       accent: "mint",
       figure: "dashboard",
     },
     {
-      industry: "Healthcare",
-      title: "Taking over an estate with no documentation",
+      industry: "Law firm · Manhattan, NY",
+      title: "The partner who had become the IT department",
       challenge:
-        "An incumbent supplier exiting with 30 days' notice, no runbooks, and two clinical applications only one departing engineer understood.",
+        "A nine-attorney firm where one partner handled every password reset, new laptop and printer fault. He estimated six hours a week; his own time log said eleven.",
       solution:
-        "Accelerated knowledge capture running in parallel with a shadow schedule, prioritizing the clinical systems, with the pod live before the incumbent's last day.",
+        "A full inventory and cleanup, named engineers on the help desk, offboarding that actually disables accounts, and multi-factor authentication across the firm's email and case system.",
       results: [
-        { value: 30, suffix: " days", label: "To full service transfer" },
-        { value: 0, label: "Clinical system outages during handover" },
-        { value: 180, suffix: "+", label: "Runbooks written in the first quarter" },
+        { value: 11, suffix: " hrs", label: "Partner time returned per week" },
+        { value: 23, suffix: "%", label: "Of paid licenses assigned to former staff" },
+        { value: 1, suffix: " day", label: "Offboarding, down from never" },
       ],
       accent: "lilac",
       figure: "layers",
@@ -262,93 +260,93 @@ export const itOutsourcing: ServiceContent = {
   quotes: [
     {
       quote:
-        "The monthly problem report is the part I did not expect. They keep finding reasons to have less work, which is not how our last supplier behaved.",
-      name: "Alan Forsythe",
-      role: "IT Director",
-      company: "Peakline",
-      initials: "AF",
+        "The monthly report is the part I did not expect. They keep finding reasons for us to need them less, which is not how our last guy operated.",
+      name: "Office Manager",
+      role: "Six-provider primary care clinic",
+      company: "Queens, NY",
+      initials: "OM",
       rating: 5,
     },
     {
       quote:
-        "Our incumbent left with 30 days' notice and no documentation. Xevantis were live before the last engineer walked out.",
-      name: "Marisa Colton",
-      role: "Head of Technology",
-      company: "Aurora Health",
-      initials: "MC",
+        "We found out our backups had been failing for four months on the morning we needed them. That does not happen now, because somebody's actual job is to check.",
+      name: "Practice Administrator",
+      role: "Multi-site dental group",
+      company: "Nassau County, NY",
+      initials: "PA",
       rating: 5,
     },
     {
       quote:
-        "Three shifts of cover for a third of what staffing it here would have cost. The business case wrote itself.",
-      name: "Devan Raju",
-      role: "CIO",
-      company: "Gridworks",
-      initials: "DR",
+        "I was the IT department and I bill at $550 an hour. Nobody at the firm could explain why that was a good arrangement.",
+      name: "Managing Partner",
+      role: "Nine-attorney law firm",
+      company: "Manhattan, NY",
+      initials: "MP",
       rating: 5,
     },
   ],
 
   faqs: [
     {
-      question: "How quickly can a team take over?",
+      question: "How quickly can you take over?",
       answer:
-        "Three weeks for a typical estate. Where an incumbent is exiting at short notice we have transferred in 30 days, running an accelerated knowledge capture in parallel with a shadow schedule.",
+        "Three weeks for a typical office. Where a current provider is leaving at short notice we have transferred in 30 days, running the documentation phase in parallel rather than after.",
     },
     {
-      question: "Do we keep our own ITSM tooling?",
+      question: "Do we have to change any of our software?",
       answer:
-        "Yes. We work in your ServiceNow, Jira Service Management, Freshservice or Zendesk under your licenses. There is no proprietary platform to adopt and your ticket data never leaves your tenancy.",
+        "No. We work in your practice management, case management, accounting or design software under your own licenses. There is no platform of ours to adopt and no migration you did not ask for.",
     },
     {
-      question: "What service levels do you commit to?",
+      question: "How fast do you answer when something is down?",
       answer:
-        "Response and resolution targets by severity, agreed in service design and contractual. P1 response is typically 15 minutes with an 8-minute median in practice, reported weekly against actuals.",
+        "Agreed up front and written into the contract. For anything that stops you seeing patients or clients the target is 15 minutes, with an 8-minute median in practice, reported to you weekly.",
     },
     {
-      question: "Can you provide 24/7 cover?",
+      question: "Do you cover evenings and weekends?",
       answer:
-        "Yes, rostered against your real incident curve rather than a standard shift pattern. Six hubs make genuine round-the-clock staffing affordable rather than an on-call compromise.",
+        "We schedule against when your office is actually open, including Saturday clinics and the nights before filing deadlines. Round-the-clock cover is available where the work genuinely needs it rather than sold as standard.",
     },
     {
-      question: "How do you handle security and access?",
+      question: "Are you HIPAA compliant?",
       answer:
-        "ISO 27001 certified and SOC 2 Type II audited, with least-privilege access, managed devices, session recording where required and quarterly access reviews. We can work within your VDI where data classification demands it.",
+        "Yes, and we sign a business associate agreement before touching anything. That includes the written risk analysis, access reviews, encryption and audit logging that get asked about first — and we will tell you which controls you are currently missing.",
     },
     {
-      question: "What is the boundary with our internal team?",
+      question: "What if we already have someone doing IT?",
       answer:
-        "Defined in service design and written down: which queues, which systems, which decisions. Ambiguity about who owns what is the most common reason managed IT relationships deteriorate.",
+        "Common, and it works well. We take the routine load and the after-hours cover so your person does the work only they can do. The split gets written down in week two so nobody is guessing.",
     },
     {
-      question: "Do you take over vendor management?",
+      question: "Will you deal with our software vendors for us?",
       answer:
-        "Yes, including escalation to your software and hardware vendors under your support contracts. Contract negotiation and renewal decisions stay with you; we provide the usage data behind them.",
+        "Yes, including chasing your practice management or case software vendor under your own support contract. Renewal and purchasing decisions stay yours; we give you the usage data behind them.",
     },
     {
-      question: "What happens if performance drops?",
+      question: "What happens if the service slips?",
       answer:
-        "Service levels carry defined remedies. In practice the weekly service review catches drift long before a threshold is breached, which is exactly why the cadence is weekly rather than monthly.",
+        "The agreed targets carry defined remedies. In practice the standing weekly call catches drift long before a threshold is breached, which is exactly why it is weekly rather than quarterly.",
     },
     {
-      question: "Do you cover cybersecurity?",
+      question: "Do you handle security, or is that separate?",
       answer:
-        "Vulnerability triage, patch compliance, endpoint security operations and posture reporting are included. Penetration testing and incident response retainers are separate specialist engagements we can coordinate.",
+        "Patching, endpoint security, multi-factor authentication and access review are included. Penetration testing and a formal breach response retainer are separate specialist engagements we can arrange.",
     },
     {
-      question: "What if we want to bring IT back in-house?",
+      question: "What if we want to bring IT back in-house later?",
       answer:
-        "The runbooks, knowledge base and asset records are yours and current, because they are maintained monthly rather than written at exit. We run a paid shadowing period with your new hires at no uplift.",
+        "The documentation, system records and inventory are yours and current, because they are maintained monthly rather than written on the way out. We will shadow your new hire for a month at no uplift.",
     },
     {
       question: "Is there a minimum term?",
       answer:
-        "Three months, then month-to-month with 30 days' notice. Three months reflects how long it takes to learn an estate properly; below that neither side gets value.",
+        "Three months, then month-to-month with 30 days' notice. Three months is how long it takes to learn an office properly; below that neither side gets value.",
     },
     {
       question: "How is it priced?",
       answer:
-        "A fixed monthly rate per pod by size and skill mix, never per ticket or per device. You see the rate card during the estate audit, before any commitment.",
+        "A flat monthly rate based on how many people and devices you have — never per ticket, per visit or per hour. You see the number during the walkthrough, before any commitment.",
     },
   ],
 
@@ -362,13 +360,13 @@ export const itOutsourcing: ServiceContent = {
   ],
 
   cta: {
-    title: "Get an estate audit and a schedule this month.",
-    body: "Tell us the estate, the ticket volume and the cover you need. We will come back within one business day with a pod shape, service levels and a price.",
+    title: "Get a walkthrough and a flat monthly number.",
+    body: "Tell us how many people you have and what keeps breaking. We will come back within one business day with who would cover it, what they would fix first, and a price.",
   },
 
   seo: {
-    title: "IT Outsourcing | Managed Service Desk & Infrastructure Support — Xevantis",
+    title: "IT Support for Small Businesses & Medical Practices — Xevantis",
     description:
-      "Dedicated IT pods covering service desk, infrastructure monitoring, endpoint management and problem management. 24/7 cover, priced per team not per ticket, live in three weeks.",
+      "Outsourced IT for clinics, dental practices, law firms, engineering and accounting offices across the US. Help desk, backups, HIPAA-aware security and network support from named engineers. Flat monthly rate, live in three weeks.",
   },
 };

@@ -3,75 +3,75 @@ import { PRIMARY_CTA, SECONDARY_CTA } from "./shared";
 
 export const legalProcessOutsourcing: ServiceContent = {
   slug: "legal-process-outsourcing",
-  name: "Legal Process Outsourcing",
+  name: "Paralegal & Legal Support",
   accent: "lilac",
-  eyebrow: "Legal Process",
+  eyebrow: "Legal Support",
   summary:
-    "Contract review, document review, paralegal support and compliance administration by qualified lawyers, under your supervision and privilege.",
-  trustLabel: "Supporting legal teams at",
+    "Paralegal support, document preparation, records requests, discovery review and billing for small law firms — supervised by you, always.",
+  trustLabel: "Supporting law firms like",
 
   sections: {
     benefits: {
-      title: "What legal support at the right cost level changes.",
-      body: "Four outcomes baselined against your current turnaround and external counsel spend before anything transfers.",
+      title: "What proper support changes at a small firm.",
+      body: "Four outcomes baselined against your current turnaround and what you currently pay a contract paralegal before anything transfers.",
     },
     process: {
-      title: "From matter scoping to a team on your playbook.",
-      body: "Six phases over about three weeks. Conflict checking and privilege design come before any document is opened.",
+      title: "From a look at your matters to a trained paralegal.",
+      body: "Six phases over about three weeks. Conflict checking and the supervision structure come before any file is opened.",
     },
     tech: {
-      title: "Contract, review and eDiscovery platforms.",
-      body: "We work in your systems under your licenses, inside your document retention and privilege boundaries.",
+      title: "Your case management, your document system.",
+      body: "We work in your Clio, MyCase or Filevine under your own licenses, inside your retention and confidentiality rules.",
     },
     why: {
-      title: "Why general counsel keep the team on the panel.",
-      body: "Legal outsourcing fails on two things: quality that needs re-reviewing, and privilege arrangements that do not survive scrutiny.",
+      title: "Why partners keep the support past the trial.",
+      body: "Legal support fails on two things: work that has to be redone, and a supervision arrangement nobody wrote down until it was questioned.",
     },
     cases: {
-      title: "Matters we support.",
-      body: "Three engagements measured on turnaround, external counsel spend displaced, and review accuracy on sampled sets.",
+      title: "Firms we support.",
+      body: "Three engagements measured on turnaround, hours returned to attorneys, and the contract-paralegal spend they replaced.",
     },
     faq: {
-      title: "Privilege, supervision and qualification.",
-      body: "The questions your general counsel and your regulator will ask, answered directly.",
+      title: "Supervision, confidentiality and the unauthorized-practice line.",
+      body: "The questions your state bar would ask about this arrangement, answered directly.",
     },
   },
 
   hero: {
-    title: "Legal capacity without external counsel rates.",
+    title: "Paralegal capacity without another salary on the books.",
     highlight: "under your supervision",
-    body: "Qualified lawyers and paralegals handling contract review, document review and compliance administration under your supervision and inside your privilege arrangements — at a fraction of what a firm charges for the same work.",
+    body: "Trained paralegals and legal assistants handling document preparation, records requests, discovery review, intake and billing — under your supervision, inside your case management system, at a fraction of what a local contract paralegal costs.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
-    trust: "Legal pods available for Q1 matters",
+    trust: "Working with firms from 2 to 40 attorneys, in all 50 states",
     chips: [
-      { value: "-64%", label: "Versus external counsel hourly rates" },
-      { value: "24 hrs", label: "Standard contract review turnaround" },
-      { value: "98.9%", label: "Accuracy on sampled review sets" },
+      { value: "-64%", label: "Versus a local contract paralegal rate" },
+      { value: "24 hrs", label: "Standard document turnaround" },
+      { value: "98.9%", label: "Accuracy on sampled work" },
     ],
     figure: "layers",
   },
 
   overview: {
     eyebrow: "Service overview",
-    title: "The volume work that should never reach a partner's rate card.",
-    body: "A large share of in-house legal work is high-volume and low-variance: NDAs, standard-form contracts, first-pass document review, compliance registers. It absorbs a legal team's week and, when it overflows, it goes to a firm at several hundred pounds an hour.",
+    title: "The volume work that should never reach an attorney's rate.",
+    body: "A large share of a small firm's week is high-volume and low-variance: records requests, medical chronologies, discovery indexing, filing packets, billing entries. It absorbs the paralegal you have, and when it overflows it lands on an attorney billing several hundred dollars an hour.",
     panels: [
       {
         heading: "What it is",
-        body: "A legal pod of qualified lawyers and paralegals working to your playbook, under your in-house supervision, inside your systems and your privilege structure.",
+        body: "Trained paralegals and legal assistants working to your procedures, under your attorneys' supervision, inside your own case management system.",
       },
       {
         heading: "Who it's for",
-        body: "In-house legal teams with high contract volume, companies in litigation or investigation with document review at scale, and regulated businesses with heavy compliance administration.",
+        body: "Firms from two to forty attorneys — personal injury, immigration, family, estate planning, real estate and small commercial practices where the paperwork is the bottleneck.",
       },
       {
         heading: "The business case",
-        body: "Volume work at roughly a third of external counsel rates, faster turnaround for the business, and your own lawyers freed for the matters that need judgment.",
+        body: "Volume work at roughly a third of a local contract paralegal rate, faster turnaround for clients, and your attorneys back on the work only they can bill for.",
       },
       {
         heading: "Why us",
-        body: "Privilege and supervision are designed with your general counsel before any matter opens, and documented so the arrangement stands up when it is examined.",
+        body: "The supervision structure and the line against unauthorized practice are designed with you and written down before any file opens — not worked out after someone asks.",
       },
     ],
     figure: "pipeline",
@@ -79,52 +79,52 @@ export const legalProcessOutsourcing: ServiceContent = {
 
   included: {
     eyebrow: "Scope",
-    title: "Review, drafting and the compliance administration around them.",
-    body: "One monthly rate per pod. Conflict checking, supervision protocols and quality sampling are inside it rather than billed as matter management.",
+    title: "Documents, discovery and the administration around them.",
+    body: "One monthly rate per seat. Conflict checking, supervision protocols and quality sampling are inside it rather than billed separately.",
     items: [
-      "Contract review against your playbook with deviation reporting",
-      "NDA, MSA and standard-form drafting and negotiation support",
-      "Contract abstraction, summarization and obligation extraction",
-      "Contract lifecycle management data entry and renewals tracking",
-      "First-pass document review for litigation and investigations",
-      "Privilege and responsiveness coding under supervision",
-      "Legal research and memoranda preparation",
-      "Regulatory horizon scanning and change summaries",
-      "Compliance register maintenance and policy administration",
-      "Due diligence document review for transactions",
-      "Litigation support: bundling, chronologies and disclosure logs",
-      "Quality sampling by a senior reviewer before any output is released",
+      "Document preparation and filing packets to your checklist",
+      "Medical records requests, tracking and chronology preparation",
+      "Discovery indexing, Bates numbering and privilege logs",
+      "First-pass document review under attorney supervision",
+      "Demand letter preparation from your templates",
+      "Deposition summaries and exhibit preparation",
+      "Client intake, conflicts checking and matter opening",
+      "Court calendar and deadline docketing",
+      "Legal research and memo drafting for attorney review",
+      "Contract abstraction and lease or agreement summaries",
+      "Time entry, prebill preparation and client billing",
+      "Quality sampling by a senior reviewer before anything goes back to you",
     ],
-    note: "All work is performed under the supervision of your qualified in-house lawyers. We prepare and review; legal advice and final sign-off always remain with your team or your instructed firm.",
+    note: "All work is performed under the supervision of your attorneys. We prepare, organize and summarize; legal advice, strategy and every filing signature stay with your firm. That line is written into the engagement before anyone gets a login.",
     figure: "network",
   },
 
   benefits: [
     {
       title: "Volume work at the right rate",
-      body: "An NDA reviewed by a firm and an NDA reviewed against your playbook are the same task at very different prices. Moving the low-variance volume is where legal budgets have most room without any loss of quality.",
-      metric: { value: 64, suffix: "%", label: "Lower than equivalent external counsel rates" },
+      body: "A medical chronology assembled by a contract paralegal at $65 an hour and the same chronology assembled to the same standard are the same deliverable at very different prices. That is where a small firm's margin actually is.",
+      metric: { value: 64, suffix: "%", label: "Lower than a local contract paralegal rate" },
       link: { label: "See what transfers well", href: "#whats-included" },
       figure: "dashboard",
     },
     {
-      title: "Contracts that stop blocking the business",
-      body: "A 24-hour standard review turnaround means sales stops waiting two weeks for a redline. Legal's reputation inside a company is set almost entirely by how long the queue is.",
-      metric: { value: 24, suffix: " hrs", label: "Standard contract review turnaround" },
+      title: "Files that stop waiting on paperwork",
+      body: "A 24-hour turnaround on standard documents means a case moves when the attorney decides it should, not when someone finds an afternoon. Client complaints at small firms are overwhelmingly about pace.",
+      metric: { value: 24, suffix: " hrs", label: "Standard document turnaround" },
       link: { label: "How the queue is run", href: "#process" },
       figure: "pipeline",
     },
     {
-      title: "Review accuracy you can evidence",
-      body: "Every reviewer's output is sampled by a senior lawyer before release, with accuracy tracked per person and per matter. In document review, an accuracy figure you can produce on demand is itself a deliverable.",
-      metric: { value: 98.9, decimals: 1, suffix: "%", label: "Accuracy on sampled review sets" },
+      title: "Accuracy you can evidence",
+      body: "Output is sampled by a senior reviewer before it comes back to you, with accuracy tracked per person and per matter type. In document work, being able to produce that figure on demand is itself worth something.",
+      metric: { value: 98.9, decimals: 1, suffix: "%", label: "Accuracy on sampled work" },
       link: { label: "How quality is controlled", href: "#why-us" },
       figure: "pulse",
     },
     {
-      title: "Your lawyers on the matters that need them",
-      body: "In-house counsel spend a striking share of their week on standard-form contracts. Returning that time is what lets a small legal team act as a business partner rather than a bottleneck.",
-      metric: { value: 17, suffix: " hrs", label: "Weekly in-house counsel time returned" },
+      title: "Attorneys on the work that bills",
+      body: "Partners at small firms spend a striking share of their week on work a trained paralegal should be doing. Returning those hours is usually worth several times what the seat costs.",
+      metric: { value: 17, suffix: " hrs", label: "Weekly attorney time returned" },
       link: { label: "Talk about your matter mix", href: "#contact" },
       figure: "layers",
     },
@@ -134,122 +134,123 @@ export const legalProcessOutsourcing: ServiceContent = {
     {
       title: "Matter scoping",
       duration: "Week 1",
-      body: "Volume, matter types, current turnaround and external counsel spend by category. We identify what should transfer and, equally, what should stay with your firm.",
+      body: "Volumes, matter types, current turnaround and what you currently spend on contract help. We identify what transfers well and, equally, what should stay with your own people.",
     },
     {
-      title: "Privilege & supervision design",
+      title: "Supervision structure",
       duration: "Week 1",
-      body: "Supervision structure, privilege arrangements, conflict checking and data handling, designed with your general counsel and documented before any matter opens.",
+      body: "Who supervises, what may and may not be done without an attorney, confidentiality handling and conflict checking — designed with you and written down before any file opens.",
     },
     {
-      title: "Playbook capture",
+      title: "Capture your procedures",
       duration: "Week 1–2",
-      body: "Your negotiation positions, fallback clauses, escalation thresholds and approval limits, written into a working playbook. Where positions are unwritten, capturing them is itself valuable.",
+      body: "Your checklists for each matter type, your templates, your deadlines and your filing preferences. Where a procedure only exists in a partner's head, writing it down is itself valuable.",
     },
     {
-      title: "Recruit",
+      title: "Find your paralegal",
       duration: "Week 1–2",
-      body: "Qualified lawyers and paralegals matched to your jurisdiction and matter types, conflict-checked. You interview every finalist and hold the veto.",
+      body: "Trained paralegals matched to your practice areas and conflict-checked before assignment. You interview every finalist and hold the veto.",
     },
     {
       title: "Calibration",
       duration: "Week 2–3",
-      body: "The pod reviews a sample set in parallel with your team until agreement rates hold. Nothing is released to the business until calibration passes.",
+      body: "They work a sample set in parallel with your own staff until the output matches. Nothing goes on a real file until it does.",
     },
     {
       title: "Run & report",
       duration: "Ongoing",
-      body: "Weekly reporting on volumes, turnaround, deviation patterns and accuracy — including which clauses the business most often gets pushed on, which is useful commercial intelligence.",
+      body: "Weekly reporting on volumes, turnaround and accuracy — plus which matter types are consuming the most time, which is usually a useful pricing input.",
     },
   ],
 
   tech: [
-    { name: "Ironclad", category: "Contract lifecycle" },
-    { name: "DocuSign CLM", category: "Contract lifecycle" },
-    { name: "Icertis", category: "Contract lifecycle" },
-    { name: "Relativity", category: "eDiscovery" },
-    { name: "Everlaw", category: "eDiscovery" },
-    { name: "Disco", category: "eDiscovery" },
-    { name: "Luminance", category: "Contract analysis" },
-    { name: "Kira", category: "Document analysis" },
-    { name: "HighQ", category: "Legal collaboration" },
-    { name: "SharePoint", category: "Document management" },
-    { name: "iManage", category: "Document management" },
-    { name: "LexisNexis", category: "Legal research" },
+    { name: "Clio", category: "Case management" },
+    { name: "MyCase", category: "Case management" },
+    { name: "Filevine", category: "Case management" },
+    { name: "Smokeball", category: "Case management" },
+    { name: "PracticePanther", category: "Case management" },
+    { name: "NetDocuments", category: "Documents" },
+    { name: "SharePoint", category: "Documents" },
+    { name: "Dropbox", category: "Documents" },
+    { name: "Everlaw", category: "Discovery" },
+    { name: "Adobe Acrobat", category: "Document prep" },
     { name: "Westlaw", category: "Legal research" },
-    { name: "Jira", category: "Matter tracking" },
-    { name: "Power BI", category: "Reporting" },
+    { name: "LexisNexis", category: "Legal research" },
+    { name: "PACER", category: "Federal filing" },
+    { name: "NYSCEF", category: "New York e-filing" },
+    { name: "QuickBooks", category: "Firm accounting" },
+    { name: "Microsoft 365", category: "Email & files" },
   ],
 
   differentiators: [
     {
-      title: "Qualified lawyers, named and conflict-checked",
-      body: "Admitted lawyers and experienced paralegals, matched to your jurisdiction, conflict-checked before assignment. You see every qualification and interview every finalist.",
+      title: "Trained paralegals, named and conflict-checked",
+      body: "Experienced paralegals matched to your practice areas and conflict-checked before assignment. You see every résumé and interview every finalist.",
     },
     {
-      title: "Privilege designed with your GC",
-      body: "The supervision and privilege structure is agreed and documented before the first matter opens. An arrangement that has not been examined in advance is one that fails when it is.",
+      title: "The supervision line is written first",
+      body: "What may be done without an attorney, and what may never be, is agreed and documented before the first file opens. An arrangement nobody examined in advance is one that fails when someone examines it.",
     },
     {
-      title: "Calibration before release",
-      body: "The pod reviews in parallel with your team until agreement rates hold. Nothing reaches the business during calibration, which typically takes two weeks.",
+      title: "Calibration before any real file",
+      body: "They work in parallel with your own staff until output matches. Nothing touches a live matter during calibration, which typically takes two weeks.",
     },
     {
-      title: "Senior sampling on every output",
-      body: "A senior lawyer samples work before release, with accuracy tracked per reviewer. Volume review without sampling is how a disclosure error reaches a court.",
+      title: "Senior sampling on everything",
+      body: "A senior reviewer samples work before it comes back to you, with accuracy tracked per person. Volume document work without sampling is how a missing exhibit reaches a judge.",
     },
     {
-      title: "We say what should stay with your firm",
-      body: "Advisory work, contentious strategy and anything requiring a regulated opinion belongs with counsel. Scoping identifies that explicitly rather than quietly absorbing it.",
+      title: "We say what should stay with you",
+      body: "Advice, strategy, anything requiring judgment about a client's case, and every signature. Scoping identifies that explicitly rather than quietly absorbing it.",
     },
     {
-      title: "Commercial intelligence from the queue",
-      body: "Deviation reporting shows which clauses your counterparties push on most. That is a pricing and playbook input your legal team rarely has time to compile.",
+      title: "Never billed by the hour",
+      body: "A flat monthly rate per seat. Hourly billing on support work gives a provider the same incentive problem your own clients complain about, and we would rather not have it.",
     },
   ],
 
   cases: [
     {
-      industry: "Enterprise software",
-      title: "Clearing a contract queue the sales team had stopped trusting",
+      industry: "Personal injury firm · Brooklyn, NY",
+      title: "Medical chronologies that stopped taking six weeks",
       challenge:
-        "A two-lawyer in-house team facing 340 contracts a quarter, with sales routinely waiting two weeks and escalating to the CEO to jump the queue.",
+        "A six-attorney firm where records requests and chronologies were handled by one paralegal alongside everything else. Median time from retainer to a complete chronology was 41 days, and demand letters went out late as a result.",
       solution:
-        "A four-person pod on a captured playbook handling standard-form review, escalating only genuine deviations, with a 24-hour turnaround commitment.",
+        "A dedicated seat doing records requests and chronologies to a written checklist, with daily follow-up on outstanding providers and the firm's own paralegal reviewing rather than assembling.",
       results: [
-        { value: 24, suffix: " hrs", label: "Standard review turnaround, from 11 days" },
-        { value: 81, suffix: "%", label: "Of contracts closed without in-house involvement" },
-        { value: 17, suffix: " hrs", label: "Weekly counsel time returned" },
+        { value: 41, suffix: " days", label: "Retainer to chronology, down to 12" },
+        { value: 22, suffix: " hrs", label: "Weekly paralegal time returned" },
+        { value: 64, suffix: "%", label: "Below the contract paralegal rate" },
       ],
       accent: "lilac",
       figure: "pipeline",
     },
     {
-      industry: "Financial services",
-      title: "First-pass review across 1.2 million documents",
+      industry: "Immigration practice · Jackson Heights, Queens, NY",
+      title: "Filing packets assembled to a checklist, every time",
       challenge:
-        "A regulatory investigation requiring responsiveness and privilege coding at a volume that would have cost seven figures at firm rates.",
+        "Two attorneys handling high-volume filings where the forms, exhibits and translations were the bottleneck. Deadlines were met only because a partner regularly worked Sundays.",
       solution:
-        "A twenty-two-reviewer pod under instructing-firm supervision, with daily calibration sessions and 5% senior sampling throughout the review.",
+        "A trained legal assistant assembling packets per matter type to a written checklist, tracked against filing deadlines, with an attorney reviewing and signing everything before submission.",
       results: [
-        { value: 1.2, decimals: 1, suffix: "m", label: "Documents reviewed" },
-        { value: 98.9, decimals: 1, suffix: "%", label: "Accuracy on sampled sets" },
-        { value: 3.6, decimals: 1, prefix: "$", suffix: "m", label: "Below the firm-rate estimate" },
+        { value: 2, suffix: " hrs", label: "Turnaround on a standard packet" },
+        { value: 0, label: "Filing deadlines missed in 14 months" },
+        { value: 0, label: "Sundays worked by a partner since" },
       ],
       accent: "sky",
       figure: "layers",
     },
     {
-      industry: "Healthcare",
-      title: "Building a compliance register that had never existed",
+      industry: "Estate planning firm · Long Island, NY",
+      title: "Billing that finally went out on the first",
       challenge:
-        "Obligations spread across 900 supplier and clinical contracts, with no central record of renewal dates, notice periods or restrictive terms.",
+        "A four-attorney firm where time entry happened at month end from memory, prebills sat unreviewed and invoices went out around the twentieth. Realization was well below what the work was worth.",
       solution:
-        "Systematic abstraction into a structured register with obligation extraction and renewal alerting, then ongoing maintenance as new contracts were signed.",
+        "Daily time entry from attorney notes, prebills prepared for one-click review, and invoices out on the first — plus a written collections follow-up starting the day a balance ages past terms.",
       results: [
-        { value: 900, label: "Contracts abstracted" },
-        { value: 41, label: "Auto-renewals identified before triggering" },
-        { value: 475, prefix: "$", suffix: "k", label: "Annualized spend avoided" },
+        { value: 20, suffix: "th", label: "Invoice date, moved to the 1st" },
+        { value: 18, suffix: "%", label: "Increase in realization" },
+        { value: 31, suffix: " days", label: "Reduction in time to collect" },
       ],
       accent: "mint",
       figure: "network",
@@ -259,113 +260,113 @@ export const legalProcessOutsourcing: ServiceContent = {
   quotes: [
     {
       quote:
-        "They designed the privilege and supervision structure with me before opening a single document. Two previous vendors had wanted to work that out later.",
-      name: "Fiona Halloran",
-      role: "General Counsel",
-      company: "Northwind",
-      initials: "FH",
+        "They wrote down the supervision structure with me before opening a single file. Two previous services wanted to work that out later, which is exactly the wrong order.",
+      name: "Managing Partner",
+      role: "Six-attorney personal injury firm",
+      company: "Brooklyn, NY",
+      initials: "MP",
       rating: 5,
     },
     {
       quote:
-        "Sales stopped escalating to the chief executive to get contracts reviewed. That change alone justified the engagement.",
-      name: "Anand Krishnan",
-      role: "Head of Legal",
-      company: "Gridworks",
-      initials: "AK",
+        "I have not worked a Sunday assembling a filing packet in over a year. That change alone justified it.",
+      name: "Partner",
+      role: "Two-attorney immigration practice",
+      company: "Jackson Heights, Queens, NY",
+      initials: "PT",
       rating: 5,
     },
     {
       quote:
-        "The deviation report told us which three clauses were costing us the most negotiation time. We changed the standard form and the queue shortened again.",
-      name: "Beatrice Lindholm",
-      role: "Legal Operations Manager",
-      company: "Vertex Pay",
-      initials: "BL",
+        "Our invoices go out on the first now. It turns out our collections problem was really a billing problem, which nobody here had time to notice.",
+      name: "Principal",
+      role: "Four-attorney estate planning firm",
+      company: "Long Island, NY",
+      initials: "PR",
       rating: 5,
     },
   ],
 
   faqs: [
     {
-      question: "Are your people qualified lawyers?",
+      question: "Are they qualified paralegals?",
       answer:
-        "Pods are staffed with admitted lawyers and experienced paralegals, matched to the relevant jurisdiction and matter type. You see every qualification and interview every finalist before assignment.",
+        "Experienced paralegals and legal assistants, matched to your practice areas, many with certification. You see every résumé and interview every finalist before they are assigned to your firm.",
     },
     {
-      question: "Does this arrangement preserve privilege?",
+      question: "How does supervision work if they are not in our office?",
       answer:
-        "The supervision and privilege structure is designed with your general counsel or instructing firm before any matter opens, and documented. Work is performed under your supervision, which is what preserves the position.",
+        "Exactly as it does for a remote paralegal you employed directly. A named attorney supervises, reviews the work, and signs everything. The structure is documented before the first file opens so it stands up if anyone asks.",
     },
     {
-      question: "Do you provide legal advice?",
+      question: "Is there any risk of unauthorized practice of law?",
       answer:
-        "No. We prepare, review and abstract under supervision. Legal advice and final sign-off always remain with your qualified in-house team or your instructed firm — that boundary is written into the engagement.",
+        "The line is written into the engagement in plain terms: they prepare, organize and summarize. They do not give legal advice, do not sign filings, do not set strategy and do not tell a client what their case is worth. Everything goes to your attorney.",
     },
     {
-      question: "How do you handle conflicts of interest?",
+      question: "How do you handle conflicts?",
       answer:
-        "Conflict checking runs before any reviewer is assigned and is repeated when new matters open. Reviewers are ring-fenced to a single client where the matter type requires it.",
+        "Conflict checking runs before anyone is assigned and repeats when new matters open. Where a practice area requires it, a paralegal is ring-fenced to your firm only.",
     },
     {
-      question: "What jurisdictions can you cover?",
+      question: "Do you know New York procedure?",
       answer:
-        "Common law jurisdictions primarily — England and Wales, US, Ireland, Australia, India — with civil law coverage available for contract abstraction and translation-supported review. We will decline where we lack genuine depth.",
+        "Yes, including NYSCEF e-filing, notice of claim deadlines against municipalities and the local rules that catch out-of-state help. We also support firms in Texas, Florida, Ohio and elsewhere, and we match people to the jurisdiction rather than assume it transfers.",
     },
     {
-      question: "How do you guarantee review quality?",
+      question: "How is client confidentiality protected?",
       answer:
-        "Calibration against your team before any release, then continuous senior sampling — typically 5% of output — with accuracy tracked per reviewer. Both the method and the figures are auditable.",
+        "Signed confidentiality agreements, least-privilege access under your own logins, managed devices, no removable media and full session logging. Work happens inside your case management system, never in one of ours.",
     },
     {
-      question: "How is data security handled?",
+      question: "How do you guarantee quality?",
       answer:
-        "ISO 27001 certified and SOC 2 Type II audited, with segregated secure floors, no removable media, managed devices and full session logging. We work inside your document management system, not ours.",
+        "Calibration against your own staff before any live file, then continuous senior sampling with accuracy tracked per person. Both the method and the figures are available to you at any time.",
     },
     {
-      question: "Can you scale for a large review?",
+      question: "Can you scale up for a big case?",
       answer:
-        "Yes. We have staffed reviews of over twenty reviewers within three weeks, with calibration run daily during ramp-up rather than only at the start.",
+        "Yes. We have staffed document review teams of twenty within three weeks, with calibration run daily during ramp-up rather than only at the start.",
     },
     {
-      question: "How quickly can a pod start?",
+      question: "How quickly can someone start?",
       answer:
-        "About three weeks, including privilege design, playbook capture and calibration. Document review for an urgent matter can compress to two with your firm's cooperation on supervision.",
+        "About three weeks, including the supervision structure, capturing your procedures and calibration. An urgent document review can compress to two.",
     },
     {
-      question: "Will this replace our law firm?",
+      question: "Will this replace our paralegal?",
       answer:
-        "For volume work, largely. For advisory, contentious strategy and regulated opinions, no — and we say so during scoping rather than absorbing work we should not be doing.",
+        "Usually not — it changes what they do. The firms that get the most from this move assembly work off their own paralegal so that person reviews, handles clients and does the work that needed someone in the building.",
     },
     {
       question: "What reporting do we get?",
       answer:
-        "Weekly volumes, turnaround, accuracy and deviation patterns. The deviation report — which clauses counterparties push on most — is often the most commercially useful output.",
+        "Weekly volumes, turnaround and accuracy, plus which matter types consume the most time. That last one is frequently the most useful thing on the report for pricing your work.",
     },
     {
       question: "How is it priced?",
       answer:
-        "A fixed monthly rate per pod for ongoing work, or a per-matter rate for defined document review projects. Never hourly, which is the pricing model that creates the incentive problem in legal services.",
+        "A flat monthly rate per seat for ongoing support, or a per-matter rate for a defined document review. Never hourly — that is the pricing model that creates the incentive problem in legal services in the first place.",
     },
   ],
 
   related: [
     "admin-support",
-    "ma-deal-flow",
+    "customer-service",
     "finance-and-accounting",
-    "hr-outsourcing",
+    "small-business",
     "it-outsourcing",
-    "nearshore-bpo",
+    "ma-deal-flow",
   ],
 
   cta: {
     title: "Find out what your volume legal work should cost.",
-    body: "Send us your matter mix and last year's external counsel spend by category. We will show you what transfers well, what should stay with your firm, and the difference.",
+    body: "Send us your matter mix and what you currently spend on contract help. We will show you what transfers well, what should stay with your own people, and the difference.",
   },
 
   seo: {
-    title: "Legal Process Outsourcing | Contract & Document Review — Xevantis",
+    title: "Paralegal Support & Legal Outsourcing for Small Law Firms — Xevantis",
     description:
-      "Qualified lawyers handling contract review, document review and compliance administration under your supervision and privilege. 64% below external counsel rates, 24-hour turnaround.",
+      "Trained paralegals handling document preparation, records requests, chronologies, discovery and billing for small US law firms, under your supervision and in your own case management system. 64% below contract paralegal rates.",
   },
 };

@@ -8,9 +8,9 @@ import { ResourceHero } from "@/components/resources/ResourceHero";
 import { FeaturedResources } from "@/components/resources/FeaturedResources";
 import { ResourceBrowser } from "@/components/resources/ResourceBrowser";
 
-const TITLE = "Resources | Insights for building better teams — Xevantis";
+const TITLE = "Resources | Guides for running a small business better — Xevantis";
 const DESCRIPTION =
-  "Playbooks, benchmarks and interviews on outsourcing, CX and the operating models that keep named teams shipping.";
+  "Playbooks, benchmarks and interviews for medical and dental clinics, pharmacies, law firms, engineering and accounting practices, real estate agencies and local offices — much of it drawn from New York, all of it usable across the US.";
 
 export const metadata: Metadata = {
   title: TITLE,

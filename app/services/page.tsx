@@ -20,9 +20,9 @@ import { TrustedBy } from "@/components/service/TrustedBy";
 import { ServiceCta } from "@/components/service/ServiceCta";
 import { ArrowRight } from "@/components/icons";
 
-const TITLE = "BPO Solutions | Sixteen Outsourcing Services — Xevantis";
+const TITLE = "BPO Solutions | Sixteen Ways to Take Work Off Your Desk — Xevantis";
 const DESCRIPTION =
-  "Sixteen BPO solutions under one operating model: IT, finance, customer, admin, HR and payroll outsourcing, plus sector and delivery models. Named teams, live in 14 days.";
+  "Front desk, admin, bookkeeping, IT, HR and payroll support for clinics, dental practices, pharmacies, law firms, engineering and accounting practices and real estate agencies across the United States. Named people, working in 14 days.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Xevantis BPO solutions",
+  name: "Xevantis BPO solutions for small and local businesses",
   itemListElement: SERVICE_SUMMARY_GROUPS.flatMap((group) => group.services).map(
     (service, index) => ({
       "@type": "ListItem",
@@ -81,20 +81,21 @@ export default function ServicesIndexPage() {
 
               <SplitWords
                 as="h1"
-                text="Sixteen BPO solutions. One operating model."
+                text="Sixteen BPO solutions. One person you call."
                 stagger={45}
                 className="mt-4 font-display text-hero font-extrabold tracking-tighter"
               />
 
               <Reveal as="p" delay={200} className="mt-6 max-w-[56ch] text-lg text-ink-500">
-                Take one solution or take six — the way we staff, report and contract does
-                not change. Named specialists you interview yourself, weekly reporting, and
-                month-to-month terms after the first quarter.
+                Built for practices and firms with 3 to 100 people, anywhere in the
+                United States. Take one service or take six — you interview whoever we
+                put on it, you get a weekly call, and terms go month-to-month after the
+                first quarter.
               </Reveal>
 
               <Reveal delay={300} className="mt-8 flex flex-wrap gap-3">
                 <Button href="#contact" size="lg" magnetic={0.3}>
-                  <ButtonLabel>Talk to a delivery lead</ButtonLabel>
+                  <ButtonLabel>Talk to someone today</ButtonLabel>
                   <ArrowRight />
                 </Button>
                 <Button href="/#process" variant="secondary" size="lg">
@@ -105,7 +106,7 @@ export default function ServicesIndexPage() {
           </Container>
         </section>
 
-        <TrustedBy label="Trusted across engineering, growth and operations by" />
+        <TrustedBy label="The businesses we run this for" />
 
         {SERVICE_SUMMARY_GROUPS.map((group, groupIndex) => (
           <Section
@@ -124,7 +125,9 @@ export default function ServicesIndexPage() {
                 {GROUP_BLURBS[group.heading]}
               </Reveal>
 
-              <ul className="grid gap-4 min-[641px]:grid-cols-2 min-[1121px]:grid-cols-3">
+              {/* Four per group, so the grid stops at two columns — a third
+                  column would leave every group with a 3 + 1 orphan row. */}
+              <ul className="grid gap-4 min-[641px]:grid-cols-2">
                 {group.services.map((service, index) => (
                   <Reveal as="li" key={service.slug} delay={index * 80} className="flex">
                     <Link
@@ -169,8 +172,8 @@ export default function ServicesIndexPage() {
         ))}
 
         <ServiceCta
-          title="Tell us the outcome. We'll shape the team."
-          body="One reply within a business day with a staffing model, a timeline and a price. No sales sequence, and no obligation to take the shape we propose."
+          title="Tell us what's eating your week."
+          body="One reply within a business day with who we'd put on it, when they'd start and what it costs per month. No sales sequence, and no obligation to take the shape we propose."
           accent="lilac"
           eyebrow="Start the conversation"
           primaryCta={{ label: "Book a scoping call", href: "#contact" }}
@@ -186,12 +189,12 @@ export default function ServicesIndexPage() {
 /** Standfirst per group. Keyed by heading so the registry stays the source of order. */
 const GROUP_BLURBS: Record<string, string> = {
   "Core functions":
-    "The operational spine — technology, finance and revenue — run by named teams inside your own systems.",
+    "The technology, the books and the phone that brings in new business — run by named people working inside the software you already have.",
   "Customer & admin":
-    "Every conversation and every piece of paperwork behind it, handled to service levels you set.",
+    "Every call from a patient or client, and every piece of paperwork behind it, handled the way your office already handles it.",
   "HR & payroll":
-    "People operations without co-employment: you keep the employment relationship and every decision.",
+    "Hiring, onboarding and payroll without co-employment. You stay the employer, and every decision about your staff stays yours.",
   "Models & sectors":
-    "Engagements shaped around how you buy — by company size, by industry, or by where the team sits.",
+    "Shaped around how you actually buy — by how small you are, by your industry, or by where you want the team to sit.",
 };
 

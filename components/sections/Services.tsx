@@ -16,29 +16,29 @@ import { ArrowUpRight, Brackets, Headset, Ledger, ShieldCheck } from "@/componen
 /** Each card opens the full service page; `href` is the route, not an anchor. */
 const SERVICES: (Service & { href: string })[] = [
   {
-    title: "Customer Support",
-    body: "Voice, chat, email, social and app-store replies — staffed by people who know your product, not a script.",
+    title: "Front Desk & Customer Calls",
+    body: "New-patient calls, appointment scheduling, reminders and client intake — answered live by someone who knows your practice.",
     accent: "sky",
     icon: <Headset />,
     href: "/services/customer-service",
   },
   {
-    title: "Admin Support",
-    body: "Order management, data operations and scheduling — the invisible work that decides how much your team gets done.",
+    title: "Admin & Paperwork",
+    body: "Insurance verification, prior authorizations, records requests and data entry — the work that quietly eats your staff's day.",
     accent: "blush",
     icon: <Ledger />,
     href: "/services/admin-support",
   },
   {
-    title: "Finance & Accounting",
-    body: "Payables, receivables and month-end close run by qualified accountants working directly in your ledger.",
+    title: "Bookkeeping & Billing",
+    body: "Claims, collections, payables and month-end close, run by qualified accountants working directly in QuickBooks or Xero.",
     accent: "mint",
     icon: <ShieldCheck />,
     href: "/services/finance-and-accounting",
   },
   {
-    title: "IT Outsourcing",
-    body: "Service desk, monitoring and application support from named engineers — priced per team, never per ticket.",
+    title: "IT & Software",
+    body: "Help desk, backups and HIPAA-aware security for your office — plus the website or custom tool you have been putting off.",
     accent: "lilac",
     icon: <Brackets />,
     href: "/services/it-outsourcing",
@@ -53,10 +53,11 @@ export function Services() {
           <Reveal as="span">
             <Eyebrow centered>What we run for you</Eyebrow>
           </Reveal>
-          <SplitWords text="More growth, less risk." stagger={45} className={headingClass} />
+          <SplitWords text="More growth, less overhead." stagger={45} className={headingClass} />
           <Reveal as="p" delay={200} className={leadClass}>
-            Four capability lines, one contract, one delivery leader. Take one or take
-            all four — the operating model doesn&rsquo;t change.
+            Four kinds of help, one contract, one person you call. Take one or take all
+            four — the price is per seat either way, and nothing about how we work
+            changes.
           </Reveal>
         </SectionHead>
 

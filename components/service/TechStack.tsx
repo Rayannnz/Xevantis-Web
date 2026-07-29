@@ -52,7 +52,10 @@ export function TechStack({
           </Reveal>
         </SectionHead>
 
-        <ul className="grid grid-cols-2 gap-3 min-[641px]:grid-cols-3 min-[1025px]:grid-cols-5">
+        {/* Every service ships exactly 16 tools, so 2 and 4 columns both fill
+            square (8 x 2, then 4 x 4). A 3- or 5-column step would strand an
+            orphan row on every page. */}
+        <ul className="grid grid-cols-2 gap-3 min-[641px]:grid-cols-4">
           {tech.map((item, index) => (
             <Reveal
               as="li"

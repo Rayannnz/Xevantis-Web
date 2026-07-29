@@ -52,12 +52,13 @@ export const metadata: Metadata = {
   // so a relative `alternates.canonical` becomes absolute automatically.
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Xevantis — Outsourcing & software teams, built to make you better",
+    default:
+      "Xevantis — Back office & software support for small US businesses",
     // Service pages set their own full title; this only wraps the ones that don't.
     template: "%s",
   },
   description:
-    "Xevantis blends world-class BPO talent with product engineers. Dedicated CX, back-office and software squads live in 2 weeks — not 2 quarters.",
+    "Front desk, admin, bookkeeping, IT and software support for medical and dental clinics, pharmacies, law firms, engineering and accounting practices, real estate agencies and local offices across the United States. Your person starts in 2 weeks.",
   icons: {
     icon: "/img/favicon.png",
     apple: "/img/logo-mark.png",

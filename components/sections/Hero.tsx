@@ -19,9 +19,9 @@ const AVATARS = [
 ];
 
 const PANEL_METRICS = [
-  { label: "Quality score", value: 0.96, delay: 0 },
-  { label: "First response time", value: 0.82, delay: 120 },
-  { label: "Cost per resolved ticket", value: 0.62, delay: 240 },
+  { label: "Calls answered live", value: 0.96, delay: 0 },
+  { label: "Average time to answer", value: 0.82, delay: 120 },
+  { label: "Cost vs a local hire", value: 0.62, delay: 240 },
 ];
 
 export function Hero() {
@@ -35,26 +35,26 @@ export function Hero() {
             <Reveal variant="fade" as="span">
               <PillGlass>
                 <PulseDot />
-                Now onboarding teams for Q4 — 11 seats left
+                Now onboarding for Q4 — 11 openings left
               </PillGlass>
             </Reveal>
 
             <SplitWords
               as="h1"
-              text="Outsourcing, re-engineered to make you better."
+              text="The back office your small business never had room to hire."
               stagger={55}
               className="font-display text-hero font-extrabold tracking-tighter"
             />
 
             <Reveal as="p" delay={220} className="max-w-[46ch] text-lg text-ink-500">
-              Xevantis pairs world-class BPO talent with product engineers, so your
-              support desk and your roadmap finally move at the same speed. Dedicated
-              squads live in <MarkUnderline>2 weeks</MarkUnderline>.
+              Clinics, law firms, pharmacies and offices across the United States use
+              Xevantis for the phones, the paperwork, the books and the software behind
+              them. Your person starts in <MarkUnderline>2 weeks</MarkUnderline>.
             </Reveal>
 
             <Reveal delay={320} className="flex flex-wrap items-center gap-3">
               <Button href="#contact" size="lg" magnetic={0.3}>
-                <ButtonLabel>Build your dream team</ButtonLabel>
+                <ButtonLabel>Get your team</ButtonLabel>
                 <ArrowRight />
               </Button>
               <Button href="#process" variant="secondary" size="lg">
@@ -78,9 +78,9 @@ export function Hero() {
                   </span>
                 ))}
               </div>
-              <p className="max-w-[24ch] text-sm text-ink-500">
-                <strong className="text-ink-900">1,400+ specialists</strong> deployed
-                across 6 delivery hubs.
+              <p className="max-w-[26ch] text-sm text-ink-500">
+                <strong className="text-ink-900">240+ local businesses</strong> served
+                across all 50 states.
               </p>
             </Reveal>
           </div>
@@ -90,7 +90,7 @@ export function Hero() {
             <Tilt max={6}>
               <div className="relative rounded-2xl border border-ink-900/10 bg-paper-000 p-6 shadow-xl">
                 <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-                  <Badge tone="ink">Live pod · Aurora CX</Badge>
+                  <Badge tone="ink">Dental practice · Queens, NY</Badge>
                   <span className="text-xs text-ink-400">Today</span>
                 </div>
 
@@ -124,9 +124,9 @@ export function Hero() {
                 </div>
 
                 <div className="mt-4 flex items-center justify-between gap-4 border-t border-ink-900/10 py-[0.7rem]">
-                  <PanelLabel>Tickets handled this week</PanelLabel>
+                  <PanelLabel>Calls handled this week</PanelLabel>
                   <PanelValue>
-                    <Counter to={18420} duration={2000} />
+                    <Counter to={1240} duration={2000} />
                   </PanelValue>
                 </div>
               </div>
@@ -136,7 +136,7 @@ export function Hero() {
               className="-left-[3.25rem] -top-9 bg-sun-200 max-[1180px]:-left-5 max-[520px]:hidden"
               rotate="-6deg"
             >
-              🎯 SLA met 99.4%
+              🎯 0 calls to voicemail
             </StickyNote>
             <StickyNote
               className="-bottom-7 right-6 bg-mint-200 [animation-delay:-3s] max-[520px]:hidden"
@@ -148,7 +148,7 @@ export function Hero() {
               className="-bottom-6 -left-4 bg-lilac-200 animate-float-slow max-[1180px]:left-4 max-[520px]:hidden"
               rotate="-3deg"
             >
-              💬 CSAT 4.8 / 5
+              💬 Client rating 4.8 / 5
             </StickyNote>
           </Reveal>
         </div>

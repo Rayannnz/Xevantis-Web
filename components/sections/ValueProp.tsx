@@ -32,14 +32,14 @@ export function ValueProp() {
             variant="left"
             className="grid grid-cols-[minmax(0,1fr)] content-start gap-6"
           >
-            <Eyebrow>Why teams switch</Eyebrow>
+            <Eyebrow>Why local businesses switch</Eyebrow>
             <h2 className="font-display text-4xl font-bold leading-snug tracking-tighter">
-              You deserve better than a call center.
+              You deserve better than an answering service.
             </h2>
             <Lead>
-              Most outsourcing sells you seats. We build teams — recruited for your
-              brand, trained on your product, measured on your outcomes, and wired
-              into the same tools your in-house staff already use.
+              An answering service takes a message. We give you a person — hired for
+              your practice, trained on your scheduling and billing software, working
+              your hours, and known by name to the patients and clients who call.
             </Lead>
 
             <ul className="grid grid-cols-[minmax(0,1fr)] content-start gap-[0.85rem]">
@@ -53,7 +53,7 @@ export function ValueProp() {
 
             <div className="flex flex-wrap items-center gap-3">
               <Button href="#contact" variant="sticker">
-                <ButtonLabel>Take Xevantis for a spin</ButtonLabel>
+                <ButtonLabel>See what it would cost</ButtonLabel>
               </Button>
             </div>
           </Reveal>

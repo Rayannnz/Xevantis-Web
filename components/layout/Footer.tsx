@@ -28,8 +28,8 @@ export function Footer() {
           <div className="grid grid-cols-[minmax(0,1fr)] content-start gap-4">
             <Brand height={44} imageClassName="h-[44px]" className="justify-self-start" />
             <p className="max-w-[46ch] text-sm text-ink-500">
-              Outsourcing and engineering teams, built to make you better. Six delivery
-              hubs, one operating model.
+              The back office your small business never had room to hire. Serving
+              clinics, firms and local offices in all 50 states.
             </p>
             <div className="flex gap-2">
               {SOCIALS.map((social) => (

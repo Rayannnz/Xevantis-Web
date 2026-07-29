@@ -7,29 +7,29 @@ export const hrOutsourcing: ServiceContent = {
   accent: "blush",
   eyebrow: "HR Outsourcing",
   summary:
-    "Recruitment administration, onboarding, employee relations support and an HR helpdesk — you keep the employer relationship and the decisions.",
-  trustLabel: "Running HR operations for",
+    "Hiring paperwork, onboarding, an HR helpdesk your staff can actually reach, and the compliance a small office keeps forgetting — you stay the employer.",
+  trustLabel: "Running HR for",
 
   sections: {
     benefits: {
-      title: "What an HR operation should give you back.",
-      body: "Four outcomes baselined before transition. Administrative cost is the easiest to move; time-to-hire and case handling are worth more.",
+      title: "What an HR function should give you back.",
+      body: "Four outcomes baselined before we start. Administrative cost is the easiest to move; hiring speed and getting the paperwork right are worth more.",
     },
     process: {
-      title: "From HR audit to a helpdesk answering employees.",
-      body: "Six phases over about three weeks. The policy and compliance review usually surfaces more than anyone expects.",
+      title: "From an HR audit to a helpdesk answering your staff.",
+      body: "Six phases over about three weeks. The policy and compliance review usually surfaces more than anyone expects, particularly in New York.",
     },
     tech: {
-      title: "Your HRIS, your records.",
-      body: "We work inside your systems under your data controller responsibilities. Nothing moves into a platform of ours.",
+      title: "Your systems, your records.",
+      body: "We work inside whatever you already run. Employee records never move into a platform of ours.",
     },
     why: {
-      title: "Why HR directors keep the employer relationship.",
-      body: "The alternative model — a PEO — takes on co-employment and, with it, a good deal of your control.",
+      title: "Why owners keep the employer relationship.",
+      body: "The alternative — a PEO — takes on co-employment and, with it, a good deal of your control over your own staff.",
     },
     cases: {
-      title: "HR functions we support.",
-      body: "Three engagements measured on time-to-hire, case resolution time, and the strategic hours returned to an HR team of two.",
+      title: "Offices we support.",
+      body: "Three engagements measured on time to hire, compliance gaps closed, and the hours returned to whoever was doing HR alongside their real job.",
     },
     faq: {
       title: "Control, liability and where the boundary sits.",
@@ -38,40 +38,40 @@ export const hrOutsourcing: ServiceContent = {
   },
 
   hero: {
-    title: "HR administration handled. Employment decisions stay yours.",
-    highlight: "never a co-employer",
-    body: "Recruitment coordination, onboarding, records, an employee helpdesk and employee relations casework support — delivered as a service, never as a co-employer. Your people remain your people, on your contracts.",
+    title: "HR paperwork handled. Every decision about your staff stays yours.",
+    highlight: "never as a co-employer",
+    body: "Hiring coordination, onboarding, employee records, a helpdesk your staff can reach, and the state and city compliance a small office keeps missing — delivered as a service, never as a co-employer. Your people stay your people.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
-    trust: "HR pods onboarding for the new year",
+    trust: "Onboarding offices from 5 to 100 staff, in all 50 states",
     chips: [
-      { value: "-38%", label: "HR administrative cost" },
+      { value: "-38%", label: "Time and cost of HR admin" },
       { value: "18 days", label: "Median time to hire" },
-      { value: "4 hrs", label: "Employee helpdesk response" },
+      { value: "4 hrs", label: "Staff helpdesk response" },
     ],
     figure: "network",
   },
 
   overview: {
     eyebrow: "Service overview",
-    title: "The administrative two-thirds of HR.",
-    body: "Most HR teams are small and spend the majority of their week on coordination: scheduling interviews, chasing references, issuing contracts, answering the same PTO question and maintaining records. None of it is the work an HR director was hired to do.",
+    title: "The paperwork two-thirds of HR.",
+    body: "Most small offices have no HR person at all — they have an office manager who does HR alongside four other jobs. The result is not usually bad judgment; it is a handbook three years out of date, hiring that loses candidates to delay, and a pay statement missing a required accrual balance.",
     panels: [
       {
         heading: "What it is",
-        body: "An HR pod — coordinators, an HR advisor and a team lead — running your recruitment administration, onboarding, records and employee helpdesk in your HRIS.",
+        body: "A named coordinator and a qualified HR advisor running your hiring paperwork, onboarding, records and staff helpdesk in whatever systems you already use.",
       },
       {
         heading: "Who it's for",
-        body: "Companies of 50–2,000 employees with a small HR team, multi-site operations, and businesses whose hiring volume is outrunning their coordination capacity.",
+        body: "Practices and firms from 5 to 100 staff with no dedicated HR person, multi-location offices, and any business whose hiring is outrunning whoever currently coordinates it.",
       },
       {
         heading: "The business case",
-        body: "Lower administrative cost, faster hiring, consistent compliance, and your HR leadership returned to the work that actually affects retention.",
+        body: "Lower administrative load, faster hiring, compliance that is actually current, and your office manager back on the job she was hired for.",
       },
       {
         heading: "Why us",
-        body: "This is HR outsourcing, not a PEO. We never become a co-employer, so you keep the employment relationship, the culture and every decision.",
+        body: "This is HR support, not a PEO. We never become a co-employer, so you keep the employment relationship, the culture and every decision about your own staff.",
       },
     ],
     figure: "layers",
@@ -101,30 +101,30 @@ export const hrOutsourcing: ServiceContent = {
 
   benefits: [
     {
-      title: "Hiring that stops losing candidates to delay",
-      body: "Most offer declines trace back to a slow process rather than to money. Dedicated coordination removes the scheduling gaps where good candidates accept somewhere else.",
+      title: "Hiring that stops losing people to delay",
+      body: "Most declined offers trace back to a slow process rather than to money. Dedicated coordination removes the scheduling gaps where a good hygienist or paralegal accepts somewhere else.",
       metric: { value: 18, suffix: " days", label: "Median time to hire, down from 34" },
-      link: { label: "See the recruitment scope", href: "#whats-included" },
+      link: { label: "See the hiring scope", href: "#whats-included" },
       figure: "pipeline",
     },
     {
-      title: "Employees who get answers the same day",
-      body: "A four-hour helpdesk response means managers stop being the first line for PTO and policy questions. It is a small change that returns a surprising amount of management time.",
-      metric: { value: 4, suffix: " hrs", label: "Median employee helpdesk response" },
+      title: "Staff who get answers the same day",
+      body: "A four-hour response means the owner stops being the first line for every PTO and benefits question. It is a small change that returns a surprising amount of time to whoever runs the place.",
+      metric: { value: 4, suffix: " hrs", label: "Median staff helpdesk response" },
       link: { label: "How the helpdesk works", href: "#process" },
       figure: "pulse",
     },
     {
-      title: "Casework documented properly the first time",
-      body: "Employee relations matters go wrong at tribunal because of documentation, not usually because of the decision. Consistent record-keeping from the first meeting is the cheapest risk reduction available.",
-      metric: { value: 100, suffix: "%", label: "Of ER cases with a complete documented trail" },
-      link: { label: "Talk about your case volume", href: "#contact" },
+      title: "Documented properly the first time",
+      body: "Employment disputes at small businesses go wrong on documentation, not usually on the decision. A written record from the first conversation is the cheapest risk reduction available to an office your size.",
+      metric: { value: 100, suffix: "%", label: "Of employee matters with a complete written trail" },
+      link: { label: "Talk about your situation", href: "#contact" },
       figure: "layers",
     },
     {
-      title: "HR leadership back on retention",
-      body: "An HR team of two spends most of its week coordinating. Returning that time is what lets HR work on the things that change turnover instead of processing its consequences.",
-      metric: { value: 38, suffix: "%", label: "Reduction in HR administrative cost" },
+      title: "Your office manager back on her actual job",
+      body: "In a small office HR is somebody's fifth responsibility, which is why the handbook is out of date. Returning that time is usually worth more than the seat costs.",
+      metric: { value: 38, suffix: "%", label: "Reduction in time and cost of HR admin" },
       link: { label: "See the case studies", href: "#work" },
       figure: "dashboard",
     },
@@ -164,21 +164,22 @@ export const hrOutsourcing: ServiceContent = {
   ],
 
   tech: [
-    { name: "Workday", category: "HRIS" },
-    { name: "BambooHR", category: "HRIS" },
-    { name: "HiBob", category: "HRIS" },
-    { name: "SAP SuccessFactors", category: "HRIS" },
-    { name: "Personio", category: "HRIS" },
-    { name: "Greenhouse", category: "Applicant tracking" },
+    { name: "Gusto", category: "HR & payroll" },
+    { name: "BambooHR", category: "HR system" },
+    { name: "Rippling", category: "HR & payroll" },
+    { name: "ADP", category: "HR & payroll" },
+    { name: "Paychex", category: "HR & payroll" },
+    { name: "Justworks", category: "HR & benefits" },
     { name: "Workable", category: "Applicant tracking" },
-    { name: "Lever", category: "Applicant tracking" },
-    { name: "LinkedIn Recruiter", category: "Sourcing" },
+    { name: "Indeed", category: "Job posting" },
+    { name: "ZipRecruiter", category: "Job posting" },
     { name: "DocuSign", category: "E-signature" },
     { name: "Sterling", category: "Background checks" },
-    { name: "Culture Amp", category: "Engagement" },
-    { name: "Zendesk", category: "Employee helpdesk" },
-    { name: "Microsoft 365", category: "Productivity" },
-    { name: "Power BI", category: "People analytics" },
+    { name: "Checkr", category: "Background checks" },
+    { name: "Google Workspace", category: "Email & files" },
+    { name: "Microsoft 365", category: "Email & files" },
+    { name: "Homebase", category: "Time & scheduling" },
+    { name: "Excel", category: "Reporting" },
   ],
 
   differentiators: [
@@ -187,20 +188,20 @@ export const hrOutsourcing: ServiceContent = {
       body: "We provide a service; we do not enter co-employment. You keep the employment relationship, the culture and every hiring and exit decision. That is the core difference from a PEO.",
     },
     {
-      title: "Qualified HR advisors",
-      body: "Pods include SHRM-certified advisors or the local equivalent, not only coordinators. Casework administration handled by someone without HR training is a risk rather than a saving.",
+      title: "A qualified HR advisor, not just a coordinator",
+      body: "SHRM-certified advisors handle anything involving an employee matter. Documenting a disciplinary conversation by someone without HR training is a risk rather than a saving.",
     },
     {
       title: "Documentation as standard",
-      body: "Every employee relations matter carries a complete written trail from the first conversation. Most tribunal losses are documentation failures rather than decision failures.",
+      body: "Every employee matter carries a complete written trail from the first conversation. Small employers lose these disputes on documentation, not on the underlying decision.",
     },
     {
-      title: "Your HRIS, your data",
-      body: "We work inside your systems under your data controller responsibilities. Employee data never moves into a platform of ours, which keeps your privacy team's life simple.",
+      title: "Your systems, your data",
+      body: "We work inside whatever you already run. Employee records never move into a platform of ours, which means nothing to untangle if you stop using us.",
     },
     {
-      title: "We flag the management problems",
-      body: "Query and case patterns by department are reported monthly. When one team generates most of the cases, that is information you want rather than a workload to absorb.",
+      title: "We flag what you cannot see",
+      body: "Query and issue patterns are reported monthly. When one supervisor generates most of the complaints, that is information you want rather than a workload to absorb quietly.",
     },
     {
       title: "You interview everyone",
@@ -210,42 +211,42 @@ export const hrOutsourcing: ServiceContent = {
 
   cases: [
     {
-      industry: "Logistics",
-      title: "Halving time to hire across eleven depots",
+      industry: "Dental group · Brooklyn & Queens, NY",
+      title: "Halving time to hire across four offices",
       challenge:
-        "Constant driver and warehouse recruitment across eleven sites, coordinated by depot managers between operational duties, losing candidates to faster competitors.",
+        "Constant hygienist and front-desk hiring across four locations, coordinated by each office manager between patients. Candidates in a tight New York market accepted elsewhere while interviews were being scheduled.",
       solution:
-        "Centralized recruitment coordination with same-day candidate contact and interview scheduling handled entirely by the pod, leaving managers only the interviews themselves.",
+        "One coordinator handling every posting, same-day candidate contact and interview scheduling across all four offices, leaving managers only the interviews themselves.",
       results: [
         { value: 18, suffix: " days", label: "Time to hire, from 34" },
-        { value: 27, suffix: "%", label: "Fewer offer declines" },
-        { value: 11, label: "Sites on one coordinated process" },
+        { value: 27, suffix: "%", label: "Fewer declined offers" },
+        { value: 4, label: "Offices on one hiring process" },
       ],
       accent: "blush",
       figure: "pipeline",
     },
     {
-      industry: "Technology",
-      title: "An HR team of two supporting 600 people",
+      industry: "Accounting firm · Manhattan, NY",
+      title: "An office manager doing HR for 60 people",
       challenge:
-        "Two HR staff absorbed entirely by helpdesk queries and onboarding, with no capacity for the retention work the board kept asking about.",
+        "One office manager absorbing every PTO question, onboarding pack and benefits query for 60 staff, alongside running the office. Nothing was wrong exactly, but nothing was current either.",
       solution:
-        "A four-person pod taking the helpdesk, onboarding and records, with the internal team retained for casework decisions and people strategy.",
+        "A coordinator taking the helpdesk, onboarding and records, with a qualified HR advisor on call for anything involving an employee matter — and the office manager back on the office.",
       results: [
-        { value: 4, suffix: " hrs", label: "Helpdesk response time" },
-        { value: 71, suffix: "%", label: "Of queries resolved without internal HR" },
-        { value: 38, suffix: "%", label: "Lower HR administrative cost" },
+        { value: 4, suffix: " hrs", label: "Staff helpdesk response time" },
+        { value: 71, suffix: "%", label: "Of questions resolved without her" },
+        { value: 38, suffix: "%", label: "Lower cost of HR administration" },
       ],
       accent: "lilac",
       figure: "network",
     },
     {
-      industry: "Care services",
-      title: "Getting compliance documentation audit-ready",
+      industry: "Home care agency · Bronx, NY",
+      title: "Getting the paperwork ready before the inspection",
       challenge:
-        "A regulated workforce where I-9, background check and training records were incomplete across roughly a fifth of employees ahead of an inspection.",
+        "A regulated workforce where I-9s, background checks and training certificates were incomplete across roughly a fifth of staff, with a state inspection scheduled in eight weeks.",
       solution:
-        "A full records audit, systematic remediation with a chase cycle, and ongoing expiry monitoring with alerts before any certification lapsed.",
+        "A full records audit, systematic remediation with a daily chase cycle, and ongoing expiry monitoring so a certification is flagged before rather than after it lapses.",
       results: [
         { value: 100, suffix: "%", label: "Compliance documentation complete" },
         { value: 0, label: "Findings at inspection" },
@@ -259,38 +260,38 @@ export const hrOutsourcing: ServiceContent = {
   quotes: [
     {
       quote:
-        "We looked at a PEO and realized we would be giving up control of our own hiring. This gave us the administrative relief without the co-employment.",
-      name: "Rachel Osei-Bonsu",
-      role: "HR Director",
-      company: "Peakline",
-      initials: "RO",
+        "We looked at a PEO and realized we would be handing over control of our own hiring. This gave us the relief without the co-employment.",
+      name: "Practice Owner",
+      role: "Four-location dental group",
+      company: "Brooklyn & Queens, NY",
+      initials: "PO",
       rating: 5,
     },
     {
       quote:
-        "The monthly report showed one department generating 40% of our employee relations cases. We had a management problem, not an HR problem.",
-      name: "Stefan Vogel",
-      role: "Chief People Officer",
-      company: "Gridworks",
-      initials: "SV",
+        "The monthly report showed one supervisor generating 40% of our staff complaints. We had a management problem, not an HR problem.",
+      name: "Managing Partner",
+      role: "Accounting firm, 60 staff",
+      company: "Manhattan, NY",
+      initials: "MP",
       rating: 5,
     },
     {
       quote:
-        "Our inspection came back with zero findings. Six weeks earlier a fifth of our records were incomplete.",
-      name: "Aoife Brennan",
-      role: "Head of People",
-      company: "Aurora Health",
-      initials: "AB",
+        "Our inspection came back with zero findings. Six weeks earlier a fifth of our records were incomplete and nobody here knew it.",
+      name: "Agency Director",
+      role: "Licensed home care agency",
+      company: "Bronx, NY",
+      initials: "AD",
       rating: 5,
     },
   ],
 
   faqs: [
     {
-      question: "Do you become our employees' employer?",
+      question: "Do you become our staff's employer?",
       answer:
-        "No. This is HR outsourcing, not a PEO. You remain the sole employer, on your contracts, with your culture and your decisions. We provide administration, coordination and advice as a service.",
+        "No. This is HR support, not a PEO. You remain the sole employer, on your own contracts, with your culture and your decisions. We provide the administration, coordination and advice as a service.",
     },
     {
       question: "How is this different from a PEO?",
@@ -298,54 +299,54 @@ export const hrOutsourcing: ServiceContent = {
         "A PEO enters co-employment, puts your staff on its own employment infrastructure and takes on some employment liability — in exchange for a good deal of your control. We have written a detailed comparison in our HR vs PEO guide.",
     },
     {
-      question: "Who makes disciplinary and termination decisions?",
+      question: "Who makes disciplinary and firing decisions?",
       answer:
-        "Your managers, always. We administer the process, prepare documentation, ensure procedural steps are followed and advise where asked. We never make or communicate the decision itself.",
+        "You do, always. We run the process, prepare the documentation, make sure the required steps happen in the right order, and advise where asked. We never make or communicate the decision itself.",
     },
     {
-      question: "Are your HR staff qualified?",
+      question: "Are your HR people qualified?",
       answer:
-        "Advisors are SHRM-certified or hold the local equivalent, supported by trained coordinators. Employee relations matters are only handled by qualified advisors, never by coordination staff.",
+        "Advisors are SHRM-certified, supported by trained coordinators. Anything involving an employee matter is only handled by a qualified advisor, never by coordination staff.",
     },
     {
-      question: "Do you work in our HRIS?",
+      question: "Do we need an HR system?",
       answer:
-        "Yes — Workday, BambooHR, HiBob, SuccessFactors, Personio and others, under your licenses and permissions. Employee data stays within your systems and your data controller responsibilities.",
+        "No. We work in whatever you have — Gusto, BambooHR, Rippling, ADP, Paychex, or a folder structure and a spreadsheet. If it is the latter, we will tell you when it is genuinely time to change and when it is not.",
     },
     {
-      question: "How do you handle employee data protection?",
+      question: "Do you know New York employment rules?",
       answer:
-        "You remain the data controller; we act as processor under a DPA reviewed by your privacy team. ISO 27001 certified and SOC 2 Type II audited, with least-privilege access and quarterly access review.",
+        "Yes, including the ones that bite at four employees rather than fifteen: salary ranges in postings, the Fair Chance Act sequence, paid safe and sick leave accruals on the pay statement, Paid Family Leave and paid prenatal leave. We support offices in other states too and match advisors to the jurisdiction.",
     },
     {
-      question: "Can you handle recruitment as well as administration?",
+      question: "How do you protect employee data?",
       answer:
-        "Coordination, screening, scheduling and offer administration are included. Executive search and specialist headhunting are separate engagements we can run, priced differently.",
+        "Records stay in your own systems under least-privilege access, on managed devices, reviewed quarterly. We sign confidentiality agreements covering everyone who touches an employee file.",
     },
     {
-      question: "Which jurisdictions do you cover?",
+      question: "Can you help us actually hire, not just administer it?",
       answer:
-        "US, Canada, Mexico, Ireland, Australia and much of Western Europe, with local employment law support through partner counsel. We will tell you where our depth is thinner rather than improvise.",
+        "Posting, screening, scheduling and offer administration are included. Specialist search for a hard-to-fill clinical or senior role is a separate engagement, priced differently and only where we genuinely have depth.",
     },
     {
-      question: "How quickly can a pod start?",
+      question: "How quickly can someone start?",
       answer:
-        "About three weeks, including the HR audit, process design and a shadowing period. Helpdesk and recruitment coordination usually go live first, with casework administration following.",
+        "About three weeks, including the HR audit, writing the procedures and a shadowing period. The helpdesk and hiring coordination usually go live first, with employee matters following.",
     },
     {
-      question: "What happens to our internal HR team?",
+      question: "What happens to whoever currently does this?",
       answer:
-        "In our engagements they typically move onto retention, performance, organizational design and casework decisions. The pod handles coordination and administration, not the judgment work.",
+        "In our experience they get their actual job back. We take the coordination and paperwork; the judgment work, the relationships and the decisions stay in the building where they belong.",
     },
     {
-      question: "Do you provide employment law advice?",
+      question: "Do you give employment law advice?",
       answer:
-        "We advise on process and best practice. Formal legal advice comes from your employment counsel, and we prepare the documentation and chronology they need — which is usually where the cost sits.",
+        "We advise on process and good practice. Formal legal advice comes from your employment counsel, and we prepare the documentation and timeline they need — which is usually where their bill actually comes from.",
     },
     {
       question: "What is the minimum term?",
       answer:
-        "Three months, then month-to-month with 30 days' notice. Three months covers a full hiring and review cycle, which is the minimum needed to judge the arrangement fairly.",
+        "Three months, then month-to-month with 30 days' notice. Three months covers a full hiring cycle, which is the minimum needed to judge the arrangement fairly.",
     },
   ],
 
@@ -360,12 +361,12 @@ export const hrOutsourcing: ServiceContent = {
 
   cta: {
     title: "Start with an HR audit.",
-    body: "One week, a fixed fee, and a written report on your administrative load, policy gaps and compliance documentation. Yours to act on with or without us.",
+    body: "One week, a fixed fee, and a written report on your admin load, your handbook, and the state and city requirements you are currently missing. Yours to act on with or without us.",
   },
 
   seo: {
-    title: "HR Outsourcing | Recruitment, Onboarding & Employee Helpdesk — Xevantis",
+    title: "HR Support for Small Businesses | Hiring, Onboarding & Compliance — Xevantis",
     description:
-      "Outsourced HR administration covering recruitment coordination, onboarding, records, employee helpdesk and ER casework support. Never a co-employer — you keep every decision.",
+      "Outsourced HR for practices and firms under 100 staff: hiring coordination, onboarding, records, a staff helpdesk and state and city compliance. Never a co-employer — you keep every decision about your own people.",
   },
 };

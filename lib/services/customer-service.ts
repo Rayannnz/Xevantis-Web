@@ -3,75 +3,75 @@ import { PRIMARY_CTA, SECONDARY_CTA } from "./shared";
 
 export const customerService: ServiceContent = {
   slug: "customer-service",
-  name: "Customer Service",
+  name: "Front Desk & Customer Calls",
   accent: "blush",
-  eyebrow: "Customer Service",
+  eyebrow: "Front Desk & Calls",
   summary:
-    "Voice, email, social and ticket support from named specialists trained on your product — priced per seat, never per contact.",
-  trustLabel: "Handling customer conversations for",
+    "New-patient calls, appointment scheduling, reminders and client intake — answered live by the same named person every day, priced per seat.",
+  trustLabel: "Answering the phone for",
 
   sections: {
     benefits: {
-      title: "What a support program should move.",
-      body: "Four numbers baselined before transition and reported weekly after it. Cost per contact is only one, and rarely the most valuable.",
+      title: "What answering the phone properly is worth.",
+      body: "Four numbers we baseline before we start and report weekly after. Cost per call is only one of them, and it is rarely the one that matters.",
     },
     process: {
-      title: "Fourteen days from scope to live.",
-      body: "Six phases. The academy and its readiness gate take the most time, because an agent who has not passed a live simulation should not meet a customer.",
+      title: "Fourteen days from first call to answering yours.",
+      body: "Six phases. The training and its sign-off take the longest, because nobody who has not passed a live practice call should be speaking to your patients.",
     },
     tech: {
-      title: "Your helpdesk, your telephony, your data.",
-      body: "We operate in your stack. No proprietary platform, no forced migration and no per-seat license from us.",
+      title: "Your scheduling software, your phone number, your records.",
+      body: "We work inside what you already run. No platform to license from us and nothing to migrate.",
     },
     why: {
-      title: "Why satisfaction goes up rather than down.",
-      body: "Outsourced support has a bad reputation for three specific reasons: scripts, rotation and handle-time targets. We built the model against all three.",
+      title: "Why patients and clients cannot tell.",
+      body: "Answering services have a bad reputation for three specific reasons: scripts, rotating strangers, and being measured on call length. We built the model against all three.",
     },
     cases: {
-      title: "Programs we run.",
-      body: "Three operations judged on satisfaction, resolution time, and contact volume that stopped existing at all.",
+      title: "Front desks we cover.",
+      body: "Three offices judged on calls answered live, appointments booked, and the work that came off the front desk entirely.",
     },
     faq: {
       title: "Quality, coverage and control.",
-      body: "The questions that separate a support partner from a call center.",
+      body: "What separates a real front desk extension from an answering service.",
     },
   },
 
   hero: {
-    title: "Support that reduces the reason people contact you.",
-    highlight: "the same people every day",
-    body: "Named specialists on voice, email, social and tickets — the same people every day, trained on your product rather than a script. Priced per seat, so nobody here benefits from you having more contacts.",
+    title: "Every call answered by someone who knows your practice.",
+    highlight: "the same person every day",
+    body: "New-patient calls, scheduling, reminders, insurance questions and client intake — handled by the same person every day, working in your software under your practice's name. Priced per seat, so nobody here benefits from your phone ringing more.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
-    trust: "CX pods onboarding now — 11 seats left this quarter",
+    trust: "Onboarding now — 11 seats left this quarter",
     chips: [
-      { value: "4.8/5", label: "Average CSAT across managed programs" },
-      { value: "14 days", label: "Signed scope to a trained team live" },
-      { value: "24/7", label: "Coverage from six delivery hubs" },
+      { value: "96%", label: "Of calls answered live, not by voicemail" },
+      { value: "14 days", label: "From signed scope to answering your phone" },
+      { value: "1", label: "Named person, not a rotating pool" },
     ],
     figure: "pulse",
   },
 
   overview: {
     eyebrow: "Service overview",
-    title: "Handling contacts well, then having fewer of them.",
-    body: "Every support operation can be judged two ways: how well it handles volume, and whether volume is falling. Most providers are paid per contact, so only the first ever improves. Ours is priced per seat, which is why the second one does too.",
+    title: "Answering the call, then booking the appointment.",
+    body: "An answering service takes a message. That is not what a missed new-patient call needs — it needs someone who can open your schedule and put them in it while they are still on the phone. That is the whole difference, and it is why we are priced per seat rather than per message.",
     panels: [
       {
         heading: "What it is",
-        body: "A dedicated CX pod — agents, a team lead and a quality analyst — working your channels in your helpdesk to service levels you set.",
+        body: "A named person — or two, or half of one — working your phones, your inbox and your scheduling software under your practice's name, to hours you set.",
       },
       {
         heading: "Who it's for",
-        body: "Companies where support is part of the product experience: subscription businesses, marketplaces, fintech, retail, gaming and software.",
+        body: "Medical and dental practices, pharmacies, law firms, engineering and accounting offices, real estate agencies and any local business whose front desk is doing three jobs at once.",
       },
       {
         heading: "The business case",
-        body: "Lower cost per contact, higher satisfaction, and a falling contact rate as the drivers behind the tickets get reported and fixed rather than absorbed.",
+        body: "Fewer new-patient calls lost to voicemail, a front desk that can look at the person in front of them, and a fuller schedule without a second full-time hire.",
       },
       {
         heading: "Why us",
-        body: "You interview every agent, they stay on your account, and the monthly voice-of-customer report tells you what your product should fix next.",
+        body: "You interview whoever we put on it, they stay on your account, and the monthly report tells you which calls you are still missing and why.",
       },
     ],
     figure: "network",
@@ -79,52 +79,52 @@ export const customerService: ServiceContent = {
 
   included: {
     eyebrow: "Scope",
-    title: "The team, the tooling discipline and the feedback loop.",
-    body: "Quality assurance, workforce management and voice-of-customer reporting are inside the service, not priced as extras.",
+    title: "The person, the scripts and the loop that keeps improving them.",
+    body: "Call quality review, schedule coverage and the monthly missed-call report are inside the service, not priced as extras.",
     items: [
-      "Voice support: inbound, outbound and scheduled callbacks",
-      "Email and ticket handling with tiered escalation",
-      "Social media and app store review responses",
-      "Technical support and troubleshooting to tier two",
-      "Order, billing and account administration",
-      "Complaint handling and resolution to your policy",
-      "Knowledge base authoring and macro library maintenance",
-      "Quality assurance scoring against a calibrated rubric",
-      "Workforce management: forecasting, rostering and adherence",
-      "Voice-of-customer reporting into your product backlog",
-      "Escalation paths and surge cover for incidents",
-      "Multilingual coverage across six delivery hubs",
+      "Inbound calls answered live under your practice's name",
+      "New-patient and new-client intake, with your screening questions",
+      "Appointment scheduling, rescheduling and cancellation backfill",
+      "Confirmation and reminder calls, texts and emails",
+      "Insurance and eligibility questions, to your escalation rules",
+      "Overflow cover when your desk is already on a call",
+      "After-hours, lunch-hour and Saturday coverage",
+      "Email and web form follow-up within your response window",
+      "Google and review-site responses, to your approved wording",
+      "Recall and reactivation calls to lapsed patients or clients",
+      "Call recording review against a rubric agreed with you",
+      "Bilingual coverage — English and Spanish as standard",
     ],
-    note: "Knowledge base content, macros, QA rubrics and process documentation are your IP and stay with you. We work in your helpdesk under your accounts throughout.",
+    note: "Your call scripts, intake questions and process documentation are yours and stay with you. We work in your scheduling software under your own accounts, on your own phone number, throughout.",
     figure: "pipeline",
   },
 
   benefits: [
     {
-      title: "Satisfaction that rises after transition",
-      body: "Named specialists who stay on your account build genuine product knowledge, and customers respond to that more than to any process change. Scripts and rotation are why outsourced support usually costs a point of CSAT.",
-      metric: { value: 4.8, decimals: 1, suffix: "/5", label: "Average CSAT across managed programs" },
-      link: { label: "How agents are trained", href: "#process" },
+      title: "New-patient calls that stop going to voicemail",
+      body: "Around a quarter of first-time calls at the practices we have measured never reached a person, and six in ten of those callers left no message. Someone answering is the entire fix.",
+      metric: { value: 96, suffix: "%", label: "Of calls answered live rather than by voicemail" },
+      link: { label: "How the coverage works", href: "#whats-included" },
       figure: "pulse",
     },
     {
-      title: "Contact volume that falls over time",
-      body: "Each pod reports the top drivers behind its tickets into your product backlog monthly, with the contact cost attached to each one. Priced per seat, we have every reason to help you need fewer of them.",
-      metric: { value: 22, suffix: "%", label: "Median fall in contact rate per active customer" },
-      link: { label: "See the feedback loop", href: "#whats-included" },
+      title: "A schedule that fills itself back in",
+      body: "Cancellations get backfilled from a waitlist the same day rather than becoming an empty chair. Recall and reactivation calls happen on a cadence instead of when someone finds a spare hour.",
+      metric: { value: 22, suffix: "%", label: "Median fall in unfilled appointment slots" },
+      link: { label: "See what's covered", href: "#whats-included" },
       figure: "dashboard",
     },
     {
-      title: "Cover that matches when customers write",
-      body: "Six hubs make genuine follow-the-sun staffing possible, rostered against your real contact curve rather than a standard shift pattern. Weekend and overnight queues stop becoming Monday's backlog.",
-      metric: { value: 42, suffix: " sec", label: "Median first response on live channels" },
+      title: "Cover for the hours that actually hurt",
+      body: "Late morning, lunch, after close and Saturdays — scheduled against when your phone genuinely rings rather than a standard shift. Nobody has to choose between the caller and the patient at the desk.",
+      metric: { value: 42, suffix: " sec", label: "Median time to answer, across covered hours" },
       link: { label: "Talk about coverage", href: "#contact" },
       figure: "network",
     },
     {
-      title: "Cost down, without rushing conversations",
-      body: "The saving comes from better tooling, tighter macros and fewer repeat contacts. Handle time is a capacity planning input here, never an individual agent target.",
-      metric: { value: 34, suffix: "%", label: "Median reduction in cost per resolved contact" },
+      title: "Cheaper than the hire, without rushing anyone",
+      body: "A seat costs a fraction of a full-time front desk salary with benefits, and you can take a half seat if that is genuinely what you need. Call length informs staffing here; it is never an individual's target.",
+      metric: { value: 34, suffix: "%", label: "Median saving against a local front-desk hire" },
       link: { label: "How quality is measured", href: "#why-us" },
       figure: "layers",
     },
@@ -132,125 +132,125 @@ export const customerService: ServiceContent = {
 
   process: [
     {
-      title: "Immersion",
+      title: "A morning in your office",
       duration: "Days 1–3",
-      body: "A delivery lead runs a two-day immersion: ticket taxonomy, escalation paths, tone of voice, systems access and the twenty edge cases that actually cause churn.",
+      body: "We sit with your front desk: which calls matter, how you take a new patient or client, what you say about insurance and fees, and the twenty situations your desk handles by instinct.",
     },
     {
-      title: "Toolkit design",
+      title: "Write the scripts you never had",
       duration: "Days 3–6",
-      body: "Macros, QA rubric, knowledge base, routing rules and reporting schema, built before a single agent is hired and handed to you as your intellectual property.",
+      body: "Intake questions, scheduling rules, escalation paths and the response templates — written before anyone is hired, and yours to keep whether you stay with us or not.",
     },
     {
-      title: "Recruit",
+      title: "Find your person",
       duration: "Days 4–8",
-      body: "A shortlist within 96 hours from a 40,000-strong talent pool, screened for your channels and languages. You interview every finalist and hold the veto.",
+      body: "Two candidates within 96 hours, screened for your industry specifically — dental insurance, legal intake, prior authorizations. You interview both and hold the veto.",
     },
     {
-      title: "Academy",
+      title: "Training",
       duration: "Days 8–14",
-      body: "Product certification, live call simulation, shadowing and a graded readiness gate. Nobody touches a real customer before passing it, which is not negotiable.",
+      body: "Your scheduling software, your scripts, live practice calls and a sign-off you approve. Nobody speaks to a real patient or client before passing it, which is not negotiable.",
     },
     {
       title: "Go live",
       duration: "Day 14",
-      body: "A ramped start on a subset of volume with the team lead on shift and every interaction reviewed. Full volume follows once quality scores hold for a week.",
+      body: "A ramped start on overflow only, with your delivery lead listening and every call reviewed. Full coverage follows once quality holds for a week.",
     },
     {
-      title: "Run & reduce",
+      title: "Run & improve",
       duration: "Ongoing",
-      body: "Weekly performance reviews, monthly business reviews, and a standing voice-of-customer report naming the contact drivers worth engineering out.",
+      body: "A standing weekly call, a monthly report on which calls you are still missing and why, and a short list of changes worth making to the scripts.",
     },
   ],
 
   tech: [
-    { name: "Zendesk", category: "Helpdesk" },
-    { name: "Intercom", category: "Messaging" },
-    { name: "Freshdesk", category: "Helpdesk" },
-    { name: "Salesforce Service Cloud", category: "Service platform" },
-    { name: "Gorgias", category: "E-commerce support" },
-    { name: "HubSpot Service Hub", category: "Service platform" },
-    { name: "Twilio", category: "Telephony" },
-    { name: "Genesys", category: "Contact center" },
-    { name: "Five9", category: "Cloud contact center" },
-    { name: "Talkdesk", category: "Voice platform" },
-    { name: "Klaus", category: "Quality assurance" },
-    { name: "Assembled", category: "Workforce management" },
-    { name: "Guru", category: "Knowledge base" },
-    { name: "Jira", category: "Escalation" },
-    { name: "Looker Studio", category: "Reporting" },
-    { name: "Slack", category: "Escalation channel" },
+    { name: "Dentrix", category: "Dental scheduling" },
+    { name: "Open Dental", category: "Dental scheduling" },
+    { name: "Athenahealth", category: "Medical scheduling" },
+    { name: "eClinicalWorks", category: "Medical records" },
+    { name: "Clio", category: "Legal intake" },
+    { name: "MyCase", category: "Legal intake" },
+    { name: "Follow Up Boss", category: "Real estate CRM" },
+    { name: "Salesforce", category: "CRM" },
+    { name: "HubSpot", category: "CRM" },
+    { name: "RingCentral", category: "Phone system" },
+    { name: "Dialpad", category: "Phone system" },
+    { name: "Weave", category: "Practice phones" },
+    { name: "Google Workspace", category: "Email & calendar" },
+    { name: "Microsoft 365", category: "Email & calendar" },
+    { name: "Calendly", category: "Booking" },
+    { name: "Podium", category: "Texting & reviews" },
   ],
 
   differentiators: [
     {
-      title: "Named specialists, not a pool",
-      body: "The same people every day, on your account only. Product knowledge compounds, and customers can tell the difference within a single interaction.",
+      title: "A named person, not a pool",
+      body: "The same voice every day, on your account only. Patients and clients start recognizing them within a fortnight, which is the entire difference from an answering service.",
     },
     {
-      title: "No scripts",
-      body: "Agents are trained on your product and your policy, then trusted to have a conversation. Handle time informs rostering; it never appears on an individual's scorecard.",
+      title: "No scripts read word for word",
+      body: "They learn your practice and your policies, then have a conversation. Call length informs how we staff; it never appears on an individual's scorecard.",
     },
     {
-      title: "Priced per seat, not per contact",
-      body: "A per-contact contract gives a supplier a quiet interest in your customers struggling. Ours does the opposite, and the monthly deflection report proves we act on it.",
+      title: "Priced per seat, not per call",
+      body: "Charging per call gives a supplier a quiet interest in your phone ringing more. Ours does the opposite, and the monthly report on missed calls proves we act on it.",
     },
     {
-      title: "Quality analysts on every pod",
-      body: "Calibrated sampling with root-cause coaching, reported weekly. Quality that is nobody's specific job drifts within two quarters, in every operation we have inherited.",
+      title: "Someone listens to the calls",
+      body: "Recordings sampled against a rubric agreed with you, with coaching logged. Call quality that is nobody's specific job drifts within two quarters, in every office we have inherited.",
     },
     {
-      title: "You interview everyone",
-      body: "Every finalist meets you before joining and you can say no. You are told immediately if anyone leaves the account, not at the next monthly review.",
+      title: "You interview them first",
+      body: "Every finalist meets you before starting and you can say no. If they ever leave your account you hear it that day, not at the next review.",
     },
     {
-      title: "Month-to-month after month three",
-      body: "No multi-year lock-in. Three months to become genuinely productive, then staying should be a choice you make each month rather than a contract you are inside.",
+      title: "Start at one seat, or half of one",
+      body: "No minimum team size and no setup fee. Plenty of our offices start with two hours of lunch cover and grow from there — or decide that is all they needed.",
     },
   ],
 
   cases: [
     {
-      industry: "E-commerce",
-      title: "Fifteen thousand tickets a month, without the fire drill",
+      industry: "Dental practice · Astoria, Queens, NY",
+      title: "Four chairs, two staff and a quarter of calls lost",
       challenge:
-        "Seasonal swings of 400% and a support team that spent every peak in backlog, with satisfaction falling each fourth quarter.",
+        "A four-provider family practice where the same two people checked in patients, seated them and answered the phone. Ninety days of call logs showed 27% of new-patient calls never reached anyone, most of them between 10am and noon.",
       solution:
-        "A core pod with pre-trained surge capacity from the same hub, a rebuilt macro library, and self-service deflection for the three highest-volume order queries.",
+        "One named seat covering the two worst hours a day plus lunch, with direct access to the schedule so callers were booked on the call rather than promised a callback.",
       results: [
-        { value: 4.7, decimals: 1, suffix: "/5", label: "CSAT held through peak" },
-        { value: 31, suffix: "%", label: "Lower cost per resolved contact" },
-        { value: 0, suffix: " hrs", label: "Peak backlog at any point" },
+        { value: 27, suffix: "%", label: "Missed new-patient calls, down to 3%" },
+        { value: 19, label: "Extra new patients booked per month" },
+        { value: 0.4, decimals: 1, suffix: " FTE", label: "Cost of the fix" },
       ],
       accent: "blush",
       figure: "pulse",
     },
     {
-      industry: "Subscription software",
-      title: "Turning the ticket queue into a product backlog",
+      industry: "Personal injury firm · Brooklyn, NY",
+      title: "Intake calls arriving while everyone was in court",
       challenge:
-        "Support answering the same defect questions for months, because nothing quantified what those questions were costing.",
+        "A six-attorney firm losing new-client calls every morning its team was at Kings County Supreme. Callers who reach voicemail call the next firm on the list, and the firm had no way of knowing how many.",
       solution:
-        "Monthly voice-of-customer reporting attaching contact cost to each recurring driver, presented directly to the product team rather than filtered through an account manager.",
+        "A trained intake specialist covering court hours, running the firm's conflicts check live and booking consultations straight into the calendar, with matter-type screening agreed with the partners.",
       results: [
-        { value: 41, label: "Recurring drivers fixed in a year" },
-        { value: 27, suffix: "%", label: "Reduction in total ticket volume" },
-        { value: 4.9, decimals: 1, suffix: "/5", label: "CSAT after two quarters" },
+        { value: 100, suffix: "%", label: "Of court-hours calls answered live" },
+        { value: 2, suffix: "x", label: "Consultations booked vs callback attempts" },
+        { value: 0, label: "Conflicts missed at intake" },
       ],
       accent: "sky",
       figure: "dashboard",
     },
     {
-      industry: "Financial services",
-      title: "Multilingual support across nine markets",
+      industry: "Real estate agency · Westchester County, NY",
+      title: "Portal inquiries answered in minutes, not hours",
       challenge:
-        "Expansion into six new markets with no local language cover and a regulatory requirement for auditable response times.",
+        "A twelve-agent brokerage where portal leads were routed to whichever agent was on rotation — all of whom were out showing property. Median response time was over four hours and about a fifth got no reply at all.",
       solution:
-        "Native-speaker pods across three hubs on a single shared quality rubric, with response-time evidence generated automatically from the helpdesk for compliance.",
+        "A dedicated response seat covering evenings and weekends, replying by text within five minutes with two specific viewing times and the fee structure stated plainly.",
       results: [
-        { value: 9, label: "Languages covered" },
-        { value: 100, suffix: "%", label: "Regulatory response deadlines met" },
-        { value: 4.8, decimals: 1, suffix: "/5", label: "CSAT, consistent across markets" },
+        { value: 4, suffix: " min", label: "Median response, down from 4h 20m" },
+        { value: 21, suffix: "%", label: "Of leads previously unanswered, now 0%" },
+        { value: 38, suffix: "%", label: "More viewings booked per 100 inquiries" },
       ],
       accent: "mint",
       figure: "network",
@@ -260,93 +260,93 @@ export const customerService: ServiceContent = {
   quotes: [
     {
       quote:
-        "Supporting fifteen thousand tickets a month stopped being a fire drill and became routine. That is the whole review, really.",
-      name: "Hannah Prescott",
-      role: "Head of Customer Operations",
-      company: "Lumen Retail",
-      initials: "HP",
+        "My front desk can look at the patient in front of them now. That is the whole review, really.",
+      name: "Practice Manager",
+      role: "Four-provider dental practice",
+      company: "Astoria, Queens, NY",
+      initials: "PM",
       rating: 5,
     },
     {
       quote:
-        "The monthly report tells us what to fix and what it is costing us. Our previous provider sent us a chart of ticket volumes.",
-      name: "Callum Reyes",
-      role: "Director of Support",
-      company: "Gridworks",
-      initials: "CR",
+        "The monthly report tells us which calls we are still missing and why. Our old answering service sent us a count of messages taken.",
+      name: "Managing Partner",
+      role: "Six-attorney personal injury firm",
+      company: "Brooklyn, NY",
+      initials: "MP",
       rating: 5,
     },
     {
       quote:
-        "The team is technically excellent, but what stands out is how quickly they push back when our process is the problem.",
-      name: "Ines Almeida",
-      role: "VP of Support",
-      company: "Solstice",
-      initials: "IA",
+        "She knows our patients by name and knows which insurance questions to escalate. Nobody has ever asked whether she sits in the office.",
+      name: "Office Administrator",
+      role: "Multi-specialty medical practice",
+      company: "Westchester County, NY",
+      initials: "OA",
       rating: 5,
     },
   ],
 
   faqs: [
     {
-      question: "How fast can a support team go live?",
+      question: "How fast can someone start answering our phone?",
       answer:
-        "Fourteen days from a signed scope. Shortlists within 96 hours, six days of academy training, and a graded readiness gate before anyone handles a live customer.",
+        "Fourteen days from a signed scope. Two candidates within 96 hours, six days of training on your software and scripts, and a sign-off you approve before anyone takes a live call.",
     },
     {
-      question: "Will our customers know support is outsourced?",
+      question: "Will patients or clients know it isn't someone in the office?",
       answer:
-        "Only if you tell them. Agents work under your brand, in your helpdesk, on your email domain, with your tone of voice. They are dedicated to your account and know your product properly.",
+        "Only if you tell them. They answer under your practice's name, on your own phone number, in your scheduling software, with your greeting. It is the same person every day, which is why callers stop noticing within a fortnight.",
     },
     {
-      question: "Do you use scripts?",
+      question: "Do they read from a script?",
       answer:
-        "No. Agents are trained on your product and policy and then trusted to hold a conversation. Macros exist for accuracy and speed, but the words are not dictated line by line.",
+        "No. They learn your practice, your policies and your fee or insurance position, then hold a conversation. Written scripts exist for intake accuracy and for anything with legal or clinical weight, but the words are not dictated line by line.",
     },
     {
-      question: "How do you measure quality?",
+      question: "How do we know the calls are being handled well?",
       answer:
-        "A dedicated quality analyst samples interactions against a rubric calibrated with your team, scored weekly with coaching actions logged. CSAT, first-contact resolution and response time sit alongside it on your dashboard.",
+        "Calls are recorded and sampled against a rubric we agree with you, reviewed weekly with coaching logged. You get calls answered, time to answer, appointments booked and missed calls on a monthly report — and you can listen to any call yourself.",
     },
     {
-      question: "What coverage can you provide?",
+      question: "What hours can you cover?",
       answer:
-        "Anything up to 24/7/365, rostered against your actual contact curve. Six hubs across Asia, Eastern Europe and Latin America make genuine follow-the-sun staffing possible.",
+        "Whatever your office needs, including lunch cover, evenings, Saturdays and the late-morning rush. Coverage is scheduled against when your phone actually rings, which we work out from your own call log.",
     },
     {
-      question: "Which languages do you support?",
+      question: "Do you offer Spanish?",
       answer:
-        "English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Tagalog and Mandarin as standard, with others on notice. Native speakers, never machine translation.",
+        "Yes, bilingual English and Spanish as standard. Other languages on notice — always native speakers, never machine translation.",
     },
     {
-      question: "Do we keep our own helpdesk?",
+      question: "Do we have to change our scheduling software or phone system?",
       answer:
-        "Yes. We work in your Zendesk, Intercom, Freshdesk or Service Cloud under your licenses. There is no proprietary platform to adopt and no customer data leaving your stack.",
+        "No. We work inside your Dentrix, Open Dental, Athenahealth, Clio or CRM under your own logins, on your existing phone number. Nothing migrates and no patient or client data leaves your systems.",
     },
     {
-      question: "How does escalation to our team work?",
+      question: "What happens when a call needs one of us?",
       answer:
-        "A tiered model agreed during immersion, with defined criteria and response windows per tier. Anything reputational or legal routes to a named contact through an agreed channel within a set time.",
+        "Escalation rules agreed in week one: which calls transfer immediately, which get a same-day message, and who they reach. Anything clinical, legal or upset goes to a named person by an agreed route within a set time.",
     },
     {
-      question: "What happens during an incident or outage?",
+      question: "Are you HIPAA compliant?",
       answer:
-        "A crisis playbook agreed up front: holding responses go out within the response window, surge staff are pulled onto the queue, and your incident lead gets situation reports on a fixed cadence.",
+        "Yes, and we sign a business associate agreement before anyone touches a schedule. Access is restricted and logged, devices are managed, and calls involving patient information are handled under the same controls as your own staff.",
     },
     {
-      question: "Can you scale for seasonal peaks?",
+      question: "Can you add cover for a busy stretch?",
       answer:
-        "Yes, with 30 days' notice. Surge staff come from the same delivery hub pre-trained on your process, so peak capacity is not agency temps meeting your product for the first time.",
+        "Yes, with 30 days' notice — flu season, open enrollment, tax season, or somebody's leave. Extra cover comes from people already trained on your account, not from temps meeting your practice for the first time.",
     },
     {
-      question: "How is data protected?",
+      question: "What if we only need a few hours a day?",
       answer:
-        "ISO 27001 certified and SOC 2 Type II audited, with clean-desk floors, managed devices, restricted access and DLP. GDPR, CCPA, PCI DSS and HIPAA controls are layered on where your data requires them.",
+        "That is a normal way to start. Plenty of our offices begin with lunch and late-morning cover only. There is no minimum team size and no setup fee.",
     },
     {
-      question: "What is the commercial model?",
+      question: "How is it priced?",
       answer:
-        "A monthly rate per seat by channel mix and language, never per contact. Charging per contact would give us a reason to want more of them, which is the opposite of what you are buying.",
+        "A monthly rate per seat, by hours and coverage — never per call or per message. Charging per call would give us a reason to want your phone ringing more, which is the opposite of what you are buying.",
     },
   ],
 
@@ -360,13 +360,13 @@ export const customerService: ServiceContent = {
   ],
 
   cta: {
-    title: "Get a CX model and a price this week.",
-    body: "Tell us your volumes, channels and the service levels you need. We will come back within one business day with a team shape, a transition plan and a cost per resolved contact.",
+    title: "Get a coverage plan and a price this week.",
+    body: "Tell us your hours, your software and what your front desk is drowning in. We will come back within one business day with who would cover it, when they would start and a monthly price.",
   },
 
   seo: {
-    title: "Customer Service Outsourcing | Dedicated CX Pods — Xevantis",
+    title: "Front Desk & Call Answering for Medical, Dental & Legal Offices — Xevantis",
     description:
-      "Voice, email, social and ticket support from named specialists trained on your product. 4.8/5 average CSAT, live in 14 days, priced per seat rather than per contact.",
+      "Live call answering, appointment scheduling and client intake for clinics, dental practices, pharmacies, law firms and local offices across the US. A named person in your own software, working in 14 days. Priced per seat, never per call.",
   },
 };

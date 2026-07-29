@@ -11,13 +11,13 @@ export function Integrations() {
       <Container width="wide">
         <SectionHead align="center">
           <SplitWords
-            text="Xevantis plugs into the stack you already run."
+            text="We work inside the software you already pay for."
             stagger={40}
             className={headingClass}
           />
           <Reveal delay={220} className="flex flex-wrap justify-center gap-3">
             <Button href="#contact">
-              <ButtonLabel>Build your team</ButtonLabel>
+              <ButtonLabel>Get your team</ButtonLabel>
             </Button>
           </Reveal>
         </SectionHead>

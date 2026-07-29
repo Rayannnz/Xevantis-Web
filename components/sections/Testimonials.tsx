@@ -49,7 +49,7 @@ export function Testimonials() {
               <Eyebrow>Proof</Eyebrow>
             </Reveal>
             <SplitWords
-              text="Validated by experts, valued by 150+ customers."
+              text="Trusted by 240+ small businesses across the US."
               stagger={45}
               className={headingClass}
             />

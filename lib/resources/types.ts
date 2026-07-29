@@ -15,12 +15,21 @@ export type ResourceService =
   | "HR"
   | "Sales & marketing";
 
+/**
+ * The industries we actually sell to. Kept broad enough that a reader
+ * self-selects in one glance — a chiropractor picks "Medical & dental", a
+ * title company picks "Local services" — rather than hunting for their exact
+ * specialty in a list of thirty.
+ */
 export type ResourceIndustry =
-  | "Consumer goods"
-  | "Retail"
-  | "SaaS"
-  | "Healthcare"
-  | "Finance";
+  | "Medical & dental"
+  | "Pharmacy"
+  | "Legal"
+  | "Engineering"
+  | "Accounting"
+  | "Real estate"
+  | "Corporate offices"
+  | "Local services";
 
 /** Icon key resolved to an SVG in `ResourceArtIcon`. */
 export type ResourceIcon =

@@ -21,10 +21,10 @@ export function Process() {
           <Reveal as="span">
             <Eyebrow centered>The launch</Eyebrow>
           </Reveal>
-          <SplitWords text="Live in five steps." stagger={45} className={headingClass} />
+          <SplitWords text="Working in five steps." stagger={45} className={headingClass} />
           <Reveal as="p" delay={180} className={leadClass}>
-            Sourced, trained and assembled in as little as two weeks. Once you&rsquo;re
-            live, we keep tuning until the KPIs hold on their own.
+            Hired, trained and answering your phone in as little as two weeks. After
+            that, we keep adjusting until it runs without you having to think about it.
           </Reveal>
         </SectionHead>
 

@@ -3,12 +3,12 @@ import { PRIMARY_CTA, SECONDARY_CTA } from "./shared";
 
 export const ecommerceBpo: ServiceContent = {
   slug: "ecommerce-bpo",
-  name: "Ecommerce BPO",
+  name: "Online Store Support",
   accent: "blush",
-  eyebrow: "Ecommerce",
+  eyebrow: "Online Store",
   summary:
-    "Support, order operations, returns and marketplace management built for peak — with surge capacity contracted before Black Friday, not during it.",
-  trustLabel: "Handling peak season for",
+    "Order handling, shipping questions, returns and marketplace listings for local businesses that also sell online — with holiday cover booked in August, not November.",
+  trustLabel: "Handling the online side for",
 
   sections: {
     benefits: {
@@ -24,12 +24,12 @@ export const ecommerceBpo: ServiceContent = {
       body: "We work in your platform and your helpdesk. Marketplace tooling and carrier portals included.",
     },
     why: {
-      title: "Why these operations hold through Black Friday.",
+      title: "Why these operations hold through December.",
       body: "Peak failures are almost never surprises. They are capacity decisions made too late to recruit and train against.",
     },
     cases: {
       title: "Peaks we have run.",
-      body: "Three retailers measured on backlog, WISMO deflection, and what happened to marketplace account health.",
+      body: "Three local businesses measured on backlog, shipping questions removed, and what happened to their marketplace accounts.",
     },
     faq: {
       title: "Peak planning, marketplaces and returns.",
@@ -38,16 +38,16 @@ export const ecommerceBpo: ServiceContent = {
   },
 
   hero: {
-    title: "An ecommerce operation that survives its own peak.",
+    title: "The online side of a local business, handled.",
     highlight: "contracted in August",
-    body: "Customer support, order operations, returns and marketplace management from a team that knows your catalog — with surge capacity contracted in August, trained by October, and working in peak week one.",
+    body: "Order handling, \"where is my package\" questions, returns and marketplace listings, from someone who knows your products — with holiday cover contracted in August, trained by October, and working in the first week that matters.",
     primaryCta: PRIMARY_CTA,
     secondaryCta: SECONDARY_CTA,
-    trust: "Peak capacity being reserved for the next season now",
+    trust: "Holiday capacity being reserved for the next season now",
     chips: [
-      { value: "0 hrs", label: "Peak backlog across managed accounts" },
-      { value: "-34%", label: "WISMO contacts after deflection work" },
-      { value: "4x", label: "Volume absorbed without new recruitment" },
+      { value: "0 hrs", label: "Holiday backlog across the accounts we run" },
+      { value: "-34%", label: "Shipping questions after the fixes" },
+      { value: "4x", label: "Volume absorbed without hiring" },
     ],
     figure: "pulse",
   },
@@ -55,23 +55,23 @@ export const ecommerceBpo: ServiceContent = {
   overview: {
     eyebrow: "Service overview",
     title: "Four months of the year decide the other eight.",
-    body: "Ecommerce operations are judged on a handful of weeks. A backlog in peak week two produces refund demands, marketplace penalties and reviews that suppress conversion for a year. Almost all of it is a staffing decision made in September rather than in June.",
+    body: "For a business that sells online alongside a storefront, a handful of weeks decides the year. A backlog in the second week of December produces refund demands, marketplace penalties and one-star reviews that suppress sales for a year. Almost all of it is a staffing decision made in September rather than in June.",
     panels: [
       {
         heading: "What it is",
-        body: "An ecommerce pod covering support, order operations, returns and marketplace administration, with pre-trained surge capacity reserved for your peak.",
+        body: "A named person covering order questions, shipping issues, returns and marketplace listings, with pre-trained extra cover reserved for your busiest weeks.",
       },
       {
         heading: "Who it's for",
-        body: "Direct-to-consumer brands, multi-channel retailers and marketplace sellers processing from a few thousand to several hundred thousand orders a month.",
+        body: "Independent pharmacies shipping orders, optical and veterinary practices selling products, local retailers running a Shopify store, and medical supply businesses selling on marketplaces.",
       },
       {
         heading: "The business case",
-        body: "No peak backlog, fewer WISMO contacts, faster returns processing and marketplace metrics that stay inside policy thresholds.",
+        body: "No holiday backlog, fewer shipping questions reaching your counter staff, faster returns, and marketplace metrics that stay inside policy thresholds.",
       },
       {
         heading: "Why us",
-        body: "Surge staff come from the same delivery hub and are trained on your catalog before peak — not agency temps meeting your product in November.",
+        body: "Extra holiday cover comes from people already trained on your products in October — not temps meeting your catalog for the first time in November.",
       },
     ],
     figure: "network",
@@ -84,7 +84,7 @@ export const ecommerceBpo: ServiceContent = {
     items: [
       "Customer support across email, chat, phone and social",
       "Order management, amendments and exception handling",
-      "WISMO handling and proactive delivery-issue outreach",
+      "Shipping-status questions and proactive delivery-issue outreach",
       "Returns, refunds and exchange processing to your policy",
       "Carrier liaison, claims and lost-parcel investigation",
       "Marketplace account management: Amazon, eBay, Etsy and others",
@@ -109,8 +109,8 @@ export const ecommerceBpo: ServiceContent = {
     },
     {
       title: "Fewer people asking where their order is",
-      body: "WISMO is typically the largest single contact driver and most of it is avoidable through proactive delivery messaging and better tracking pages. Deflecting it is cheaper than staffing it.",
-      metric: { value: 34, suffix: "%", label: "Median reduction in WISMO contact volume" },
+      body: "\"Where is my order\" is almost always the single biggest source of messages, and most of it is avoidable with automatic shipping updates and a better status page. Removing it is cheaper than staffing it.",
+      metric: { value: 34, suffix: "%", label: "Median reduction in shipping-status messages" },
       link: { label: "How deflection works", href: "#whats-included" },
       figure: "dashboard",
     },
@@ -144,7 +144,7 @@ export const ecommerceBpo: ServiceContent = {
     {
       title: "Base team design",
       duration: "Week 2–3",
-      body: "The steady-state pod sized for normal trading, plus the macro library, returns rules and marketplace response templates it will work from.",
+      body: "The steady-state cover sized for normal trading, plus the saved responses, returns rules and marketplace templates it will work from.",
     },
     {
       title: "Peak plan",
@@ -166,19 +166,19 @@ export const ecommerceBpo: ServiceContent = {
   tech: [
     { name: "Shopify", category: "Commerce platform" },
     { name: "BigCommerce", category: "Commerce platform" },
-    { name: "Magento", category: "Commerce platform" },
     { name: "WooCommerce", category: "Commerce platform" },
+    { name: "Square Online", category: "Commerce platform" },
     { name: "Amazon Seller Central", category: "Marketplace" },
     { name: "eBay Seller Hub", category: "Marketplace" },
-    { name: "ChannelAdvisor", category: "Marketplace management" },
-    { name: "Linnworks", category: "Order management" },
-    { name: "Gorgias", category: "Ecommerce helpdesk" },
-    { name: "Zendesk", category: "Helpdesk" },
+    { name: "Etsy", category: "Marketplace" },
+    { name: "Walmart Marketplace", category: "Marketplace" },
+    { name: "ShipStation", category: "Shipping" },
+    { name: "Gorgias", category: "Store help desk" },
+    { name: "Zendesk", category: "Help desk" },
     { name: "Klaviyo", category: "Customer messaging" },
-    { name: "ShipStation", category: "Fulfillment" },
     { name: "Loop Returns", category: "Returns" },
-    { name: "Signifyd", category: "Fraud screening" },
-    { name: "NetSuite", category: "ERP" },
+    { name: "Stripe", category: "Payments" },
+    { name: "QuickBooks", category: "Accounting" },
     { name: "Looker Studio", category: "Reporting" },
   ],
 
@@ -189,11 +189,11 @@ export const ecommerceBpo: ServiceContent = {
     },
     {
       title: "Surge staff trained on your catalog",
-      body: "Peak hires come from the same delivery hub and train six weeks before the season. They are productive in peak week one rather than learning your returns policy during it.",
+      body: "Holiday staff train on your products six weeks before the season. They are productive in the first busy week rather than learning your returns policy during it.",
     },
     {
       title: "We reduce contacts, not just handle them",
-      body: "Contact driver analysis comes before headcount. Roughly a third of WISMO volume can be deflected, and deflecting it is cheaper for you than staffing it is profitable for us.",
+      body: "Contact driver analysis comes before headcount. Roughly a third of shipping-status messages can be removed entirely, and removing them is cheaper for you than staffing them is profitable for us.",
     },
     {
       title: "Marketplace-literate",
@@ -211,14 +211,14 @@ export const ecommerceBpo: ServiceContent = {
 
   cases: [
     {
-      industry: "Fashion DTC",
-      title: "A Black Friday with no backlog for the first time",
+      industry: "Optical retailer · Brooklyn, NY",
+      title: "A December with no backlog for the first time",
       challenge:
-        "Order volume rising sixfold through peak, with the previous season producing a nine-day support backlog and a surge of chargebacks in January.",
+        "A three-store optical business whose online frame orders rose sixfold through the holidays, with the previous season producing a nine-day email backlog and a wave of chargebacks in January.",
       solution:
-        "Surge capacity contracted in August and trained in October, proactive delivery messaging on the two carriers causing most WISMO, and returns rules simplified before the season.",
+        "Holiday cover contracted in August and trained in October, proactive shipping messages on the two carriers causing most complaints, and the returns policy simplified before the season rather than during it.",
       results: [
-        { value: 0, suffix: " hrs", label: "Backlog at any point in peak" },
+        { value: 0, suffix: " hrs", label: "Backlog at any point in the season" },
         { value: 6, suffix: "x", label: "Volume absorbed" },
         { value: 71, suffix: "%", label: "Fewer January chargebacks" },
       ],
@@ -226,14 +226,14 @@ export const ecommerceBpo: ServiceContent = {
       figure: "pulse",
     },
     {
-      industry: "Home goods marketplace seller",
+      industry: "Medical supply business · Queens, NY",
       title: "Recovering an Amazon account from policy warnings",
       challenge:
-        "Response times drifting past the 24-hour policy window and a defect rate approaching suspension thresholds across three marketplaces.",
+        "A family-run supplier whose response times had drifted past the 24-hour policy window, with a defect rate approaching suspension across three marketplaces and no idea which products were causing it.",
       solution:
-        "Dedicated marketplace case handling inside a 12-hour internal target, systematic A-to-z appeal preparation, and root-cause work on the two SKUs generating most defects.",
+        "Dedicated marketplace case handling inside a 12-hour internal target, systematic appeal preparation, and root-cause work on the two products generating most of the defects.",
       results: [
-        { value: 100, suffix: "%", label: "Cases answered within policy window" },
+        { value: 100, suffix: "%", label: "Cases answered within the policy window" },
         { value: 0.4, decimals: 1, suffix: "%", label: "Defect rate, from 2.1%" },
         { value: 3, label: "Marketplace accounts restored to good standing" },
       ],
@@ -241,16 +241,16 @@ export const ecommerceBpo: ServiceContent = {
       figure: "network",
     },
     {
-      industry: "Electronics retail",
-      title: "Cutting WISMO by a third without touching support",
+      industry: "Independent pharmacy · Bronx, NY",
+      title: "Cutting shipping questions by a third",
       challenge:
-        "Where-is-my-order contacts making up 44% of all support volume, with agents copying tracking numbers from one system into another.",
+        "\"Where is my order\" making up 44% of all online contact volume, with counter staff interrupting patient service to copy tracking numbers from one system into another.",
       solution:
-        "Proactive delivery exception messaging, a rebuilt tracking page, and automated updates at three shipment milestones — all identified during contact driver analysis.",
+        "Automatic shipping updates at three points, a rebuilt order status page, and proactive messages on delayed shipments — all identified by analyzing what people were actually asking about.",
       results: [
-        { value: 34, suffix: "%", label: "Reduction in WISMO contacts" },
-        { value: 21, suffix: "%", label: "Lower total support volume" },
-        { value: 4.8, decimals: 1, suffix: "/5", label: "CSAT through peak" },
+        { value: 34, suffix: "%", label: "Fewer shipping questions" },
+        { value: 21, suffix: "%", label: "Lower total online contact volume" },
+        { value: 4.8, decimals: 1, suffix: "/5", label: "Customer rating through the season" },
       ],
       accent: "sky",
       figure: "dashboard",
@@ -260,29 +260,29 @@ export const ecommerceBpo: ServiceContent = {
   quotes: [
     {
       quote:
-        "They made us contract peak capacity in August. It felt early and it was the reason November was boring.",
-      name: "Erin Maddox",
-      role: "Head of Ecommerce",
-      company: "Lumen Retail",
-      initials: "EM",
+        "They made us book the holiday cover in August. It felt early, and it was the reason December was boring for once.",
+      name: "Owner",
+      role: "Three-store optical retailer",
+      company: "Brooklyn, NY",
+      initials: "OW",
       rating: 5,
     },
     {
       quote:
-        "Our Amazon account was two weeks from suspension. They handled the appeals and fixed the two SKUs causing it.",
-      name: "Vikram Anand",
-      role: "Marketplace Director",
-      company: "Duonode",
-      initials: "VA",
+        "Our Amazon account was two weeks from suspension. They handled the appeals and then fixed the two products causing it.",
+      name: "Operations Manager",
+      role: "Family-run medical supply business",
+      company: "Queens, NY",
+      initials: "OM",
       rating: 5,
     },
     {
       quote:
-        "A third of our support volume was people asking where their parcel was. They told us to fix the tracking page instead of hiring more agents.",
-      name: "Lotte Jansen",
-      role: "Customer Experience Lead",
-      company: "Solstice",
-      initials: "LJ",
+        "A third of our online messages were people asking where their package was. They told us to fix the status page instead of paying for more hours.",
+      name: "Pharmacist-in-Charge",
+      role: "Independent pharmacy",
+      company: "Bronx, NY",
+      initials: "PC",
       rating: 5,
     },
   ],
@@ -296,7 +296,7 @@ export const ecommerceBpo: ServiceContent = {
     {
       question: "Will peak staff know our products?",
       answer:
-        "Yes. Surge staff come from the same delivery hub and complete catalog, policy and systems training with a graded readiness gate before the season starts.",
+        "Yes. Yes. Holiday staff complete product, policy and systems training with a sign-off before the season starts.",
     },
     {
       question: "Can you manage our marketplace accounts?",
@@ -309,7 +309,7 @@ export const ecommerceBpo: ServiceContent = {
         "You do, always. Ratings, review history and account standing stay in your name. Changing supplier should never risk a sales channel, and under this model it cannot.",
     },
     {
-      question: "How do you reduce WISMO?",
+      question: "How do you cut down shipping questions?",
       answer:
         "Proactive delivery exception messaging, better tracking pages and automated milestone updates. Contact driver analysis identifies which of the three will move your volume most before we quote headcount.",
     },
@@ -336,7 +336,7 @@ export const ecommerceBpo: ServiceContent = {
     {
       question: "Can you cover 24/7 through peak?",
       answer:
-        "Yes. Six delivery hubs allow genuine round-the-clock cover during peak weeks, which is when overnight backlog does the most damage to next-day expectations.",
+        "Yes. Round-the-clock cover is available through the busiest weeks, which is when an overnight backlog does the most damage to next-day expectations.",
     },
     {
       question: "Do you support multiple languages?",
@@ -360,13 +360,13 @@ export const ecommerceBpo: ServiceContent = {
   ],
 
   cta: {
-    title: "Plan the next peak while there is still time.",
-    body: "Send us last season's contact volumes and order data. We will come back with a deflection plan, a surge forecast and what it costs to reserve the capacity now.",
+    title: "Plan the holidays while there is still time.",
+    body: "Send us last season's message volumes and order data. We will come back with a list of what to fix, a forecast of what you will need, and what it costs to reserve the cover now.",
   },
 
   seo: {
-    title: "Ecommerce BPO | Peak Support, Order Ops & Marketplace Management — Xevantis",
+    title: "Online Store Support for Local Businesses & Pharmacies — Xevantis",
     description:
-      "Ecommerce support, returns, order operations and marketplace management with surge capacity contracted a quarter ahead. Zero peak backlog, 34% WISMO reduction.",
+      "Order handling, shipping questions, returns and Amazon and eBay marketplace management for pharmacies, optical and veterinary practices and local retailers across the US. Holiday cover booked a quarter ahead. Zero backlog, 34% fewer shipping questions.",
   },
 };
