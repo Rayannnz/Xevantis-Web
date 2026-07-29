@@ -207,8 +207,8 @@
      arc travelling past, so it reads as a wipe rather than a growing ball.
      Each stage waits for the one before it — overlapping the out with the sun
      sweep clips the bottom-left away before the accent has reached it. */
-  --animate-type-in: type-in 9000ms var(--ease-out-back) both;
-  --animate-curtain-in: curtain-in 520ms 20000ms var(--ease-in-out-soft) both;
+  --animate-type-in: type-in 280ms var(--ease-out-back) both;
+  --animate-curtain-in: curtain-in 520ms 800ms var(--ease-in-out-soft) both;
   --animate-curtain-in-late: curtain-in 520ms 920ms var(--ease-in-out-soft) both;
   --animate-curtain-out: curtain-out 600ms 1460ms var(--ease-in-out-soft) both;
 

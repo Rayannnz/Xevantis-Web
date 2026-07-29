@@ -4,10 +4,11 @@ import type { CSSProperties } from "react";
 import { useState } from "react";
 
 /**
- * The intro belongs to the document load, not the route. Module scope is what
- * gives it that lifetime: it survives soft navigations back to the landing page
- * (so the curtain does not replay on every client-side return) and resets on a
- * real reload, which is exactly when the effect is worth showing again.
+ * The intro belongs to the document load, not the route. Mounted in the root
+ * layout so every route gets it once. Module scope is what gives it that
+ * lifetime: it survives soft navigations (so the curtain does not replay on
+ * every client-side hop) and resets on a real reload, which is exactly when
+ * the effect is worth showing again.
  */
 let played = false;
 

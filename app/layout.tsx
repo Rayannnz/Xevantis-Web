@@ -7,6 +7,7 @@ import {
   Quicksand,
 } from "next/font/google";
 import Link from "next/link";
+import { IntroCurtain } from "@/components/motion/IntroCurtain";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { MotionProvider } from "@/components/motion/MotionProvider";
 import { ToastProvider } from "@/components/ui/Toast";
@@ -83,6 +84,7 @@ export default function RootLayout({
           Skip to content
         </Link>
 
+        <IntroCurtain />
         <ScrollProgress />
         <MotionProvider>
           <ToastProvider>{children}</ToastProvider>

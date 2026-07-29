@@ -1,4 +1,3 @@
-import { IntroCurtain } from "@/components/motion/IntroCurtain";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Ribbon, Wave } from "@/components/ui/primitives";
@@ -18,7 +17,6 @@ import { CtaBand } from "@/components/sections/CtaBand";
 export default function HomePage() {
   return (
     <>
-      <IntroCurtain />
       <Header />
 
       {/* tabIndex makes the skip link actually move focus, not just scroll. */}
