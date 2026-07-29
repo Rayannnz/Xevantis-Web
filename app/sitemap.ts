@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SERVICE_SLUGS } from "@/lib/services";
+import { RESOURCES } from "@/lib/resources";
 import { absoluteUrl, SITE_URL } from "@/lib/seo";
 
 /**
@@ -23,6 +24,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.8,
+    })),
+    {
+      url: absoluteUrl("/resources"),
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    // Articles carry their own publication date — unlike the static shell,
+    // these genuinely were modified when they were written.
+    ...RESOURCES.map((resource) => ({
+      url: absoluteUrl(`/resources/${resource.slug}`),
+      lastModified: new Date(resource.date),
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
     })),
   ];
 }

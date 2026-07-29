@@ -87,6 +87,8 @@
   --font-body: var(--font-inter), "Segoe UI Variable Text", "Segoe UI",
     system-ui, -apple-system, sans-serif;
   --font-hand: var(--font-caveat), "Segoe Script", "Bradley Hand", cursive;
+  /* Logotype only — the rounded monoline the intro wordmark is drawn in. */
+  --font-logo: var(--font-quicksand), var(--font-jakarta), system-ui, sans-serif;
   --font-mono: var(--font-jetbrains), ui-monospace, "Cascadia Mono", Consolas,
     monospace;
 
@@ -190,6 +192,26 @@
   --animate-marquee: marquee-x var(--marquee-duration, 38s) linear infinite;
   --animate-pulse-ring: pulse-ring 2.4s var(--ease-out-quad) infinite;
 
+  /* ---------- Page-load curtain ----------
+     One timeline, staged entirely through delays so it needs no JS. The
+     wordmark types out on the paper field (0–712ms), the two brand arcs chase
+     each other across it, then the whole curtain retreats:
+
+       type-in    0 →  712    per letter, offset by --type-step
+       violet   800 → 1320
+       sun      920 → 1440
+       out     1460 → 2060
+
+     Both sweep radii are anchored to a corner, never the centre. That is the
+     whole trick: with the origin off in a corner the visitor only ever sees an
+     arc travelling past, so it reads as a wipe rather than a growing ball.
+     Each stage waits for the one before it — overlapping the out with the sun
+     sweep clips the bottom-left away before the accent has reached it. */
+  --animate-type-in: type-in 9000ms var(--ease-out-back) both;
+  --animate-curtain-in: curtain-in 520ms 20000ms var(--ease-in-out-soft) both;
+  --animate-curtain-in-late: curtain-in 520ms 920ms var(--ease-in-out-soft) both;
+  --animate-curtain-out: curtain-out 600ms 1460ms var(--ease-in-out-soft) both;
+
   @keyframes float-y {
     0%,
     100% {
@@ -274,6 +296,41 @@
     }
   }
 
+  /* The accent sweeps in from the top-right corner ... */
+  @keyframes curtain-in {
+    from {
+      clip-path: circle(0% at 100% 0%);
+    }
+    to {
+      clip-path: circle(150% at 100% 0%);
+    }
+  }
+
+  /* ... and the whole curtain retreats into the opposite corner. 150% clears a
+     corner-anchored viewport: the reference for a percentage radius is
+     sqrt((w² + h²) / 2), so the far corner sits at ~141%. */
+  @keyframes curtain-out {
+    from {
+      clip-path: circle(150% at 0% 100%);
+    }
+    to {
+      clip-path: circle(0% at 0% 100%);
+    }
+  }
+
+  /* One glyph landing. The overshoot is what makes it read as struck rather
+     than faded — a plain opacity ramp on a stagger looks like a dissolve. */
+  @keyframes type-in {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 0.3em, 0) scale(0.7);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+  }
+
   @keyframes pulse-ring {
     0% {
       transform: scale(0.85);
@@ -297,6 +354,9 @@
    ========================================================================== */
 
 :root {
+  /* Gap between consecutive glyphs of the intro wordmark. Raw CSS because the
+     delay is computed per letter as `calc(var(--i) * var(--type-step))`. */
+  --type-step: 48ms;
   --header-height: 76px;
   --gutter: clamp(1.25rem, 0.75rem + 2vw, 2.5rem);
   --section-y: clamp(4.5rem, 3rem + 6vw, 9rem);

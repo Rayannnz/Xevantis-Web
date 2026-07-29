@@ -34,10 +34,12 @@ const jsonLd = {
   url: absoluteUrl("/resources"),
   mainEntity: {
     "@type": "ItemList",
+    numberOfItems: RESOURCES.length,
     itemListElement: RESOURCES.map((resource, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: resource.title,
+      description: resource.excerpt,
     })),
   },
 };

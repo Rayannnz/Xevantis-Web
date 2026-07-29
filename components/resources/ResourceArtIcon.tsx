@@ -10,6 +10,8 @@ import {
   LedgerOutline,
   PersonOutline,
   Rocket,
+  Route,
+  ShieldCheck,
   Users,
 } from "@/components/icons";
 
@@ -26,14 +28,18 @@ const ICONS: Record<ResourceIcon, (props: IconProps) => ReactNode> = {
   gauge: (p) => <Gauge {...p} />,
   globe: (p) => <Globe {...p} />,
   users: (p) => <Users {...p} />,
+  route: (p) => <Route {...p} />,
+  shield: (p) => <ShieldCheck {...p} />,
 };
 
 export function ResourceArtIcon({
   name,
   size = 64,
+  className,
 }: {
   name: ResourceIcon;
   size?: number;
+  className?: string;
 }) {
-  return ICONS[name]({ width: size, height: size });
+  return ICONS[name]({ width: size, height: size, className });
 }

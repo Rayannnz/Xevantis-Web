@@ -12,7 +12,8 @@ import { Button, ButtonLabel } from "@/components/ui/Button";
 import { Reveal } from "@/components/motion/Reveal";
 import { SplitWords } from "@/components/motion/SplitWords";
 import { ArrowUpRight } from "@/components/icons";
-import { ResourceArtIcon } from "@/components/resources/ResourceArtIcon";
+import { ResourceScene } from "@/components/resources/ResourceScene";
+import { ResourceMeta } from "@/components/resources/ResourceCard";
 
 export function Insights() {
   const posts = getLatestResources(3);
@@ -50,20 +51,25 @@ export function Insights() {
                       post.art,
                     )}
                   >
-                    <ResourceArtIcon name={post.icon} size={86} />
+                    <ResourceScene
+                      name={post.icon}
+                      accent={post.accent}
+                      className="size-full"
+                    />
                   </div>
                 </div>
 
                 <div className="grid gap-3 px-6 pb-6">
-                  <div className="flex items-center gap-2 text-xs uppercase tracking-wide text-ink-400">
-                    <span>{post.date}</span>
-                    <span>·</span>
+                  <ResourceMeta resource={post}>
                     <span>{post.type}</span>
-                  </div>
+                  </ResourceMeta>
                   <h3 className="font-display text-lg font-bold leading-[1.3] tracking-tight">
                     {post.title}
                   </h3>
-                  <TextLink href="/resources" className="justify-self-start">
+                  <TextLink
+                    href={`/resources/${post.slug}`}
+                    className="justify-self-start"
+                  >
                     Read article
                     <ArrowUpRight />
                   </TextLink>

@@ -1,5 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Caveat, Inter, JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
+import {
+  Caveat,
+  Inter,
+  JetBrains_Mono,
+  Plus_Jakarta_Sans,
+  Quicksand,
+} from "next/font/google";
 import Link from "next/link";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { MotionProvider } from "@/components/motion/MotionProvider";
@@ -21,6 +27,15 @@ const inter = Inter({
 
 const caveat = Caveat({
   variable: "--font-caveat",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+// Rounded geometric monoline — the logotype face. Only the intro wordmark uses
+// it, so it is deliberately the one family loaded without a fallback stack that
+// tries to imitate it: nothing else in the page would match anyway.
+const quicksand = Quicksand({
+  variable: "--font-quicksand",
   subsets: ["latin"],
   display: "swap",
 });
@@ -58,7 +73,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jakarta.variable} ${inter.variable} ${caveat.variable} ${jetbrainsMono.variable}`}
+      className={`${jakarta.variable} ${inter.variable} ${caveat.variable} ${quicksand.variable} ${jetbrainsMono.variable}`}
     >
       <body>
         <Link
