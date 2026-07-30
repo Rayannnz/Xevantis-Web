@@ -95,7 +95,7 @@ export function MegaMenu({ open, id, onPointerEnter, onPointerLeave }: MegaMenuP
             All solutions
             <ArrowRight aria-hidden className="size-4" />
           </Link>
-          <Button href="/#contact" size="sm">
+          <Button href="/get-started" size="sm">
             <ButtonLabel>Talk to an expert</ButtonLabel>
             <ArrowRight />
           </Button>

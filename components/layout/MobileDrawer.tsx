@@ -99,7 +99,7 @@ export function MobileDrawer({ id, open, onClose }: MobileDrawerProps) {
       </div>
 
       <Button
-        href="/#contact"
+        href="/get-started"
         variant="accent"
         size="lg"
         block

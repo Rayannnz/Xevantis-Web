@@ -16,7 +16,9 @@ There is no test suite and no test runner installed. The `/design-system` route 
 
 ## Project
 
-Marketing site for **Xevantis**, a BPO + software agency. Next.js 16 App Router, React 19, TypeScript strict, Tailwind CSS v4, framer-motion. Fully static — no database, no API routes, no auth. The only environment variable is `NEXT_PUBLIC_SITE_URL` (falls back to `https://xevantis.com`; set it per deploy or preview canonicals point at production).
+Marketing site for **Xevantis**, a BPO + software agency. Next.js 16 App Router, React 19, TypeScript strict, Tailwind CSS v4, framer-motion. Every page is static and there is no database, no auth and no API routes — the one piece of server work is the `/get-started` lead form's server action.
+
+Environment variables (see `.env.example`): `NEXT_PUBLIC_SITE_URL` (falls back to `https://xevantis.com`; set it per deploy or preview canonicals point at production), and for the lead form `RESEND_API_KEY`, `LEAD_TO_EMAIL`, `LEAD_FROM_EMAIL`.
 
 Naming trap: the brand is **Xevantis** in all copy. The repo folder is still `Valentysis` and the logo asset is still `public/img/logo-valentisys.png` — both are pre-rebrand leftovers, not the brand.
 
@@ -37,6 +39,15 @@ Routes are hand-written folders (`app/services/<slug>/page.tsx`), not a `[slug]`
 **Adding a service** = new `lib/services/<slug>.ts` + add it to a group in `SERVICE_GROUPS` + new route folder. Navigation, the index grid, related-service cards and the sitemap all follow automatically.
 
 Homepage/shell content lives in `lib/content.ts` with types in `lib/types.ts`. Those types *do* carry `ReactNode` (icons), so they are client-side content, distinct from the service data model.
+
+### The lead form is the only server-side path
+
+Every "Get started" CTA — header, mega menu, mobile drawer, hero, `CtaBand` — points at `/get-started`. The in-page `#contact` anchors ("Book a scoping call", "Talk about your books") still scroll to the CTA band on the page they are on; they are a different, deliberate pattern.
+
+- `lib/leads/index.ts` — the quote model and the parser. Client-safe on purpose: the form renders the figure and the action recomputes it, so both read one module. **`MIN_HOURLY_RATE` is $6 and nothing may quote below it** — the parser rejects a lower rate with a message, and `quote()` clamps regardless, because it runs on raw `FormData`. Deliberately imports nothing from `lib/services`, so the client bundle stays free of the 16 data files; the page passes the solutions dropdown down as plain strings.
+- `lib/leads/actions.ts` — `"use server"`. Validates, then POSTs to Resend's REST API (`fetch`, not the `resend` package — one endpoint, native, and the dependency list is short on purpose). `reply_to` is the lead's address so sales can just hit reply. Every visitor string is HTML-escaped into the message body and length-capped in the parser. A missing key or a Resend error returns a failure the visitor can act on — never a silent success.
+- `lib/leads/self-check.ts` — `npx tsx lib/leads/self-check.ts`. Guards the floor and the arithmetic.
+- `components/get-started/GetStartedForm.tsx` — the one client component. Works without JS; the live estimate is the only thing that needs it.
 
 ### Design tokens live in CSS, not a Tailwind config
 

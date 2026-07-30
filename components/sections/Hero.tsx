@@ -53,7 +53,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={320} className="flex flex-wrap items-center gap-3">
-              <Button href="#contact" size="lg" magnetic={0.3}>
+              <Button href="/get-started" size="lg" magnetic={0.3}>
                 <ButtonLabel>Get your team</ButtonLabel>
                 <ArrowRight />
               </Button>
@@ -206,3 +206,4 @@ function StickyNote({
     </span>
   );
 }
+

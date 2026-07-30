@@ -145,7 +145,7 @@ export function Header() {
               </nav>
 
               <div className="flex items-center gap-2 max-[980px]:ml-auto">
-                <Button href="/#contact" size="sm" magnetic={0.25}>
+                <Button href="/get-started" size="sm" magnetic={0.25}>
                   <ButtonLabel>Get started</ButtonLabel>
                   <ArrowRight />
                 </Button>

@@ -13,6 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: SITE_URL, lastModified, changeFrequency: "weekly", priority: 1 },
+    // Every CTA on the site ends here, so it ranks alongside the solutions index.
+    {
+      url: absoluteUrl("/get-started"),
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     {
       url: absoluteUrl("/services"),
       lastModified,
