@@ -1,7 +1,6 @@
 import { SERVICE_GROUPS } from "./services";
 import type {
   FooterColumn,
-  LaunchStep,
   NavLink,
   ProcessStep,
   Stat,
@@ -38,13 +37,6 @@ export const ALL_SOLUTIONS: NavLink[] = SOLUTION_GROUPS.flatMap(
   (group) => group.links,
 );
 
-export const LAUNCH_STEPS: LaunchStep[] = [
-  { title: "Scope", detail: "Your front desk, your files, your busy hours.", accent: "sun" },
-  { title: "Match", detail: "Two candidates in 96 hours, you interview.", accent: "mint" },
-  { title: "Train", detail: "Your intake scripts, your software, live practice.", accent: "lilac" },
-  { title: "Go live", detail: "A weekly call with the person who runs it.", accent: "blush" },
-];
-
 export const WHY_SWITCH: string[] = [
   "The same named person every day — not whoever picks up the phone.",
   "Start at one seat, or half of one. No minimum team size.",
@@ -60,26 +52,31 @@ export const PROCESS_STEPS: ProcessStep[] = [
     title: "We sit with you for a morning and learn how the office actually runs",
     detail:
       "Which calls matter, what your software is, who signs off on what, and the dozen situations your front desk handles by instinct because nobody ever wrote them down.",
+    day: "Day 1",
   },
   {
     title: "We write the playbook you never had time to write",
     detail:
       "Intake scripts, scheduling rules, insurance and billing steps, escalation paths — documented before anyone is hired, and yours to keep whether you stay with us or not.",
+    day: "Days 2–3",
   },
   {
     title: "We shortlist people who have worked in your industry",
     detail:
       "Two candidates within 96 hours, screened for the specifics — dental insurance verification, legal intake, prior-authorization calls. You interview both and hold the veto.",
+    day: "Day 4",
   },
   {
     title: "They train on your systems before they touch a real patient or client",
     detail:
       "Two weeks in your practice management or case software, live call practice against your scripts, and a readiness check you sign off on.",
+    day: "Days 5–13",
   },
   {
     title: "Go live, then a standing weekly call with the person who runs it",
     detail:
       "No account managers who have never seen your queue. Add or drop a seat with 30 days' notice, no penalty and no renegotiation.",
+    day: "Day 14",
   },
 ];
 

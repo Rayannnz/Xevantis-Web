@@ -29,45 +29,50 @@
   --color-paper-100: #fbf8f2;
   --color-paper-200: #f5f0e6;
 
-  /* ---------- Color: Sun — primary accent ---------- */
-  --color-sun-050: #fffae0;
-  --color-sun-100: #fff3ba;
-  --color-sun-200: #ffe98a;
-  --color-sun-300: #ffdd57;
-  --color-sun-400: #ffd12b;
-  --color-sun-500: #f5bd00;
+  /* ponytail: ramp names (sun/mint/lilac/blush/sky) are pre-retheme leftovers,
+     like the Valentysis folder. Renaming would touch every component plus all
+     16 service data files for zero rendered difference; the hues below are the
+     truth. Upgrade path: mechanical rename across lib/ + components/. */
 
-  /* ---------- Color: Mint — reliability ---------- */
-  --color-mint-050: #edfcf4;
-  --color-mint-100: #d3f6e4;
-  --color-mint-200: #a8ecca;
-  --color-mint-300: #74dfab;
-  --color-mint-400: #43cd8c;
-  --color-mint-500: #1faa6c;
+  /* ---------- Color: Sun — primary accent, brand violet ---------- */
+  --color-sun-050: #f7f4fe;
+  --color-sun-100: #ede6fd;
+  --color-sun-200: #dbccfa;
+  --color-sun-300: #c3a8f6;
+  --color-sun-400: #a37ef2;
+  --color-sun-500: #7a45e6;
 
-  /* ---------- Color: Lilac — intelligence, AI ---------- */
-  --color-lilac-050: #f4f0ff;
-  --color-lilac-100: #e6dfff;
-  --color-lilac-200: #d0c3ff;
-  --color-lilac-300: #b39fff;
-  --color-lilac-400: #9578ff;
-  --color-lilac-500: #7350f0;
+  /* ---------- Color: Mint — reliability, warm greige ---------- */
+  --color-mint-050: #faf9f6;
+  --color-mint-100: #f1efe9;
+  --color-mint-200: #e4e0d6;
+  --color-mint-300: #d0cabb;
+  --color-mint-400: #b3ab97;
+  --color-mint-500: #746b58;
 
-  /* ---------- Color: Blush — human touch, CX ---------- */
-  --color-blush-050: #fff1ee;
-  --color-blush-100: #ffdfd8;
-  --color-blush-200: #ffc4b7;
-  --color-blush-300: #ffa48f;
-  --color-blush-400: #ff7f63;
-  --color-blush-500: #f2593a;
+  /* ---------- Color: Lilac — intelligence, muted lavender ---------- */
+  --color-lilac-050: #f6f5fb;
+  --color-lilac-100: #ebe9f7;
+  --color-lilac-200: #d9d5ef;
+  --color-lilac-300: #c0b9e4;
+  --color-lilac-400: #a196d4;
+  --color-lilac-500: #6f61b8;
 
-  /* ---------- Color: Sky — scale, infrastructure ---------- */
-  --color-sky-050: #eef7ff;
-  --color-sky-100: #d5ecff;
-  --color-sky-200: #b0dbff;
-  --color-sky-300: #82c5ff;
-  --color-sky-400: #55acff;
-  --color-sky-500: #1d84e6;
+  /* ---------- Color: Blush — human touch, warm cream ---------- */
+  --color-blush-050: #fdf9ef;
+  --color-blush-100: #f9f1dd;
+  --color-blush-200: #f2e4c2;
+  --color-blush-300: #e7d1a0;
+  --color-blush-400: #d4b678;
+  --color-blush-500: #806729;
+
+  /* ---------- Color: Sky — scale, cool slate gray ---------- */
+  --color-sky-050: #f7f8fb;
+  --color-sky-100: #edeff4;
+  --color-sky-200: #dde1e9;
+  --color-sky-300: #c5cbd8;
+  --color-sky-400: #a3abbf;
+  --color-sky-500: #626e88;
 
   /* ---------- Color: Brand — sampled from the logo ---------- */
   --color-brand-violet: #8250f0;
@@ -156,12 +161,12 @@
   --shadow-lg: 0 26px 60px -20px rgb(14 13 18 / 0.22),
     0 6px 16px rgb(14 13 18 / 0.06);
   --shadow-xl: 0 48px 90px -32px rgb(14 13 18 / 0.3);
-  --shadow-glow-sun: 0 18px 50px -14px rgb(245 189 0 / 0.55);
+  --shadow-glow-sun: 0 18px 50px -14px rgb(122 69 230 / 0.45);
   --shadow-sticker: 4px 4px 0 #0e0d12;
   --shadow-sticker-lg: 8px 8px 0 #0e0d12;
   --shadow-sticker-hover: 6px 6px 0 #0e0d12;
   --shadow-sticker-active: 1px 1px 0 #0e0d12;
-  --shadow-focus-sun: 0 0 0 4px rgb(255 209 43 / 0.35);
+  --shadow-focus-sun: 0 0 0 4px rgb(163 126 242 / 0.35);
   --shadow-focus-danger: 0 0 0 4px rgb(224 58 47 / 0.14);
 
   /* ---------- Easing ---------- */
@@ -534,6 +539,18 @@
     opacity: 1;
     animation: sheen 1.5s var(--ease-out-quad);
   }
+}
+
+/* Hairline drafting grid — the landing page's editorial texture. Callers mask
+   it themselves so the fade direction stays a layout decision. */
+@utility bg-ruled {
+  background-image: linear-gradient(
+      to right,
+      rgb(14 13 18 / 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(14 13 18 / 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
 }
 
 /* Fades the marquee in and out at the container edges. */

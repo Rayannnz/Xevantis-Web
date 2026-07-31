@@ -1,0 +1,568 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic:
+    - paragraph:
+      - generic: X
+      - generic: e
+      - generic: v
+      - generic: a
+      - generic: "n"
+      - generic: t
+      - generic: i
+      - generic: s
+  - banner [ref=e3]:
+    - generic [ref=e6]:
+      - link "Xevantis home" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - navigation "Primary" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /#about
+        - button "BPO Solutions" [ref=e11] [cursor=pointer]
+        - link "Resources" [ref=e14] [cursor=pointer]:
+          - /url: /resources
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /#contact
+      - link "Get started" [ref=e17] [cursor=pointer]:
+        - /url: /get-started
+  - main [ref=e21]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: Now onboarding for Q4 — 11 openings left
+        - heading "The back office your small business never had room to hire." [level=1] [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: The
+            - generic [ref=e33]: back
+            - generic [ref=e34]: office
+            - generic [ref=e35]: your
+            - generic [ref=e36]: small
+            - generic [ref=e37]: business
+            - generic [ref=e38]: never
+            - generic [ref=e39]: had
+            - generic [ref=e40]: room
+            - generic [ref=e41]: to
+            - generic [ref=e42]: hire.
+        - paragraph [ref=e45]: Clinics, law firms, pharmacies and offices across the United States use Xevantis for the phones, the paperwork, the books and the software behind them. Your person starts in 2 weeks.
+        - generic [ref=e46]:
+          - link "Get your team" [ref=e47] [cursor=pointer]:
+            - /url: /get-started
+          - link "See how it works" [ref=e51] [cursor=pointer]:
+            - /url: "#process"
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - strong [ref=e55]: 240+
+            - generic [ref=e56]: businesses served
+          - generic [ref=e57]:
+            - strong [ref=e58]: "50"
+            - generic [ref=e59]: states covered
+          - generic [ref=e60]:
+            - strong [ref=e61]: 4.8/5
+            - generic [ref=e62]: client rating
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: Live this week
+          - generic [ref=e68]: Dental practice · Queens, NY
+        - generic [ref=e69]:
+          - heading "30 days with Xevantis" [level=2] [ref=e70]
+          - generic [ref=e71]:
+            - generic [ref=e73]:
+              - generic [ref=e74]: Calls answered live
+              - generic [ref=e75]: 0%
+            - generic [ref=e78]:
+              - generic [ref=e79]: Average time to answer
+              - generic [ref=e80]: 42 sec
+            - generic [ref=e83]:
+              - generic [ref=e84]: Cost vs a local hire
+              - generic [ref=e85]: −0%
+          - generic [ref=e87]:
+            - generic [ref=e88]: Calls handled this week
+            - generic [ref=e89]: "0"
+    - region "Who we serve" [ref=e90]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - generic [ref=e94]: Running the back office for
+          - list [ref=e95]:
+            - listitem [ref=e96]: Medical clinics
+            - listitem [ref=e99]: Dental practices
+            - listitem [ref=e102]: Independent pharmacies
+            - listitem [ref=e105]: Law firms
+            - listitem [ref=e108]: Engineering firms
+            - listitem [ref=e112]: Accounting firms
+            - listitem [ref=e115]: Real estate agencies
+            - listitem [ref=e118]: Corporate offices
+        - generic [ref=e122]:
+          - generic [ref=e123]: HIPAA compliant
+          - generic [ref=e126]: SOC 2 Type II
+          - generic [ref=e129]: CCPA & state privacy ready
+          - generic [ref=e132]: PCI DSS
+    - generic [ref=e137]:
+      - generic [ref=e138]:
+        - generic [ref=e139]: 01 · Why owners switch
+        - heading "A named person, not a rotating pool." [level=2] [ref=e141]:
+          - generic [ref=e142]:
+            - generic [ref=e143]: A
+            - generic [ref=e144]: named
+            - generic [ref=e145]: person,
+            - generic [ref=e146]: not
+            - generic [ref=e147]: a
+            - generic [ref=e148]: rotating
+            - generic [ref=e149]: pool.
+        - paragraph [ref=e150]: An answering service takes a message. We give you a person — hired for your practice, trained on your scheduling and billing software, working your hours, and known by name to the patients and clients who call.
+        - list [ref=e151]:
+          - listitem [ref=e152]:
+            - generic [ref=e153]: "01"
+            - generic [ref=e154]: The same named person every day — not whoever picks up the phone.
+          - listitem [ref=e155]:
+            - generic [ref=e156]: "02"
+            - generic [ref=e157]: Start at one seat, or half of one. No minimum team size.
+          - listitem [ref=e158]:
+            - generic [ref=e159]: "03"
+            - generic [ref=e160]: Month-to-month after month three. No multi-year contract, ever.
+        - link "See what it would cost" [ref=e162] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e165]:
+        - generic [ref=e166]:
+          - generic [ref=e167]: Your specialist, on paper
+          - generic [ref=e173]: On shift now
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - term [ref=e177]: Trained on
+            - definition [ref=e178]: Your software, your scripts, your phone tree
+          - generic [ref=e179]:
+            - term [ref=e180]: Coverage
+            - definition [ref=e181]: Your office hours, in your time zone
+          - generic [ref=e182]:
+            - term [ref=e183]: Backup
+            - definition [ref=e184]: A trained second seat for PTO and sick days
+          - generic [ref=e185]:
+            - term [ref=e186]: Check-in
+            - definition [ref=e187]: Fifteen minutes, every Friday, same person
+        - figure "Office Manager · Multi-specialty medical practice, Westchester County, NY" [ref=e188]:
+          - blockquote [ref=e189]: “I did not want a vendor, I wanted one more competent person. That is what I got, and she has been with us two years now.”
+    - generic [ref=e192]:
+      - generic [ref=e193]:
+        - generic [ref=e194]:
+          - generic [ref=e195]: 02 · What we run
+          - heading "Sixteen services. One contract." [level=2] [ref=e197]:
+            - generic [ref=e198]:
+              - generic [ref=e199]: Sixteen
+              - generic [ref=e200]: services.
+              - generic [ref=e201]: One
+              - generic [ref=e202]: contract.
+          - paragraph [ref=e203]: Take one seat or staff a whole function — the price is per seat either way, and every engagement gets the same named-specialist setup.
+        - link "Browse all 16 services" [ref=e205] [cursor=pointer]:
+          - /url: /services
+      - generic [ref=e208]:
+        - generic [ref=e210]:
+          - generic [ref=e212]: "01"
+          - heading "Core functions" [level=3] [ref=e219]
+          - list [ref=e220]:
+            - listitem [ref=e221]:
+              - link "IT Outsourcing" [ref=e222] [cursor=pointer]:
+                - /url: /services/it-outsourcing
+            - listitem [ref=e225]:
+              - link "Finance & Accounting" [ref=e226] [cursor=pointer]:
+                - /url: /services/finance-and-accounting
+            - listitem [ref=e229]:
+              - link "Finance Outsourcing" [ref=e230] [cursor=pointer]:
+                - /url: /services/finance-outsourcing
+            - listitem [ref=e233]:
+              - link "Sales & Marketing" [ref=e234] [cursor=pointer]:
+                - /url: /services/sales-and-marketing
+        - generic [ref=e238]:
+          - generic [ref=e240]: "02"
+          - heading "Customer & admin" [level=3] [ref=e246]
+          - list [ref=e247]:
+            - listitem [ref=e248]:
+              - link "Front Desk & Customer Calls" [ref=e249] [cursor=pointer]:
+                - /url: /services/customer-service
+            - listitem [ref=e252]:
+              - link "Website Chat & Text" [ref=e253] [cursor=pointer]:
+                - /url: /services/live-chat-outsourcing
+            - listitem [ref=e256]:
+              - link "Admin Support" [ref=e257] [cursor=pointer]:
+                - /url: /services/admin-support
+            - listitem [ref=e260]:
+              - link "Paralegal & Legal Support" [ref=e261] [cursor=pointer]:
+                - /url: /services/legal-process-outsourcing
+        - generic [ref=e265]:
+          - generic [ref=e267]: "03"
+          - heading "HR & payroll" [level=3] [ref=e274]
+          - list [ref=e275]:
+            - listitem [ref=e276]:
+              - link "HR Outsourcing" [ref=e277] [cursor=pointer]:
+                - /url: /services/hr-outsourcing
+            - listitem [ref=e280]:
+              - link "Payroll Outsourcing" [ref=e281] [cursor=pointer]:
+                - /url: /services/payroll-outsourcing
+            - listitem [ref=e284]:
+              - link "HR vs PEO Guide" [ref=e285] [cursor=pointer]:
+                - /url: /services/hr-vs-peo-guide
+            - listitem [ref=e288]:
+              - link "HR for Multi-Location Businesses" [ref=e289] [cursor=pointer]:
+                - /url: /services/hr-for-retail
+        - generic [ref=e293]:
+          - generic [ref=e295]: "04"
+          - heading "Models & sectors" [level=3] [ref=e302]
+          - list [ref=e303]:
+            - listitem [ref=e304]:
+              - link "Small Business" [ref=e305] [cursor=pointer]:
+                - /url: /services/small-business
+            - listitem [ref=e308]:
+              - link "Online Store Support" [ref=e309] [cursor=pointer]:
+                - /url: /services/ecommerce-bpo
+            - listitem [ref=e312]:
+              - link "Nearshore Teams" [ref=e313] [cursor=pointer]:
+                - /url: /services/nearshore-bpo
+            - listitem [ref=e316]:
+              - link "Practice Acquisitions & Sales" [ref=e317] [cursor=pointer]:
+                - /url: /services/ma-deal-flow
+    - generic [ref=e321]:
+      - generic [ref=e322]:
+        - generic [ref=e323]: 03 · The launch
+        - heading "First call to fully staffed in 14 days." [level=2] [ref=e325]:
+          - generic [ref=e326]:
+            - generic [ref=e327]: First
+            - generic [ref=e328]: call
+            - generic [ref=e329]: to
+            - generic [ref=e330]: fully
+            - generic [ref=e331]: staffed
+            - generic [ref=e332]: in
+            - generic [ref=e333]: "14"
+            - generic [ref=e334]: days.
+        - paragraph [ref=e335]: Five steps, each with a date on it. After go-live we keep adjusting until it runs without you having to think about it.
+      - generic [ref=e336]:
+        - generic [ref=e337]:
+          - text: Where you are
+          - paragraph [ref=e339]: Day 1
+          - paragraph [ref=e340]: Step 1 of 5 · trained and answering your phone in as little as two weeks.
+          - generic [ref=e341]:
+            - generic [ref=e342]:
+              - generic [ref=e343]: The 14 days
+              - generic [ref=e344]: 1/14
+            - generic [ref=e345]:
+              - generic [ref=e346]: "1"
+              - generic [ref=e347]: "2"
+              - generic [ref=e348]: "3"
+              - generic [ref=e349]: "4"
+              - generic [ref=e350]: "5"
+              - generic [ref=e351]: "6"
+              - generic [ref=e352]: "7"
+              - generic [ref=e353]: "8"
+              - generic [ref=e354]: "9"
+              - generic [ref=e355]: "10"
+              - generic [ref=e356]: "11"
+              - generic [ref=e357]: "12"
+              - generic [ref=e358]: "13"
+              - generic [ref=e359]: "14"
+        - list [ref=e360]:
+          - listitem [ref=e362]:
+            - text: Day 1
+            - heading "We sit with you for a morning and learn how the office actually runs" [level=3] [ref=e364]
+            - paragraph [ref=e365]: Which calls matter, what your software is, who signs off on what, and the dozen situations your front desk handles by instinct because nobody ever wrote them down.
+          - listitem [ref=e366]:
+            - text: Days 2–3
+            - heading "We write the playbook you never had time to write" [level=3] [ref=e368]
+            - paragraph [ref=e369]: Intake scripts, scheduling rules, insurance and billing steps, escalation paths — documented before anyone is hired, and yours to keep whether you stay with us or not.
+          - listitem [ref=e370]:
+            - text: Day 4
+            - heading "We shortlist people who have worked in your industry" [level=3] [ref=e372]
+            - paragraph [ref=e373]: Two candidates within 96 hours, screened for the specifics — dental insurance verification, legal intake, prior-authorization calls. You interview both and hold the veto.
+          - listitem [ref=e374]:
+            - text: Days 5–13
+            - heading "They train on your systems before they touch a real patient or client" [level=3] [ref=e376]
+            - paragraph [ref=e377]: Two weeks in your practice management or case software, live call practice against your scripts, and a readiness check you sign off on.
+          - listitem [ref=e378]:
+            - text: Day 14
+            - heading "Go live, then a standing weekly call with the person who runs it" [level=3] [ref=e380]
+            - paragraph [ref=e381]: No account managers who have never seen your queue. Add or drop a seat with 30 days' notice, no penalty and no renegotiation.
+    - generic [ref=e384]:
+      - generic [ref=e385]:
+        - generic [ref=e386]: 04 · Surge cover
+        - heading "When the week doubles, your team can too." [level=2] [ref=e388]:
+          - generic [ref=e389]:
+            - generic [ref=e390]: When
+            - generic [ref=e391]: the
+            - generic [ref=e392]: week
+            - generic [ref=e393]: doubles,
+            - generic [ref=e394]: your
+            - generic [ref=e395]: team
+            - generic [ref=e396]: can
+            - generic [ref=e397]: too.
+        - paragraph [ref=e398]: A small office has no bench, so we are it. Trained cover joins within 72 hours, stays for the season or the emergency, and rolls off when it’s over — no penalty in either direction. It is a clause in the contract, not an upsell.
+        - link "Plan your cover" [ref=e400] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e403]:
+        - figure [ref=e404]:
+          - 'img "Bar chart of one surge season: weekly volume rises past the in-house team''s capacity, and the overage is absorbed by Xevantis cover" [ref=e405]'
+          - generic [ref=e434]:
+            - generic [ref=e435]: Your team today
+            - generic [ref=e437]: The surge, covered by us
+        - paragraph [ref=e439]: The weeks we cover most
+        - list [ref=e440]:
+          - listitem [ref=e441]:
+            - generic [ref=e442]: "01"
+            - text: Flu and vaccine season
+          - listitem [ref=e443]:
+            - generic [ref=e444]: "02"
+            - text: Open enrollment
+          - listitem [ref=e445]:
+            - generic [ref=e446]: "03"
+            - text: Tax season
+          - listitem [ref=e447]:
+            - generic [ref=e448]: "04"
+            - text: Spring home-buying season
+          - listitem [ref=e449]:
+            - generic [ref=e450]: "05"
+            - text: Staff PTO and leave
+          - listitem [ref=e451]:
+            - generic [ref=e452]: "06"
+            - text: Back-to-school physicals
+          - listitem [ref=e453]:
+            - generic [ref=e454]: "07"
+            - text: A sudden resignation
+          - listitem [ref=e455]:
+            - generic [ref=e456]: "08"
+            - text: Snow days and closures
+    - generic [ref=e459]:
+      - generic [ref=e460]:
+        - generic [ref=e461]: 0+
+        - generic [ref=e462]: Local US businesses running on Xevantis teams today
+      - generic [ref=e463]:
+        - generic [ref=e464]: 0.0/5
+        - generic [ref=e465]: Average client rating across every managed account
+      - generic [ref=e466]:
+        - generic [ref=e467]: 0%
+        - generic [ref=e468]: Median saving against hiring the same role locally
+      - generic [ref=e469]:
+        - generic [ref=e470]: 0 days
+        - generic [ref=e471]: From signed scope to a trained person answering your phone
+    - generic [ref=e473]:
+      - generic [ref=e474]:
+        - generic [ref=e475]: 05 · Proof
+        - heading "Trusted by 240+ small businesses across the US." [level=2] [ref=e477]:
+          - generic [ref=e478]:
+            - generic [ref=e479]: Trusted
+            - generic [ref=e480]: by
+            - generic [ref=e481]: 240+
+            - generic [ref=e482]: small
+            - generic [ref=e483]: businesses
+            - generic [ref=e484]: across
+            - generic [ref=e485]: the
+            - generic [ref=e486]: US.
+      - generic [ref=e487]:
+        - figure "Practice Manager · Family dental practice · Queens, NY · 4 providers" [ref=e489]:
+          - blockquote [ref=e492]:
+            - paragraph [ref=e493]: Our front desk finally gets to look patients in the eye
+            - paragraph [ref=e494]: Two people were answering phones and checking in patients at the same time, badly. Xevantis took the calls and the insurance verification. Same two staff, no more waiting room backlog, and we stopped losing new-patient calls to voicemail.
+          - generic [ref=e495]:
+            - strong [ref=e496]: Practice Manager
+            - generic [ref=e497]: · Family dental practice · Queens, NY · 4 providers
+        - list [ref=e499]:
+          - listitem [ref=e500]:
+            - button "Practice Manager Family dental practice · Queens, NY · 4 providers" [pressed] [ref=e501] [cursor=pointer]:
+              - generic [ref=e502]: PM
+              - generic [ref=e503]:
+                - strong [ref=e504]: Practice Manager
+                - generic [ref=e505]: Family dental practice · Queens, NY · 4 providers
+          - listitem [ref=e506]:
+            - button "Managing Partner Personal injury firm · Brooklyn, NY · 6 attorneys" [ref=e507] [cursor=pointer]:
+              - generic [ref=e508]: MP
+              - generic [ref=e509]:
+                - strong [ref=e510]: Managing Partner
+                - generic [ref=e511]: Personal injury firm · Brooklyn, NY · 6 attorneys
+          - listitem [ref=e512]:
+            - button "Pharmacist-in-Charge Independent pharmacy · 2 locations · Bronx, NY" [ref=e513] [cursor=pointer]:
+              - generic [ref=e514]: PC
+              - generic [ref=e515]:
+                - strong [ref=e516]: Pharmacist-in-Charge
+                - generic [ref=e517]: Independent pharmacy · 2 locations · Bronx, NY
+          - listitem [ref=e518]:
+            - button "Principal Structural engineering firm · Long Island City, NY · 18 staff" [ref=e519] [cursor=pointer]:
+              - generic [ref=e520]: PE
+              - generic [ref=e521]:
+                - strong [ref=e522]: Principal
+                - generic [ref=e523]: Structural engineering firm · Long Island City, NY · 18 staff
+    - generic [ref=e526]:
+      - generic [ref=e527]:
+        - generic [ref=e528]: 06 · Software
+        - heading "We work inside the software you already pay for." [level=2] [ref=e530]:
+          - generic [ref=e531]:
+            - generic [ref=e532]: We
+            - generic [ref=e533]: work
+            - generic [ref=e534]: inside
+            - generic [ref=e535]: the
+            - generic [ref=e536]: software
+            - generic [ref=e537]: you
+            - generic [ref=e538]: already
+            - generic [ref=e539]: pay
+            - generic [ref=e540]: for.
+        - paragraph [ref=e541]: No migrations, no new logins for your staff. Your specialist trains on your stack in week one and works in it every day after.
+        - link "Get your team" [ref=e543] [cursor=pointer]:
+          - /url: "#contact"
+      - list [ref=e546]:
+        - listitem [ref=e547]: Dentrix
+        - listitem [ref=e548]: Open Dental
+        - listitem [ref=e549]: Athenahealth
+        - listitem [ref=e550]: eClinicalWorks
+        - listitem [ref=e551]: Clio
+        - listitem [ref=e552]: MyCase
+        - listitem [ref=e553]: QuickBooks
+        - listitem [ref=e554]: Xero
+        - listitem [ref=e555]: Salesforce
+        - listitem [ref=e556]: HubSpot
+        - listitem [ref=e557]: Google Workspace
+        - listitem [ref=e558]: Microsoft 365
+        - listitem [ref=e559]: RingCentral
+        - listitem [ref=e560]: Follow Up Boss
+        - listitem [ref=e561]: Gusto
+        - listitem [ref=e562]: Square
+        - listitem [ref=e563]: + whatever your office runs
+    - generic [ref=e565]:
+      - generic [ref=e566]:
+        - generic [ref=e567]:
+          - generic [ref=e568]: From the desk
+          - heading "Written for the people who run the place." [level=2] [ref=e570]:
+            - generic [ref=e571]:
+              - generic [ref=e572]: Written
+              - generic [ref=e573]: for
+              - generic [ref=e574]: the
+              - generic [ref=e575]: people
+              - generic [ref=e576]: who
+              - generic [ref=e577]: run
+              - generic [ref=e578]: the
+              - generic [ref=e579]: place.
+          - paragraph [ref=e580]: Practical guides for small and local businesses, written from what we see running New York offices.
+        - link "All resources" [ref=e582] [cursor=pointer]:
+          - /url: /resources
+      - list [ref=e585]:
+        - listitem [ref=e586]:
+          - link "Benchmark · Jul 27, 2026 What a missed call costs a New York dental practice" [ref=e587] [cursor=pointer]:
+            - /url: /resources/nyc-dental-practice-missed-calls
+            - generic [ref=e602]:
+              - generic [ref=e603]: Benchmark · Jul 27, 2026
+              - heading "What a missed call costs a New York dental practice" [level=3] [ref=e604]
+        - listitem [ref=e607]:
+          - 'link "Playbook · Jul 20, 2026 Legal intake in New York: the call that decides whether you get the case" [ref=e608] [cursor=pointer]':
+            - /url: /resources/law-firm-intake-new-york
+            - generic [ref=e631]:
+              - generic [ref=e632]: Playbook · Jul 20, 2026
+              - 'heading "Legal intake in New York: the call that decides whether you get the case" [level=3] [ref=e633]'
+        - listitem [ref=e636]:
+          - 'link "White paper · Jul 13, 2026 Local SEO for New York service businesses: eight things that move the map" [ref=e637] [cursor=pointer]':
+            - /url: /resources/local-seo-nyc-service-business
+            - generic [ref=e655]:
+              - generic [ref=e656]: White paper · Jul 13, 2026
+              - 'heading "Local SEO for New York service businesses: eight things that move the map" [level=3] [ref=e657]'
+    - generic [ref=e665]:
+      - generic [ref=e666]:
+        - generic [ref=e667]: Let’s plan it
+        - heading "Tell us what's eating your week." [level=2] [ref=e669]:
+          - generic [ref=e670]:
+            - generic [ref=e671]: Tell
+            - generic [ref=e672]: us
+            - generic [ref=e673]: what's
+            - generic [ref=e674]: eating
+            - generic [ref=e675]: your
+            - generic [ref=e676]: week.
+        - paragraph [ref=e677]: Whether you run a clinic in Queens or a firm in Tulsa, we’ll come back within one business day with who we’d put on it, when they’d start and what it costs per month.
+      - generic [ref=e678]:
+        - generic [ref=e680]:
+          - generic [ref=e681]: Work email
+          - textbox "Work email" [ref=e682]:
+            - /placeholder: you@yourpractice.com
+          - button "Get started" [ref=e683] [cursor=pointer]
+        - paragraph [ref=e685]: No sales sequence. One reply from a human, not a sales development rep.
+  - contentinfo [ref=e686]:
+    - generic [ref=e687]:
+      - generic [ref=e688]:
+        - generic [ref=e689]:
+          - link "Xevantis home" [ref=e690] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e691]: The back office your small business never had room to hire. Serving clinics, firms and local offices in all 50 states.
+          - generic [ref=e692]:
+            - link "LinkedIn" [ref=e693] [cursor=pointer]:
+              - /url: /
+            - link "X" [ref=e696] [cursor=pointer]:
+              - /url: /
+            - link "YouTube" [ref=e699] [cursor=pointer]:
+              - /url: /
+            - link "Instagram" [ref=e702] [cursor=pointer]:
+              - /url: /
+        - generic [ref=e707]:
+          - heading "Solutions" [level=3] [ref=e708]
+          - list [ref=e709]:
+            - listitem [ref=e710]:
+              - link "Small business support" [ref=e711] [cursor=pointer]:
+                - /url: /services/small-business
+            - listitem [ref=e712]:
+              - link "Front desk & customer calls" [ref=e713] [cursor=pointer]:
+                - /url: /services/customer-service
+            - listitem [ref=e714]:
+              - link "Bookkeeping & accounting" [ref=e715] [cursor=pointer]:
+                - /url: /services/finance-and-accounting
+            - listitem [ref=e716]:
+              - link "IT support" [ref=e717] [cursor=pointer]:
+                - /url: /services/it-outsourcing
+            - listitem [ref=e718]:
+              - link "All BPO solutions" [ref=e719] [cursor=pointer]:
+                - /url: /services
+        - generic [ref=e720]:
+          - heading "Company" [level=3] [ref=e721]
+          - list [ref=e722]:
+            - listitem [ref=e723]:
+              - link "About us" [ref=e724] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e725]:
+              - link "Who we work with" [ref=e726] [cursor=pointer]:
+                - /url: /#proof
+            - listitem [ref=e727]:
+              - link "Insights" [ref=e728] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e729]:
+              - link "Careers" [ref=e730] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e731]:
+              - link "Contact" [ref=e732] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=e733]:
+          - heading "Resources" [level=3] [ref=e734]
+          - list [ref=e735]:
+            - listitem [ref=e736]:
+              - link "Design system" [ref=e737] [cursor=pointer]:
+                - /url: /design-system
+            - listitem [ref=e738]:
+              - link "Playbooks" [ref=e739] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e740]:
+              - link "Benchmarks" [ref=e741] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e742]:
+              - link "Security" [ref=e743] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e744]:
+              - link "Status" [ref=e745] [cursor=pointer]:
+                - /url: /
+        - generic [ref=e746]:
+          - heading "Newsletter" [level=3] [ref=e747]
+          - paragraph [ref=e748]: One operations letter a month. No fluff.
+          - generic [ref=e750]:
+            - generic [ref=e751]: Email address
+            - textbox "Email address" [ref=e752]:
+              - /placeholder: Your email
+            - button "Sign up" [ref=e753] [cursor=pointer]
+      - generic [ref=e755]:
+        - generic [ref=e756]: © 2026 Xevantis. All rights reserved.
+        - generic [ref=e757]:
+          - generic [ref=e758]: HIPAA compliant
+          - generic [ref=e759]: SOC 2 Type II
+          - generic [ref=e760]: CCPA & state privacy ready
+          - generic [ref=e761]: PCI DSS
+        - generic [ref=e762]:
+          - link "Privacy" [ref=e763] [cursor=pointer]:
+            - /url: /
+          - link "Terms" [ref=e764] [cursor=pointer]:
+            - /url: /
+  - button "Open Next.js Dev Tools" [ref=e770] [cursor=pointer]

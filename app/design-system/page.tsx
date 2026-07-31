@@ -334,10 +334,12 @@ function ColorBlock() {
       title="Color"
       intro={
         <>
-          One ink, one paper, five brand pastels. Pastels carry meaning — Sun for energy
-          and CTAs, Mint for reliability, Lilac for intelligence/AI, Blush for the human
-          side, Sky for scale and data. Text is always ink on light; never pastel on
-          pastel. Click a swatch to copy its token.
+          One ink, one paper, five light washes in the brand&rsquo;s violet, cream and
+          gray family. The names are historical; the meanings hold — Sun is the violet
+          primary for CTAs, Mint the warm greige of reliability, Lilac the lavender of
+          intelligence/AI, Blush the cream of the human side, Sky the slate of scale and
+          data. Text is always ink on light; never pastel on pastel. Click a swatch to
+          copy its token.
         </>
       }
     >

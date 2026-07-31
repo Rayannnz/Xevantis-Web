@@ -55,11 +55,11 @@ export const ACCENT_ORB: Record<Accent, string> = {
 
 /** Hover glow for cards. Kept low-alpha so a grid of them stays quiet. */
 export const ACCENT_GLOW: Record<Accent, string> = {
-  sun: "group-hover:shadow-[0_28px_60px_-24px_rgb(245_189_0/0.5)]",
-  mint: "group-hover:shadow-[0_28px_60px_-24px_rgb(31_170_108/0.45)]",
-  lilac: "group-hover:shadow-[0_28px_60px_-24px_rgb(115_80_240/0.45)]",
-  blush: "group-hover:shadow-[0_28px_60px_-24px_rgb(242_89_58/0.45)]",
-  sky: "group-hover:shadow-[0_28px_60px_-24px_rgb(29_132_230/0.45)]",
+  sun: "group-hover:shadow-[0_28px_60px_-24px_rgb(122_69_230/0.45)]",
+  mint: "group-hover:shadow-[0_28px_60px_-24px_rgb(116_107_88/0.35)]",
+  lilac: "group-hover:shadow-[0_28px_60px_-24px_rgb(111_97_184/0.42)]",
+  blush: "group-hover:shadow-[0_28px_60px_-24px_rgb(128_103_41/0.35)]",
+  sky: "group-hover:shadow-[0_28px_60px_-24px_rgb(98_110_136/0.4)]",
 };
 
 /**

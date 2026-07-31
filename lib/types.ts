@@ -26,15 +26,11 @@ export interface Service {
   icon: ReactNode;
 }
 
-export interface LaunchStep {
-  title: string;
-  detail: string;
-  accent: Accent;
-}
-
 export interface ProcessStep {
   title: string;
   detail: string;
+  /** Where the step lands in the 14-day launch, e.g. "Days 2–3". */
+  day?: string;
 }
 
 export interface Testimonial {
