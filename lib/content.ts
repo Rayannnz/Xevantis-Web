@@ -1,9 +1,12 @@
 import { SERVICE_GROUPS } from "./services";
 import type {
+  Coverage,
   FooterColumn,
   LaunchStep,
   NavLink,
+  OpsEvent,
   ProcessStep,
+  ProofCell,
   Stat,
   Testimonial,
 } from "./types";
@@ -37,6 +40,59 @@ export const SOLUTION_GROUPS: { heading: string; links: NavLink[] }[] =
 export const ALL_SOLUTIONS: NavLink[] = SOLUTION_GROUPS.flatMap(
   (group) => group.links,
 );
+
+/**
+ * The hero day sheet — one day's work, as the office would see it logged.
+ *
+ * Deliberately mundane: the argument is that these are the interruptions that
+ * eat a front desk, not that any single one is impressive. Exactly one item
+ * escalates, because "we handle it, you hear about the one that matters" is
+ * the claim the sheet exists to make.
+ *
+ * ponytail: a representative day, labeled as one on the sheet itself, not a
+ * log from a real account. Ceiling — it states nothing measurable, so it needs
+ * no substantiation. Upgrade path: swap in a real anonymized day if sales
+ * wants to stand behind specific volumes.
+ */
+export const OPS_DAY: OpsEvent[] = [
+  { time: "08:04", label: "New patient call", status: "Booked" },
+  { time: "08:26", label: "Insurance verification", status: "Aetna" },
+  { time: "09:11", label: "Records request", status: "Sent" },
+  { time: "09:48", label: "Reschedule, two chairs", status: "Done" },
+  { time: "10:32", label: "Billing question", status: "Escalated", flagged: true },
+  { time: "11:15", label: "Prior authorization", status: "Submitted" },
+  { time: "12:40", label: "New patient call", status: "Booked" },
+  { time: "13:22", label: "Recall list, 40 calls", status: "Working" },
+  { time: "15:09", label: "Claim resubmission", status: "Filed" },
+];
+
+/**
+ * The hero proof rail. Every figure here is already claimed elsewhere on the
+ * site (STATS, the launch promise), so the rail restates what we stand behind
+ * rather than introducing numbers that appear in only one place.
+ */
+export const HERO_PROOF: ProofCell[] = [
+  { figure: "240+", label: "Local US businesses" },
+  { figure: "50", label: "States covered" },
+  { figure: "42 sec", label: "Average time to answer" },
+  { figure: "2 weeks", label: "From first call to live" },
+];
+
+/**
+ * Hours the phones are covered, drawn as the hero band.
+ *
+ * ponytail: these hours are a placeholder standing in for the real answered-live
+ * window, which nothing in the repo records. Ceiling — the band renders whatever
+ * is set here and the hero's aria-label is generated from it, so correcting it
+ * is a one-object edit with no component change. Upgrade path: replace with the
+ * hours sales actually quotes, and the timezone they quote them in.
+ */
+export const COVERAGE: Coverage = {
+  timezone: "ET",
+  band: { from: 6, to: 22 },
+  live: { from: 7, to: 20 },
+  extended: { from: 6, to: 22 },
+};
 
 export const LAUNCH_STEPS: LaunchStep[] = [
   { title: "Scope", detail: "Your front desk, your files, your busy hours.", accent: "sun" },

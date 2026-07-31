@@ -11,23 +11,31 @@
    variables backing a generated utility, which would drop the steps the design
    system page renders dynamically (color ramps, gradient swatches). */
 @theme static {
-  /* ---------- Color: Ink — the near-black spine of the brand ---------- */
-  --color-ink-900: #0e0d12;
-  --color-ink-800: #17161d;
-  --color-ink-700: #26242e;
-  --color-ink-600: #3a3745;
-  --color-ink-500: #55515f;
-  --color-ink-400: #7b7786;
-  --color-ink-300: #a5a1b0;
-  --color-ink-200: #cdc9d6;
-  --color-ink-100: #e6e3ec;
-  --color-ink-050: #f2f0f6;
+  /* ---------- Color: Ink — the navy spine of the brand ----------
+     Rebased on the logo's own darkest value (--color-brand-navy) rather than a
+     neutral near-black. Every mid step keeps the same hue and loses saturation
+     as it lightens, so the ramp doubles as the secondary-text greys: a pure
+     grey next to navy reads as an unrelated second neutral.
+     500 and 400 are the two steps body copy actually uses, so both are held
+     above 5:1 on paper-050. */
+  --color-ink-900: #1e1450;
+  --color-ink-800: #272060;
+  --color-ink-700: #383172;
+  --color-ink-600: #4c4683;
+  --color-ink-500: #5d5885;
+  --color-ink-400: #6e6a92;
+  --color-ink-300: #a6a2bf;
+  --color-ink-200: #c9c6dc;
+  --color-ink-100: #e4e2ee;
+  --color-ink-050: #f1f0f7;
 
-  /* ---------- Color: Paper — warm off-whites ---------- */
+  /* ---------- Color: Paper — cool off-whites ----------
+     Biased toward the accent, not away from it. The previous ramp was warm
+     cream, which fights a navy/violet spine and reads as a different brand. */
   --color-paper-000: #ffffff;
-  --color-paper-050: #fdfbf7;
-  --color-paper-100: #fbf8f2;
-  --color-paper-200: #f5f0e6;
+  --color-paper-050: #f9f8fc;
+  --color-paper-100: #f5f4fa;
+  --color-paper-200: #eceaf4;
 
   /* ---------- Color: Sun — primary accent ---------- */
   --color-sun-050: #fffae0;
@@ -45,13 +53,17 @@
   --color-mint-400: #43cd8c;
   --color-mint-500: #1faa6c;
 
-  /* ---------- Color: Lilac — intelligence, AI ---------- */
-  --color-lilac-050: #f4f0ff;
-  --color-lilac-100: #e6dfff;
-  --color-lilac-200: #d0c3ff;
-  --color-lilac-300: #b39fff;
-  --color-lilac-400: #9578ff;
-  --color-lilac-500: #7350f0;
+  /* ---------- Color: Lilac — the accent ----------
+     Retuned onto the brand violet rather than adding a parallel accent ramp:
+     300 and 400 now *are* --color-brand-violet-light and --color-brand-violet.
+     This is the only hue that marks anything, and 500 is the step that stays
+     readable as text on paper. */
+  --color-lilac-050: #f3efff;
+  --color-lilac-100: #e7dfff;
+  --color-lilac-200: #cfc0ff;
+  --color-lilac-300: #a98bf5;
+  --color-lilac-400: #8250f0;
+  --color-lilac-500: #6a35d9;
 
   /* ---------- Color: Blush — human touch, CX ---------- */
   --color-blush-050: #fff1ee;
@@ -149,18 +161,22 @@
   --radius-blob: 62% 38% 44% 56% / 48% 52% 48% 52%;
 
   /* ---------- Elevation: soft (ambient) and sticker (hard offset) ---------- */
-  --shadow-xs: 0 1px 2px rgb(14 13 18 / 0.06);
-  --shadow-sm: 0 2px 8px rgb(14 13 18 / 0.06), 0 1px 2px rgb(14 13 18 / 0.04);
-  --shadow-md: 0 10px 26px -8px rgb(14 13 18 / 0.14),
-    0 2px 6px rgb(14 13 18 / 0.05);
-  --shadow-lg: 0 26px 60px -20px rgb(14 13 18 / 0.22),
-    0 6px 16px rgb(14 13 18 / 0.06);
-  --shadow-xl: 0 48px 90px -32px rgb(14 13 18 / 0.3);
+  /* Tinted with the ink hue, not black: a neutral shadow over cool paper
+     greys the surface it falls on instead of deepening it. */
+  --shadow-xs: 0 1px 2px rgb(30 20 80 / 0.06);
+  --shadow-sm: 0 2px 8px rgb(30 20 80 / 0.07), 0 1px 2px rgb(30 20 80 / 0.04);
+  --shadow-md: 0 10px 26px -8px rgb(30 20 80 / 0.16),
+    0 2px 6px rgb(30 20 80 / 0.06);
+  --shadow-lg: 0 26px 60px -20px rgb(30 20 80 / 0.24),
+    0 6px 16px rgb(30 20 80 / 0.07);
+  --shadow-xl: 0 48px 90px -32px rgb(30 20 80 / 0.32);
   --shadow-glow-sun: 0 18px 50px -14px rgb(245 189 0 / 0.55);
-  --shadow-sticker: 4px 4px 0 #0e0d12;
-  --shadow-sticker-lg: 8px 8px 0 #0e0d12;
-  --shadow-sticker-hover: 6px 6px 0 #0e0d12;
-  --shadow-sticker-active: 1px 1px 0 #0e0d12;
+  /* Buttons keep the sticker offset, so it follows the ink token to navy —
+     a near-black offset against a navy surface reads as two different darks. */
+  --shadow-sticker: 4px 4px 0 #1e1450;
+  --shadow-sticker-lg: 8px 8px 0 #1e1450;
+  --shadow-sticker-hover: 6px 6px 0 #1e1450;
+  --shadow-sticker-active: 1px 1px 0 #1e1450;
   --shadow-focus-sun: 0 0 0 4px rgb(255 209 43 / 0.35);
   --shadow-focus-danger: 0 0 0 4px rgb(224 58 47 / 0.14);
 
@@ -189,6 +205,19 @@
   --animate-bob: bob 3.2s var(--ease-in-out-soft) infinite;
   --animate-aurora: wave-slide 18s linear infinite;
   --animate-ribbon: wave-slide 22s linear infinite;
+  /* ---------- Hero day sheet ----------
+     A scan line runs the working day and each entry resolves from pending to
+     done as it passes, on a loop. Two rules make it safe:
+
+     - The base styles are the *resolved* state and the keyframes dip back to
+       pending, so a browser that never runs the animation shows a finished
+       sheet rather than a permanently dimmed one.
+     - `backwards` fill is what lets the rows below the line read as pending
+       during their delay; without it every row sits bright until its turn
+       arrives and the sweep has nothing to reveal. */
+  --animate-ops-scan: ops-scan var(--ops-cycle, 12s) linear infinite;
+  --animate-ops-resolve: ops-resolve var(--ops-cycle, 12s) linear infinite
+    backwards;
   --animate-marquee: marquee-x var(--marquee-duration, 38s) linear infinite;
   --animate-pulse-ring: pulse-ring 2.4s var(--ease-out-quad) infinite;
 
@@ -275,6 +304,37 @@
     }
     to {
       background-position-x: 200%;
+    }
+  }
+
+  /* `top` rather than a transform: the line spans a container whose height is
+     set by however many rows the sheet has, and a percentage translate would
+     resolve against the line's own 1px. */
+  @keyframes ops-scan {
+    0% {
+      top: 0;
+      opacity: 0;
+    }
+    6% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes ops-resolve {
+    0%,
+    4% {
+      opacity: 0.3;
+    }
+    10%,
+    100% {
+      opacity: 1;
     }
   }
 
@@ -485,6 +545,22 @@
     mix-blend-mode: multiply;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.16'/%3E%3C/svg%3E");
   }
+}
+
+/* Ruled plan-paper field — the ambient background that replaces the drifting
+   blobs. Two 1px gradients: no image request, no animation, no paint cost
+   beyond the initial rasterize. `--grid-step` lets a section tighten the rule
+   spacing without a second utility. */
+@utility grid-field {
+  background-image:
+    linear-gradient(to right, var(--color-ink-900) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-ink-900) 1px, transparent 1px);
+  background-size: var(--grid-step, 96px) var(--grid-step, 96px);
+  /* The lines are drawn at full ink and knocked back here, so the field
+     inherits the ink hue instead of being a separate grey. Low enough to read
+     as the tooth of the paper — at 0.045 it resolved into legible graph paper
+     and started competing with the headline for the same attention. */
+  opacity: 0.028;
 }
 
 @utility bg-aurora {

@@ -12,7 +12,8 @@ export type RevealVariant =
   | "right"
   | "blur"
   | "pop"
-  | "clip";
+  | "clip"
+  | "rule";
 
 const EASE_OUT_EXPO = [0.16, 1, 0.3, 1] as const;
 const EASE_OUT_BACK = [0.34, 1.56, 0.64, 1] as const;
@@ -27,9 +28,19 @@ const EASE_OUT_BACK = [0.34, 1.56, 0.64, 1] as const;
  */
 const SLIDE_X = 16;
 
+/**
+ * Vertical travel on the default entrance.
+ *
+ * 32px reads as an element arriving from off-screen — the eye follows the
+ * movement instead of the words. 8px reads as the page settling: enough to
+ * register that something resolved, not enough to animate the reader's
+ * attention away from what it says.
+ */
+const RISE_Y = 8;
+
 /** Hidden states, one per `data-reveal` value in the original system. */
 const hiddenByVariant: Record<RevealVariant, TargetAndTransition> = {
-  up: { opacity: 0, y: 32 },
+  up: { opacity: 0, y: RISE_Y },
   fade: { opacity: 0, y: 0 },
   scale: { opacity: 0, y: 14, scale: 0.94 },
   left: { opacity: 0, x: -SLIDE_X },
@@ -37,6 +48,9 @@ const hiddenByVariant: Record<RevealVariant, TargetAndTransition> = {
   blur: { opacity: 0, y: 16, filter: "blur(14px)" },
   pop: { opacity: 0, y: 10, scale: 0.8 },
   clip: { opacity: 0, clipPath: "inset(0 0 100% 0)" },
+  /* Stays fully opaque: a rule that never animates should be an invisible
+     zero-width line, not a visible blank strip holding open a gap. */
+  rule: { opacity: 1, scaleX: 0 },
 };
 
 const shownByVariant: Record<RevealVariant, TargetAndTransition> = {
@@ -48,6 +62,18 @@ const shownByVariant: Record<RevealVariant, TargetAndTransition> = {
   blur: { opacity: 1, y: 0, filter: "blur(0px)" },
   pop: { opacity: 1, y: 0, scale: 1 },
   clip: { opacity: 1, clipPath: "inset(0 0 0% 0)" },
+  rule: { opacity: 1, scaleX: 1 },
+};
+
+/**
+ * Seconds. One entrance speed for everything, so a page of staggered reveals
+ * resolves at a single tempo rather than as several overlapping ones. The rule
+ * runs longer only because a line drawing its full width at 420ms reads as a
+ * flicker rather than as a stroke.
+ */
+const DURATION = 0.42;
+const DURATION_BY_VARIANT: Partial<Record<RevealVariant, number>> = {
+  rule: 0.62,
 };
 
 const TAGS = {
@@ -64,7 +90,8 @@ const TAGS = {
 } as const;
 
 export interface RevealProps {
-  children: ReactNode;
+  /** Optional: `rule` reveals a bare divider, which has nothing inside it. */
+  children?: ReactNode;
   /** Entrance shape. Defaults to the 32px rise used across the site. */
   variant?: RevealVariant;
   /** Milliseconds, matching the original `data-delay`. */
@@ -98,7 +125,7 @@ export function Reveal({
     shown: {
       ...shownByVariant[variant],
       transition: {
-        duration: 0.9,
+        duration: DURATION_BY_VARIANT[variant] ?? DURATION,
         delay: delay / 1000,
         ease: variant === "pop" ? EASE_OUT_BACK : EASE_OUT_EXPO,
       },

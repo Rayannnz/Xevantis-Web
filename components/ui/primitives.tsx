@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import type { Accent, Tint } from "@/lib/types";
+import { Reveal } from "@/components/motion/Reveal";
 
 /* ==========================================================================
    LAYOUT
@@ -31,13 +32,20 @@ export function Container({
   );
 }
 
-/** Tinted section washes. `aurora` animates; the rest are flat. */
+/**
+ * Section washes.
+ *
+ * The five accent tints collapse to one quiet field. Alternating five pastel
+ * bands down a page turns section order into a color sequence the reader has
+ * to decode; the rhythm is now paper → field → ink, and emphasis is spent on
+ * the ink band rather than spread across every section.
+ */
 const TINTS: Record<Tint, string> = {
-  sun: "bg-sun-100",
-  mint: "bg-mint-100",
-  lilac: "bg-lilac-100",
-  blush: "bg-blush-100",
-  sky: "bg-sky-100",
+  sun: "bg-paper-100",
+  mint: "bg-paper-100",
+  lilac: "bg-paper-100",
+  blush: "bg-paper-100",
+  sky: "bg-paper-100",
   paper: "bg-paper-050",
   ink: "bg-ink-900",
   aurora: "bg-aurora",
@@ -168,11 +176,11 @@ type BadgeTone = Accent | "ink" | "outline" | "default";
 
 const BADGE_TONES: Record<BadgeTone, string> = {
   default: "bg-ink-050",
-  sun: "bg-sun-200",
-  mint: "bg-mint-200",
-  lilac: "bg-lilac-200",
-  blush: "bg-blush-200",
-  sky: "bg-sky-200",
+  sun: "bg-ink-100",
+  mint: "bg-ink-100",
+  lilac: "bg-ink-100",
+  blush: "bg-ink-100",
+  sky: "bg-ink-100",
   ink: "bg-ink-900 text-paper-050",
   outline: "border border-ink-900 bg-transparent",
 };
@@ -268,6 +276,71 @@ export function TextLink({
     >
       {children}
     </Link>
+  );
+}
+
+/* ==========================================================================
+   INDEX RAIL
+   ========================================================================== */
+
+/**
+ * Hairline divider that draws itself in from the left as it enters view.
+ *
+ * The one piece of signature motion in the system. It is a `scaleX` on a 1px
+ * element, so it composites on its own layer and costs nothing to animate —
+ * and because the hidden state is `scaleX(0)` rather than `opacity: 0`, a rule
+ * that never animates is invisible rather than a stranded blank strip.
+ */
+export function HairRule({
+  delay = 0,
+  className,
+}: {
+  delay?: number;
+  className?: string;
+}) {
+  return (
+    <Reveal
+      variant="rule"
+      delay={delay}
+      aria-hidden
+      className={cn("h-px w-full origin-left bg-ink-900/12", className)}
+    />
+  );
+}
+
+/**
+ * The section marker: position in the page, then what the section is.
+ *
+ * Numbering is only honest because the homepage is a sequence a visitor walks
+ * in order — it is not applied to grids or card sets, where the order carries
+ * nothing. Stacks beside the content on desktop, runs inline above it on
+ * narrow screens where a side rail would eat the text column.
+ */
+export function IndexRail({
+  index,
+  label,
+  className,
+}: {
+  index: string;
+  label: string;
+  className?: string;
+}) {
+  return (
+    <div
+      className={cn(
+        "flex items-center gap-3",
+        "min-[821px]:grid min-[821px]:content-start min-[821px]:gap-[0.7rem] min-[821px]:pt-[0.6rem]",
+        className,
+      )}
+    >
+      <span className="font-mono text-xs font-medium tabular-nums tracking-widest text-lilac-500">
+        {index}
+      </span>
+      <HairRule delay={120} className="w-9 shrink-0 min-[821px]:w-full" />
+      <span className="font-mono text-2xs uppercase tracking-widest text-ink-400">
+        {label}
+      </span>
+    </div>
   );
 }
 
