@@ -6,44 +6,61 @@ import type { Accent } from "./types";
  * Tailwind cannot see `bg-${accent}-300`, so every accent-driven surface has to
  * resolve through a literal map. Centralizing them here means a service page
  * picks its accent once and the whole page follows.
- *
- * The five accents now resolve to the same restrained surfaces. Color-coding a
- * grid by rotating five pastels made every section read as a rainbow and left
- * nothing for emphasis to use; the ink ramp carries surfaces and violet marks
- * the one thing per view that matters. The union stays open and the maps stay
- * keyed by all five names so the 16 `lib/services/*` files never change — and
- * so reintroducing differentiation later is a single edit here.
  */
 
-/** Every accent resolves to the same class. Written out per key so Tailwind's
- *  source scan still finds each literal. */
-const uniform = (value: string): Record<Accent, string> => ({
-  sun: value,
-  mint: value,
-  lilac: value,
-  blush: value,
-  sky: value,
-});
+/** Solid 300-step tile, for icons sitting on paper. */
+export const ACCENT_TILE: Record<Accent, string> = {
+  sun: "bg-sun-300",
+  mint: "bg-mint-300",
+  lilac: "bg-lilac-300",
+  blush: "bg-blush-300",
+  sky: "bg-sky-300",
+};
 
-/** Icon tile, for icons sitting on paper. Neutral: the icon carries the shape. */
-export const ACCENT_TILE = uniform("bg-ink-100");
+/** 100-step wash, for large calm areas. */
+export const ACCENT_WASH: Record<Accent, string> = {
+  sun: "bg-sun-100",
+  mint: "bg-mint-100",
+  lilac: "bg-lilac-100",
+  blush: "bg-blush-100",
+  sky: "bg-sky-100",
+};
 
-/** Large calm areas. */
-export const ACCENT_WASH = uniform("bg-ink-050");
+/** 050-step wash — the lightest tint that still reads as colored. */
+export const ACCENT_TINT: Record<Accent, string> = {
+  sun: "bg-sun-050",
+  mint: "bg-mint-050",
+  lilac: "bg-lilac-050",
+  blush: "bg-blush-050",
+  sky: "bg-sky-050",
+};
 
-/** The lightest tint that still separates from paper. */
-export const ACCENT_TINT = uniform("bg-paper-100");
+/** Readable accent text on paper — the 500 step, never the pastels. */
+export const ACCENT_TEXT: Record<Accent, string> = {
+  sun: "text-sun-500",
+  mint: "text-mint-500",
+  lilac: "text-lilac-500",
+  blush: "text-blush-500",
+  sky: "text-sky-500",
+};
 
-/** Readable accent text on paper — the one place hue is allowed to speak. */
-export const ACCENT_TEXT = uniform("text-lilac-500");
+/** Blurred orb behind hero and CTA copy. */
+export const ACCENT_ORB: Record<Accent, string> = {
+  sun: "bg-sun-200",
+  mint: "bg-mint-200",
+  lilac: "bg-lilac-200",
+  blush: "bg-blush-200",
+  sky: "bg-sky-200",
+};
 
-/** Soft field behind hero and CTA copy. */
-export const ACCENT_ORB = uniform("bg-ink-050");
-
-/** Hover shadow for cards. One tinted elevation, not five colored glows. */
-export const ACCENT_GLOW = uniform(
-  "group-hover:shadow-[0_28px_60px_-24px_rgb(30_20_80/0.28)]",
-);
+/** Hover glow for cards. Kept low-alpha so a grid of them stays quiet. */
+export const ACCENT_GLOW: Record<Accent, string> = {
+  sun: "group-hover:shadow-[0_28px_60px_-24px_rgb(245_189_0/0.5)]",
+  mint: "group-hover:shadow-[0_28px_60px_-24px_rgb(31_170_108/0.45)]",
+  lilac: "group-hover:shadow-[0_28px_60px_-24px_rgb(115_80_240/0.45)]",
+  blush: "group-hover:shadow-[0_28px_60px_-24px_rgb(242_89_58/0.45)]",
+  sky: "group-hover:shadow-[0_28px_60px_-24px_rgb(29_132_230/0.45)]",
+};
 
 /**
  * Gradient border, painted onto a card's `::before` and revealed on hover.
@@ -52,6 +69,10 @@ export const ACCENT_GLOW = uniform(
  * the stop positions stay exact and the class survives any future rename of
  * the `bg-gradient-*` / `bg-linear-*` family.
  */
-export const ACCENT_EDGE = uniform(
-  "before:[background:linear-gradient(140deg,var(--color-lilac-400),transparent_58%)]",
-);
+export const ACCENT_EDGE: Record<Accent, string> = {
+  sun: "before:[background:linear-gradient(140deg,var(--color-sun-300),transparent_58%)]",
+  mint: "before:[background:linear-gradient(140deg,var(--color-mint-300),transparent_58%)]",
+  lilac: "before:[background:linear-gradient(140deg,var(--color-lilac-300),transparent_58%)]",
+  blush: "before:[background:linear-gradient(140deg,var(--color-blush-300),transparent_58%)]",
+  sky: "before:[background:linear-gradient(140deg,var(--color-sky-300),transparent_58%)]",
+};
